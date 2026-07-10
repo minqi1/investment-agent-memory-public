@@ -4,7 +4,7 @@ Use this file as the stable handoff prompt between Codex and ChatGPT.
 
 ## Current Context
 
-- Generated: 2026-07-10T20:31:31
+- Generated: 2026-07-10T20:44:43
 - Stage: `premarket`
 - Report date: `2026-07-10`
 - Market regime from Codex: `tech_led_risk_on`
@@ -45,7 +45,8 @@ Analyze:
 - risk and invalidation
 - what needs manual broker confirmation before any real trade
 
-Codex is the Market Perception Layer. Treat Codex outputs as market data, technical state, risk flags, and source-quality metadata.
+Codex is the Market Perception Layer.
+Treat Codex outputs as market data, technical state, risk flags, and source-quality metadata.
 
 ## Hard Boundaries
 
@@ -68,9 +69,9 @@ Codex is the Market Perception Layer. Treat Codex outputs as market data, techni
 
 Return a concise committee response in Chinese with these sections:
 
-1. `Market Judgment`: broad regime, breadth, index/sector confirmation, and whether this is real strength or narrow rotation.
-2. `Main Thesis Chains`: key chains such as AI accelerators, memory/HBM, custom silicon, data-center power/cooling, cloud capex.
-3. `Key Companies`: explain support, valuation pressure, catalyst durability, and falsification for the most important names.
+1. `Market Judgment`: broad regime, breadth, index/sector confirmation, and rotation quality.
+2. `Main Thesis Chains`: AI accelerators, memory/HBM, custom silicon, power/cooling, cloud capex.
+3. `Key Companies`: support, valuation pressure, catalyst durability, and falsification.
 4. `Risks`: macro, event, technical, valuation, data-quality, and execution-boundary risks.
 5. `Next Watch Items`: what should Codex/user verify next, including VWAP/opening range/support and news follow-through.
 6. `Reviewable Hypotheses`: write falsifiable hypotheses with review date and what would prove them wrong.
@@ -110,7 +111,14 @@ Then output one machine-readable JSON block:
       "mistakes": [],
       "stock_notes": []
     },
-    "do_not_overwrite": ["raw_score", "price", "vwap", "data_quality", "execution_level", "risk_reasons"]
+    "do_not_overwrite": [
+      "raw_score",
+      "price",
+      "vwap",
+      "data_quality",
+      "execution_level",
+      "risk_reasons"
+    ]
   }
 }
 ```
@@ -123,11 +131,11 @@ Then output one machine-readable JSON block:
 - Signals available: 12
 
 Top leaders from Codex:
-- `SPY` S&P 500 ETF | chain=market_regime | score=49.73 | execution=L1_WATCH | caution=watch_only
-- `SOXX` iShares Semiconductor ETF | chain=semiconductor_index | score=27.47 | execution=L1_WATCH | caution=spread_too_wide_or_missing
-- `MSFT` Microsoft | chain=cloud_ai_capex | score=24.14 | execution=L3_MANUAL_CONFIRM_REQUIRED | caution=spread_too_wide_or_missing
-- `AAPL` Apple | chain=mega_cap_platform | score=20.59 | execution=L1_WATCH | caution=spread_too_wide_or_missing
-- `NVDA` NVIDIA | chain=ai_accelerator | score=1.78 | execution=L3_MANUAL_CONFIRM_REQUIRED | caution=spread_too_wide_or_missing
-- `SMH` VanEck Semiconductor ETF | chain=semiconductor_index | score=1.38 | execution=L1_WATCH | caution=spread_too_wide_or_missing
-- `AMD` AMD | chain=ai_accelerator | score=-0.24 | execution=L3_MANUAL_CONFIRM_REQUIRED | caution=spread_too_wide_or_missing
-- `AMZN` Amazon | chain=cloud_ai_capex | score=-3.66 | execution=L1_WATCH | caution=spread_too_wide_or_missing
+- `SPY` S&P 500 ETF | chain=market_regime | score=49.73 | exec=L1_WATCH | flag=watch_only
+- `SOXX` iShares Semiconductor ETF | chain=semiconductor_index | score=27.47 | exec=L1_WATCH | flag=spread_missing
+- `MSFT` Microsoft | chain=cloud_ai_capex | score=24.14 | exec=L3_MANUAL_CONFIRM_REQUIRED | flag=spread_missing
+- `AAPL` Apple | chain=mega_cap_platform | score=20.59 | exec=L1_WATCH | flag=spread_missing
+- `NVDA` NVIDIA | chain=ai_accelerator | score=1.78 | exec=L3_MANUAL_CONFIRM_REQUIRED | flag=spread_missing
+- `SMH` VanEck Semiconductor ETF | chain=semiconductor_index | score=1.38 | exec=L1_WATCH | flag=spread_missing
+- `AMD` AMD | chain=ai_accelerator | score=-0.24 | exec=L3_MANUAL_CONFIRM_REQUIRED | flag=spread_missing
+- `AMZN` Amazon | chain=cloud_ai_capex | score=-3.66 | exec=L1_WATCH | flag=spread_missing

@@ -1,6 +1,6 @@
 # Market Overview
 
-Generated: 2026-07-10T20:31:31
+Generated: 2026-07-10T20:44:43
 Stage: premarket | Report date: 2026-07-10
 
 ## Market Regime
@@ -10,15 +10,15 @@ Stage: premarket | Report date: 2026-07-10
 - Snapshot stage: premarket
 - Snapshot generated at: 2026-07-10T20:31:27
 - Execution boundary: L3_MANUAL_CONFIRM_REQUIRED
-- Monitor fresh/stale: 52/3
+- Monitor fresh/stale: 42/13
 
 ## Index
 
-- `QQQ` Nasdaq 100 ETF | price=720.27 | VWAP=714.7677748287466 | above_vwap=True | caution=price_stale_or_missing
-- `SPY` S&P 500 ETF | price=750.845 | VWAP=748.0100208011644 | above_vwap=True | caution=watch_only
-- `SOXX` iShares Semiconductor ETF | price=572.9299 | VWAP=568.7557947393174 | above_vwap=True | caution=spread_too_wide_or_missing
-- `SMH` VanEck Semiconductor ETF | price=600.8857 | VWAP=594.6966685539421 | above_vwap=True | caution=spread_too_wide_or_missing
-- `IWM` Russell 2000 ETF | price=297.01 | VWAP= | above_vwap=False | caution=below_vwap
+- `QQQ` Nasdaq 100 ETF | price=721.17 | VWAP=714.7677748287466 | above_vwap=True | caution=price_stale_or_missing
+- `SPY` S&P 500 ETF | price=751.89 | VWAP=748.0100208011644 | above_vwap=True | caution=price_stale_or_missing
+- `SOXX` iShares Semiconductor ETF | price=574.98 | VWAP=568.7557947393174 | above_vwap=True | caution=price_stale_or_missing
+- `SMH` VanEck Semiconductor ETF | price=602.16 | VWAP=594.6966685539421 | above_vwap=True | caution=spread_too_wide_or_missing
+- `IWM` Russell 2000 ETF | price=297.55 | VWAP= | above_vwap=False | caution=price_stale_or_missing
 
 ## Leaders
 
@@ -48,7 +48,7 @@ Stage: premarket | Report date: 2026-07-10
 
 ## Risk Factors
 
-- low: data_freshness - fresh=52, stale=3, stale_ratio=5.45%
+- low: data_freshness - fresh=42, stale=13, stale_ratio=23.64%
 - medium: execution_boundary - Automated output is capped at L3_MANUAL_CONFIRM_REQUIRED unless broker realtime data is verified.
 - medium: market_or_data_caution - below_vwap: 36
 - medium: market_or_data_caution - price_stale_or_missing: 3

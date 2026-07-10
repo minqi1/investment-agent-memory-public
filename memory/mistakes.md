@@ -9,10 +9,10 @@ Manual notes live outside the generated section. Record what happened, why it ha
 
 <!-- AUTO-GENERATED:BEGIN -->
 
-Generated: 2026-07-10T20:31:31
+Generated: 2026-07-10T20:44:43
 
 ## Current Avoidance Rules
-- Avoid ignoring `data_freshness`: fresh=52, stale=3, stale_ratio=5.45%
+- Avoid ignoring `data_freshness`: fresh=42, stale=13, stale_ratio=23.64%
 - Avoid ignoring `execution_boundary`: Automated output is capped at L3_MANUAL_CONFIRM_REQUIRED unless broker realtime data is verified.
 - Avoid ignoring `market_or_data_caution`: below_vwap: 36
 - Avoid ignoring `market_or_data_caution`: price_stale_or_missing: 3
