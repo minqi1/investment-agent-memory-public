@@ -4,7 +4,7 @@ Use this file as the stable handoff prompt between Codex and ChatGPT.
 
 ## Current Context
 
-- Generated: 2026-07-10T20:44:43
+- Generated: 2026-07-10T20:48:53
 - Stage: `premarket`
 - Report date: `2026-07-10`
 - Market regime from Codex: `tech_led_risk_on`
@@ -62,7 +62,7 @@ Treat Codex outputs as market data, technical state, risk flags, and source-qual
 - Is current strength broad-based, or driven by a narrow group of AI, semiconductor, and infrastructure leaders?
 - Which moves are supported by durable fundamental catalysts, and which are mainly news spikes or crowded trades?
 - Are high-score names extended away from VWAP/opening range, or still near a reasonable support-check zone?
-- Please judge whether the support behind these leaders is durable: SPY, SOXX, MSFT, AAPL, NVDA.
+- Please judge whether the support behind these leaders is durable: MU, SMH, CIEN, AMAT, TT.
 - Separate data-quality/execution-boundary risks from true market risks.
 
 ## Required Output
@@ -131,11 +131,11 @@ Then output one machine-readable JSON block:
 - Signals available: 12
 
 Top leaders from Codex:
-- `SPY` S&P 500 ETF | chain=market_regime | score=49.73 | exec=L1_WATCH | flag=watch_only
-- `SOXX` iShares Semiconductor ETF | chain=semiconductor_index | score=27.47 | exec=L1_WATCH | flag=spread_missing
-- `MSFT` Microsoft | chain=cloud_ai_capex | score=24.14 | exec=L3_MANUAL_CONFIRM_REQUIRED | flag=spread_missing
-- `AAPL` Apple | chain=mega_cap_platform | score=20.59 | exec=L1_WATCH | flag=spread_missing
-- `NVDA` NVIDIA | chain=ai_accelerator | score=1.78 | exec=L3_MANUAL_CONFIRM_REQUIRED | flag=spread_missing
-- `SMH` VanEck Semiconductor ETF | chain=semiconductor_index | score=1.38 | exec=L1_WATCH | flag=spread_missing
-- `AMD` AMD | chain=ai_accelerator | score=-0.24 | exec=L3_MANUAL_CONFIRM_REQUIRED | flag=spread_missing
-- `AMZN` Amazon | chain=cloud_ai_capex | score=-3.66 | exec=L1_WATCH | flag=spread_missing
+- `MU` Micron | chain=memory_hbm_storage | score=2.1 | exec=L3_MANUAL_CONFIRM_REQUIRED | flag=spread_missing
+- `SMH` VanEck Semiconductor ETF | chain=semiconductor_index | score=0.93 | exec=L1_WATCH | flag=spread_missing
+- `CIEN` Ciena | chain=ai_networking_optical | score=-5.7 | exec=L3_MANUAL_CONFIRM_REQUIRED | flag=below_vwap
+- `AMAT` Applied Materials | chain=semiconductor_equipment | score=-5.92 | exec=L3_MANUAL_CONFIRM_REQUIRED | flag=below_vwap
+- `TT` Trane Technologies | chain=data_center_power_cooling | score=-6.11 | exec=L3_MANUAL_CONFIRM_REQUIRED | flag=below_vwap
+- `KLAC` KLA | chain=semiconductor_equipment | score=-6.42 | exec=L1_WATCH | flag=below_vwap
+- `LRCX` Lam Research | chain=semiconductor_equipment | score=-6.51 | exec=L3_MANUAL_CONFIRM_REQUIRED | flag=below_vwap
+- `ONTO` Onto Innovation | chain=semiconductor_test_packaging | score=-6.55 | exec=L3_MANUAL_CONFIRM_REQUIRED | flag=below_vwap

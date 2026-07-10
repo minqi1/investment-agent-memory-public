@@ -1,6 +1,6 @@
 # Market Overview
 
-Generated: 2026-07-10T20:44:43
+Generated: 2026-07-10T20:48:53
 Stage: premarket | Report date: 2026-07-10
 
 ## Market Regime
@@ -8,7 +8,7 @@ Stage: premarket | Report date: 2026-07-10
 当前市场状态：`tech_led_risk_on`
 
 - Snapshot stage: premarket
-- Snapshot generated at: 2026-07-10T20:31:27
+- Snapshot generated at: 2026-07-10T20:48:49
 - Execution boundary: L3_MANUAL_CONFIRM_REQUIRED
 - Monitor fresh/stale: 42/13
 
@@ -22,37 +22,37 @@ Stage: premarket | Report date: 2026-07-10
 
 ## Leaders
 
-- `SPY` S&P 500 ETF | chain=market_regime | price=750.845 | VWAP=748.0100208011644 | score=49.73 | level=L1_WATCH | caution=watch_only
-- `SOXX` iShares Semiconductor ETF | chain=semiconductor_index | price=572.9299 | VWAP=568.7557947393174 | score=27.47 | level=L1_WATCH | caution=spread_too_wide_or_missing
-- `MSFT` Microsoft | chain=cloud_ai_capex | price=386.87 | VWAP=385.2946942570428 | score=24.14 | level=L3_MANUAL_CONFIRM_REQUIRED | caution=spread_too_wide_or_missing
-- `AAPL` Apple | chain=mega_cap_platform | price=313.94 | VWAP=312.580034104003 | score=20.59 | level=L1_WATCH | caution=spread_too_wide_or_missing
-- `NVDA` NVIDIA | chain=ai_accelerator | price=201.06 | VWAP=198.6129702700327 | score=1.78 | level=L3_MANUAL_CONFIRM_REQUIRED | caution=spread_too_wide_or_missing
-- `SMH` VanEck Semiconductor ETF | chain=semiconductor_index | price=600.8857 | VWAP=594.6966685539421 | score=1.38 | level=L1_WATCH | caution=spread_too_wide_or_missing
-- `AMD` AMD | chain=ai_accelerator | price=541.635 | VWAP=534.8185566160087 | score=-0.24 | level=L3_MANUAL_CONFIRM_REQUIRED | caution=spread_too_wide_or_missing
-- `AMZN` Amazon | chain=cloud_ai_capex | price=247.15 | VWAP=243.97602796947365 | score=-3.66 | level=L1_WATCH | caution=spread_too_wide_or_missing
-- `CIEN` Ciena | chain=ai_networking_optical | score=-4.39 | level=L3_MANUAL_CONFIRM_REQUIRED | caution=below_vwap
-- `LRCX` Lam Research | chain=semiconductor_equipment | score=-4.71 | level=L1_WATCH | caution=below_vwap
-- `AMAT` Applied Materials | chain=semiconductor_equipment | score=-5.75 | level=L3_MANUAL_CONFIRM_REQUIRED | caution=below_vwap
-- `ASML` ASML Holding | chain=semiconductor_equipment | price=1785.91 | score=-6.33 | level=L3_MANUAL_CONFIRM_REQUIRED | caution=below_vwap
+- `MU` Micron | chain=memory_hbm_storage | price=975.33 | VWAP=962.7506256109568 | score=2.1 | level=L3_MANUAL_CONFIRM_REQUIRED | caution=spread_too_wide_or_missing
+- `SMH` VanEck Semiconductor ETF | chain=semiconductor_index | price=602.16 | VWAP=594.6966685539421 | score=0.93 | level=L1_WATCH | caution=spread_too_wide_or_missing
+- `CIEN` Ciena | chain=ai_networking_optical | score=-5.7 | level=L3_MANUAL_CONFIRM_REQUIRED | caution=below_vwap
+- `AMAT` Applied Materials | chain=semiconductor_equipment | score=-5.92 | level=L3_MANUAL_CONFIRM_REQUIRED | caution=below_vwap
+- `TT` Trane Technologies | chain=data_center_power_cooling | score=-6.11 | level=L3_MANUAL_CONFIRM_REQUIRED | caution=below_vwap
+- `KLAC` KLA | chain=semiconductor_equipment | score=-6.42 | level=L1_WATCH | caution=below_vwap
+- `LRCX` Lam Research | chain=semiconductor_equipment | score=-6.51 | level=L3_MANUAL_CONFIRM_REQUIRED | caution=below_vwap
+- `ONTO` Onto Innovation | chain=semiconductor_test_packaging | score=-6.55 | level=L3_MANUAL_CONFIRM_REQUIRED | caution=below_vwap
+- `VRT` Vertiv | chain=data_center_power_cooling | score=-6.73 | level=L3_MANUAL_CONFIRM_REQUIRED | caution=below_vwap
+- `JCI` Johnson Controls | chain=data_center_power_cooling | score=-6.83 | level=L3_MANUAL_CONFIRM_REQUIRED | caution=below_vwap
+- `ETN` Eaton | chain=data_center_power_cooling | score=-6.96 | level=L3_MANUAL_CONFIRM_REQUIRED | caution=below_vwap
+- `PWR` Quanta Services | chain=data_center_power_cooling | score=-7.09 | level=L3_MANUAL_CONFIRM_REQUIRED | caution=below_vwap
 
 ## Technical State
 
-- `SPY` | price=750.845 | VWAP=748.0100208011644 | above_vwap=True | caution=watch_only | execution=L1_WATCH
-- `SOXX` | price=572.9299 | VWAP=568.7557947393174 | above_vwap=True | caution=spread_too_wide_or_missing | execution=L1_WATCH
-- `MSFT` | price=386.87 | VWAP=385.2946942570428 | above_vwap=True | caution=spread_too_wide_or_missing | execution=L3_MANUAL_CONFIRM_REQUIRED
-- `AAPL` | price=313.94 | VWAP=312.580034104003 | above_vwap=True | caution=spread_too_wide_or_missing | execution=L1_WATCH
-- `NVDA` | price=201.06 | VWAP=198.6129702700327 | above_vwap=True | caution=spread_too_wide_or_missing | execution=L3_MANUAL_CONFIRM_REQUIRED
-- `SMH` | price=600.8857 | VWAP=594.6966685539421 | above_vwap=True | caution=spread_too_wide_or_missing | execution=L1_WATCH
-- `AMD` | price=541.635 | VWAP=534.8185566160087 | above_vwap=True | caution=spread_too_wide_or_missing | execution=L3_MANUAL_CONFIRM_REQUIRED
-- `AMZN` | price=247.15 | VWAP=243.97602796947365 | above_vwap=True | caution=spread_too_wide_or_missing | execution=L1_WATCH
+- `MU` | price=975.33 | VWAP=962.7506256109568 | above_vwap=True | caution=spread_too_wide_or_missing | execution=L3_MANUAL_CONFIRM_REQUIRED
+- `SMH` | price=602.16 | VWAP=594.6966685539421 | above_vwap=True | caution=spread_too_wide_or_missing | execution=L1_WATCH
+- `CIEN` | price= | VWAP= | above_vwap= | caution=below_vwap | execution=L3_MANUAL_CONFIRM_REQUIRED
+- `AMAT` | price= | VWAP= | above_vwap= | caution=below_vwap | execution=L3_MANUAL_CONFIRM_REQUIRED
+- `TT` | price= | VWAP= | above_vwap= | caution=below_vwap | execution=L3_MANUAL_CONFIRM_REQUIRED
+- `KLAC` | price= | VWAP= | above_vwap= | caution=below_vwap | execution=L1_WATCH
+- `LRCX` | price= | VWAP= | above_vwap= | caution=below_vwap | execution=L3_MANUAL_CONFIRM_REQUIRED
+- `ONTO` | price= | VWAP= | above_vwap= | caution=below_vwap | execution=L3_MANUAL_CONFIRM_REQUIRED
 
 ## Risk Factors
 
 - low: data_freshness - fresh=42, stale=13, stale_ratio=23.64%
 - medium: execution_boundary - Automated output is capped at L3_MANUAL_CONFIRM_REQUIRED unless broker realtime data is verified.
-- medium: market_or_data_caution - below_vwap: 36
-- medium: market_or_data_caution - price_stale_or_missing: 3
-- medium: market_or_data_caution - spread_too_wide_or_missing: 15
+- medium: market_or_data_caution - below_vwap: 33
+- medium: market_or_data_caution - price_stale_or_missing: 13
+- medium: market_or_data_caution - spread_too_wide_or_missing: 9
 - info: market_breadth - latest breadth cache present; generated_at=2026-07-09T23:31:33
 
 ## Watch Items
@@ -75,7 +75,7 @@ Stage: premarket | Report date: 2026-07-10
 - Is current strength broad-based, or driven by a narrow group of AI, semiconductor, and infrastructure leaders?
 - Which moves are supported by durable fundamental catalysts, and which are mainly news spikes or crowded trades?
 - Are high-score names extended away from VWAP/opening range, or still near a reasonable support-check zone?
-- Please judge whether the support behind these leaders is durable: SPY, SOXX, MSFT, AAPL, NVDA.
+- Please judge whether the support behind these leaders is durable: MU, SMH, CIEN, AMAT, TT.
 - Separate data-quality/execution-boundary risks from true market risks.
 
 ## Source Files
