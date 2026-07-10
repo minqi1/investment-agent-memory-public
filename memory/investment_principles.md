@@ -12,7 +12,7 @@ Manual notes live outside the generated section. Keep this file focused on rules
 
 <!-- AUTO-GENERATED:BEGIN -->
 
-Generated: 2026-07-10T20:48:53
+Generated: 2026-07-10T20:49:57
 
 - Current automated execution ceiling: `L3_MANUAL_CONFIRM_REQUIRED`.
 - Treat Codex output as market perception and data quality, not final investment approval.

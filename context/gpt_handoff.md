@@ -4,7 +4,7 @@ Use this file as the stable handoff prompt between Codex and ChatGPT.
 
 ## Current Context
 
-- Generated: 2026-07-10T20:48:53
+- Generated: 2026-07-10T20:49:57
 - Stage: `premarket`
 - Report date: `2026-07-10`
 - Market regime from Codex: `tech_led_risk_on`
@@ -131,11 +131,11 @@ Then output one machine-readable JSON block:
 - Signals available: 12
 
 Top leaders from Codex:
-- `MU` Micron | chain=memory_hbm_storage | score=2.1 | exec=L3_MANUAL_CONFIRM_REQUIRED | flag=spread_missing
-- `SMH` VanEck Semiconductor ETF | chain=semiconductor_index | score=0.93 | exec=L1_WATCH | flag=spread_missing
-- `CIEN` Ciena | chain=ai_networking_optical | score=-5.7 | exec=L3_MANUAL_CONFIRM_REQUIRED | flag=below_vwap
-- `AMAT` Applied Materials | chain=semiconductor_equipment | score=-5.92 | exec=L3_MANUAL_CONFIRM_REQUIRED | flag=below_vwap
-- `TT` Trane Technologies | chain=data_center_power_cooling | score=-6.11 | exec=L3_MANUAL_CONFIRM_REQUIRED | flag=below_vwap
-- `KLAC` KLA | chain=semiconductor_equipment | score=-6.42 | exec=L1_WATCH | flag=below_vwap
-- `LRCX` Lam Research | chain=semiconductor_equipment | score=-6.51 | exec=L3_MANUAL_CONFIRM_REQUIRED | flag=below_vwap
-- `ONTO` Onto Innovation | chain=semiconductor_test_packaging | score=-6.55 | exec=L3_MANUAL_CONFIRM_REQUIRED | flag=below_vwap
+- `MU` Micron | chain=memory_hbm_storage | score=2.1 | exec=L3_MANUAL | flag=spread_missing
+- `SMH` VanEck Semiconductor ETF | chain=semiconductor_index | score=0.93 | exec=L1 | flag=spread_missing
+- `CIEN` Ciena | chain=ai_networking_optical | score=-5.7 | exec=L3_MANUAL | flag=below_vwap
+- `AMAT` Applied Materials | chain=semiconductor_equipment | score=-5.92 | exec=L3_MANUAL | flag=below_vwap
+- `TT` Trane Technologies | chain=data_center_power_cooling | score=-6.11 | exec=L3_MANUAL | flag=below_vwap
+- `KLAC` KLA | chain=semiconductor_equipment | score=-6.42 | exec=L1 | flag=below_vwap
+- `LRCX` Lam Research | chain=semiconductor_equipment | score=-6.51 | exec=L3_MANUAL | flag=below_vwap
+- `ONTO` Onto Innovation | chain=semiconductor_test_packaging | score=-6.55 | exec=L3_MANUAL | flag=below_vwap
