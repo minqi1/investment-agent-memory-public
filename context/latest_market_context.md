@@ -1,6 +1,6 @@
 # Market Overview
 
-Generated: 2026-07-10T20:58:08
+Generated: 2026-07-10T21:11:27
 Stage: premarket | Report date: 2026-07-10
 
 ## Market Regime
@@ -8,7 +8,7 @@ Stage: premarket | Report date: 2026-07-10
 当前市场状态：`tech_led_risk_on`
 
 - Snapshot stage: premarket
-- Snapshot generated at: 2026-07-10T20:48:49
+- Snapshot generated at: 2026-07-10T21:11:17
 - Execution boundary: L3_MANUAL_CONFIRM_REQUIRED
 - Monitor fresh/stale: 42/13
 

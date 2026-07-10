@@ -1,13 +1,13 @@
 {
   "schema_version": "market_context_v1",
-  "timestamp": "2026-07-10T20:58:08",
+  "timestamp": "2026-07-10T21:11:27",
   "stage": "premarket",
   "report_date": "2026-07-10",
   "market_regime": "tech_led_risk_on",
   "market_session": {
     "archive_date": "2026-07-10",
-    "beijing_time": "2026-07-10T20:48:48+08:00",
-    "us_eastern_time": "2026-07-10T08:48:49-04:00",
+    "beijing_time": "2026-07-10T21:11:16+08:00",
+    "us_eastern_time": "2026-07-10T09:11:17-04:00",
     "us_session_date": "2026-07-10",
     "market_clock_source": "Alpaca trading clock",
     "market_clock_status": "ALPACA_IEX_ONLY",
@@ -1128,7 +1128,7 @@
       "below_vwap": 33,
       "spread_too_wide_or_missing": 9
     },
-    "snapshot_generated_at": "2026-07-10T20:48:49",
+    "snapshot_generated_at": "2026-07-10T21:11:17",
     "snapshot_stage": "premarket"
   },
   "news_attention_proxy": [
@@ -1826,7 +1826,7 @@
     {
       "source_name": "latest_committee_snapshot.json",
       "exists_at_generation": true,
-      "updated_at": "2026-07-10T20:48:49",
+      "updated_at": "2026-07-10T21:11:17",
       "local_path_redacted": true
     },
     {
@@ -1876,6 +1876,6 @@
     "recent_user_actions removed because it may contain real trade symbols, prices, quantities, and notes",
     "local source file paths removed because they expose workstation layout"
   ],
-  "public_bridge_generated_at": "2026-07-10T20:58:08",
+  "public_bridge_generated_at": "2026-07-10T21:11:27",
   "public_repo": "https://github.com/minqi1/investment-agent-memory-public"
 }
