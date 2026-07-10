@@ -4,8 +4,8 @@ Use this file as the stable handoff prompt between Codex and ChatGPT.
 
 ## Current Context
 
-- Generated: 2026-07-10T20:05:39
-- Stage: `eod`
+- Generated: 2026-07-10T20:31:31
+- Stage: `premarket`
 - Report date: `2026-07-10`
 - Market regime from Codex: `tech_led_risk_on`
 - Current automated execution ceiling: `L3_MANUAL_CONFIRM_REQUIRED`
@@ -61,7 +61,7 @@ Codex is the Market Perception Layer. Treat Codex outputs as market data, techni
 - Is current strength broad-based, or driven by a narrow group of AI, semiconductor, and infrastructure leaders?
 - Which moves are supported by durable fundamental catalysts, and which are mainly news spikes or crowded trades?
 - Are high-score names extended away from VWAP/opening range, or still near a reasonable support-check zone?
-- Please judge whether the support behind these leaders is durable: QQQ, NVDA, AVGO, SPY, IWM.
+- Please judge whether the support behind these leaders is durable: SPY, SOXX, MSFT, AAPL, NVDA.
 - Separate data-quality/execution-boundary risks from true market risks.
 
 ## Required Output
@@ -123,11 +123,11 @@ Then output one machine-readable JSON block:
 - Signals available: 12
 
 Top leaders from Codex:
-- `QQQ` Nasdaq 100 ETF | chain=market_regime | score=73.12 | execution=L1_WATCH | caution=closed_market_eod_proxy
-- `NVDA` NVIDIA | chain=ai_accelerator | score=68.78 | execution=L3_MANUAL_CONFIRM_REQUIRED | caution=closed_market_eod_proxy
-- `AVGO` Broadcom | chain=custom_silicon_networking | score=66.44 | execution=L3_MANUAL_CONFIRM_REQUIRED | caution=closed_market_eod_proxy
-- `SPY` S&P 500 ETF | chain=market_regime | score=65.72 | execution=L1_WATCH | caution=closed_market_eod_proxy
-- `IWM` Russell 2000 ETF | chain=market_regime | score=63.43 | execution=L1_WATCH | caution=closed_market_eod_proxy
-- `LIN` Linde | chain=industrial_gases | score=46.17 | execution=L1_WATCH | caution=closed_market_eod_proxy
-- `AAPL` Apple | chain=mega_cap_platform | score=37.59 | execution=L1_WATCH | caution=closed_market_eod_proxy
-- `TT` Trane Technologies | chain=data_center_power_cooling | score=30.41 | execution=L3_MANUAL_CONFIRM_REQUIRED | caution=closed_market_eod_proxy
+- `SPY` S&P 500 ETF | chain=market_regime | score=49.73 | execution=L1_WATCH | caution=watch_only
+- `SOXX` iShares Semiconductor ETF | chain=semiconductor_index | score=27.47 | execution=L1_WATCH | caution=spread_too_wide_or_missing
+- `MSFT` Microsoft | chain=cloud_ai_capex | score=24.14 | execution=L3_MANUAL_CONFIRM_REQUIRED | caution=spread_too_wide_or_missing
+- `AAPL` Apple | chain=mega_cap_platform | score=20.59 | execution=L1_WATCH | caution=spread_too_wide_or_missing
+- `NVDA` NVIDIA | chain=ai_accelerator | score=1.78 | execution=L3_MANUAL_CONFIRM_REQUIRED | caution=spread_too_wide_or_missing
+- `SMH` VanEck Semiconductor ETF | chain=semiconductor_index | score=1.38 | execution=L1_WATCH | caution=spread_too_wide_or_missing
+- `AMD` AMD | chain=ai_accelerator | score=-0.24 | execution=L3_MANUAL_CONFIRM_REQUIRED | caution=spread_too_wide_or_missing
+- `AMZN` Amazon | chain=cloud_ai_capex | score=-3.66 | execution=L1_WATCH | caution=spread_too_wide_or_missing
