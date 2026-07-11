@@ -4,9 +4,9 @@ Use this file as the stable handoff prompt between Codex and ChatGPT.
 
 ## Current Context
 
-- Generated: 2026-07-10T21:11:27
-- Stage: `premarket`
-- Report date: `2026-07-10`
+- Generated: 2026-07-11T09:01:37
+- Stage: `eod`
+- Report date: `2026-07-11`
 - Market regime from Codex: `tech_led_risk_on`
 - Current automated execution ceiling: `L3_MANUAL_CONFIRM_REQUIRED`
 - GitHub repo: https://github.com/minqi1/investment-agent-memory-public
@@ -62,7 +62,7 @@ Treat Codex outputs as market data, technical state, risk flags, and source-qual
 - Is current strength broad-based, or driven by a narrow group of AI, semiconductor, and infrastructure leaders?
 - Which moves are supported by durable fundamental catalysts, and which are mainly news spikes or crowded trades?
 - Are high-score names extended away from VWAP/opening range, or still near a reasonable support-check zone?
-- Please judge whether the support behind these leaders is durable: MU, SMH, CIEN, AMAT, TT.
+- Please judge whether the support behind these leaders is durable: SPY, MU, CIEN, ASML, PWR.
 - Separate data-quality/execution-boundary risks from true market risks.
 
 ## Required Output
@@ -131,11 +131,11 @@ Then output one machine-readable JSON block:
 - Signals available: 12
 
 Top leaders from Codex:
-- `MU` Micron | chain=memory_hbm_storage | score=2.1 | exec=L3_MANUAL | flag=spread_missing
-- `SMH` VanEck Semiconductor ETF | chain=semiconductor_index | score=0.93 | exec=L1 | flag=spread_missing
-- `CIEN` Ciena | chain=ai_networking_optical | score=-5.7 | exec=L3_MANUAL | flag=below_vwap
-- `AMAT` Applied Materials | chain=semiconductor_equipment | score=-5.92 | exec=L3_MANUAL | flag=below_vwap
-- `TT` Trane Technologies | chain=data_center_power_cooling | score=-6.11 | exec=L3_MANUAL | flag=below_vwap
-- `KLAC` KLA | chain=semiconductor_equipment | score=-6.42 | exec=L1 | flag=below_vwap
-- `LRCX` Lam Research | chain=semiconductor_equipment | score=-6.51 | exec=L3_MANUAL | flag=below_vwap
-- `ONTO` Onto Innovation | chain=semiconductor_test_packaging | score=-6.55 | exec=L3_MANUAL | flag=below_vwap
+- `SPY` S&P 500 ETF | chain=market_regime | score=71.55 | exec=L1 | flag=closed_market_eod_proxy
+- `MU` Micron | chain=memory_hbm_storage | score=69.1 | exec=L3_MANUAL | flag=closed_market_eod_proxy
+- `CIEN` Ciena | chain=ai_networking_optical | score=67.3 | exec=L3_MANUAL | flag=closed_market_eod_proxy
+- `ASML` ASML Holding | chain=semiconductor_equipment | score=66.49 | exec=L3_MANUAL | flag=closed_market_eod_proxy
+- `PWR` Quanta Services | chain=data_center_power_cooling | score=65.91 | exec=L3_MANUAL | flag=closed_market_eod_proxy
+- `MRVL` Marvell Technology | chain=custom_silicon_networking | score=65.19 | exec=L1 | flag=closed_market_eod_proxy
+- `ALAB` Astera Labs | chain=ai_networking_optical | score=65.09 | exec=L3_MANUAL | flag=closed_market_eod_proxy
+- `ENTG` Entegris | chain=semiconductor_materials | score=64.11 | exec=L3_MANUAL | flag=closed_market_eod_proxy

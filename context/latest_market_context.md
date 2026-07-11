@@ -1,158 +1,191 @@
 # Market Overview
 
-Generated: 2026-07-10T21:11:27
-Stage: premarket | Report date: 2026-07-10
+Generated: 2026-07-11T09:01:37
+Stage: eod | Report date: 2026-07-11
 
 ## Market Regime
 
 当前市场状态：`tech_led_risk_on`
 
-- Snapshot stage: premarket
-- Snapshot generated at: 2026-07-10T21:11:17
+- Snapshot stage: postmarket_review
+- Snapshot generated at: 2026-07-11T09:01:34
 - Execution boundary: L3_MANUAL_CONFIRM_REQUIRED
-- Monitor fresh/stale: 42/13
+- Monitor fresh/stale: 55/1
 
 ## Index
 
 - `QQQ` Nasdaq 100 ETF
-  - price: 721.17
-  - VWAP: 714.7677748287466
+  - price: 726.27
+  - VWAP: 723.7237227281722
   - above_vwap: True
-  - caution: price_stale_or_missing
+  - caution: closed_market_eod_proxy
 - `SPY` S&P 500 ETF
-  - price: 751.89
-  - VWAP: 748.0100208011644
+  - price: 755.1
+  - VWAP: 753.6647630684664
   - above_vwap: True
-  - caution: price_stale_or_missing
+  - caution: closed_market_eod_proxy
 - `SOXX` iShares Semiconductor ETF
-  - price: 574.98
-  - VWAP: 568.7557947393174
+  - price: 581.13
+  - VWAP: 578.3430980620037
   - above_vwap: True
-  - caution: price_stale_or_missing
+  - caution: closed_market_eod_proxy
 - `SMH` VanEck Semiconductor ETF
-  - price: 602.16
-  - VWAP: 594.6966685539421
+  - price: 611.42
+  - VWAP: 607.1186391690582
   - above_vwap: True
-  - caution: spread_missing
+  - caution: closed_market_eod_proxy
 - `IWM` Russell 2000 ETF
-  - price: 297.55
-  - above_vwap: False
-  - caution: price_stale_or_missing
+  - price: 296.03
+  - VWAP: 295.6958146782682
+  - above_vwap: True
+  - caution: closed_market_eod_proxy
 
 ## Leaders
 
+- `SPY` S&P 500 ETF
+  - chain: market_regime
+  - price: 755.10
+  - VWAP: 753.66
+  - score: 71.55
+  - level: L1
+  - caution: closed_market_eod_proxy
 - `MU` Micron
   - chain: memory_hbm_storage
-  - price: 975.33
-  - VWAP: 962.75
-  - score: 2.10
+  - price: 980.68
+  - VWAP: 977.34
+  - score: 69.10
   - level: L3_MANUAL
-  - caution: spread_missing
-- `SMH` VanEck Semiconductor ETF
-  - chain: semiconductor_index
-  - price: 602.16
-  - VWAP: 594.70
-  - score: 0.93
-  - level: L1
-  - caution: spread_missing
+  - caution: closed_market_eod_proxy
 - `CIEN` Ciena
   - chain: ai_networking_optical
-  - score: -5.70
+  - price: 460.74
+  - VWAP: 460.69
+  - score: 67.30
   - level: L3_MANUAL
-  - caution: below_vwap
-- `AMAT` Applied Materials
+  - caution: closed_market_eod_proxy
+- `ASML` ASML Holding
   - chain: semiconductor_equipment
-  - score: -5.92
+  - price: 1797.32
+  - VWAP: 1797.30
+  - score: 66.49
   - level: L3_MANUAL
-  - caution: below_vwap
-- `TT` Trane Technologies
-  - chain: data_center_power_cooling
-  - score: -6.11
-  - level: L3_MANUAL
-  - caution: below_vwap
-- `KLAC` KLA
-  - chain: semiconductor_equipment
-  - score: -6.42
-  - level: L1
-  - caution: below_vwap
-- `LRCX` Lam Research
-  - chain: semiconductor_equipment
-  - score: -6.51
-  - level: L3_MANUAL
-  - caution: below_vwap
-- `ONTO` Onto Innovation
-  - chain: semiconductor_test_packaging
-  - score: -6.55
-  - level: L3_MANUAL
-  - caution: below_vwap
-- `VRT` Vertiv
-  - chain: data_center_power_cooling
-  - score: -6.73
-  - level: L3_MANUAL
-  - caution: below_vwap
-- `JCI` Johnson Controls
-  - chain: data_center_power_cooling
-  - score: -6.83
-  - level: L3_MANUAL
-  - caution: below_vwap
-- `ETN` Eaton
-  - chain: data_center_power_cooling
-  - score: -6.96
-  - level: L3_MANUAL
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
 - `PWR` Quanta Services
   - chain: data_center_power_cooling
-  - score: -7.09
+  - price: 658.46
+  - VWAP: 657.55
+  - score: 65.91
   - level: L3_MANUAL
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
+- `MRVL` Marvell Technology
+  - chain: custom_silicon_networking
+  - price: 236.84
+  - VWAP: 236.16
+  - score: 65.19
+  - level: L1
+  - caution: closed_market_eod_proxy
+- `ALAB` Astera Labs
+  - chain: ai_networking_optical
+  - price: 412.65
+  - VWAP: 412.31
+  - score: 65.09
+  - level: L3_MANUAL
+  - caution: closed_market_eod_proxy
+- `ENTG` Entegris
+  - chain: semiconductor_materials
+  - price: 145.34
+  - VWAP: 144.90
+  - score: 64.11
+  - level: L3_MANUAL
+  - caution: closed_market_eod_proxy
+- `IWM` Russell 2000 ETF
+  - chain: market_regime
+  - price: 296.03
+  - VWAP: 295.70
+  - score: 63.43
+  - level: L1
+  - caution: closed_market_eod_proxy
+- `APD` Air Products
+  - chain: industrial_gases
+  - price: 299.48
+  - VWAP: 299.27
+  - score: 63.34
+  - level: L1
+  - caution: closed_market_eod_proxy
+- `TER` Teradyne
+  - chain: semiconductor_test_packaging
+  - price: 359.61
+  - VWAP: 358.42
+  - score: 62.94
+  - level: L1
+  - caution: closed_market_eod_proxy
+- `META` Meta Platforms
+  - chain: cloud_ai_capex
+  - price: 669.25
+  - VWAP: 668.87
+  - score: 61.23
+  - level: L1
+  - caution: closed_market_eod_proxy
 
 ## Technical State
 
+- `SPY`
+  - price: 755.10
+  - VWAP: 753.66
+  - above_vwap: True
+  - caution: closed_market_eod_proxy
+  - execution: L1
 - `MU`
-  - price: 975.33
-  - VWAP: 962.75
+  - price: 980.68
+  - VWAP: 977.34
   - above_vwap: True
-  - caution: spread_missing
+  - caution: closed_market_eod_proxy
   - execution: L3_MANUAL
-- `SMH`
-  - price: 602.16
-  - VWAP: 594.70
-  - above_vwap: True
-  - caution: spread_missing
-  - execution: L1
 - `CIEN`
-  - above_vwap: False
-  - caution: below_vwap
+  - price: 460.74
+  - VWAP: 460.69
+  - above_vwap: True
+  - caution: closed_market_eod_proxy
   - execution: L3_MANUAL
-- `AMAT`
-  - above_vwap: False
-  - caution: below_vwap
+- `ASML`
+  - price: 1797.32
+  - VWAP: 1797.30
+  - above_vwap: True
+  - caution: closed_market_eod_proxy
   - execution: L3_MANUAL
-- `TT`
-  - above_vwap: False
-  - caution: below_vwap
+- `PWR`
+  - price: 658.46
+  - VWAP: 657.55
+  - above_vwap: True
+  - caution: closed_market_eod_proxy
   - execution: L3_MANUAL
-- `KLAC`
-  - above_vwap: False
-  - caution: below_vwap
+- `MRVL`
+  - price: 236.84
+  - VWAP: 236.16
+  - above_vwap: True
+  - caution: closed_market_eod_proxy
   - execution: L1
-- `LRCX`
-  - above_vwap: False
-  - caution: below_vwap
+- `ALAB`
+  - price: 412.65
+  - VWAP: 412.31
+  - above_vwap: True
+  - caution: closed_market_eod_proxy
   - execution: L3_MANUAL
-- `ONTO`
-  - above_vwap: False
-  - caution: below_vwap
+- `ENTG`
+  - price: 145.34
+  - VWAP: 144.90
+  - above_vwap: True
+  - caution: closed_market_eod_proxy
   - execution: L3_MANUAL
 
 ## Risk Factors
 
-- low: data_freshness - fresh=42, stale=13, stale_ratio=23.64%
+- low: data_freshness - fresh=55, stale=1, stale_ratio=1.79%
 - medium: execution_boundary - Automated output is capped at L3_MANUAL_CONFIRM_REQUIRED unless broker realtime
   data is verified.
-- medium: market_or_data_caution - below_vwap: 33
-- medium: market_or_data_caution - price_stale_or_missing: 13
-- medium: market_or_data_caution - spread_too_wide_or_missing: 9
+- medium: market_or_data_caution - below_vwap: 1
+- medium: market_or_data_caution - closed_market_eod_proxy: 54
+- medium: market_or_data_caution - price_stale_or_missing: 1
 - info: market_breadth - latest breadth cache present; generated_at=2026-07-09T23:31:33
 
 ## Watch Items
@@ -237,7 +270,7 @@ Stage: premarket | Report date: 2026-07-10
 - Which moves are supported by durable fundamental catalysts, and which are mainly news spikes or crowded
   trades?
 - Are high-score names extended away from VWAP/opening range, or still near a reasonable support-check zone?
-- Please judge whether the support behind these leaders is durable: MU, SMH, CIEN, AMAT, TT.
+- Please judge whether the support behind these leaders is durable: SPY, MU, CIEN, ASML, PWR.
 - Separate data-quality/execution-boundary risks from true market risks.
 
 ## Source Files
