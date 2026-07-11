@@ -1,198 +1,160 @@
 # Market Overview
 
-Generated: 2026-07-11T09:01:37
-Stage: eod | Report date: 2026-07-11
+Generated: 2026-07-11T20:49:04
+Stage: premarket | Report date: 2026-07-11
 
 ## Market Regime
 
-当前市场状态：`tech_led_risk_on`
+当前市场状态：`data_quality_caution`
 
-- Snapshot stage: postmarket_review
-- Snapshot generated at: 2026-07-11T09:01:34
+- Snapshot stage: premarket
+- Snapshot generated at: 2026-07-11T20:49:00
 - Execution boundary: L3_MANUAL_CONFIRM_REQUIRED
-- Monitor fresh/stale: 55/1
+- Monitor fresh/stale: 35/21
 
 ## Index
 
 - `QQQ` Nasdaq 100 ETF
-  - price: 726.27
-  - VWAP: 723.7237227281722
+  - price: 726.41
+  - VWAP: 716.1875124257797
   - above_vwap: True
-  - caution: closed_market_eod_proxy
+  - caution: price_stale_or_missing
 - `SPY` S&P 500 ETF
-  - price: 755.1
-  - VWAP: 753.6647630684664
+  - price: 754.89
+  - VWAP: 749.0544288116674
   - above_vwap: True
-  - caution: closed_market_eod_proxy
+  - caution: price_stale_or_missing
 - `SOXX` iShares Semiconductor ETF
-  - price: 581.13
-  - VWAP: 578.3430980620037
+  - price: 583.99
+  - VWAP: 570.0485902870723
   - above_vwap: True
-  - caution: closed_market_eod_proxy
+  - caution: price_stale_or_missing
 - `SMH` VanEck Semiconductor ETF
-  - price: 611.42
-  - VWAP: 607.1186391690582
+  - price: 613.0
+  - VWAP: 596.4367467638699
   - above_vwap: True
-  - caution: closed_market_eod_proxy
+  - caution: price_stale_or_missing
 - `IWM` Russell 2000 ETF
-  - price: 296.03
-  - VWAP: 295.6958146782682
-  - above_vwap: True
-  - caution: closed_market_eod_proxy
+  - above_vwap: False
+  - caution: below_vwap
 
 ## Leaders
 
-- `SPY` S&P 500 ETF
-  - chain: market_regime
-  - price: 755.10
-  - VWAP: 753.66
-  - score: 71.55
-  - level: L1
-  - caution: closed_market_eod_proxy
-- `MU` Micron
-  - chain: memory_hbm_storage
-  - price: 980.68
-  - VWAP: 977.34
-  - score: 69.10
+- `TT` Trane Technologies
+  - chain: data_center_power_cooling
+  - score: -6.02
   - level: L3_MANUAL
-  - caution: closed_market_eod_proxy
-- `CIEN` Ciena
-  - chain: ai_networking_optical
-  - price: 460.74
-  - VWAP: 460.69
-  - score: 67.30
-  - level: L3_MANUAL
-  - caution: closed_market_eod_proxy
+  - caution: below_vwap
 - `ASML` ASML Holding
   - chain: semiconductor_equipment
-  - price: 1797.32
-  - VWAP: 1797.30
-  - score: 66.49
+  - score: -6.20
   - level: L3_MANUAL
-  - caution: closed_market_eod_proxy
+  - caution: below_vwap
+- `JCI` Johnson Controls
+  - chain: data_center_power_cooling
+  - score: -6.47
+  - level: L3_MANUAL
+  - caution: below_vwap
+- `KLAC` KLA
+  - chain: semiconductor_equipment
+  - score: -6.51
+  - level: L3_MANUAL
+  - caution: below_vwap
+- `CIEN` Ciena
+  - chain: ai_networking_optical
+  - score: -7.14
+  - level: L3_MANUAL
+  - caution: below_vwap
+- `GEV` GE Vernova
+  - chain: data_center_power_cooling
+  - score: -7.19
+  - level: L3_MANUAL
+  - caution: below_vwap
+- `AMAT` Applied Materials
+  - chain: semiconductor_equipment
+  - score: -7.23
+  - level: L3_MANUAL
+  - caution: below_vwap
 - `PWR` Quanta Services
   - chain: data_center_power_cooling
-  - price: 658.46
-  - VWAP: 657.55
-  - score: 65.91
+  - score: -7.23
   - level: L3_MANUAL
-  - caution: closed_market_eod_proxy
-- `MRVL` Marvell Technology
-  - chain: custom_silicon_networking
-  - price: 236.84
-  - VWAP: 236.16
-  - score: 65.19
-  - level: L1
-  - caution: closed_market_eod_proxy
-- `ALAB` Astera Labs
+  - caution: below_vwap
+- `VRT` Vertiv
+  - chain: data_center_power_cooling
+  - score: -7.32
+  - level: L3_MANUAL
+  - caution: below_vwap
+- `ETN` Eaton
+  - chain: data_center_power_cooling
+  - score: -7.45
+  - level: L3_MANUAL
+  - caution: below_vwap
+- `LRCX` Lam Research
+  - chain: semiconductor_equipment
+  - score: -7.72
+  - level: L3_MANUAL
+  - caution: below_vwap
+- `ANET` Arista Networks
   - chain: ai_networking_optical
-  - price: 412.65
-  - VWAP: 412.31
-  - score: 65.09
-  - level: L3_MANUAL
-  - caution: closed_market_eod_proxy
-- `ENTG` Entegris
-  - chain: semiconductor_materials
-  - price: 145.34
-  - VWAP: 144.90
-  - score: 64.11
-  - level: L3_MANUAL
-  - caution: closed_market_eod_proxy
-- `IWM` Russell 2000 ETF
-  - chain: market_regime
-  - price: 296.03
-  - VWAP: 295.70
-  - score: 63.43
+  - score: -8.22
   - level: L1
-  - caution: closed_market_eod_proxy
-- `APD` Air Products
-  - chain: industrial_gases
-  - price: 299.48
-  - VWAP: 299.27
-  - score: 63.34
-  - level: L1
-  - caution: closed_market_eod_proxy
-- `TER` Teradyne
-  - chain: semiconductor_test_packaging
-  - price: 359.61
-  - VWAP: 358.42
-  - score: 62.94
-  - level: L1
-  - caution: closed_market_eod_proxy
-- `META` Meta Platforms
-  - chain: cloud_ai_capex
-  - price: 669.25
-  - VWAP: 668.87
-  - score: 61.23
-  - level: L1
-  - caution: closed_market_eod_proxy
+  - caution: below_vwap
 
 ## Technical State
 
-- `SPY`
-  - price: 755.10
-  - VWAP: 753.66
-  - above_vwap: True
-  - caution: closed_market_eod_proxy
-  - execution: L1
-- `MU`
-  - price: 980.68
-  - VWAP: 977.34
-  - above_vwap: True
-  - caution: closed_market_eod_proxy
-  - execution: L3_MANUAL
-- `CIEN`
-  - price: 460.74
-  - VWAP: 460.69
-  - above_vwap: True
-  - caution: closed_market_eod_proxy
+- `TT`
+  - above_vwap: False
+  - caution: below_vwap
   - execution: L3_MANUAL
 - `ASML`
-  - price: 1797.32
-  - VWAP: 1797.30
-  - above_vwap: True
-  - caution: closed_market_eod_proxy
+  - above_vwap: False
+  - caution: below_vwap
+  - execution: L3_MANUAL
+- `JCI`
+  - above_vwap: False
+  - caution: below_vwap
+  - execution: L3_MANUAL
+- `KLAC`
+  - above_vwap: False
+  - caution: below_vwap
+  - execution: L3_MANUAL
+- `CIEN`
+  - above_vwap: False
+  - caution: below_vwap
+  - execution: L3_MANUAL
+- `GEV`
+  - above_vwap: False
+  - caution: below_vwap
+  - execution: L3_MANUAL
+- `AMAT`
+  - above_vwap: False
+  - caution: below_vwap
   - execution: L3_MANUAL
 - `PWR`
-  - price: 658.46
-  - VWAP: 657.55
-  - above_vwap: True
-  - caution: closed_market_eod_proxy
+  - above_vwap: False
+  - caution: below_vwap
   - execution: L3_MANUAL
-- `MRVL`
-  - price: 236.84
-  - VWAP: 236.16
-  - above_vwap: True
-  - caution: closed_market_eod_proxy
-  - execution: L1
-- `ALAB`
-  - price: 412.65
-  - VWAP: 412.31
-  - above_vwap: True
-  - caution: closed_market_eod_proxy
-  - execution: L3_MANUAL
-- `ENTG`
-  - price: 145.34
-  - VWAP: 144.90
-  - above_vwap: True
-  - caution: closed_market_eod_proxy
-  - execution: L3_MANUAL
+
+## GPT Overlay Continuity
+
+- GPT overlay unavailable; establish a new baseline.
 
 ## Risk Factors
 
-- low: data_freshness - fresh=55, stale=1, stale_ratio=1.79%
-- medium: execution_boundary - Automated output is capped at L3_MANUAL_CONFIRM_REQUIRED unless broker realtime
+- high: data_freshness - fresh=35, stale=21, stale_ratio=37.50%
+- medium: execution_boundary - Automated output is capped at L3_MANUAL_CONFIRM_REQUIRED unless
+  broker realtime
   data is verified.
-- medium: market_or_data_caution - below_vwap: 1
-- medium: market_or_data_caution - closed_market_eod_proxy: 54
-- medium: market_or_data_caution - price_stale_or_missing: 1
+- medium: market_or_data_caution - below_vwap: 35
+- medium: market_or_data_caution - price_stale_or_missing: 21
 - info: market_breadth - latest breadth cache present; generated_at=2026-07-09T23:31:33
 
 ## Watch Items
 
 - `NVDA` NVIDIA
   - tier: A_CORE
-  - action: research_watch
+  - action: core_watch_wait_for_pullback
   - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
     growth support,
     news risk becomes hard negative, or price loses medium-term trend support.
@@ -214,15 +176,15 @@ Stage: eod | Report date: 2026-07-11
   - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
     growth support,
     news risk becomes hard negative, or price loses medium-term trend support.
-- `AMD` AMD
+- `ALAB` Astera Labs
   - tier: B_HIGH_BETA
   - action: core_watch_wait_for_pullback
   - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
     growth support,
     news risk becomes hard negative, or price loses medium-term trend support.
-- `ALAB` Astera Labs
-  - tier: B_HIGH_BETA
-  - action: core_watch_wait_for_pullback
+- `AVGO` Broadcom
+  - tier: A_CORE
+  - action: research_watch
   - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
     growth support,
     news risk becomes hard negative, or price loses medium-term trend support.
@@ -232,9 +194,15 @@ Stage: eod | Report date: 2026-07-11
   - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
     growth support,
     news risk becomes hard negative, or price loses medium-term trend support.
-- `KLAC` KLA
+- `ASML` ASML Holding
   - tier: A_CORE
   - action: watch_for_reclaim_and_support
+  - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
+    growth support,
+    news risk becomes hard negative, or price loses medium-term trend support.
+- `TT` Trane Technologies
+  - tier: B_HIGH_BETA
+  - action: core_watch_wait_for_pullback
   - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
     growth support,
     news risk becomes hard negative, or price loses medium-term trend support.
@@ -244,14 +212,8 @@ Stage: eod | Report date: 2026-07-11
   - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
     growth support,
     news risk becomes hard negative, or price loses medium-term trend support.
-- `AMAT` Applied Materials
+- `KLAC` KLA
   - tier: A_CORE
-  - action: watch_for_reclaim_and_support
-  - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
-    growth support,
-    news risk becomes hard negative, or price loses medium-term trend support.
-- `MRVL` Marvell Technology
-  - tier: B_HIGH_BETA
   - action: watch_for_reclaim_and_support
   - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
     growth support,
@@ -265,12 +227,15 @@ Stage: eod | Report date: 2026-07-11
 
 ## Questions For Investment Committee
 
-- Is current strength broad-based, or driven by a narrow group of AI, semiconductor, and infrastructure
+- Is current strength broad-based, or driven by a narrow group of AI, semiconductor, and
+  infrastructure
   leaders?
-- Which moves are supported by durable fundamental catalysts, and which are mainly news spikes or crowded
+- Which moves are supported by durable fundamental catalysts, and which are mainly news spikes
+  or crowded
   trades?
-- Are high-score names extended away from VWAP/opening range, or still near a reasonable support-check zone?
-- Please judge whether the support behind these leaders is durable: SPY, MU, CIEN, ASML, PWR.
+- Are high-score names extended away from VWAP/opening range, or still near a reasonable
+  support-check zone?
+- Please judge whether the support behind these leaders is durable: TT, ASML, JCI, KLAC, CIEN.
 - Separate data-quality/execution-boundary risks from true market risks.
 
 ## Source Files
