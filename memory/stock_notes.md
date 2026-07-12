@@ -9,21 +9,21 @@ Manual notes live outside the generated section. Use this file for durable compa
 
 <!-- AUTO-GENERATED:BEGIN -->
 
-Generated: 2026-07-12T09:03:19
+Generated: 2026-07-12T20:48:17
 
 ## Current Long-Term Watch Notes
 - `NVDA` NVIDIA: chain=ai_accelerator; tier/action=A_CORE; watch invalidation=Downgrade if earnings/order thesis is disproved, valuation rises without growth support, news risk becomes hard negative, or price loses medium-term trend support.
 - `ARM` Arm Holdings: chain=ai_accelerator; tier/action=A_CORE; watch invalidation=Downgrade if earnings/order thesis is disproved, valuation rises without growth support, news risk becomes hard negative, or price loses medium-term trend support.
 - `TSM` TSMC ADR: chain=foundry; tier/action=A_CORE; watch invalidation=Downgrade if earnings/order thesis is disproved, valuation rises without growth support, news risk becomes hard negative, or price loses medium-term trend support.
 - `ANET` Arista Networks: chain=ai_networking_optical; tier/action=B_HIGH_BETA; watch invalidation=Downgrade if earnings/order thesis is disproved, valuation rises without growth support, news risk becomes hard negative, or price loses medium-term trend support.
-- `ALAB` Astera Labs: chain=ai_networking_optical; tier/action=B_HIGH_BETA; watch invalidation=Downgrade if earnings/order thesis is disproved, valuation rises without growth support, news risk becomes hard negative, or price loses medium-term trend support.
-- `AVGO` Broadcom: chain=custom_silicon_networking; tier/action=A_CORE; watch invalidation=Downgrade if earnings/order thesis is disproved, valuation rises without growth support, news risk becomes hard negative, or price loses medium-term trend support.
-- `MU` Micron: chain=memory_hbm_storage; tier/action=B_HIGH_BETA; watch invalidation=Downgrade if earnings/order thesis is disproved, valuation rises without growth support, news risk becomes hard negative, or price loses medium-term trend support.
 - `ASML` ASML Holding: chain=semiconductor_equipment; tier/action=A_CORE; watch invalidation=Downgrade if earnings/order thesis is disproved, valuation rises without growth support, news risk becomes hard negative, or price loses medium-term trend support.
-- `TT` Trane Technologies: chain=data_center_power_cooling; tier/action=B_HIGH_BETA; watch invalidation=Downgrade if earnings/order thesis is disproved, valuation rises without growth support, news risk becomes hard negative, or price loses medium-term trend support.
-- `000660.KS` SK Hynix: chain=memory_hbm_storage; tier/action=B_HIGH_BETA; watch invalidation=Downgrade if earnings/order thesis is disproved, valuation rises without growth support, news risk becomes hard negative, or price loses medium-term trend support.
 - `KLAC` KLA: chain=semiconductor_equipment; tier/action=A_CORE; watch invalidation=Downgrade if earnings/order thesis is disproved, valuation rises without growth support, news risk becomes hard negative, or price loses medium-term trend support.
-- `META` Meta Platforms: chain=cloud_ai_capex; tier/action=B_HIGH_BETA; watch invalidation=Downgrade if earnings/order thesis is disproved, valuation rises without growth support, news risk becomes hard negative, or price loses medium-term trend support.
+- `000660.KS` SK Hynix: chain=memory_hbm_storage; tier/action=B_HIGH_BETA; watch invalidation=Downgrade if earnings/order thesis is disproved, valuation rises without growth support, news risk becomes hard negative, or price loses medium-term trend support.
+- `ALAB` Astera Labs: chain=ai_networking_optical; tier/action=B_HIGH_BETA; watch invalidation=Downgrade if earnings/order thesis is disproved, valuation rises without growth support, news risk becomes hard negative, or price loses medium-term trend support.
+- `MU` Micron: chain=memory_hbm_storage; tier/action=B_HIGH_BETA; watch invalidation=Downgrade if earnings/order thesis is disproved, valuation rises without growth support, news risk becomes hard negative, or price loses medium-term trend support.
+- `AVGO` Broadcom: chain=custom_silicon_networking; tier/action=A_CORE; watch invalidation=Downgrade if earnings/order thesis is disproved, valuation rises without growth support, news risk becomes hard negative, or price loses medium-term trend support.
+- `TT` Trane Technologies: chain=data_center_power_cooling; tier/action=B_HIGH_BETA; watch invalidation=Downgrade if earnings/order thesis is disproved, valuation rises without growth support, news risk becomes hard negative, or price loses medium-term trend support.
+- `SKHY` SK hynix ADR: chain=memory_hbm_storage; tier/action=B_HIGH_BETA; watch invalidation=Downgrade if earnings/order thesis is disproved, valuation rises without growth support, news risk becomes hard negative, or price loses medium-term trend support.
 
 <!-- AUTO-GENERATED:END -->
 

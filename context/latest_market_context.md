@@ -1,14 +1,14 @@
 # Market Overview
 
-Generated: 2026-07-12T09:03:19
-Stage: eod | Report date: 2026-07-12
+Generated: 2026-07-12T20:48:17
+Stage: premarket | Report date: 2026-07-12
 
 ## Market Regime
 
 当前市场状态：`data_quality_caution`
 
-- Snapshot stage: postmarket_review
-- Snapshot generated at: 2026-07-12T09:03:16
+- Snapshot stage: premarket
+- Snapshot generated at: 2026-07-12T20:48:14
 - Execution boundary: L3_MANUAL_CONFIRM_REQUIRED
 - Monitor fresh/stale: 35/21
 
@@ -36,104 +36,104 @@ Stage: eod | Report date: 2026-07-12
   - caution: price_stale_or_missing
 - `IWM` Russell 2000 ETF
   - above_vwap: False
-  - caution: closed_market_eod_proxy
+  - caution: below_vwap
 
 ## Leaders
 
 - `TT` Trane Technologies
   - chain: data_center_power_cooling
-  - score: 11.98
+  - score: -6.02
   - level: L3_MANUAL
-  - caution: closed_market_eod_proxy
-- `ASML` ASML Holding
-  - chain: semiconductor_equipment
-  - score: 11.80
-  - level: L3_MANUAL
-  - caution: closed_market_eod_proxy
+  - caution: below_vwap
 - `JCI` Johnson Controls
   - chain: data_center_power_cooling
-  - score: 11.53
+  - score: -6.47
   - level: L3_MANUAL
-  - caution: closed_market_eod_proxy
+  - caution: below_vwap
+- `ASML` ASML Holding
+  - chain: semiconductor_equipment
+  - score: -6.51
+  - level: L3_MANUAL
+  - caution: below_vwap
 - `KLAC` KLA
   - chain: semiconductor_equipment
-  - score: 11.49
+  - score: -6.83
   - level: L3_MANUAL
-  - caution: closed_market_eod_proxy
+  - caution: below_vwap
 - `CIEN` Ciena
   - chain: ai_networking_optical
-  - score: 10.86
+  - score: -7.09
   - level: L3_MANUAL
-  - caution: closed_market_eod_proxy
-- `AMAT` Applied Materials
-  - chain: semiconductor_equipment
-  - score: 10.77
-  - level: L3_MANUAL
-  - caution: closed_market_eod_proxy
+  - caution: below_vwap
 - `GEV` GE Vernova
   - chain: data_center_power_cooling
-  - score: 10.77
+  - score: -7.23
   - level: L3_MANUAL
-  - caution: closed_market_eod_proxy
+  - caution: below_vwap
 - `PWR` Quanta Services
   - chain: data_center_power_cooling
-  - score: 10.77
+  - score: -7.23
   - level: L3_MANUAL
-  - caution: closed_market_eod_proxy
+  - caution: below_vwap
 - `VRT` Vertiv
   - chain: data_center_power_cooling
-  - score: 10.63
+  - score: -7.37
   - level: L3_MANUAL
-  - caution: closed_market_eod_proxy
+  - caution: below_vwap
 - `ETN` Eaton
   - chain: data_center_power_cooling
-  - score: 10.55
+  - score: -7.50
   - level: L3_MANUAL
-  - caution: closed_market_eod_proxy
+  - caution: below_vwap
+- `AMAT` Applied Materials
+  - chain: semiconductor_equipment
+  - score: -7.55
+  - level: L3_MANUAL
+  - caution: below_vwap
+- `SKHY` SK hynix ADR
+  - chain: memory_hbm_storage
+  - score: -7.91
+  - level: L1
+  - caution: below_vwap
 - `LRCX` Lam Research
   - chain: semiconductor_equipment
-  - score: 10.28
+  - score: -8.04
   - level: L3_MANUAL
-  - caution: closed_market_eod_proxy
-- `ANET` Arista Networks
-  - chain: ai_networking_optical
-  - score: 9.78
-  - level: L1
-  - caution: closed_market_eod_proxy
+  - caution: below_vwap
 
 ## Technical State
 
 - `TT`
   - above_vwap: False
-  - caution: closed_market_eod_proxy
-  - execution: L3_MANUAL
-- `ASML`
-  - above_vwap: False
-  - caution: closed_market_eod_proxy
+  - caution: below_vwap
   - execution: L3_MANUAL
 - `JCI`
   - above_vwap: False
-  - caution: closed_market_eod_proxy
+  - caution: below_vwap
+  - execution: L3_MANUAL
+- `ASML`
+  - above_vwap: False
+  - caution: below_vwap
   - execution: L3_MANUAL
 - `KLAC`
   - above_vwap: False
-  - caution: closed_market_eod_proxy
+  - caution: below_vwap
   - execution: L3_MANUAL
 - `CIEN`
   - above_vwap: False
-  - caution: closed_market_eod_proxy
-  - execution: L3_MANUAL
-- `AMAT`
-  - above_vwap: False
-  - caution: closed_market_eod_proxy
+  - caution: below_vwap
   - execution: L3_MANUAL
 - `GEV`
   - above_vwap: False
-  - caution: closed_market_eod_proxy
+  - caution: below_vwap
   - execution: L3_MANUAL
 - `PWR`
   - above_vwap: False
-  - caution: closed_market_eod_proxy
+  - caution: below_vwap
+  - execution: L3_MANUAL
+- `VRT`
+  - above_vwap: False
+  - caution: below_vwap
   - execution: L3_MANUAL
 
 ## GPT Overlay Continuity
@@ -146,8 +146,7 @@ Stage: eod | Report date: 2026-07-12
 - medium: execution_boundary - Automated output is capped at L3_MANUAL_CONFIRM_REQUIRED unless
   broker realtime
   data is verified.
-- medium: market_or_data_caution - below_vwap: 1
-- medium: market_or_data_caution - closed_market_eod_proxy: 34
+- medium: market_or_data_caution - below_vwap: 35
 - medium: market_or_data_caution - price_stale_or_missing: 21
 - info: market_breadth - latest breadth cache present; generated_at=2026-07-09T23:31:33
 
@@ -177,38 +176,8 @@ Stage: eod | Report date: 2026-07-12
   - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
     growth support,
     news risk becomes hard negative, or price loses medium-term trend support.
-- `ALAB` Astera Labs
-  - tier: B_HIGH_BETA
-  - action: core_watch_wait_for_pullback
-  - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
-    growth support,
-    news risk becomes hard negative, or price loses medium-term trend support.
-- `AVGO` Broadcom
-  - tier: A_CORE
-  - action: research_watch
-  - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
-    growth support,
-    news risk becomes hard negative, or price loses medium-term trend support.
-- `MU` Micron
-  - tier: B_HIGH_BETA
-  - action: watch_for_reclaim_and_support
-  - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
-    growth support,
-    news risk becomes hard negative, or price loses medium-term trend support.
 - `ASML` ASML Holding
   - tier: A_CORE
-  - action: watch_for_reclaim_and_support
-  - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
-    growth support,
-    news risk becomes hard negative, or price loses medium-term trend support.
-- `TT` Trane Technologies
-  - tier: B_HIGH_BETA
-  - action: core_watch_wait_for_pullback
-  - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
-    growth support,
-    news risk becomes hard negative, or price loses medium-term trend support.
-- `000660.KS` SK Hynix
-  - tier: B_HIGH_BETA
   - action: watch_for_reclaim_and_support
   - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
     growth support,
@@ -219,9 +188,39 @@ Stage: eod | Report date: 2026-07-12
   - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
     growth support,
     news risk becomes hard negative, or price loses medium-term trend support.
-- `META` Meta Platforms
+- `000660.KS` SK Hynix
+  - tier: B_HIGH_BETA
+  - action: watch_for_reclaim_and_support
+  - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
+    growth support,
+    news risk becomes hard negative, or price loses medium-term trend support.
+- `ALAB` Astera Labs
   - tier: B_HIGH_BETA
   - action: core_watch_wait_for_pullback
+  - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
+    growth support,
+    news risk becomes hard negative, or price loses medium-term trend support.
+- `MU` Micron
+  - tier: B_HIGH_BETA
+  - action: watch_for_reclaim_and_support
+  - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
+    growth support,
+    news risk becomes hard negative, or price loses medium-term trend support.
+- `AVGO` Broadcom
+  - tier: A_CORE
+  - action: research_watch
+  - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
+    growth support,
+    news risk becomes hard negative, or price loses medium-term trend support.
+- `TT` Trane Technologies
+  - tier: B_HIGH_BETA
+  - action: core_watch_wait_for_pullback
+  - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
+    growth support,
+    news risk becomes hard negative, or price loses medium-term trend support.
+- `SKHY` SK hynix ADR
+  - tier: B_HIGH_BETA
+  - action: research_watch
   - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
     growth support,
     news risk becomes hard negative, or price loses medium-term trend support.
@@ -236,7 +235,7 @@ Stage: eod | Report date: 2026-07-12
   trades?
 - Are high-score names extended away from VWAP/opening range, or still near a reasonable
   support-check zone?
-- Please judge whether the support behind these leaders is durable: TT, ASML, JCI, KLAC, CIEN.
+- Please judge whether the support behind these leaders is durable: TT, JCI, ASML, KLAC, CIEN.
 - Separate data-quality/execution-boundary risks from true market risks.
 
 ## Source Files
