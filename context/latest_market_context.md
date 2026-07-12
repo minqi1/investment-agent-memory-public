@@ -1,14 +1,14 @@
 # Market Overview
 
-Generated: 2026-07-11T20:49:04
-Stage: premarket | Report date: 2026-07-11
+Generated: 2026-07-12T09:03:19
+Stage: eod | Report date: 2026-07-12
 
 ## Market Regime
 
 当前市场状态：`data_quality_caution`
 
-- Snapshot stage: premarket
-- Snapshot generated at: 2026-07-11T20:49:00
+- Snapshot stage: postmarket_review
+- Snapshot generated at: 2026-07-12T09:03:16
 - Execution boundary: L3_MANUAL_CONFIRM_REQUIRED
 - Monitor fresh/stale: 35/21
 
@@ -36,104 +36,104 @@ Stage: premarket | Report date: 2026-07-11
   - caution: price_stale_or_missing
 - `IWM` Russell 2000 ETF
   - above_vwap: False
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
 
 ## Leaders
 
 - `TT` Trane Technologies
   - chain: data_center_power_cooling
-  - score: -6.02
+  - score: 11.98
   - level: L3_MANUAL
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
 - `ASML` ASML Holding
   - chain: semiconductor_equipment
-  - score: -6.20
+  - score: 11.80
   - level: L3_MANUAL
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
 - `JCI` Johnson Controls
   - chain: data_center_power_cooling
-  - score: -6.47
+  - score: 11.53
   - level: L3_MANUAL
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
 - `KLAC` KLA
   - chain: semiconductor_equipment
-  - score: -6.51
+  - score: 11.49
   - level: L3_MANUAL
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
 - `CIEN` Ciena
   - chain: ai_networking_optical
-  - score: -7.14
+  - score: 10.86
   - level: L3_MANUAL
-  - caution: below_vwap
-- `GEV` GE Vernova
-  - chain: data_center_power_cooling
-  - score: -7.19
-  - level: L3_MANUAL
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
 - `AMAT` Applied Materials
   - chain: semiconductor_equipment
-  - score: -7.23
+  - score: 10.77
   - level: L3_MANUAL
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
+- `GEV` GE Vernova
+  - chain: data_center_power_cooling
+  - score: 10.77
+  - level: L3_MANUAL
+  - caution: closed_market_eod_proxy
 - `PWR` Quanta Services
   - chain: data_center_power_cooling
-  - score: -7.23
+  - score: 10.77
   - level: L3_MANUAL
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
 - `VRT` Vertiv
   - chain: data_center_power_cooling
-  - score: -7.32
+  - score: 10.63
   - level: L3_MANUAL
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
 - `ETN` Eaton
   - chain: data_center_power_cooling
-  - score: -7.45
+  - score: 10.55
   - level: L3_MANUAL
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
 - `LRCX` Lam Research
   - chain: semiconductor_equipment
-  - score: -7.72
+  - score: 10.28
   - level: L3_MANUAL
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
 - `ANET` Arista Networks
   - chain: ai_networking_optical
-  - score: -8.22
+  - score: 9.78
   - level: L1
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
 
 ## Technical State
 
 - `TT`
   - above_vwap: False
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
   - execution: L3_MANUAL
 - `ASML`
   - above_vwap: False
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
   - execution: L3_MANUAL
 - `JCI`
   - above_vwap: False
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
   - execution: L3_MANUAL
 - `KLAC`
   - above_vwap: False
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
   - execution: L3_MANUAL
 - `CIEN`
   - above_vwap: False
-  - caution: below_vwap
-  - execution: L3_MANUAL
-- `GEV`
-  - above_vwap: False
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
   - execution: L3_MANUAL
 - `AMAT`
   - above_vwap: False
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
+  - execution: L3_MANUAL
+- `GEV`
+  - above_vwap: False
+  - caution: closed_market_eod_proxy
   - execution: L3_MANUAL
 - `PWR`
   - above_vwap: False
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
   - execution: L3_MANUAL
 
 ## GPT Overlay Continuity
@@ -146,7 +146,8 @@ Stage: premarket | Report date: 2026-07-11
 - medium: execution_boundary - Automated output is capped at L3_MANUAL_CONFIRM_REQUIRED unless
   broker realtime
   data is verified.
-- medium: market_or_data_caution - below_vwap: 35
+- medium: market_or_data_caution - below_vwap: 1
+- medium: market_or_data_caution - closed_market_eod_proxy: 34
 - medium: market_or_data_caution - price_stale_or_missing: 21
 - info: market_breadth - latest breadth cache present; generated_at=2026-07-09T23:31:33
 
