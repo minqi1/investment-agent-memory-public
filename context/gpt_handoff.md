@@ -4,9 +4,9 @@ Use this file as the stable handoff prompt between Codex and ChatGPT.
 
 ## Current Context
 
-- Generated: 2026-07-12T20:48:17
-- Stage: `premarket`
-- Report date: `2026-07-12`
+- Generated: 2026-07-13T09:02:06
+- Stage: `eod`
+- Report date: `2026-07-13`
 - Market regime from Codex: `data_quality_caution`
 - Current automated execution ceiling: `L3_MANUAL_CONFIRM_REQUIRED`
 - GitHub repo: https://github.com/minqi1/investment-agent-memory-public
@@ -166,21 +166,23 @@ Then output one machine-readable JSON block:
 
 - Leaders available: 20
 - Watchlist rows available: 20
-- Risk flags available: 5
+- Risk flags available: 6
 - Signals available: 12
 
 Top leaders from Codex:
-- `TT` Trane Technologies | chain=data_center_power_cooling | score=-6.02 | exec=L3_MANUAL |
-  flag=below_vwap
-- `JCI` Johnson Controls | chain=data_center_power_cooling | score=-6.47 | exec=L3_MANUAL |
-  flag=below_vwap
-- `ASML` ASML Holding | chain=semiconductor_equipment | score=-6.51 | exec=L3_MANUAL |
-  flag=below_vwap
-- `KLAC` KLA | chain=semiconductor_equipment | score=-6.83 | exec=L3_MANUAL | flag=below_vwap
-- `CIEN` Ciena | chain=ai_networking_optical | score=-7.09 | exec=L3_MANUAL | flag=below_vwap
-- `GEV` GE Vernova | chain=data_center_power_cooling | score=-7.23 | exec=L3_MANUAL |
-  flag=below_vwap
-- `PWR` Quanta Services | chain=data_center_power_cooling | score=-7.23 | exec=L3_MANUAL |
-  flag=below_vwap
-- `VRT` Vertiv | chain=data_center_power_cooling | score=-7.37 | exec=L3_MANUAL |
-  flag=below_vwap
+- `TT` Trane Technologies | chain=data_center_power_cooling | score=11.98 | exec=L3_MANUAL |
+  flag=closed_market_eod_proxy
+- `JCI` Johnson Controls | chain=data_center_power_cooling | score=11.53 | exec=L3_MANUAL |
+  flag=closed_market_eod_proxy
+- `ASML` ASML Holding | chain=semiconductor_equipment | score=11.49 | exec=L3_MANUAL |
+  flag=closed_market_eod_proxy
+- `KLAC` KLA | chain=semiconductor_equipment | score=11.17 | exec=L3_MANUAL |
+  flag=closed_market_eod_proxy
+- `CIEN` Ciena | chain=ai_networking_optical | score=10.91 | exec=L3_MANUAL |
+  flag=closed_market_eod_proxy
+- `GEV` GE Vernova | chain=data_center_power_cooling | score=10.77 | exec=L3_MANUAL |
+  flag=closed_market_eod_proxy
+- `PWR` Quanta Services | chain=data_center_power_cooling | score=10.77 | exec=L3_MANUAL |
+  flag=closed_market_eod_proxy
+- `VRT` Vertiv | chain=data_center_power_cooling | score=10.63 | exec=L3_MANUAL |
+  flag=closed_market_eod_proxy

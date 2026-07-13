@@ -1,14 +1,14 @@
 # Market Overview
 
-Generated: 2026-07-12T20:48:17
-Stage: premarket | Report date: 2026-07-12
+Generated: 2026-07-13T09:02:06
+Stage: eod | Report date: 2026-07-13
 
 ## Market Regime
 
 当前市场状态：`data_quality_caution`
 
-- Snapshot stage: premarket
-- Snapshot generated at: 2026-07-12T20:48:14
+- Snapshot stage: postmarket_review
+- Snapshot generated at: 2026-07-13T09:02:04
 - Execution boundary: L3_MANUAL_CONFIRM_REQUIRED
 - Monitor fresh/stale: 35/21
 
@@ -36,104 +36,104 @@ Stage: premarket | Report date: 2026-07-12
   - caution: price_stale_or_missing
 - `IWM` Russell 2000 ETF
   - above_vwap: False
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
 
 ## Leaders
 
 - `TT` Trane Technologies
   - chain: data_center_power_cooling
-  - score: -6.02
+  - score: 11.98
   - level: L3_MANUAL
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
 - `JCI` Johnson Controls
   - chain: data_center_power_cooling
-  - score: -6.47
+  - score: 11.53
   - level: L3_MANUAL
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
 - `ASML` ASML Holding
   - chain: semiconductor_equipment
-  - score: -6.51
+  - score: 11.49
   - level: L3_MANUAL
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
 - `KLAC` KLA
   - chain: semiconductor_equipment
-  - score: -6.83
+  - score: 11.17
   - level: L3_MANUAL
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
 - `CIEN` Ciena
   - chain: ai_networking_optical
-  - score: -7.09
+  - score: 10.91
   - level: L3_MANUAL
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
 - `GEV` GE Vernova
   - chain: data_center_power_cooling
-  - score: -7.23
+  - score: 10.77
   - level: L3_MANUAL
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
 - `PWR` Quanta Services
   - chain: data_center_power_cooling
-  - score: -7.23
+  - score: 10.77
   - level: L3_MANUAL
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
 - `VRT` Vertiv
   - chain: data_center_power_cooling
-  - score: -7.37
+  - score: 10.63
   - level: L3_MANUAL
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
 - `ETN` Eaton
   - chain: data_center_power_cooling
-  - score: -7.50
+  - score: 10.50
   - level: L3_MANUAL
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
 - `AMAT` Applied Materials
   - chain: semiconductor_equipment
-  - score: -7.55
+  - score: 10.45
   - level: L3_MANUAL
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
 - `SKHY` SK hynix ADR
   - chain: memory_hbm_storage
-  - score: -7.91
+  - score: 10.09
   - level: L1
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
 - `LRCX` Lam Research
   - chain: semiconductor_equipment
-  - score: -8.04
+  - score: 9.96
   - level: L3_MANUAL
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
 
 ## Technical State
 
 - `TT`
   - above_vwap: False
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
   - execution: L3_MANUAL
 - `JCI`
   - above_vwap: False
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
   - execution: L3_MANUAL
 - `ASML`
   - above_vwap: False
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
   - execution: L3_MANUAL
 - `KLAC`
   - above_vwap: False
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
   - execution: L3_MANUAL
 - `CIEN`
   - above_vwap: False
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
   - execution: L3_MANUAL
 - `GEV`
   - above_vwap: False
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
   - execution: L3_MANUAL
 - `PWR`
   - above_vwap: False
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
   - execution: L3_MANUAL
 - `VRT`
   - above_vwap: False
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
   - execution: L3_MANUAL
 
 ## GPT Overlay Continuity
@@ -146,7 +146,8 @@ Stage: premarket | Report date: 2026-07-12
 - medium: execution_boundary - Automated output is capped at L3_MANUAL_CONFIRM_REQUIRED unless
   broker realtime
   data is verified.
-- medium: market_or_data_caution - below_vwap: 35
+- medium: market_or_data_caution - below_vwap: 1
+- medium: market_or_data_caution - closed_market_eod_proxy: 34
 - medium: market_or_data_caution - price_stale_or_missing: 21
 - info: market_breadth - latest breadth cache present; generated_at=2026-07-09T23:31:33
 
