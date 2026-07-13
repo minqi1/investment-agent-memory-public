@@ -1,11 +1,11 @@
 # Market Overview
 
-Generated: 2026-07-13T22:06:39
+Generated: 2026-07-13T23:06:07
 Stage: intraday | Report date: 2026-07-13
 
 ## Market Regime
 
-当前市场状态：`premarket_observe`
+当前市场状态：`tech_led_risk_on`
 
 - Snapshot stage: premarket
 - Snapshot generated at: 2026-07-13T20:48:52
@@ -15,28 +15,28 @@ Stage: intraday | Report date: 2026-07-13
 ## Index
 
 - `QQQ` Nasdaq 100 ETF
-  - price: 714.5
-  - VWAP: 714.9912988972798
-  - above_vwap: False
-  - caution: below_vwap
+  - price: 718.15
+  - VWAP: 715.4429876194454
+  - above_vwap: True
+  - caution: watch_only
 - `SPY` S&P 500 ETF
-  - price: 752.62
-  - VWAP: 753.066936310377
+  - price: 752.31
+  - VWAP: 752.597831513814
   - above_vwap: False
-  - caution: below_vwap
+  - caution: below_opening_15m_low
 - `SOXX` iShares Semiconductor ETF
-  - price: 558.97
-  - VWAP: 558.5208444906327
+  - price: 562.85
+  - VWAP: 559.9701004387474
   - above_vwap: True
   - caution: watch_only
 - `SMH` VanEck Semiconductor ETF
-  - price: 591.99
-  - VWAP: 592.1769843215006
-  - above_vwap: False
-  - caution: below_vwap
+  - price: 596.42
+  - VWAP: 593.4266550649539
+  - above_vwap: True
+  - caution: watch_only
 - `IWM` Russell 2000 ETF
-  - price: 294.11
-  - VWAP: 295.044294343787
+  - price: 294.32
+  - VWAP: 294.68739892181975
   - above_vwap: False
   - caution: below_opening_15m_low
 

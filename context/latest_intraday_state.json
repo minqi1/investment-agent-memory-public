@@ -1,19 +1,19 @@
 {
   "stage": "intraday",
-  "generated_at": "2026-07-13T22:06:39+08:00",
-  "us_eastern_time": "2026-07-13T10:06:39-04:00",
+  "generated_at": "2026-07-13T23:06:07+08:00",
+  "us_eastern_time": "2026-07-13T11:06:07-04:00",
   "session": {
     "archive_date": "2026-07-13",
-    "beijing_time": "2026-07-13T22:06:38+08:00",
-    "us_eastern_time": "2026-07-13T10:06:39-04:00",
+    "beijing_time": "2026-07-13T23:06:06+08:00",
+    "us_eastern_time": "2026-07-13T11:06:07-04:00",
     "us_session_date": "2026-07-13",
     "market_clock_source": "Alpaca trading clock",
     "market_clock_status": "ALPACA_IEX_ONLY",
     "is_open": true,
     "next_open": "2026-07-14T09:30:00-04:00",
     "next_close": "2026-07-13T16:00:00-04:00",
-    "generated_beijing_time": "2026-07-13T22:06:39+08:00",
-    "generated_us_eastern_time": "2026-07-13T10:06:39-04:00"
+    "generated_beijing_time": "2026-07-13T23:06:07+08:00",
+    "generated_us_eastern_time": "2026-07-13T11:06:07-04:00"
   },
   "source_refresh_path": "data\\intraday_refresh\\2026-07-13_intraday_refresh.json",
   "max_lag_minutes": 10.0,
@@ -37,13 +37,13 @@
       "name": "Nasdaq 100 ETF",
       "chain_segment": "market_regime",
       "raw_score": 54.6,
-      "price": 714.5,
-      "vwap": 714.9912988972798,
+      "price": 718.15,
+      "vwap": 715.4429876194454,
       "opening_15m_high": 718.255,
       "opening_15m_low": 713.97,
-      "bid_ask_spread": 0.2400000000000091,
-      "spread_pct": 0.0336,
-      "vwap_distance_pct": -0.0687,
+      "bid_ask_spread": 0.32999999999992724,
+      "spread_pct": 0.046,
+      "vwap_distance_pct": 0.3784,
       "open15_position": "inside_opening_15m_range",
       "data_quality": {
         "price_status": "ALPACA_IEX_ONLY",
@@ -51,44 +51,43 @@
         "opening_15m_high_status": "ALPACA_IEX_ONLY",
         "opening_15m_low_status": "ALPACA_IEX_ONLY",
         "bid_ask_spread_status": "ALPACA_IEX_ONLY",
-        "lag_minutes": 1.64,
+        "lag_minutes": 2.11,
         "fresh_within_lag": true,
         "live_fresh_within_lag": true
       },
-      "data_delay_minutes": 1.64,
+      "data_delay_minutes": 2.11,
       "execution_level": "L1_WATCH",
       "real_trade_allowed": "no",
       "manual_confirm_candidate": false,
       "risk_reasons": [
-        "below_vwap",
         "not_above_opening_15m_high"
       ],
       "relative_strength": {
         "QQQ": {
           "vwap_distance_delta_pct": 0.0,
-          "above_vwap_vs_benchmark": "False/False",
+          "above_vwap_vs_benchmark": "True/True",
           "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
         },
         "SPY": {
-          "vwap_distance_delta_pct": -0.0094,
-          "above_vwap_vs_benchmark": "False/False",
-          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
+          "vwap_distance_delta_pct": 0.4166,
+          "above_vwap_vs_benchmark": "True/False",
+          "open15_position_vs_benchmark": "inside_opening_15m_range/below_opening_15m_low"
         },
         "SMH": {
-          "vwap_distance_delta_pct": -0.0371,
-          "above_vwap_vs_benchmark": "False/False",
+          "vwap_distance_delta_pct": -0.126,
+          "above_vwap_vs_benchmark": "True/True",
           "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
         },
         "SOXX": {
-          "vwap_distance_delta_pct": -0.1491,
-          "above_vwap_vs_benchmark": "False/True",
+          "vwap_distance_delta_pct": -0.1359,
+          "above_vwap_vs_benchmark": "True/True",
           "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
         }
       },
       "buy_precheck": {
         "conditions": {
           "fresh_data": true,
-          "price_above_vwap": false,
+          "price_above_vwap": true,
           "price_above_opening_15m_high": false,
           "not_below_opening_15m_low": true,
           "spread_available_and_acceptable": true,
@@ -97,12 +96,12 @@
         },
         "met": [
           "fresh_data",
+          "price_above_vwap",
           "not_below_opening_15m_low",
           "spread_available_and_acceptable",
           "no_auto_trade"
         ],
         "unmet": [
-          "price_above_vwap",
           "price_above_opening_15m_high",
           "execution_level_is_manual_confirm"
         ],
@@ -114,52 +113,53 @@
       "name": "S&P 500 ETF",
       "chain_segment": "market_regime",
       "raw_score": 50.8,
-      "price": 752.62,
-      "vwap": 753.066936310377,
+      "price": 752.31,
+      "vwap": 752.597831513814,
       "opening_15m_high": 753.835,
       "opening_15m_low": 752.42,
-      "bid_ask_spread": 0.6399999999999864,
-      "spread_pct": 0.085,
-      "vwap_distance_pct": -0.0593,
-      "open15_position": "inside_opening_15m_range",
+      "bid_ask_spread": 0.029999999999972715,
+      "spread_pct": 0.004,
+      "vwap_distance_pct": -0.0382,
+      "open15_position": "below_opening_15m_low",
       "data_quality": {
         "price_status": "ALPACA_IEX_ONLY",
         "vwap_status": "ALPACA_IEX_ONLY",
         "opening_15m_high_status": "ALPACA_IEX_ONLY",
         "opening_15m_low_status": "ALPACA_IEX_ONLY",
         "bid_ask_spread_status": "ALPACA_IEX_ONLY",
-        "lag_minutes": 1.64,
+        "lag_minutes": 2.11,
         "fresh_within_lag": true,
         "live_fresh_within_lag": true
       },
-      "data_delay_minutes": 1.64,
+      "data_delay_minutes": 2.11,
       "execution_level": "L1_WATCH",
       "real_trade_allowed": "no",
       "manual_confirm_candidate": false,
       "risk_reasons": [
+        "below_opening_15m_low",
         "below_vwap",
         "not_above_opening_15m_high"
       ],
       "relative_strength": {
         "QQQ": {
-          "vwap_distance_delta_pct": 0.0094,
-          "above_vwap_vs_benchmark": "False/False",
-          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
+          "vwap_distance_delta_pct": -0.4166,
+          "above_vwap_vs_benchmark": "False/True",
+          "open15_position_vs_benchmark": "below_opening_15m_low/inside_opening_15m_range"
         },
         "SPY": {
           "vwap_distance_delta_pct": 0.0,
           "above_vwap_vs_benchmark": "False/False",
-          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
+          "open15_position_vs_benchmark": "below_opening_15m_low/below_opening_15m_low"
         },
         "SMH": {
-          "vwap_distance_delta_pct": -0.0278,
-          "above_vwap_vs_benchmark": "False/False",
-          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
+          "vwap_distance_delta_pct": -0.5427,
+          "above_vwap_vs_benchmark": "False/True",
+          "open15_position_vs_benchmark": "below_opening_15m_low/inside_opening_15m_range"
         },
         "SOXX": {
-          "vwap_distance_delta_pct": -0.1398,
+          "vwap_distance_delta_pct": -0.5525,
           "above_vwap_vs_benchmark": "False/True",
-          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
+          "open15_position_vs_benchmark": "below_opening_15m_low/inside_opening_15m_range"
         }
       },
       "buy_precheck": {
@@ -167,20 +167,20 @@
           "fresh_data": true,
           "price_above_vwap": false,
           "price_above_opening_15m_high": false,
-          "not_below_opening_15m_low": true,
+          "not_below_opening_15m_low": false,
           "spread_available_and_acceptable": true,
           "execution_level_is_manual_confirm": false,
           "no_auto_trade": true
         },
         "met": [
           "fresh_data",
-          "not_below_opening_15m_low",
           "spread_available_and_acceptable",
           "no_auto_trade"
         ],
         "unmet": [
           "price_above_vwap",
           "price_above_opening_15m_high",
+          "not_below_opening_15m_low",
           "execution_level_is_manual_confirm"
         ],
         "status": "not_ready"
@@ -191,13 +191,13 @@
       "name": "VanEck Semiconductor ETF",
       "chain_segment": "semiconductor_index",
       "raw_score": 50.5,
-      "price": 591.99,
-      "vwap": 592.1769843215006,
+      "price": 596.42,
+      "vwap": 593.4266550649539,
       "opening_15m_high": 598.55,
       "opening_15m_low": 589.01,
-      "bid_ask_spread": 0.2299999999999045,
-      "spread_pct": 0.0389,
-      "vwap_distance_pct": -0.0316,
+      "bid_ask_spread": 0.31999999999993634,
+      "spread_pct": 0.0537,
+      "vwap_distance_pct": 0.5044,
       "open15_position": "inside_opening_15m_range",
       "data_quality": {
         "price_status": "ALPACA_IEX_ONLY",
@@ -205,44 +205,43 @@
         "opening_15m_high_status": "ALPACA_IEX_ONLY",
         "opening_15m_low_status": "ALPACA_IEX_ONLY",
         "bid_ask_spread_status": "ALPACA_IEX_ONLY",
-        "lag_minutes": 1.64,
+        "lag_minutes": 2.11,
         "fresh_within_lag": true,
         "live_fresh_within_lag": true
       },
-      "data_delay_minutes": 1.64,
+      "data_delay_minutes": 2.11,
       "execution_level": "L1_WATCH",
       "real_trade_allowed": "no",
       "manual_confirm_candidate": false,
       "risk_reasons": [
-        "below_vwap",
         "not_above_opening_15m_high"
       ],
       "relative_strength": {
         "QQQ": {
-          "vwap_distance_delta_pct": 0.0371,
-          "above_vwap_vs_benchmark": "False/False",
+          "vwap_distance_delta_pct": 0.126,
+          "above_vwap_vs_benchmark": "True/True",
           "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
         },
         "SPY": {
-          "vwap_distance_delta_pct": 0.0278,
-          "above_vwap_vs_benchmark": "False/False",
-          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
+          "vwap_distance_delta_pct": 0.5427,
+          "above_vwap_vs_benchmark": "True/False",
+          "open15_position_vs_benchmark": "inside_opening_15m_range/below_opening_15m_low"
         },
         "SMH": {
           "vwap_distance_delta_pct": 0.0,
-          "above_vwap_vs_benchmark": "False/False",
+          "above_vwap_vs_benchmark": "True/True",
           "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
         },
         "SOXX": {
-          "vwap_distance_delta_pct": -0.112,
-          "above_vwap_vs_benchmark": "False/True",
+          "vwap_distance_delta_pct": -0.0099,
+          "above_vwap_vs_benchmark": "True/True",
           "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
         }
       },
       "buy_precheck": {
         "conditions": {
           "fresh_data": true,
-          "price_above_vwap": false,
+          "price_above_vwap": true,
           "price_above_opening_15m_high": false,
           "not_below_opening_15m_low": true,
           "spread_available_and_acceptable": true,
@@ -251,12 +250,12 @@
         },
         "met": [
           "fresh_data",
+          "price_above_vwap",
           "not_below_opening_15m_low",
           "spread_available_and_acceptable",
           "no_auto_trade"
         ],
         "unmet": [
-          "price_above_vwap",
           "price_above_opening_15m_high",
           "execution_level_is_manual_confirm"
         ],
@@ -268,13 +267,13 @@
       "name": "iShares Semiconductor ETF",
       "chain_segment": "semiconductor_index",
       "raw_score": 55.5,
-      "price": 558.97,
-      "vwap": 558.5208444906327,
+      "price": 562.85,
+      "vwap": 559.9701004387474,
       "opening_15m_high": 564.7,
       "opening_15m_low": 554.59,
-      "bid_ask_spread": 0.5300000000000864,
-      "spread_pct": 0.0948,
-      "vwap_distance_pct": 0.0804,
+      "bid_ask_spread": 0.4699999999999136,
+      "spread_pct": 0.0835,
+      "vwap_distance_pct": 0.5143,
       "open15_position": "inside_opening_15m_range",
       "data_quality": {
         "price_status": "ALPACA_IEX_ONLY",
@@ -282,11 +281,11 @@
         "opening_15m_high_status": "ALPACA_IEX_ONLY",
         "opening_15m_low_status": "ALPACA_IEX_ONLY",
         "bid_ask_spread_status": "ALPACA_IEX_ONLY",
-        "lag_minutes": 2.64,
+        "lag_minutes": 2.11,
         "fresh_within_lag": true,
         "live_fresh_within_lag": true
       },
-      "data_delay_minutes": 2.64,
+      "data_delay_minutes": 2.11,
       "execution_level": "L1_WATCH",
       "real_trade_allowed": "no",
       "manual_confirm_candidate": false,
@@ -295,18 +294,18 @@
       ],
       "relative_strength": {
         "QQQ": {
-          "vwap_distance_delta_pct": 0.1491,
-          "above_vwap_vs_benchmark": "True/False",
+          "vwap_distance_delta_pct": 0.1359,
+          "above_vwap_vs_benchmark": "True/True",
           "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
         },
         "SPY": {
-          "vwap_distance_delta_pct": 0.1398,
+          "vwap_distance_delta_pct": 0.5525,
           "above_vwap_vs_benchmark": "True/False",
-          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
+          "open15_position_vs_benchmark": "inside_opening_15m_range/below_opening_15m_low"
         },
         "SMH": {
-          "vwap_distance_delta_pct": 0.112,
-          "above_vwap_vs_benchmark": "True/False",
+          "vwap_distance_delta_pct": 0.0099,
+          "above_vwap_vs_benchmark": "True/True",
           "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
         },
         "SOXX": {
@@ -346,13 +345,13 @@
       "name": "Nasdaq 100 ETF",
       "chain_segment": "market_regime",
       "raw_score": 54.6,
-      "price": 714.5,
-      "vwap": 714.9912988972798,
+      "price": 718.15,
+      "vwap": 715.4429876194454,
       "opening_15m_high": 718.255,
       "opening_15m_low": 713.97,
-      "bid_ask_spread": 0.2400000000000091,
-      "spread_pct": 0.0336,
-      "vwap_distance_pct": -0.0687,
+      "bid_ask_spread": 0.32999999999992724,
+      "spread_pct": 0.046,
+      "vwap_distance_pct": 0.3784,
       "open15_position": "inside_opening_15m_range",
       "data_quality": {
         "price_status": "ALPACA_IEX_ONLY",
@@ -360,44 +359,43 @@
         "opening_15m_high_status": "ALPACA_IEX_ONLY",
         "opening_15m_low_status": "ALPACA_IEX_ONLY",
         "bid_ask_spread_status": "ALPACA_IEX_ONLY",
-        "lag_minutes": 1.64,
+        "lag_minutes": 2.11,
         "fresh_within_lag": true,
         "live_fresh_within_lag": true
       },
-      "data_delay_minutes": 1.64,
+      "data_delay_minutes": 2.11,
       "execution_level": "L1_WATCH",
       "real_trade_allowed": "no",
       "manual_confirm_candidate": false,
       "risk_reasons": [
-        "below_vwap",
         "not_above_opening_15m_high"
       ],
       "relative_strength": {
         "QQQ": {
           "vwap_distance_delta_pct": 0.0,
-          "above_vwap_vs_benchmark": "False/False",
+          "above_vwap_vs_benchmark": "True/True",
           "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
         },
         "SPY": {
-          "vwap_distance_delta_pct": -0.0094,
-          "above_vwap_vs_benchmark": "False/False",
-          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
+          "vwap_distance_delta_pct": 0.4166,
+          "above_vwap_vs_benchmark": "True/False",
+          "open15_position_vs_benchmark": "inside_opening_15m_range/below_opening_15m_low"
         },
         "SMH": {
-          "vwap_distance_delta_pct": -0.0371,
-          "above_vwap_vs_benchmark": "False/False",
+          "vwap_distance_delta_pct": -0.126,
+          "above_vwap_vs_benchmark": "True/True",
           "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
         },
         "SOXX": {
-          "vwap_distance_delta_pct": -0.1491,
-          "above_vwap_vs_benchmark": "False/True",
+          "vwap_distance_delta_pct": -0.1359,
+          "above_vwap_vs_benchmark": "True/True",
           "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
         }
       },
       "buy_precheck": {
         "conditions": {
           "fresh_data": true,
-          "price_above_vwap": false,
+          "price_above_vwap": true,
           "price_above_opening_15m_high": false,
           "not_below_opening_15m_low": true,
           "spread_available_and_acceptable": true,
@@ -406,12 +404,12 @@
         },
         "met": [
           "fresh_data",
+          "price_above_vwap",
           "not_below_opening_15m_low",
           "spread_available_and_acceptable",
           "no_auto_trade"
         ],
         "unmet": [
-          "price_above_vwap",
           "price_above_opening_15m_high",
           "execution_level_is_manual_confirm"
         ],
@@ -423,13 +421,13 @@
       "name": "iShares Semiconductor ETF",
       "chain_segment": "semiconductor_index",
       "raw_score": 55.5,
-      "price": 558.97,
-      "vwap": 558.5208444906327,
+      "price": 562.85,
+      "vwap": 559.9701004387474,
       "opening_15m_high": 564.7,
       "opening_15m_low": 554.59,
-      "bid_ask_spread": 0.5300000000000864,
-      "spread_pct": 0.0948,
-      "vwap_distance_pct": 0.0804,
+      "bid_ask_spread": 0.4699999999999136,
+      "spread_pct": 0.0835,
+      "vwap_distance_pct": 0.5143,
       "open15_position": "inside_opening_15m_range",
       "data_quality": {
         "price_status": "ALPACA_IEX_ONLY",
@@ -437,11 +435,11 @@
         "opening_15m_high_status": "ALPACA_IEX_ONLY",
         "opening_15m_low_status": "ALPACA_IEX_ONLY",
         "bid_ask_spread_status": "ALPACA_IEX_ONLY",
-        "lag_minutes": 2.64,
+        "lag_minutes": 2.11,
         "fresh_within_lag": true,
         "live_fresh_within_lag": true
       },
-      "data_delay_minutes": 2.64,
+      "data_delay_minutes": 2.11,
       "execution_level": "L1_WATCH",
       "real_trade_allowed": "no",
       "manual_confirm_candidate": false,
@@ -450,18 +448,18 @@
       ],
       "relative_strength": {
         "QQQ": {
-          "vwap_distance_delta_pct": 0.1491,
-          "above_vwap_vs_benchmark": "True/False",
+          "vwap_distance_delta_pct": 0.1359,
+          "above_vwap_vs_benchmark": "True/True",
           "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
         },
         "SPY": {
-          "vwap_distance_delta_pct": 0.1398,
+          "vwap_distance_delta_pct": 0.5525,
           "above_vwap_vs_benchmark": "True/False",
-          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
+          "open15_position_vs_benchmark": "inside_opening_15m_range/below_opening_15m_low"
         },
         "SMH": {
-          "vwap_distance_delta_pct": 0.112,
-          "above_vwap_vs_benchmark": "True/False",
+          "vwap_distance_delta_pct": 0.0099,
+          "above_vwap_vs_benchmark": "True/True",
           "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
         },
         "SOXX": {
@@ -499,13 +497,13 @@
       "name": "VanEck Semiconductor ETF",
       "chain_segment": "semiconductor_index",
       "raw_score": 50.5,
-      "price": 591.99,
-      "vwap": 592.1769843215006,
+      "price": 596.42,
+      "vwap": 593.4266550649539,
       "opening_15m_high": 598.55,
       "opening_15m_low": 589.01,
-      "bid_ask_spread": 0.2299999999999045,
-      "spread_pct": 0.0389,
-      "vwap_distance_pct": -0.0316,
+      "bid_ask_spread": 0.31999999999993634,
+      "spread_pct": 0.0537,
+      "vwap_distance_pct": 0.5044,
       "open15_position": "inside_opening_15m_range",
       "data_quality": {
         "price_status": "ALPACA_IEX_ONLY",
@@ -513,44 +511,43 @@
         "opening_15m_high_status": "ALPACA_IEX_ONLY",
         "opening_15m_low_status": "ALPACA_IEX_ONLY",
         "bid_ask_spread_status": "ALPACA_IEX_ONLY",
-        "lag_minutes": 1.64,
+        "lag_minutes": 2.11,
         "fresh_within_lag": true,
         "live_fresh_within_lag": true
       },
-      "data_delay_minutes": 1.64,
+      "data_delay_minutes": 2.11,
       "execution_level": "L1_WATCH",
       "real_trade_allowed": "no",
       "manual_confirm_candidate": false,
       "risk_reasons": [
-        "below_vwap",
         "not_above_opening_15m_high"
       ],
       "relative_strength": {
         "QQQ": {
-          "vwap_distance_delta_pct": 0.0371,
-          "above_vwap_vs_benchmark": "False/False",
+          "vwap_distance_delta_pct": 0.126,
+          "above_vwap_vs_benchmark": "True/True",
           "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
         },
         "SPY": {
-          "vwap_distance_delta_pct": 0.0278,
-          "above_vwap_vs_benchmark": "False/False",
-          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
+          "vwap_distance_delta_pct": 0.5427,
+          "above_vwap_vs_benchmark": "True/False",
+          "open15_position_vs_benchmark": "inside_opening_15m_range/below_opening_15m_low"
         },
         "SMH": {
           "vwap_distance_delta_pct": 0.0,
-          "above_vwap_vs_benchmark": "False/False",
+          "above_vwap_vs_benchmark": "True/True",
           "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
         },
         "SOXX": {
-          "vwap_distance_delta_pct": -0.112,
-          "above_vwap_vs_benchmark": "False/True",
+          "vwap_distance_delta_pct": -0.0099,
+          "above_vwap_vs_benchmark": "True/True",
           "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
         }
       },
       "buy_precheck": {
         "conditions": {
           "fresh_data": true,
-          "price_above_vwap": false,
+          "price_above_vwap": true,
           "price_above_opening_15m_high": false,
           "not_below_opening_15m_low": true,
           "spread_available_and_acceptable": true,
@@ -559,12 +556,12 @@
         },
         "met": [
           "fresh_data",
+          "price_above_vwap",
           "not_below_opening_15m_low",
           "spread_available_and_acceptable",
           "no_auto_trade"
         ],
         "unmet": [
-          "price_above_vwap",
           "price_above_opening_15m_high",
           "execution_level_is_manual_confirm"
         ],
@@ -576,52 +573,53 @@
       "name": "S&P 500 ETF",
       "chain_segment": "market_regime",
       "raw_score": 50.8,
-      "price": 752.62,
-      "vwap": 753.066936310377,
+      "price": 752.31,
+      "vwap": 752.597831513814,
       "opening_15m_high": 753.835,
       "opening_15m_low": 752.42,
-      "bid_ask_spread": 0.6399999999999864,
-      "spread_pct": 0.085,
-      "vwap_distance_pct": -0.0593,
-      "open15_position": "inside_opening_15m_range",
+      "bid_ask_spread": 0.029999999999972715,
+      "spread_pct": 0.004,
+      "vwap_distance_pct": -0.0382,
+      "open15_position": "below_opening_15m_low",
       "data_quality": {
         "price_status": "ALPACA_IEX_ONLY",
         "vwap_status": "ALPACA_IEX_ONLY",
         "opening_15m_high_status": "ALPACA_IEX_ONLY",
         "opening_15m_low_status": "ALPACA_IEX_ONLY",
         "bid_ask_spread_status": "ALPACA_IEX_ONLY",
-        "lag_minutes": 1.64,
+        "lag_minutes": 2.11,
         "fresh_within_lag": true,
         "live_fresh_within_lag": true
       },
-      "data_delay_minutes": 1.64,
+      "data_delay_minutes": 2.11,
       "execution_level": "L1_WATCH",
       "real_trade_allowed": "no",
       "manual_confirm_candidate": false,
       "risk_reasons": [
+        "below_opening_15m_low",
         "below_vwap",
         "not_above_opening_15m_high"
       ],
       "relative_strength": {
         "QQQ": {
-          "vwap_distance_delta_pct": 0.0094,
-          "above_vwap_vs_benchmark": "False/False",
-          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
+          "vwap_distance_delta_pct": -0.4166,
+          "above_vwap_vs_benchmark": "False/True",
+          "open15_position_vs_benchmark": "below_opening_15m_low/inside_opening_15m_range"
         },
         "SPY": {
           "vwap_distance_delta_pct": 0.0,
           "above_vwap_vs_benchmark": "False/False",
-          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
+          "open15_position_vs_benchmark": "below_opening_15m_low/below_opening_15m_low"
         },
         "SMH": {
-          "vwap_distance_delta_pct": -0.0278,
-          "above_vwap_vs_benchmark": "False/False",
-          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
+          "vwap_distance_delta_pct": -0.5427,
+          "above_vwap_vs_benchmark": "False/True",
+          "open15_position_vs_benchmark": "below_opening_15m_low/inside_opening_15m_range"
         },
         "SOXX": {
-          "vwap_distance_delta_pct": -0.1398,
+          "vwap_distance_delta_pct": -0.5525,
           "above_vwap_vs_benchmark": "False/True",
-          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
+          "open15_position_vs_benchmark": "below_opening_15m_low/inside_opening_15m_range"
         }
       },
       "buy_precheck": {
@@ -629,23 +627,315 @@
           "fresh_data": true,
           "price_above_vwap": false,
           "price_above_opening_15m_high": false,
-          "not_below_opening_15m_low": true,
+          "not_below_opening_15m_low": false,
           "spread_available_and_acceptable": true,
           "execution_level_is_manual_confirm": false,
           "no_auto_trade": true
         },
         "met": [
           "fresh_data",
-          "not_below_opening_15m_low",
           "spread_available_and_acceptable",
           "no_auto_trade"
         ],
         "unmet": [
           "price_above_vwap",
           "price_above_opening_15m_high",
+          "not_below_opening_15m_low",
           "execution_level_is_manual_confirm"
         ],
         "status": "not_ready"
+      }
+    },
+    {
+      "symbol": "CRWV",
+      "name": "CoreWeave",
+      "chain_segment": "gpu_cloud_ai_factory",
+      "raw_score": 40.4,
+      "price": 87.145,
+      "vwap": 86.27261745887913,
+      "opening_15m_high": 86.94,
+      "opening_15m_low": 84.51,
+      "bid_ask_spread": 0.11999999999999034,
+      "spread_pct": 0.1377,
+      "vwap_distance_pct": 1.0112,
+      "open15_position": "above_opening_15m_high",
+      "data_quality": {
+        "price_status": "ALPACA_IEX_ONLY",
+        "vwap_status": "ALPACA_IEX_ONLY",
+        "opening_15m_high_status": "ALPACA_IEX_ONLY",
+        "opening_15m_low_status": "ALPACA_IEX_ONLY",
+        "bid_ask_spread_status": "ALPACA_IEX_ONLY",
+        "lag_minutes": 2.11,
+        "fresh_within_lag": true,
+        "live_fresh_within_lag": true
+      },
+      "data_delay_minutes": 2.11,
+      "execution_level": "L3_MANUAL_CONFIRM_REQUIRED",
+      "real_trade_allowed": "manual_confirm_only",
+      "manual_confirm_candidate": true,
+      "risk_reasons": [],
+      "relative_strength": {
+        "QQQ": {
+          "vwap_distance_delta_pct": 0.6328,
+          "above_vwap_vs_benchmark": "True/True",
+          "open15_position_vs_benchmark": "above_opening_15m_high/inside_opening_15m_range"
+        },
+        "SPY": {
+          "vwap_distance_delta_pct": 1.0494,
+          "above_vwap_vs_benchmark": "True/False",
+          "open15_position_vs_benchmark": "above_opening_15m_high/below_opening_15m_low"
+        },
+        "SMH": {
+          "vwap_distance_delta_pct": 0.5068,
+          "above_vwap_vs_benchmark": "True/True",
+          "open15_position_vs_benchmark": "above_opening_15m_high/inside_opening_15m_range"
+        },
+        "SOXX": {
+          "vwap_distance_delta_pct": 0.4969,
+          "above_vwap_vs_benchmark": "True/True",
+          "open15_position_vs_benchmark": "above_opening_15m_high/inside_opening_15m_range"
+        }
+      },
+      "buy_precheck": {
+        "conditions": {
+          "fresh_data": true,
+          "price_above_vwap": true,
+          "price_above_opening_15m_high": true,
+          "not_below_opening_15m_low": true,
+          "spread_available_and_acceptable": true,
+          "execution_level_is_manual_confirm": true,
+          "no_auto_trade": true
+        },
+        "met": [
+          "fresh_data",
+          "price_above_vwap",
+          "price_above_opening_15m_high",
+          "not_below_opening_15m_low",
+          "spread_available_and_acceptable",
+          "execution_level_is_manual_confirm",
+          "no_auto_trade"
+        ],
+        "unmet": [],
+        "status": "manual_confirm_candidate"
+      }
+    },
+    {
+      "symbol": "AMAT",
+      "name": "Applied Materials",
+      "chain_segment": "semiconductor_equipment",
+      "raw_score": 50.2,
+      "price": 585.885,
+      "vwap": 579.079878125894,
+      "opening_15m_high": 583.85,
+      "opening_15m_low": 568.665,
+      "bid_ask_spread": 1.2100000000000364,
+      "spread_pct": 0.2065,
+      "vwap_distance_pct": 1.1752,
+      "open15_position": "above_opening_15m_high",
+      "data_quality": {
+        "price_status": "ALPACA_IEX_ONLY",
+        "vwap_status": "ALPACA_IEX_ONLY",
+        "opening_15m_high_status": "ALPACA_IEX_ONLY",
+        "opening_15m_low_status": "ALPACA_IEX_ONLY",
+        "bid_ask_spread_status": "ALPACA_IEX_ONLY",
+        "lag_minutes": 2.11,
+        "fresh_within_lag": true,
+        "live_fresh_within_lag": true
+      },
+      "data_delay_minutes": 2.11,
+      "execution_level": "L3_MANUAL_CONFIRM_REQUIRED",
+      "real_trade_allowed": "manual_confirm_only",
+      "manual_confirm_candidate": true,
+      "risk_reasons": [],
+      "relative_strength": {
+        "QQQ": {
+          "vwap_distance_delta_pct": 0.7968,
+          "above_vwap_vs_benchmark": "True/True",
+          "open15_position_vs_benchmark": "above_opening_15m_high/inside_opening_15m_range"
+        },
+        "SPY": {
+          "vwap_distance_delta_pct": 1.2134,
+          "above_vwap_vs_benchmark": "True/False",
+          "open15_position_vs_benchmark": "above_opening_15m_high/below_opening_15m_low"
+        },
+        "SMH": {
+          "vwap_distance_delta_pct": 0.6707,
+          "above_vwap_vs_benchmark": "True/True",
+          "open15_position_vs_benchmark": "above_opening_15m_high/inside_opening_15m_range"
+        },
+        "SOXX": {
+          "vwap_distance_delta_pct": 0.6609,
+          "above_vwap_vs_benchmark": "True/True",
+          "open15_position_vs_benchmark": "above_opening_15m_high/inside_opening_15m_range"
+        }
+      },
+      "buy_precheck": {
+        "conditions": {
+          "fresh_data": true,
+          "price_above_vwap": true,
+          "price_above_opening_15m_high": true,
+          "not_below_opening_15m_low": true,
+          "spread_available_and_acceptable": true,
+          "execution_level_is_manual_confirm": true,
+          "no_auto_trade": true
+        },
+        "met": [
+          "fresh_data",
+          "price_above_vwap",
+          "price_above_opening_15m_high",
+          "not_below_opening_15m_low",
+          "spread_available_and_acceptable",
+          "execution_level_is_manual_confirm",
+          "no_auto_trade"
+        ],
+        "unmet": [],
+        "status": "manual_confirm_candidate"
+      }
+    },
+    {
+      "symbol": "WDC",
+      "name": "Western Digital",
+      "chain_segment": "memory_hbm_storage",
+      "raw_score": 50.2,
+      "price": 558.725,
+      "vwap": 544.9698220643775,
+      "opening_15m_high": 553.495,
+      "opening_15m_low": 532.85,
+      "bid_ask_spread": 0.9800000000000182,
+      "spread_pct": 0.1754,
+      "vwap_distance_pct": 2.524,
+      "open15_position": "above_opening_15m_high",
+      "data_quality": {
+        "price_status": "ALPACA_IEX_ONLY",
+        "vwap_status": "ALPACA_IEX_ONLY",
+        "opening_15m_high_status": "ALPACA_IEX_ONLY",
+        "opening_15m_low_status": "ALPACA_IEX_ONLY",
+        "bid_ask_spread_status": "ALPACA_IEX_ONLY",
+        "lag_minutes": 2.11,
+        "fresh_within_lag": true,
+        "live_fresh_within_lag": true
+      },
+      "data_delay_minutes": 2.11,
+      "execution_level": "L3_MANUAL_CONFIRM_REQUIRED",
+      "real_trade_allowed": "manual_confirm_only",
+      "manual_confirm_candidate": true,
+      "risk_reasons": [],
+      "relative_strength": {
+        "QQQ": {
+          "vwap_distance_delta_pct": 2.1457,
+          "above_vwap_vs_benchmark": "True/True",
+          "open15_position_vs_benchmark": "above_opening_15m_high/inside_opening_15m_range"
+        },
+        "SPY": {
+          "vwap_distance_delta_pct": 2.5623,
+          "above_vwap_vs_benchmark": "True/False",
+          "open15_position_vs_benchmark": "above_opening_15m_high/below_opening_15m_low"
+        },
+        "SMH": {
+          "vwap_distance_delta_pct": 2.0196,
+          "above_vwap_vs_benchmark": "True/True",
+          "open15_position_vs_benchmark": "above_opening_15m_high/inside_opening_15m_range"
+        },
+        "SOXX": {
+          "vwap_distance_delta_pct": 2.0097,
+          "above_vwap_vs_benchmark": "True/True",
+          "open15_position_vs_benchmark": "above_opening_15m_high/inside_opening_15m_range"
+        }
+      },
+      "buy_precheck": {
+        "conditions": {
+          "fresh_data": true,
+          "price_above_vwap": true,
+          "price_above_opening_15m_high": true,
+          "not_below_opening_15m_low": true,
+          "spread_available_and_acceptable": true,
+          "execution_level_is_manual_confirm": true,
+          "no_auto_trade": true
+        },
+        "met": [
+          "fresh_data",
+          "price_above_vwap",
+          "price_above_opening_15m_high",
+          "not_below_opening_15m_low",
+          "spread_available_and_acceptable",
+          "execution_level_is_manual_confirm",
+          "no_auto_trade"
+        ],
+        "unmet": [],
+        "status": "manual_confirm_candidate"
+      }
+    },
+    {
+      "symbol": "AMZN",
+      "name": "Amazon",
+      "chain_segment": "cloud_ai_capex",
+      "raw_score": 51.3,
+      "price": 249.11,
+      "vwap": 247.25309915892797,
+      "opening_15m_high": 248.56,
+      "opening_15m_low": 244.18,
+      "bid_ask_spread": 0.10999999999998522,
+      "spread_pct": 0.0442,
+      "vwap_distance_pct": 0.751,
+      "open15_position": "above_opening_15m_high",
+      "data_quality": {
+        "price_status": "ALPACA_IEX_ONLY",
+        "vwap_status": "ALPACA_IEX_ONLY",
+        "opening_15m_high_status": "ALPACA_IEX_ONLY",
+        "opening_15m_low_status": "ALPACA_IEX_ONLY",
+        "bid_ask_spread_status": "ALPACA_IEX_ONLY",
+        "lag_minutes": 2.11,
+        "fresh_within_lag": true,
+        "live_fresh_within_lag": true
+      },
+      "data_delay_minutes": 2.11,
+      "execution_level": "L3_MANUAL_CONFIRM_REQUIRED",
+      "real_trade_allowed": "manual_confirm_only",
+      "manual_confirm_candidate": true,
+      "risk_reasons": [],
+      "relative_strength": {
+        "QQQ": {
+          "vwap_distance_delta_pct": 0.3726,
+          "above_vwap_vs_benchmark": "True/True",
+          "open15_position_vs_benchmark": "above_opening_15m_high/inside_opening_15m_range"
+        },
+        "SPY": {
+          "vwap_distance_delta_pct": 0.7893,
+          "above_vwap_vs_benchmark": "True/False",
+          "open15_position_vs_benchmark": "above_opening_15m_high/below_opening_15m_low"
+        },
+        "SMH": {
+          "vwap_distance_delta_pct": 0.2466,
+          "above_vwap_vs_benchmark": "True/True",
+          "open15_position_vs_benchmark": "above_opening_15m_high/inside_opening_15m_range"
+        },
+        "SOXX": {
+          "vwap_distance_delta_pct": 0.2367,
+          "above_vwap_vs_benchmark": "True/True",
+          "open15_position_vs_benchmark": "above_opening_15m_high/inside_opening_15m_range"
+        }
+      },
+      "buy_precheck": {
+        "conditions": {
+          "fresh_data": true,
+          "price_above_vwap": true,
+          "price_above_opening_15m_high": true,
+          "not_below_opening_15m_low": true,
+          "spread_available_and_acceptable": true,
+          "execution_level_is_manual_confirm": true,
+          "no_auto_trade": true
+        },
+        "met": [
+          "fresh_data",
+          "price_above_vwap",
+          "price_above_opening_15m_high",
+          "not_below_opening_15m_low",
+          "spread_available_and_acceptable",
+          "execution_level_is_manual_confirm",
+          "no_auto_trade"
+        ],
+        "unmet": [],
+        "status": "manual_confirm_candidate"
       }
     },
     {
@@ -653,204 +943,50 @@
       "name": "Micron",
       "chain_segment": "memory_hbm_storage",
       "raw_score": 57.6,
-      "price": 922.72,
-      "vwap": 917.5610524173248,
+      "price": 941.545,
+      "vwap": 925.849434741348,
       "opening_15m_high": 929.76,
       "opening_15m_low": 903.0,
-      "bid_ask_spread": 5.659999999999968,
-      "spread_pct": 0.6134,
-      "vwap_distance_pct": 0.5622,
-      "open15_position": "inside_opening_15m_range",
-      "data_quality": {
-        "price_status": "ALPACA_IEX_ONLY",
-        "vwap_status": "ALPACA_IEX_ONLY",
-        "opening_15m_high_status": "ALPACA_IEX_ONLY",
-        "opening_15m_low_status": "ALPACA_IEX_ONLY",
-        "bid_ask_spread_status": "ALPACA_IEX_ONLY",
-        "lag_minutes": 1.64,
-        "fresh_within_lag": true,
-        "live_fresh_within_lag": true
-      },
-      "data_delay_minutes": 1.64,
-      "execution_level": "L3_MANUAL_CONFIRM_REQUIRED",
-      "real_trade_allowed": "no",
-      "manual_confirm_candidate": false,
-      "risk_reasons": [
-        "not_above_opening_15m_high",
-        "spread_too_wide",
-        "spread_too_wide_or_missing"
-      ],
-      "relative_strength": {
-        "QQQ": {
-          "vwap_distance_delta_pct": 0.631,
-          "above_vwap_vs_benchmark": "True/False",
-          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
-        },
-        "SPY": {
-          "vwap_distance_delta_pct": 0.6216,
-          "above_vwap_vs_benchmark": "True/False",
-          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
-        },
-        "SMH": {
-          "vwap_distance_delta_pct": 0.5938,
-          "above_vwap_vs_benchmark": "True/False",
-          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
-        },
-        "SOXX": {
-          "vwap_distance_delta_pct": 0.4818,
-          "above_vwap_vs_benchmark": "True/True",
-          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
-        }
-      },
-      "buy_precheck": {
-        "conditions": {
-          "fresh_data": true,
-          "price_above_vwap": true,
-          "price_above_opening_15m_high": false,
-          "not_below_opening_15m_low": true,
-          "spread_available_and_acceptable": false,
-          "execution_level_is_manual_confirm": true,
-          "no_auto_trade": true
-        },
-        "met": [
-          "fresh_data",
-          "price_above_vwap",
-          "not_below_opening_15m_low",
-          "execution_level_is_manual_confirm",
-          "no_auto_trade"
-        ],
-        "unmet": [
-          "price_above_opening_15m_high",
-          "spread_available_and_acceptable"
-        ],
-        "status": "not_ready"
-      }
-    },
-    {
-      "symbol": "AVGO",
-      "name": "Broadcom",
-      "chain_segment": "custom_silicon_networking",
-      "raw_score": 56.6,
-      "price": 390.84,
-      "vwap": 389.67869503493773,
-      "opening_15m_high": 394.81,
-      "opening_15m_low": 387.98,
-      "bid_ask_spread": 0.6200000000000045,
-      "spread_pct": 0.1586,
-      "vwap_distance_pct": 0.298,
-      "open15_position": "inside_opening_15m_range",
-      "data_quality": {
-        "price_status": "ALPACA_IEX_ONLY",
-        "vwap_status": "ALPACA_IEX_ONLY",
-        "opening_15m_high_status": "ALPACA_IEX_ONLY",
-        "opening_15m_low_status": "ALPACA_IEX_ONLY",
-        "bid_ask_spread_status": "ALPACA_IEX_ONLY",
-        "lag_minutes": 1.64,
-        "fresh_within_lag": true,
-        "live_fresh_within_lag": true
-      },
-      "data_delay_minutes": 1.64,
-      "execution_level": "L3_MANUAL_CONFIRM_REQUIRED",
-      "real_trade_allowed": "no",
-      "manual_confirm_candidate": false,
-      "risk_reasons": [
-        "not_above_opening_15m_high"
-      ],
-      "relative_strength": {
-        "QQQ": {
-          "vwap_distance_delta_pct": 0.3667,
-          "above_vwap_vs_benchmark": "True/False",
-          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
-        },
-        "SPY": {
-          "vwap_distance_delta_pct": 0.3574,
-          "above_vwap_vs_benchmark": "True/False",
-          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
-        },
-        "SMH": {
-          "vwap_distance_delta_pct": 0.3296,
-          "above_vwap_vs_benchmark": "True/False",
-          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
-        },
-        "SOXX": {
-          "vwap_distance_delta_pct": 0.2176,
-          "above_vwap_vs_benchmark": "True/True",
-          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
-        }
-      },
-      "buy_precheck": {
-        "conditions": {
-          "fresh_data": true,
-          "price_above_vwap": true,
-          "price_above_opening_15m_high": false,
-          "not_below_opening_15m_low": true,
-          "spread_available_and_acceptable": true,
-          "execution_level_is_manual_confirm": true,
-          "no_auto_trade": true
-        },
-        "met": [
-          "fresh_data",
-          "price_above_vwap",
-          "not_below_opening_15m_low",
-          "spread_available_and_acceptable",
-          "execution_level_is_manual_confirm",
-          "no_auto_trade"
-        ],
-        "unmet": [
-          "price_above_opening_15m_high"
-        ],
-        "status": "not_ready"
-      }
-    },
-    {
-      "symbol": "TT",
-      "name": "Trane Technologies",
-      "chain_segment": "data_center_power_cooling",
-      "raw_score": 53.3,
-      "price": 480.64,
-      "vwap": 478.27228445157226,
-      "opening_15m_high": 479.64,
-      "opening_15m_low": 473.03,
-      "bid_ask_spread": null,
-      "spread_pct": null,
-      "vwap_distance_pct": 0.4951,
+      "bid_ask_spread": 24.0,
+      "spread_pct": 2.549,
+      "vwap_distance_pct": 1.6953,
       "open15_position": "above_opening_15m_high",
       "data_quality": {
         "price_status": "ALPACA_IEX_ONLY",
         "vwap_status": "ALPACA_IEX_ONLY",
         "opening_15m_high_status": "ALPACA_IEX_ONLY",
         "opening_15m_low_status": "ALPACA_IEX_ONLY",
-        "bid_ask_spread_status": "UNAVAILABLE",
-        "lag_minutes": 2.64,
+        "bid_ask_spread_status": "ALPACA_IEX_ONLY",
+        "lag_minutes": 2.11,
         "fresh_within_lag": true,
         "live_fresh_within_lag": true
       },
-      "data_delay_minutes": 2.64,
+      "data_delay_minutes": 2.11,
       "execution_level": "L3_MANUAL_CONFIRM_REQUIRED",
       "real_trade_allowed": "no",
       "manual_confirm_candidate": false,
       "risk_reasons": [
-        "spread_too_wide_or_missing",
-        "spread_unavailable"
+        "spread_too_wide",
+        "spread_too_wide_or_missing"
       ],
       "relative_strength": {
         "QQQ": {
-          "vwap_distance_delta_pct": 0.5638,
-          "above_vwap_vs_benchmark": "True/False",
+          "vwap_distance_delta_pct": 1.3169,
+          "above_vwap_vs_benchmark": "True/True",
           "open15_position_vs_benchmark": "above_opening_15m_high/inside_opening_15m_range"
         },
         "SPY": {
-          "vwap_distance_delta_pct": 0.5544,
+          "vwap_distance_delta_pct": 1.7335,
           "above_vwap_vs_benchmark": "True/False",
-          "open15_position_vs_benchmark": "above_opening_15m_high/inside_opening_15m_range"
+          "open15_position_vs_benchmark": "above_opening_15m_high/below_opening_15m_low"
         },
         "SMH": {
-          "vwap_distance_delta_pct": 0.5266,
-          "above_vwap_vs_benchmark": "True/False",
+          "vwap_distance_delta_pct": 1.1908,
+          "above_vwap_vs_benchmark": "True/True",
           "open15_position_vs_benchmark": "above_opening_15m_high/inside_opening_15m_range"
         },
         "SOXX": {
-          "vwap_distance_delta_pct": 0.4146,
+          "vwap_distance_delta_pct": 1.181,
           "above_vwap_vs_benchmark": "True/True",
           "open15_position_vs_benchmark": "above_opening_15m_high/inside_opening_15m_range"
         }
@@ -880,17 +1016,17 @@
       }
     },
     {
-      "symbol": "ASML",
-      "name": "ASML Holding",
-      "chain_segment": "semiconductor_equipment",
-      "raw_score": 52.5,
-      "price": 1751.85,
-      "vwap": 1750.2006487022218,
-      "opening_15m_high": 1774.255,
-      "opening_15m_low": 1738.94,
-      "bid_ask_spread": 11.77000000000021,
-      "spread_pct": 0.6719,
-      "vwap_distance_pct": 0.0942,
+      "symbol": "AVGO",
+      "name": "Broadcom",
+      "chain_segment": "custom_silicon_networking",
+      "raw_score": 56.6,
+      "price": 391.1,
+      "vwap": 390.76592263341223,
+      "opening_15m_high": 394.81,
+      "opening_15m_low": 387.98,
+      "bid_ask_spread": 8.079999999999984,
+      "spread_pct": 2.066,
+      "vwap_distance_pct": 0.0855,
       "open15_position": "inside_opening_15m_range",
       "data_quality": {
         "price_status": "ALPACA_IEX_ONLY",
@@ -898,11 +1034,11 @@
         "opening_15m_high_status": "ALPACA_IEX_ONLY",
         "opening_15m_low_status": "ALPACA_IEX_ONLY",
         "bid_ask_spread_status": "ALPACA_IEX_ONLY",
-        "lag_minutes": 1.64,
+        "lag_minutes": 2.11,
         "fresh_within_lag": true,
         "live_fresh_within_lag": true
       },
-      "data_delay_minutes": 1.64,
+      "data_delay_minutes": 2.11,
       "execution_level": "L3_MANUAL_CONFIRM_REQUIRED",
       "real_trade_allowed": "no",
       "manual_confirm_candidate": false,
@@ -913,22 +1049,178 @@
       ],
       "relative_strength": {
         "QQQ": {
-          "vwap_distance_delta_pct": 0.163,
-          "above_vwap_vs_benchmark": "True/False",
+          "vwap_distance_delta_pct": -0.2929,
+          "above_vwap_vs_benchmark": "True/True",
           "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
         },
         "SPY": {
-          "vwap_distance_delta_pct": 0.1536,
+          "vwap_distance_delta_pct": 0.1237,
           "above_vwap_vs_benchmark": "True/False",
-          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
+          "open15_position_vs_benchmark": "inside_opening_15m_range/below_opening_15m_low"
         },
         "SMH": {
-          "vwap_distance_delta_pct": 0.1258,
-          "above_vwap_vs_benchmark": "True/False",
+          "vwap_distance_delta_pct": -0.4189,
+          "above_vwap_vs_benchmark": "True/True",
           "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
         },
         "SOXX": {
-          "vwap_distance_delta_pct": 0.0138,
+          "vwap_distance_delta_pct": -0.4288,
+          "above_vwap_vs_benchmark": "True/True",
+          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
+        }
+      },
+      "buy_precheck": {
+        "conditions": {
+          "fresh_data": true,
+          "price_above_vwap": true,
+          "price_above_opening_15m_high": false,
+          "not_below_opening_15m_low": true,
+          "spread_available_and_acceptable": false,
+          "execution_level_is_manual_confirm": true,
+          "no_auto_trade": true
+        },
+        "met": [
+          "fresh_data",
+          "price_above_vwap",
+          "not_below_opening_15m_low",
+          "execution_level_is_manual_confirm",
+          "no_auto_trade"
+        ],
+        "unmet": [
+          "price_above_opening_15m_high",
+          "spread_available_and_acceptable"
+        ],
+        "status": "not_ready"
+      }
+    },
+    {
+      "symbol": "TT",
+      "name": "Trane Technologies",
+      "chain_segment": "data_center_power_cooling",
+      "raw_score": 53.3,
+      "price": 478.485,
+      "vwap": 479.8442449693913,
+      "opening_15m_high": 479.64,
+      "opening_15m_low": 473.03,
+      "bid_ask_spread": 22.24000000000001,
+      "spread_pct": 4.648,
+      "vwap_distance_pct": -0.2833,
+      "open15_position": "inside_opening_15m_range",
+      "data_quality": {
+        "price_status": "ALPACA_IEX_ONLY",
+        "vwap_status": "ALPACA_IEX_ONLY",
+        "opening_15m_high_status": "ALPACA_IEX_ONLY",
+        "opening_15m_low_status": "ALPACA_IEX_ONLY",
+        "bid_ask_spread_status": "ALPACA_IEX_ONLY",
+        "lag_minutes": 4.11,
+        "fresh_within_lag": true,
+        "live_fresh_within_lag": true
+      },
+      "data_delay_minutes": 4.11,
+      "execution_level": "L3_MANUAL_CONFIRM_REQUIRED",
+      "real_trade_allowed": "no",
+      "manual_confirm_candidate": false,
+      "risk_reasons": [
+        "below_vwap",
+        "not_above_opening_15m_high",
+        "spread_too_wide"
+      ],
+      "relative_strength": {
+        "QQQ": {
+          "vwap_distance_delta_pct": -0.6616,
+          "above_vwap_vs_benchmark": "False/True",
+          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
+        },
+        "SPY": {
+          "vwap_distance_delta_pct": -0.245,
+          "above_vwap_vs_benchmark": "False/False",
+          "open15_position_vs_benchmark": "inside_opening_15m_range/below_opening_15m_low"
+        },
+        "SMH": {
+          "vwap_distance_delta_pct": -0.7877,
+          "above_vwap_vs_benchmark": "False/True",
+          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
+        },
+        "SOXX": {
+          "vwap_distance_delta_pct": -0.7976,
+          "above_vwap_vs_benchmark": "False/True",
+          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
+        }
+      },
+      "buy_precheck": {
+        "conditions": {
+          "fresh_data": true,
+          "price_above_vwap": false,
+          "price_above_opening_15m_high": false,
+          "not_below_opening_15m_low": true,
+          "spread_available_and_acceptable": false,
+          "execution_level_is_manual_confirm": true,
+          "no_auto_trade": true
+        },
+        "met": [
+          "fresh_data",
+          "not_below_opening_15m_low",
+          "execution_level_is_manual_confirm",
+          "no_auto_trade"
+        ],
+        "unmet": [
+          "price_above_vwap",
+          "price_above_opening_15m_high",
+          "spread_available_and_acceptable"
+        ],
+        "status": "not_ready"
+      }
+    },
+    {
+      "symbol": "ASML",
+      "name": "ASML Holding",
+      "chain_segment": "semiconductor_equipment",
+      "raw_score": 52.5,
+      "price": 1759.72,
+      "vwap": 1752.2054523248175,
+      "opening_15m_high": 1774.255,
+      "opening_15m_low": 1738.94,
+      "bid_ask_spread": 12.36999999999989,
+      "spread_pct": 0.703,
+      "vwap_distance_pct": 0.4289,
+      "open15_position": "inside_opening_15m_range",
+      "data_quality": {
+        "price_status": "ALPACA_IEX_ONLY",
+        "vwap_status": "ALPACA_IEX_ONLY",
+        "opening_15m_high_status": "ALPACA_IEX_ONLY",
+        "opening_15m_low_status": "ALPACA_IEX_ONLY",
+        "bid_ask_spread_status": "ALPACA_IEX_ONLY",
+        "lag_minutes": 3.11,
+        "fresh_within_lag": true,
+        "live_fresh_within_lag": true
+      },
+      "data_delay_minutes": 3.11,
+      "execution_level": "L3_MANUAL_CONFIRM_REQUIRED",
+      "real_trade_allowed": "no",
+      "manual_confirm_candidate": false,
+      "risk_reasons": [
+        "not_above_opening_15m_high",
+        "spread_too_wide",
+        "spread_too_wide_or_missing"
+      ],
+      "relative_strength": {
+        "QQQ": {
+          "vwap_distance_delta_pct": 0.0505,
+          "above_vwap_vs_benchmark": "True/True",
+          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
+        },
+        "SPY": {
+          "vwap_distance_delta_pct": 0.4671,
+          "above_vwap_vs_benchmark": "True/False",
+          "open15_position_vs_benchmark": "inside_opening_15m_range/below_opening_15m_low"
+        },
+        "SMH": {
+          "vwap_distance_delta_pct": -0.0756,
+          "above_vwap_vs_benchmark": "True/True",
+          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
+        },
+        "SOXX": {
+          "vwap_distance_delta_pct": -0.0854,
           "above_vwap_vs_benchmark": "True/True",
           "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
         }
@@ -962,13 +1254,13 @@
       "name": "Johnson Controls",
       "chain_segment": "data_center_power_cooling",
       "raw_score": 52.3,
-      "price": 143.69,
-      "vwap": 143.21126545957912,
+      "price": 143.95,
+      "vwap": 143.37722469026718,
       "opening_15m_high": 143.43,
       "opening_15m_low": 140.87,
       "bid_ask_spread": null,
       "spread_pct": null,
-      "vwap_distance_pct": 0.3343,
+      "vwap_distance_pct": 0.3995,
       "open15_position": "above_opening_15m_high",
       "data_quality": {
         "price_status": "ALPACA_IEX_ONLY",
@@ -976,11 +1268,11 @@
         "opening_15m_high_status": "ALPACA_IEX_ONLY",
         "opening_15m_low_status": "ALPACA_IEX_ONLY",
         "bid_ask_spread_status": "UNAVAILABLE",
-        "lag_minutes": 5.64,
+        "lag_minutes": 3.11,
         "fresh_within_lag": true,
         "live_fresh_within_lag": true
       },
-      "data_delay_minutes": 5.64,
+      "data_delay_minutes": 3.11,
       "execution_level": "L3_MANUAL_CONFIRM_REQUIRED",
       "real_trade_allowed": "no",
       "manual_confirm_candidate": false,
@@ -990,22 +1282,22 @@
       ],
       "relative_strength": {
         "QQQ": {
-          "vwap_distance_delta_pct": 0.403,
-          "above_vwap_vs_benchmark": "True/False",
+          "vwap_distance_delta_pct": 0.0211,
+          "above_vwap_vs_benchmark": "True/True",
           "open15_position_vs_benchmark": "above_opening_15m_high/inside_opening_15m_range"
         },
         "SPY": {
-          "vwap_distance_delta_pct": 0.3936,
+          "vwap_distance_delta_pct": 0.4377,
           "above_vwap_vs_benchmark": "True/False",
-          "open15_position_vs_benchmark": "above_opening_15m_high/inside_opening_15m_range"
+          "open15_position_vs_benchmark": "above_opening_15m_high/below_opening_15m_low"
         },
         "SMH": {
-          "vwap_distance_delta_pct": 0.3659,
-          "above_vwap_vs_benchmark": "True/False",
+          "vwap_distance_delta_pct": -0.1049,
+          "above_vwap_vs_benchmark": "True/True",
           "open15_position_vs_benchmark": "above_opening_15m_high/inside_opening_15m_range"
         },
         "SOXX": {
-          "vwap_distance_delta_pct": 0.2539,
+          "vwap_distance_delta_pct": -0.1148,
           "above_vwap_vs_benchmark": "True/True",
           "open15_position_vs_benchmark": "above_opening_15m_high/inside_opening_15m_range"
         }
@@ -1039,13 +1331,13 @@
       "name": "KLA",
       "chain_segment": "semiconductor_equipment",
       "raw_score": 51.8,
-      "price": 222.135,
-      "vwap": 221.68292476282005,
+      "price": 224.66,
+      "vwap": 222.76397817385666,
       "opening_15m_high": 225.15,
       "opening_15m_low": 219.8,
-      "bid_ask_spread": 0.18000000000000682,
-      "spread_pct": 0.081,
-      "vwap_distance_pct": 0.2039,
+      "bid_ask_spread": 2.5999999999999943,
+      "spread_pct": 1.1573,
+      "vwap_distance_pct": 0.8511,
       "open15_position": "inside_opening_15m_range",
       "data_quality": {
         "price_status": "ALPACA_IEX_ONLY",
@@ -1053,35 +1345,37 @@
         "opening_15m_high_status": "ALPACA_IEX_ONLY",
         "opening_15m_low_status": "ALPACA_IEX_ONLY",
         "bid_ask_spread_status": "ALPACA_IEX_ONLY",
-        "lag_minutes": 1.64,
+        "lag_minutes": 2.11,
         "fresh_within_lag": true,
         "live_fresh_within_lag": true
       },
-      "data_delay_minutes": 1.64,
+      "data_delay_minutes": 2.11,
       "execution_level": "L3_MANUAL_CONFIRM_REQUIRED",
       "real_trade_allowed": "no",
       "manual_confirm_candidate": false,
       "risk_reasons": [
-        "not_above_opening_15m_high"
+        "not_above_opening_15m_high",
+        "spread_too_wide",
+        "spread_too_wide_or_missing"
       ],
       "relative_strength": {
         "QQQ": {
-          "vwap_distance_delta_pct": 0.2726,
-          "above_vwap_vs_benchmark": "True/False",
+          "vwap_distance_delta_pct": 0.4728,
+          "above_vwap_vs_benchmark": "True/True",
           "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
         },
         "SPY": {
-          "vwap_distance_delta_pct": 0.2633,
+          "vwap_distance_delta_pct": 0.8894,
           "above_vwap_vs_benchmark": "True/False",
-          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
+          "open15_position_vs_benchmark": "inside_opening_15m_range/below_opening_15m_low"
         },
         "SMH": {
-          "vwap_distance_delta_pct": 0.2355,
-          "above_vwap_vs_benchmark": "True/False",
+          "vwap_distance_delta_pct": 0.3467,
+          "above_vwap_vs_benchmark": "True/True",
           "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
         },
         "SOXX": {
-          "vwap_distance_delta_pct": 0.1235,
+          "vwap_distance_delta_pct": 0.3368,
           "above_vwap_vs_benchmark": "True/True",
           "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
         }
@@ -1092,7 +1386,7 @@
           "price_above_vwap": true,
           "price_above_opening_15m_high": false,
           "not_below_opening_15m_low": true,
-          "spread_available_and_acceptable": true,
+          "spread_available_and_acceptable": false,
           "execution_level_is_manual_confirm": true,
           "no_auto_trade": true
         },
@@ -1100,12 +1394,12 @@
           "fresh_data",
           "price_above_vwap",
           "not_below_opening_15m_low",
-          "spread_available_and_acceptable",
           "execution_level_is_manual_confirm",
           "no_auto_trade"
         ],
         "unmet": [
-          "price_above_opening_15m_high"
+          "price_above_opening_15m_high",
+          "spread_available_and_acceptable"
         ],
         "status": "not_ready"
       }
@@ -1115,13 +1409,13 @@
       "name": "Quanta Services",
       "chain_segment": "data_center_power_cooling",
       "raw_score": 50.6,
-      "price": 646.28,
-      "vwap": 647.53203789134,
+      "price": 647.12,
+      "vwap": 646.9455047538711,
       "opening_15m_high": 652.475,
       "opening_15m_low": 643.23,
       "bid_ask_spread": null,
       "spread_pct": null,
-      "vwap_distance_pct": -0.1934,
+      "vwap_distance_pct": 0.027,
       "open15_position": "inside_opening_15m_range",
       "data_quality": {
         "price_status": "ALPACA_IEX_ONLY",
@@ -1129,45 +1423,45 @@
         "opening_15m_high_status": "ALPACA_IEX_ONLY",
         "opening_15m_low_status": "ALPACA_IEX_ONLY",
         "bid_ask_spread_status": "UNAVAILABLE",
-        "lag_minutes": 1.64,
+        "lag_minutes": 2.11,
         "fresh_within_lag": true,
         "live_fresh_within_lag": true
       },
-      "data_delay_minutes": 1.64,
+      "data_delay_minutes": 2.11,
       "execution_level": "L3_MANUAL_CONFIRM_REQUIRED",
       "real_trade_allowed": "no",
       "manual_confirm_candidate": false,
       "risk_reasons": [
-        "below_vwap",
         "not_above_opening_15m_high",
+        "spread_too_wide_or_missing",
         "spread_unavailable"
       ],
       "relative_strength": {
         "QQQ": {
-          "vwap_distance_delta_pct": -0.1246,
-          "above_vwap_vs_benchmark": "False/False",
+          "vwap_distance_delta_pct": -0.3514,
+          "above_vwap_vs_benchmark": "True/True",
           "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
         },
         "SPY": {
-          "vwap_distance_delta_pct": -0.134,
-          "above_vwap_vs_benchmark": "False/False",
-          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
+          "vwap_distance_delta_pct": 0.0652,
+          "above_vwap_vs_benchmark": "True/False",
+          "open15_position_vs_benchmark": "inside_opening_15m_range/below_opening_15m_low"
         },
         "SMH": {
-          "vwap_distance_delta_pct": -0.1618,
-          "above_vwap_vs_benchmark": "False/False",
+          "vwap_distance_delta_pct": -0.4774,
+          "above_vwap_vs_benchmark": "True/True",
           "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
         },
         "SOXX": {
-          "vwap_distance_delta_pct": -0.2738,
-          "above_vwap_vs_benchmark": "False/True",
+          "vwap_distance_delta_pct": -0.4873,
+          "above_vwap_vs_benchmark": "True/True",
           "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
         }
       },
       "buy_precheck": {
         "conditions": {
           "fresh_data": true,
-          "price_above_vwap": false,
+          "price_above_vwap": true,
           "price_above_opening_15m_high": false,
           "not_below_opening_15m_low": true,
           "spread_available_and_acceptable": false,
@@ -1176,12 +1470,12 @@
         },
         "met": [
           "fresh_data",
+          "price_above_vwap",
           "not_below_opening_15m_low",
           "execution_level_is_manual_confirm",
           "no_auto_trade"
         ],
         "unmet": [
-          "price_above_vwap",
           "price_above_opening_15m_high",
           "spread_available_and_acceptable"
         ],
@@ -1193,51 +1487,51 @@
       "name": "GE Vernova",
       "chain_segment": "data_center_power_cooling",
       "raw_score": 50.6,
-      "price": 1059.715,
-      "vwap": 1066.0864627357053,
+      "price": 1060.0,
+      "vwap": 1065.7027978582255,
       "opening_15m_high": 1087.78,
       "opening_15m_low": 1054.39,
-      "bid_ask_spread": null,
-      "spread_pct": null,
-      "vwap_distance_pct": -0.5976,
+      "bid_ask_spread": 52.690000000000055,
+      "spread_pct": 4.9708,
+      "vwap_distance_pct": -0.5351,
       "open15_position": "inside_opening_15m_range",
       "data_quality": {
         "price_status": "ALPACA_IEX_ONLY",
         "vwap_status": "ALPACA_IEX_ONLY",
         "opening_15m_high_status": "ALPACA_IEX_ONLY",
         "opening_15m_low_status": "ALPACA_IEX_ONLY",
-        "bid_ask_spread_status": "UNAVAILABLE",
-        "lag_minutes": 1.64,
+        "bid_ask_spread_status": "ALPACA_IEX_ONLY",
+        "lag_minutes": 2.11,
         "fresh_within_lag": true,
         "live_fresh_within_lag": true
       },
-      "data_delay_minutes": 1.64,
+      "data_delay_minutes": 2.11,
       "execution_level": "L3_MANUAL_CONFIRM_REQUIRED",
       "real_trade_allowed": "no",
       "manual_confirm_candidate": false,
       "risk_reasons": [
         "below_vwap",
         "not_above_opening_15m_high",
-        "spread_unavailable"
+        "spread_too_wide"
       ],
       "relative_strength": {
         "QQQ": {
-          "vwap_distance_delta_pct": -0.5289,
-          "above_vwap_vs_benchmark": "False/False",
+          "vwap_distance_delta_pct": -0.9135,
+          "above_vwap_vs_benchmark": "False/True",
           "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
         },
         "SPY": {
-          "vwap_distance_delta_pct": -0.5383,
+          "vwap_distance_delta_pct": -0.4969,
           "above_vwap_vs_benchmark": "False/False",
-          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
+          "open15_position_vs_benchmark": "inside_opening_15m_range/below_opening_15m_low"
         },
         "SMH": {
-          "vwap_distance_delta_pct": -0.5661,
-          "above_vwap_vs_benchmark": "False/False",
+          "vwap_distance_delta_pct": -1.0395,
+          "above_vwap_vs_benchmark": "False/True",
           "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
         },
         "SOXX": {
-          "vwap_distance_delta_pct": -0.6781,
+          "vwap_distance_delta_pct": -1.0494,
           "above_vwap_vs_benchmark": "False/True",
           "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
         }
@@ -1271,60 +1565,59 @@
       "name": "SK hynix ADR",
       "chain_segment": "memory_hbm_storage",
       "raw_score": 42.3,
-      "price": 155.73,
-      "vwap": 155.60834210807374,
+      "price": 158.09,
+      "vwap": 156.52777565250963,
       "opening_15m_high": 156.7,
       "opening_15m_low": 152.425,
-      "bid_ask_spread": 4.5,
-      "spread_pct": 2.8896,
-      "vwap_distance_pct": 0.0782,
-      "open15_position": "inside_opening_15m_range",
+      "bid_ask_spread": 3.0200000000000102,
+      "spread_pct": 1.9103,
+      "vwap_distance_pct": 0.998,
+      "open15_position": "above_opening_15m_high",
       "data_quality": {
         "price_status": "ALPACA_IEX_ONLY",
         "vwap_status": "ALPACA_IEX_ONLY",
         "opening_15m_high_status": "ALPACA_IEX_ONLY",
         "opening_15m_low_status": "ALPACA_IEX_ONLY",
         "bid_ask_spread_status": "ALPACA_IEX_ONLY",
-        "lag_minutes": 1.64,
+        "lag_minutes": 2.11,
         "fresh_within_lag": true,
         "live_fresh_within_lag": true
       },
-      "data_delay_minutes": 1.64,
+      "data_delay_minutes": 2.11,
       "execution_level": "L1_WATCH",
       "real_trade_allowed": "no",
       "manual_confirm_candidate": false,
       "risk_reasons": [
-        "not_above_opening_15m_high",
         "spread_too_wide",
         "spread_too_wide_or_missing"
       ],
       "relative_strength": {
         "QQQ": {
-          "vwap_distance_delta_pct": 0.1469,
-          "above_vwap_vs_benchmark": "True/False",
-          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
+          "vwap_distance_delta_pct": 0.6197,
+          "above_vwap_vs_benchmark": "True/True",
+          "open15_position_vs_benchmark": "above_opening_15m_high/inside_opening_15m_range"
         },
         "SPY": {
-          "vwap_distance_delta_pct": 0.1375,
+          "vwap_distance_delta_pct": 1.0363,
           "above_vwap_vs_benchmark": "True/False",
-          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
+          "open15_position_vs_benchmark": "above_opening_15m_high/below_opening_15m_low"
         },
         "SMH": {
-          "vwap_distance_delta_pct": 0.1098,
-          "above_vwap_vs_benchmark": "True/False",
-          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
+          "vwap_distance_delta_pct": 0.4936,
+          "above_vwap_vs_benchmark": "True/True",
+          "open15_position_vs_benchmark": "above_opening_15m_high/inside_opening_15m_range"
         },
         "SOXX": {
-          "vwap_distance_delta_pct": -0.0022,
+          "vwap_distance_delta_pct": 0.4838,
           "above_vwap_vs_benchmark": "True/True",
-          "open15_position_vs_benchmark": "inside_opening_15m_range/inside_opening_15m_range"
+          "open15_position_vs_benchmark": "above_opening_15m_high/inside_opening_15m_range"
         }
       },
       "buy_precheck": {
         "conditions": {
           "fresh_data": true,
           "price_above_vwap": true,
-          "price_above_opening_15m_high": false,
+          "price_above_opening_15m_high": true,
           "not_below_opening_15m_low": true,
           "spread_available_and_acceptable": false,
           "execution_level_is_manual_confirm": false,
@@ -1333,11 +1626,11 @@
         "met": [
           "fresh_data",
           "price_above_vwap",
+          "price_above_opening_15m_high",
           "not_below_opening_15m_low",
           "no_auto_trade"
         ],
         "unmet": [
-          "price_above_opening_15m_high",
           "spread_available_and_acceptable",
           "execution_level_is_manual_confirm"
         ],
@@ -1345,9 +1638,302 @@
       }
     }
   ],
-  "manual_confirm_candidates": [],
+  "manual_confirm_candidates": [
+    {
+      "symbol": "CRWV",
+      "name": "CoreWeave",
+      "chain_segment": "gpu_cloud_ai_factory",
+      "raw_score": 40.4,
+      "price": 87.145,
+      "vwap": 86.27261745887913,
+      "opening_15m_high": 86.94,
+      "opening_15m_low": 84.51,
+      "bid_ask_spread": 0.11999999999999034,
+      "spread_pct": 0.1377,
+      "vwap_distance_pct": 1.0112,
+      "open15_position": "above_opening_15m_high",
+      "data_quality": {
+        "price_status": "ALPACA_IEX_ONLY",
+        "vwap_status": "ALPACA_IEX_ONLY",
+        "opening_15m_high_status": "ALPACA_IEX_ONLY",
+        "opening_15m_low_status": "ALPACA_IEX_ONLY",
+        "bid_ask_spread_status": "ALPACA_IEX_ONLY",
+        "lag_minutes": 2.11,
+        "fresh_within_lag": true,
+        "live_fresh_within_lag": true
+      },
+      "data_delay_minutes": 2.11,
+      "execution_level": "L3_MANUAL_CONFIRM_REQUIRED",
+      "real_trade_allowed": "manual_confirm_only",
+      "manual_confirm_candidate": true,
+      "risk_reasons": [],
+      "relative_strength": {
+        "QQQ": {
+          "vwap_distance_delta_pct": 0.6328,
+          "above_vwap_vs_benchmark": "True/True",
+          "open15_position_vs_benchmark": "above_opening_15m_high/inside_opening_15m_range"
+        },
+        "SPY": {
+          "vwap_distance_delta_pct": 1.0494,
+          "above_vwap_vs_benchmark": "True/False",
+          "open15_position_vs_benchmark": "above_opening_15m_high/below_opening_15m_low"
+        },
+        "SMH": {
+          "vwap_distance_delta_pct": 0.5068,
+          "above_vwap_vs_benchmark": "True/True",
+          "open15_position_vs_benchmark": "above_opening_15m_high/inside_opening_15m_range"
+        },
+        "SOXX": {
+          "vwap_distance_delta_pct": 0.4969,
+          "above_vwap_vs_benchmark": "True/True",
+          "open15_position_vs_benchmark": "above_opening_15m_high/inside_opening_15m_range"
+        }
+      },
+      "buy_precheck": {
+        "conditions": {
+          "fresh_data": true,
+          "price_above_vwap": true,
+          "price_above_opening_15m_high": true,
+          "not_below_opening_15m_low": true,
+          "spread_available_and_acceptable": true,
+          "execution_level_is_manual_confirm": true,
+          "no_auto_trade": true
+        },
+        "met": [
+          "fresh_data",
+          "price_above_vwap",
+          "price_above_opening_15m_high",
+          "not_below_opening_15m_low",
+          "spread_available_and_acceptable",
+          "execution_level_is_manual_confirm",
+          "no_auto_trade"
+        ],
+        "unmet": [],
+        "status": "manual_confirm_candidate"
+      }
+    },
+    {
+      "symbol": "AMAT",
+      "name": "Applied Materials",
+      "chain_segment": "semiconductor_equipment",
+      "raw_score": 50.2,
+      "price": 585.885,
+      "vwap": 579.079878125894,
+      "opening_15m_high": 583.85,
+      "opening_15m_low": 568.665,
+      "bid_ask_spread": 1.2100000000000364,
+      "spread_pct": 0.2065,
+      "vwap_distance_pct": 1.1752,
+      "open15_position": "above_opening_15m_high",
+      "data_quality": {
+        "price_status": "ALPACA_IEX_ONLY",
+        "vwap_status": "ALPACA_IEX_ONLY",
+        "opening_15m_high_status": "ALPACA_IEX_ONLY",
+        "opening_15m_low_status": "ALPACA_IEX_ONLY",
+        "bid_ask_spread_status": "ALPACA_IEX_ONLY",
+        "lag_minutes": 2.11,
+        "fresh_within_lag": true,
+        "live_fresh_within_lag": true
+      },
+      "data_delay_minutes": 2.11,
+      "execution_level": "L3_MANUAL_CONFIRM_REQUIRED",
+      "real_trade_allowed": "manual_confirm_only",
+      "manual_confirm_candidate": true,
+      "risk_reasons": [],
+      "relative_strength": {
+        "QQQ": {
+          "vwap_distance_delta_pct": 0.7968,
+          "above_vwap_vs_benchmark": "True/True",
+          "open15_position_vs_benchmark": "above_opening_15m_high/inside_opening_15m_range"
+        },
+        "SPY": {
+          "vwap_distance_delta_pct": 1.2134,
+          "above_vwap_vs_benchmark": "True/False",
+          "open15_position_vs_benchmark": "above_opening_15m_high/below_opening_15m_low"
+        },
+        "SMH": {
+          "vwap_distance_delta_pct": 0.6707,
+          "above_vwap_vs_benchmark": "True/True",
+          "open15_position_vs_benchmark": "above_opening_15m_high/inside_opening_15m_range"
+        },
+        "SOXX": {
+          "vwap_distance_delta_pct": 0.6609,
+          "above_vwap_vs_benchmark": "True/True",
+          "open15_position_vs_benchmark": "above_opening_15m_high/inside_opening_15m_range"
+        }
+      },
+      "buy_precheck": {
+        "conditions": {
+          "fresh_data": true,
+          "price_above_vwap": true,
+          "price_above_opening_15m_high": true,
+          "not_below_opening_15m_low": true,
+          "spread_available_and_acceptable": true,
+          "execution_level_is_manual_confirm": true,
+          "no_auto_trade": true
+        },
+        "met": [
+          "fresh_data",
+          "price_above_vwap",
+          "price_above_opening_15m_high",
+          "not_below_opening_15m_low",
+          "spread_available_and_acceptable",
+          "execution_level_is_manual_confirm",
+          "no_auto_trade"
+        ],
+        "unmet": [],
+        "status": "manual_confirm_candidate"
+      }
+    },
+    {
+      "symbol": "WDC",
+      "name": "Western Digital",
+      "chain_segment": "memory_hbm_storage",
+      "raw_score": 50.2,
+      "price": 558.725,
+      "vwap": 544.9698220643775,
+      "opening_15m_high": 553.495,
+      "opening_15m_low": 532.85,
+      "bid_ask_spread": 0.9800000000000182,
+      "spread_pct": 0.1754,
+      "vwap_distance_pct": 2.524,
+      "open15_position": "above_opening_15m_high",
+      "data_quality": {
+        "price_status": "ALPACA_IEX_ONLY",
+        "vwap_status": "ALPACA_IEX_ONLY",
+        "opening_15m_high_status": "ALPACA_IEX_ONLY",
+        "opening_15m_low_status": "ALPACA_IEX_ONLY",
+        "bid_ask_spread_status": "ALPACA_IEX_ONLY",
+        "lag_minutes": 2.11,
+        "fresh_within_lag": true,
+        "live_fresh_within_lag": true
+      },
+      "data_delay_minutes": 2.11,
+      "execution_level": "L3_MANUAL_CONFIRM_REQUIRED",
+      "real_trade_allowed": "manual_confirm_only",
+      "manual_confirm_candidate": true,
+      "risk_reasons": [],
+      "relative_strength": {
+        "QQQ": {
+          "vwap_distance_delta_pct": 2.1457,
+          "above_vwap_vs_benchmark": "True/True",
+          "open15_position_vs_benchmark": "above_opening_15m_high/inside_opening_15m_range"
+        },
+        "SPY": {
+          "vwap_distance_delta_pct": 2.5623,
+          "above_vwap_vs_benchmark": "True/False",
+          "open15_position_vs_benchmark": "above_opening_15m_high/below_opening_15m_low"
+        },
+        "SMH": {
+          "vwap_distance_delta_pct": 2.0196,
+          "above_vwap_vs_benchmark": "True/True",
+          "open15_position_vs_benchmark": "above_opening_15m_high/inside_opening_15m_range"
+        },
+        "SOXX": {
+          "vwap_distance_delta_pct": 2.0097,
+          "above_vwap_vs_benchmark": "True/True",
+          "open15_position_vs_benchmark": "above_opening_15m_high/inside_opening_15m_range"
+        }
+      },
+      "buy_precheck": {
+        "conditions": {
+          "fresh_data": true,
+          "price_above_vwap": true,
+          "price_above_opening_15m_high": true,
+          "not_below_opening_15m_low": true,
+          "spread_available_and_acceptable": true,
+          "execution_level_is_manual_confirm": true,
+          "no_auto_trade": true
+        },
+        "met": [
+          "fresh_data",
+          "price_above_vwap",
+          "price_above_opening_15m_high",
+          "not_below_opening_15m_low",
+          "spread_available_and_acceptable",
+          "execution_level_is_manual_confirm",
+          "no_auto_trade"
+        ],
+        "unmet": [],
+        "status": "manual_confirm_candidate"
+      }
+    },
+    {
+      "symbol": "AMZN",
+      "name": "Amazon",
+      "chain_segment": "cloud_ai_capex",
+      "raw_score": 51.3,
+      "price": 249.11,
+      "vwap": 247.25309915892797,
+      "opening_15m_high": 248.56,
+      "opening_15m_low": 244.18,
+      "bid_ask_spread": 0.10999999999998522,
+      "spread_pct": 0.0442,
+      "vwap_distance_pct": 0.751,
+      "open15_position": "above_opening_15m_high",
+      "data_quality": {
+        "price_status": "ALPACA_IEX_ONLY",
+        "vwap_status": "ALPACA_IEX_ONLY",
+        "opening_15m_high_status": "ALPACA_IEX_ONLY",
+        "opening_15m_low_status": "ALPACA_IEX_ONLY",
+        "bid_ask_spread_status": "ALPACA_IEX_ONLY",
+        "lag_minutes": 2.11,
+        "fresh_within_lag": true,
+        "live_fresh_within_lag": true
+      },
+      "data_delay_minutes": 2.11,
+      "execution_level": "L3_MANUAL_CONFIRM_REQUIRED",
+      "real_trade_allowed": "manual_confirm_only",
+      "manual_confirm_candidate": true,
+      "risk_reasons": [],
+      "relative_strength": {
+        "QQQ": {
+          "vwap_distance_delta_pct": 0.3726,
+          "above_vwap_vs_benchmark": "True/True",
+          "open15_position_vs_benchmark": "above_opening_15m_high/inside_opening_15m_range"
+        },
+        "SPY": {
+          "vwap_distance_delta_pct": 0.7893,
+          "above_vwap_vs_benchmark": "True/False",
+          "open15_position_vs_benchmark": "above_opening_15m_high/below_opening_15m_low"
+        },
+        "SMH": {
+          "vwap_distance_delta_pct": 0.2466,
+          "above_vwap_vs_benchmark": "True/True",
+          "open15_position_vs_benchmark": "above_opening_15m_high/inside_opening_15m_range"
+        },
+        "SOXX": {
+          "vwap_distance_delta_pct": 0.2367,
+          "above_vwap_vs_benchmark": "True/True",
+          "open15_position_vs_benchmark": "above_opening_15m_high/inside_opening_15m_range"
+        }
+      },
+      "buy_precheck": {
+        "conditions": {
+          "fresh_data": true,
+          "price_above_vwap": true,
+          "price_above_opening_15m_high": true,
+          "not_below_opening_15m_low": true,
+          "spread_available_and_acceptable": true,
+          "execution_level_is_manual_confirm": true,
+          "no_auto_trade": true
+        },
+        "met": [
+          "fresh_data",
+          "price_above_vwap",
+          "price_above_opening_15m_high",
+          "not_below_opening_15m_low",
+          "spread_available_and_acceptable",
+          "execution_level_is_manual_confirm",
+          "no_auto_trade"
+        ],
+        "unmet": [],
+        "status": "manual_confirm_candidate"
+      }
+    }
+  ],
   "buy_precheck_summary": {
-    "candidate_count": 0,
+    "candidate_count": 4,
     "real_trade_allowed_boundary": "manual_confirm_only; no automated trading",
     "must_not_overwrite": [
       "raw_score",
