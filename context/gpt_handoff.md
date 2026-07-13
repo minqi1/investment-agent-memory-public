@@ -4,8 +4,8 @@ Use this file as the stable handoff prompt between Codex and ChatGPT.
 
 ## Current Context
 
-- Generated: 2026-07-13T09:02:06
-- Stage: `eod`
+- Generated: 2026-07-13T20:48:56
+- Stage: `premarket`
 - Report date: `2026-07-13`
 - Market regime from Codex: `data_quality_caution`
 - Current automated execution ceiling: `L3_MANUAL_CONFIRM_REQUIRED`
@@ -78,7 +78,7 @@ If GPT overlay continuity is gapped, do not invent missing forecasts or decision
   or crowded trades?
 - Are high-score names extended away from VWAP/opening range, or still near a reasonable
   support-check zone?
-- Please judge whether the support behind these leaders is durable: TT, JCI, ASML, KLAC, CIEN.
+- Please judge whether the support behind these leaders is durable: ARM, AMZN, STX, SMH, MSFT.
 - Separate data-quality/execution-boundary risks from true market risks.
 
 ## Required Output
@@ -170,19 +170,15 @@ Then output one machine-readable JSON block:
 - Signals available: 12
 
 Top leaders from Codex:
-- `TT` Trane Technologies | chain=data_center_power_cooling | score=11.98 | exec=L3_MANUAL |
-  flag=closed_market_eod_proxy
-- `JCI` Johnson Controls | chain=data_center_power_cooling | score=11.53 | exec=L3_MANUAL |
-  flag=closed_market_eod_proxy
-- `ASML` ASML Holding | chain=semiconductor_equipment | score=11.49 | exec=L3_MANUAL |
-  flag=closed_market_eod_proxy
-- `KLAC` KLA | chain=semiconductor_equipment | score=11.17 | exec=L3_MANUAL |
-  flag=closed_market_eod_proxy
-- `CIEN` Ciena | chain=ai_networking_optical | score=10.91 | exec=L3_MANUAL |
-  flag=closed_market_eod_proxy
-- `GEV` GE Vernova | chain=data_center_power_cooling | score=10.77 | exec=L3_MANUAL |
-  flag=closed_market_eod_proxy
-- `PWR` Quanta Services | chain=data_center_power_cooling | score=10.77 | exec=L3_MANUAL |
-  flag=closed_market_eod_proxy
-- `VRT` Vertiv | chain=data_center_power_cooling | score=10.63 | exec=L3_MANUAL |
-  flag=closed_market_eod_proxy
+- `ARM` Arm Holdings | chain=ai_accelerator | score=43.34 | exec=L1 | flag=spread_missing
+- `AMZN` Amazon | chain=cloud_ai_capex | score=41.09 | exec=L1 | flag=spread_missing
+- `STX` Seagate | chain=memory_hbm_storage | score=37.08 | exec=L1 | flag=spread_missing
+- `SMH` VanEck Semiconductor ETF | chain=semiconductor_index | score=24.73 | exec=L1 |
+  flag=spread_missing
+- `MSFT` Microsoft | chain=cloud_ai_capex | score=24.28 | exec=L3_MANUAL | flag=spread_missing
+- `AVGO` Broadcom | chain=custom_silicon_networking | score=1.47 | exec=L3_MANUAL |
+  flag=spread_missing
+- `TT` Trane Technologies | chain=data_center_power_cooling | score=-6.02 | exec=L3_MANUAL |
+  flag=below_vwap
+- `JCI` Johnson Controls | chain=data_center_power_cooling | score=-6.47 | exec=L3_MANUAL |
+  flag=below_vwap
