@@ -1,0 +1,156 @@
+{
+  "gpt_overlay": {
+    "stage": "premarket",
+    "generated_at": "2026-07-13T21:50:00+08:00",
+    "source_snapshot_generated_at": "2026-07-13T20:48:56+08:00",
+    "continuity": {
+      "last_available_overlay_date": null,
+      "gap_days": null,
+      "status": "new_baseline",
+      "notes": "repo时间戳按东八区解释。source snapshot对应2026-07-13T08:48:52-04:00，美股尚未开盘。gpt_handoff和latest_market_context较旧属于刷新频率差异，不属于时间戳异常。"
+    },
+    "decision": "RISK_REDUCTION_REVIEW",
+    "decision_reason": "存储和半导体盘前处于宏观风险、拥挤交易、ADR与本股定价错位及杠杆去风险叠加阶段。对现有杠杆暴露先做风险检查；若无杠杆持仓则降级为NO_TRADE。",
+    "changes_vs_previous": [
+      "油价和美债收益率上升，AI与半导体估值约束增强",
+      "SK海力士韩国本股与美股ADR出现高波动和定价错位",
+      "存储链从基本面驱动切换为资金结构风险优先",
+      "SOXX低于代理VWAP，SMH虽高于代理VWAP但价差缺失，板块未形成同步确认"
+    ],
+    "thesis_ledger": [
+      {
+        "thesis_id": "T-AI-CAPEX-20260713",
+        "thesis": "AI资本开支基本面尚未出现明确下修，但油价、通胀和收益率上升正在提高估值风险。",
+        "status": "fundamental_active_valuation_risk_elevated",
+        "confidence": "medium",
+        "evidence_type": [
+          "资本开支",
+          "估值",
+          "宏观"
+        ],
+        "invalidation": "TSMC、ASML或大型云厂商明确下调AI需求、设备订单或资本开支。"
+      },
+      {
+        "thesis_id": "T-MEMORY-HBM-20260713",
+        "thesis": "HBM供需逻辑尚未失效，但ADR溢价、拥挤持仓、杠杆产品和远期扩产使交易结构显著恶化。",
+        "status": "fundamental_active_trading_weakened",
+        "confidence": "medium",
+        "evidence_type": [
+          "供需",
+          "竞争格局",
+          "估值",
+          "资本开支",
+          "资金结构"
+        ],
+        "invalidation": "HBM订单、价格或交期实质转弱，或新增产能形成可信的周期过剩证据。"
+      },
+      {
+        "thesis_id": "T-SEMI-EQUIPMENT-20260713",
+        "thesis": "设备链需要ASML订单和TSMC资本开支及指引确认，盘前价格变化不足以升级基本面判断。",
+        "status": "pending_earnings_confirmation",
+        "confidence": "medium",
+        "evidence_type": [
+          "订单",
+          "资本开支",
+          "盈利指引"
+        ],
+        "invalidation": "设备订单、先进制程需求或资本开支明显弱于预期。"
+      }
+    ],
+    "forecast_review": [
+      {
+        "claim_id": "F-20260712-04",
+        "result": "成立",
+        "assessment": "油价和收益率上升后，纳斯达克期货与半导体盘前相对承压，估值压缩路径已经出现。"
+      }
+    ],
+    "candidate_review": [
+      {
+        "ticker": "SMH",
+        "previous_status": "conditional_buy_precheck",
+        "result": "不成立",
+        "next_status": "research_watch_only",
+        "reason": "SOXX未同步，开盘15分钟结构不存在，SMH价差缺失，不能确认板块承接。"
+      },
+      {
+        "ticker": "MU",
+        "previous_status": "conditional_buy_precheck",
+        "result": "不成立",
+        "next_status": "removed_from_buy_precheck",
+        "reason": "存储链正在去杠杆，MU尚未证明相对SMH、TSM和SKHY的独立强度。"
+      }
+    ],
+    "buy_precheck_candidates": [],
+    "capital_priority": [
+      "检查现有两倍海力士产品的风险敞口和折溢价",
+      "现金",
+      "固定日期和固定金额的宽基指数定投",
+      "等待开盘首小时结构确认",
+      "等待ASML和TSMC订单及指引",
+      "暂停存储和半导体个股新增仓位"
+    ],
+    "do_not_do": [
+      "不把暴跌自动解释为超跌买点",
+      "不开盘前5分钟追反弹",
+      "不用SKHY ADR价格直接推算韩国本股合理即时价格",
+      "不因HBM长期逻辑仍在就给杠杆产品补仓",
+      "不把SMH单独高于代理VWAP当成板块修复",
+      "不交易ADR与韩国本股的短期价差"
+    ],
+    "insight": "产业供需、企业盈利和股票回报必须分层审计。正确的HBM产业逻辑仍可能被估值透支、拥挤持仓、杠杆清算和跨市场定价错位暂时压倒。",
+    "forecast_ledger": [
+      {
+        "claim_id": "F-20260713-05",
+        "claim": "如果SOXX和SMH开盘首小时无法收复盘前跌幅的一半，且存储股继续跑输TSM和NVDA，则本轮下跌更可能属于拥挤交易去杠杆。",
+        "confidence": "medium",
+        "horizon": "2026-07-13 US session",
+        "expected_observation": "SOXX和SMH无法同步站回VWAP，存储股继续相对弱势。",
+        "invalidation": "SOXX、SMH快速站回VWAP，存储股同步止跌且成交结构改善。",
+        "review_due": "2026-07-14"
+      },
+      {
+        "claim_id": "F-20260713-06",
+        "claim": "若油价和收益率继续上升，高估值AI与半导体将继续相对SPY承压，即使盈利预期暂未下修。",
+        "confidence": "medium_high",
+        "horizon": "2026-07-13 to 2026-07-14",
+        "expected_observation": "半导体和高估值科技相对SPY走弱。",
+        "invalidation": "油价和收益率上升但半导体仍形成广泛持续的相对强势。",
+        "review_due": "2026-07-14"
+      },
+      {
+        "claim_id": "F-20260713-07",
+        "claim": "SKHY ADR与韩国本股的定价差异将在未来数日继续放大波动，普通技术支撑暂时失真。",
+        "confidence": "high",
+        "horizon": "1-5 trading days",
+        "expected_observation": "ADR、本股和相关杠杆产品继续出现异常价差与高波动。",
+        "invalidation": "价差显著收敛，套利与成交机制恢复稳定。",
+        "review_due": "2026-07-20"
+      }
+    ],
+    "action_checklist": {
+      "watch": "SOXX和SMH首小时结构、存储股相对TSM与NVDA表现、油价、美债收益率以及SKHY折溢价。",
+      "wait_for": "板块同步站回VWAP、停止创新低、至少两个核心半导体标的共同确认，并由券商真实盘口验证。",
+      "cancel_if": "半导体继续创新低、存储链无承接、油价收益率继续加速或公司订单及资本开支指引转弱。",
+      "if_no_pullback": "不追涨，继续持有现金，等待下一次可验证的承接结构。"
+    },
+    "do_not_overwrite": [
+      "raw_score",
+      "price",
+      "vwap",
+      "data_quality",
+      "execution_level",
+      "risk_reasons"
+    ]
+  },
+  "received_at": "2026-07-13T22:01:59",
+  "received_overlay_date": "2026-07-13",
+  "received_generated_at": "2026-07-13T21:50:00+08:00",
+  "protected_codex_fields": [
+    "data_quality",
+    "execution_level",
+    "price",
+    "raw_score",
+    "risk_reasons",
+    "vwap"
+  ]
+}

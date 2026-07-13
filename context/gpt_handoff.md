@@ -4,13 +4,13 @@ Use this file as the stable handoff prompt between Codex and ChatGPT.
 
 ## Current Context
 
-- Generated: 2026-07-13T20:48:56
+- Generated: 2026-07-13T22:02:12
 - Stage: `premarket`
 - Report date: `2026-07-13`
-- Market regime from Codex: `data_quality_caution`
+- Market regime from Codex: `tech_led_risk_on`
 - Current automated execution ceiling: `L3_MANUAL_CONFIRM_REQUIRED`
 - GitHub repo: https://github.com/minqi1/investment-agent-memory-public
-- Latest GPT premarket overlay date: `None`
+- Latest GPT premarket overlay date: `2026-07-13`
 - Latest GPT postmarket overlay date: `None`
 - GPT overlay gap days: `None`
 
@@ -36,7 +36,43 @@ If raw GitHub URLs are unavailable, read the same paths inside the repo:
 
 ## GPT Overlay Continuity
 
-- GPT overlay unavailable; establish a new baseline.
+- Availability
+  - latest_premarket_overlay_available: True
+  - latest_postmarket_overlay_available: False
+  - latest_premarket_overlay_date: 2026-07-13
+  - continuity_status: new_baseline
+- Latest Decision
+  - decision: RISK_REDUCTION_REVIEW
+  - decision_reason: 存储和半导体盘前处于宏观风险、拥挤交易、ADR与本股定价错位及杠杆去风险叠加阶段。对现有杠杆暴露先做风险检查；若无杠杆持仓则降级为NO_TRADE。
+
+### Latest Thesis Ledger
+
+- T-AI-CAPEX-20260713: AI资本开支基本面尚未出现明确下修，但油价、通胀和收益率上升正在提高估值风险。
+- T-MEMORY-HBM-20260713: HBM供需逻辑尚未失效，但ADR溢价、拥挤持仓、杠杆产品和远期扩产使交易结构显著恶化。
+- T-SEMI-EQUIPMENT-20260713: 设备链需要ASML订单和TSMC资本开支及指引确认，盘前价格变化不足以升级基本面判断。
+
+### Latest Forecast Ledger
+
+- F-20260713-05: 如果SOXX和SMH开盘首小时无法收复盘前跌幅的一半，且存储股继续跑输TSM和NVDA，则本轮下跌更可能属于拥挤交易去杠杆。 |
+  confidence=medium | horizon=2026-07-13 US session | review_due=2026-07-14
+  - expected: SOXX和SMH无法同步站回VWAP，存储股继续相对弱势。
+  - invalidation: SOXX、SMH快速站回VWAP，存储股同步止跌且成交结构改善。
+- F-20260713-06: 若油价和收益率继续上升，高估值AI与半导体将继续相对SPY承压，即使盈利预期暂未下修。 | confidence=medium_high |
+  horizon=2026-07-13 to 2026-07-14 | review_due=2026-07-14
+  - expected: 半导体和高估值科技相对SPY走弱。
+  - invalidation: 油价和收益率上升但半导体仍形成广泛持续的相对强势。
+- F-20260713-07: SKHY ADR与韩国本股的定价差异将在未来数日继续放大波动，普通技术支撑暂时失真。 | confidence=high | horizon=1-5
+  trading days | review_due=2026-07-20
+  - expected: ADR、本股和相关杠杆产品继续出现异常价差与高波动。
+  - invalidation: 价差显著收敛，套利与成交机制恢复稳定。
+
+### Candidate Conditions
+
+- No buy precheck candidates supplied by GPT overlay.
+
+### Review Due Forecast Claims
+
+- No overdue unreviewed forecast claims.
 
 ## Your Role
 

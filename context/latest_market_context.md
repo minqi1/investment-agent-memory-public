@@ -1,42 +1,44 @@
 # Market Overview
 
-Generated: 2026-07-13T20:48:56
+Generated: 2026-07-13T22:02:12
 Stage: premarket | Report date: 2026-07-13
 
 ## Market Regime
 
-当前市场状态：`data_quality_caution`
+当前市场状态：`tech_led_risk_on`
 
 - Snapshot stage: premarket
 - Snapshot generated at: 2026-07-13T20:48:52
 - Execution boundary: L3_MANUAL_CONFIRM_REQUIRED
-- Monitor fresh/stale: 37/19
+- Monitor fresh/stale: 55/1
 
 ## Index
 
 - `QQQ` Nasdaq 100 ETF
-  - price: 717.41
-  - VWAP: 714.6926610159277
+  - price: 716.41
+  - VWAP: 714.9668586620736
   - above_vwap: True
-  - caution: price_stale_or_missing
+  - caution: watch_only
 - `SPY` S&P 500 ETF
-  - price: 751.81
-  - VWAP: 748.5993418751976
+  - price: 753.73
+  - VWAP: 753.0684600795374
   - above_vwap: True
-  - caution: price_stale_or_missing
+  - caution: watch_only
 - `SOXX` iShares Semiconductor ETF
-  - price: 562.9734
-  - VWAP: 565.9909318112418
-  - above_vwap: False
-  - caution: below_vwap
-- `SMH` VanEck Semiconductor ETF
-  - price: 596.496
-  - VWAP: 592.9791113907456
+  - price: 561.19
+  - VWAP: 558.4464970516916
   - above_vwap: True
-  - caution: spread_missing
+  - caution: watch_only
+- `SMH` VanEck Semiconductor ETF
+  - price: 594.58
+  - VWAP: 592.0578950246038
+  - above_vwap: True
+  - caution: watch_only
 - `IWM` Russell 2000 ETF
-  - above_vwap: False
-  - caution: below_vwap
+  - price: 295.245
+  - VWAP: 295.1969844707241
+  - above_vwap: True
+  - caution: watch_only
 
 ## Leaders
 
@@ -162,11 +164,50 @@ Stage: premarket | Report date: 2026-07-13
 
 ## GPT Overlay Continuity
 
-- GPT overlay unavailable; establish a new baseline.
+- Availability
+  - latest_premarket_overlay_available: True
+  - latest_postmarket_overlay_available: False
+  - latest_premarket_overlay_date: 2026-07-13
+  - continuity_status: new_baseline
+- Latest Decision
+  - decision: RISK_REDUCTION_REVIEW
+  - decision_reason: 存储和半导体盘前处于宏观风险、拥挤交易、ADR与本股定价错位及杠杆去风险叠加阶段。对现有杠杆暴露先做风险检查；若无杠杆持仓则降级为NO_TRADE。
+
+### Latest Thesis Ledger
+
+- T-AI-CAPEX-20260713: AI资本开支基本面尚未出现明确下修，但油价、通胀和收益率上升正在提高估值风险。
+- T-MEMORY-HBM-20260713: HBM供需逻辑尚未失效，但ADR溢价、拥挤持仓、杠杆产品和远期扩产使交易结构显著恶化。
+- T-SEMI-EQUIPMENT-20260713: 设备链需要ASML订单和TSMC资本开支及指引确认，盘前价格变化不足以升级基本面判断。
+
+### Latest Forecast Ledger
+
+- F-20260713-05: 如果SOXX和SMH开盘首小时无法收复盘前跌幅的一半，且存储股继续跑输TSM和NVDA，则本轮下跌更可能属于拥挤交易去杠杆。 |
+  confidence=medium |
+  horizon=2026-07-13 US session | review_due=2026-07-14
+  - expected: SOXX和SMH无法同步站回VWAP，存储股继续相对弱势。
+  - invalidation: SOXX、SMH快速站回VWAP，存储股同步止跌且成交结构改善。
+- F-20260713-06: 若油价和收益率继续上升，高估值AI与半导体将继续相对SPY承压，即使盈利预期暂未下修。 | confidence=medium_high |
+  horizon=2026-07-13 to
+  2026-07-14 | review_due=2026-07-14
+  - expected: 半导体和高估值科技相对SPY走弱。
+  - invalidation: 油价和收益率上升但半导体仍形成广泛持续的相对强势。
+- F-20260713-07: SKHY ADR与韩国本股的定价差异将在未来数日继续放大波动，普通技术支撑暂时失真。 | confidence=high | horizon=1-5
+  trading days |
+  review_due=2026-07-20
+  - expected: ADR、本股和相关杠杆产品继续出现异常价差与高波动。
+  - invalidation: 价差显著收敛，套利与成交机制恢复稳定。
+
+### Candidate Conditions
+
+- No buy precheck candidates supplied by GPT overlay.
+
+### Review Due Forecast Claims
+
+- No overdue unreviewed forecast claims.
 
 ## Risk Factors
 
-- high: data_freshness - fresh=37, stale=19, stale_ratio=33.93%
+- low: data_freshness - fresh=55, stale=1, stale_ratio=1.79%
 - medium: execution_boundary - Automated output is capped at L3_MANUAL_CONFIRM_REQUIRED unless
   broker realtime
   data is verified.

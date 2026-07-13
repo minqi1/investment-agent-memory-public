@@ -1,0 +1,111 @@
+{
+  "updated_at": "2026-07-13T22:01:59",
+  "schema_version": "gpt_overlay_continuity_v1",
+  "latest_premarket_overlay_available": true,
+  "latest_postmarket_overlay_available": false,
+  "latest_premarket_overlay_date": "2026-07-13",
+  "latest_postmarket_overlay_date": null,
+  "latest_premarket_overlay_path": "gpt_outputs\\history\\2026-07-13_premarket.json",
+  "latest_postmarket_overlay_path": null,
+  "latest_overlay_stage": "premarket",
+  "latest_overlay_date": "2026-07-13",
+  "latest_overlay_path": "gpt_outputs\\history\\2026-07-13_premarket.json",
+  "gap_days": null,
+  "continuity": {
+    "last_available_overlay_date": null,
+    "gap_days": null,
+    "status": "new_baseline",
+    "notes": "repo时间戳按东八区解释。source snapshot对应2026-07-13T08:48:52-04:00，美股尚未开盘。gpt_handoff和latest_market_context较旧属于刷新频率差异，不属于时间戳异常。"
+  },
+  "latest_decision": "RISK_REDUCTION_REVIEW",
+  "latest_decision_reason": "存储和半导体盘前处于宏观风险、拥挤交易、ADR与本股定价错位及杠杆去风险叠加阶段。对现有杠杆暴露先做风险检查；若无杠杆持仓则降级为NO_TRADE。",
+  "thesis_ledger": [
+    {
+      "thesis_id": "T-AI-CAPEX-20260713",
+      "thesis": "AI资本开支基本面尚未出现明确下修，但油价、通胀和收益率上升正在提高估值风险。",
+      "status": "fundamental_active_valuation_risk_elevated",
+      "confidence": "medium",
+      "evidence_type": [
+        "资本开支",
+        "估值",
+        "宏观"
+      ],
+      "invalidation": "TSMC、ASML或大型云厂商明确下调AI需求、设备订单或资本开支。",
+      "source_stage": "premarket",
+      "source_date": "2026-07-13",
+      "source_file": "gpt_outputs\\history\\2026-07-13_premarket.json"
+    },
+    {
+      "thesis_id": "T-MEMORY-HBM-20260713",
+      "thesis": "HBM供需逻辑尚未失效，但ADR溢价、拥挤持仓、杠杆产品和远期扩产使交易结构显著恶化。",
+      "status": "fundamental_active_trading_weakened",
+      "confidence": "medium",
+      "evidence_type": [
+        "供需",
+        "竞争格局",
+        "估值",
+        "资本开支",
+        "资金结构"
+      ],
+      "invalidation": "HBM订单、价格或交期实质转弱，或新增产能形成可信的周期过剩证据。",
+      "source_stage": "premarket",
+      "source_date": "2026-07-13",
+      "source_file": "gpt_outputs\\history\\2026-07-13_premarket.json"
+    },
+    {
+      "thesis_id": "T-SEMI-EQUIPMENT-20260713",
+      "thesis": "设备链需要ASML订单和TSMC资本开支及指引确认，盘前价格变化不足以升级基本面判断。",
+      "status": "pending_earnings_confirmation",
+      "confidence": "medium",
+      "evidence_type": [
+        "订单",
+        "资本开支",
+        "盈利指引"
+      ],
+      "invalidation": "设备订单、先进制程需求或资本开支明显弱于预期。",
+      "source_stage": "premarket",
+      "source_date": "2026-07-13",
+      "source_file": "gpt_outputs\\history\\2026-07-13_premarket.json"
+    }
+  ],
+  "forecast_ledger": [
+    {
+      "claim_id": "F-20260713-05",
+      "claim": "如果SOXX和SMH开盘首小时无法收复盘前跌幅的一半，且存储股继续跑输TSM和NVDA，则本轮下跌更可能属于拥挤交易去杠杆。",
+      "confidence": "medium",
+      "horizon": "2026-07-13 US session",
+      "expected_observation": "SOXX和SMH无法同步站回VWAP，存储股继续相对弱势。",
+      "invalidation": "SOXX、SMH快速站回VWAP，存储股同步止跌且成交结构改善。",
+      "review_due": "2026-07-14",
+      "source_stage": "premarket",
+      "source_date": "2026-07-13",
+      "source_file": "gpt_outputs\\history\\2026-07-13_premarket.json"
+    },
+    {
+      "claim_id": "F-20260713-06",
+      "claim": "若油价和收益率继续上升，高估值AI与半导体将继续相对SPY承压，即使盈利预期暂未下修。",
+      "confidence": "medium_high",
+      "horizon": "2026-07-13 to 2026-07-14",
+      "expected_observation": "半导体和高估值科技相对SPY走弱。",
+      "invalidation": "油价和收益率上升但半导体仍形成广泛持续的相对强势。",
+      "review_due": "2026-07-14",
+      "source_stage": "premarket",
+      "source_date": "2026-07-13",
+      "source_file": "gpt_outputs\\history\\2026-07-13_premarket.json"
+    },
+    {
+      "claim_id": "F-20260713-07",
+      "claim": "SKHY ADR与韩国本股的定价差异将在未来数日继续放大波动，普通技术支撑暂时失真。",
+      "confidence": "high",
+      "horizon": "1-5 trading days",
+      "expected_observation": "ADR、本股和相关杠杆产品继续出现异常价差与高波动。",
+      "invalidation": "价差显著收敛，套利与成交机制恢复稳定。",
+      "review_due": "2026-07-20",
+      "source_stage": "premarket",
+      "source_date": "2026-07-13",
+      "source_file": "gpt_outputs\\history\\2026-07-13_premarket.json"
+    }
+  ],
+  "buy_precheck_candidates": [],
+  "overdue_unreviewed_forecast_claims": []
+}
