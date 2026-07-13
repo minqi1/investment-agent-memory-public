@@ -4,29 +4,37 @@ Use this file as the stable handoff prompt between Codex and ChatGPT.
 
 ## Current Context
 
-- Generated: 2026-07-13T22:02:12
-- Stage: `premarket`
+- Generated: 2026-07-13T22:06:39
+- Stage: `intraday`
 - Report date: `2026-07-13`
-- Market regime from Codex: `tech_led_risk_on`
+- Market regime from Codex: `premarket_observe`
 - Current automated execution ceiling: `L3_MANUAL_CONFIRM_REQUIRED`
 - GitHub repo: https://github.com/minqi1/investment-agent-memory-public
 - Latest GPT premarket overlay date: `2026-07-13`
 - Latest GPT postmarket overlay date: `None`
 - GPT overlay gap days: `None`
+- Latest intraday context generated: `2026-07-13T22:06:39+08:00`
+- Latest intraday US/Eastern time: `2026-07-13T10:06:39-04:00`
+- Latest intraday session open: `True`
+- Latest intraday candidate count: `0`
 
 ## Files To Read
 
 Read these files first, in this order:
 
-1. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_market_context.md`
-2. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_market_state.json`
-3. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/watchlist.md`
-4. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/memory/investment_principles.md`
-5. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/memory/mistakes.md`
-6. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/memory/stock_notes.md`
+1. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_context.md`
+2. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_state.json`
+3. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_market_context.md`
+4. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_market_state.json`
+5. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/watchlist.md`
+6. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/memory/investment_principles.md`
+7. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/memory/mistakes.md`
+8. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/memory/stock_notes.md`
 
 If raw GitHub URLs are unavailable, read the same paths inside the repo:
 
+- `context/latest_intraday_context.md`
+- `context/latest_intraday_state.json`
 - `context/latest_market_context.md`
 - `context/latest_market_state.json`
 - `context/watchlist.md`
