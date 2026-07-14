@@ -1,10 +1,10 @@
 # Latest Intraday Context
 
-- generated_at: `2026-07-13T23:06:07+08:00`
+- generated_at: `2026-07-14T21:50:02+08:00`
 - stage: `intraday`
-- Beijing time: `2026-07-13T23:06:07+08:00`
-- US Eastern time: `2026-07-13T11:06:07-04:00`
-- US session date: `2026-07-13`
+- Beijing time: `2026-07-14T21:50:02+08:00`
+- US Eastern time: `2026-07-14T09:50:02-04:00`
+- US session date: `2026-07-14`
 - is_open: `True`
 - market_clock_source: `Alpaca trading clock`
 
@@ -27,22 +27,22 @@
 
 ## Indices
 
-- `QQQ` price=718.15 VWAP=715.443 open15=718.255/713.97 spread=0.046% lag=2.11m
+- `QQQ` price=719.25 VWAP=718.7246 open15=720.15/717.26 spread=0.0389% lag=2.02m
   risk=not_above_opening_15m_high
-- `SPY` price=752.31 VWAP=752.5978 open15=753.835/752.42 spread=0.004% lag=2.11m
-  risk=below_opening_15m_low,below_vwap,not_above_opening_15m_high
-- `SMH` price=596.42 VWAP=593.4267 open15=598.55/589.01 spread=0.0537% lag=2.11m
+- `SPY` price=750.89 VWAP=750.5578 open15=751.5/749.54 spread=0.004% lag=2.02m
   risk=not_above_opening_15m_high
-- `SOXX` price=562.85 VWAP=559.9701 open15=564.7/554.59 spread=0.0835% lag=2.11m
-  risk=not_above_opening_15m_high
+- `SMH` price=599.97 VWAP=600.7562 open15=608.895/596.44 spread=0.0883% lag=2.02m
+  risk=below_vwap,not_above_opening_15m_high
+- `SOXX` price=571.74 VWAP=573.0194 open15=580.67/567.78 spread=0.1032% lag=2.02m
+  risk=below_vwap,not_above_opening_15m_high
 
 ## Focus Instruments
 
-- `QQQ` Nasdaq 100 ETF | raw_score=54.6 | price=718.15 | VWAP=715.443 | open15=718.255/713.97 |
-  spread=0.046% | level=L1_WATCH | allowed=no
+- `QQQ` Nasdaq 100 ETF | raw_score=52.3 | price=719.25 | VWAP=718.7246 | open15=720.15/717.26 |
+  spread=0.0389% | level=L1_WATCH | allowed=no
   - data_quality: `{"price_status": "ALPACA_IEX_ONLY", "vwap_status": "ALPACA_IEX_ONLY",
     "opening_15m_high_status": "ALPACA_IEX_ONLY", "opening_15m_low_status": "ALPACA_IEX_ONLY",
-    "bid_ask_spread_status": "ALPACA_IEX_ONLY", "lag_minutes": 2.11, "fresh_within_lag": true,
+    "bid_ask_spread_status": "ALPACA_IEX_ONLY", "lag_minutes": 2.02, "fresh_within_lag": true,
     "live_fresh_within_lag": true}`
   - risk_reasons: `not_above_opening_15m_high`
   - buy_precheck_met: `fresh_data, price_above_vwap, not_below_opening_15m_low,
@@ -50,270 +50,204 @@
   - buy_precheck_unmet: `price_above_opening_15m_high, execution_level_is_manual_confirm`
   - relative_vs_QQQ: vwap_delta=0pct; above_vwap=True/True;
     open15=inside_opening_15m_range/inside_opening_15m_range
-  - relative_vs_SMH: vwap_delta=-0.126pct; above_vwap=True/True;
+  - relative_vs_SMH: vwap_delta=0.204pct; above_vwap=True/False;
     open15=inside_opening_15m_range/inside_opening_15m_range
-  - relative_vs_SOXX: vwap_delta=-0.1359pct; above_vwap=True/True;
+  - relative_vs_SOXX: vwap_delta=0.2964pct; above_vwap=True/False;
     open15=inside_opening_15m_range/inside_opening_15m_range
-- `SOXX` iShares Semiconductor ETF | raw_score=55.5 | price=562.85 | VWAP=559.9701 |
-  open15=564.7/554.59 | spread=0.0835% | level=L1_WATCH | allowed=no
+- `SOXX` iShares Semiconductor ETF | raw_score=54.2 | price=571.74 | VWAP=573.0194 |
+  open15=580.67/567.78 | spread=0.1032% | level=L1_WATCH | allowed=no
   - data_quality: `{"price_status": "ALPACA_IEX_ONLY", "vwap_status": "ALPACA_IEX_ONLY",
     "opening_15m_high_status": "ALPACA_IEX_ONLY", "opening_15m_low_status": "ALPACA_IEX_ONLY",
-    "bid_ask_spread_status": "ALPACA_IEX_ONLY", "lag_minutes": 2.11, "fresh_within_lag": true,
+    "bid_ask_spread_status": "ALPACA_IEX_ONLY", "lag_minutes": 2.02, "fresh_within_lag": true,
     "live_fresh_within_lag": true}`
-  - risk_reasons: `not_above_opening_15m_high`
-  - buy_precheck_met: `fresh_data, price_above_vwap, not_below_opening_15m_low,
-    spread_available_and_acceptable, no_auto_trade`
-  - buy_precheck_unmet: `price_above_opening_15m_high, execution_level_is_manual_confirm`
-  - relative_vs_QQQ: vwap_delta=0.1359pct; above_vwap=True/True;
+  - risk_reasons: `below_vwap, not_above_opening_15m_high`
+  - buy_precheck_met: `fresh_data, not_below_opening_15m_low, spread_available_and_acceptable,
+    no_auto_trade`
+  - buy_precheck_unmet: `price_above_vwap, price_above_opening_15m_high,
+    execution_level_is_manual_confirm`
+  - relative_vs_QQQ: vwap_delta=-0.2964pct; above_vwap=False/True;
     open15=inside_opening_15m_range/inside_opening_15m_range
-  - relative_vs_SMH: vwap_delta=0.0099pct; above_vwap=True/True;
+  - relative_vs_SMH: vwap_delta=-0.0924pct; above_vwap=False/False;
     open15=inside_opening_15m_range/inside_opening_15m_range
-  - relative_vs_SOXX: vwap_delta=0pct; above_vwap=True/True;
+  - relative_vs_SOXX: vwap_delta=0pct; above_vwap=False/False;
     open15=inside_opening_15m_range/inside_opening_15m_range
-- `SMH` VanEck Semiconductor ETF | raw_score=50.5 | price=596.42 | VWAP=593.4267 |
-  open15=598.55/589.01 | spread=0.0537% | level=L1_WATCH | allowed=no
+- `SMH` VanEck Semiconductor ETF | raw_score=47.9 | price=599.97 | VWAP=600.7562 |
+  open15=608.895/596.44 | spread=0.0883% | level=L1_WATCH | allowed=no
   - data_quality: `{"price_status": "ALPACA_IEX_ONLY", "vwap_status": "ALPACA_IEX_ONLY",
     "opening_15m_high_status": "ALPACA_IEX_ONLY", "opening_15m_low_status": "ALPACA_IEX_ONLY",
-    "bid_ask_spread_status": "ALPACA_IEX_ONLY", "lag_minutes": 2.11, "fresh_within_lag": true,
+    "bid_ask_spread_status": "ALPACA_IEX_ONLY", "lag_minutes": 2.02, "fresh_within_lag": true,
     "live_fresh_within_lag": true}`
-  - risk_reasons: `not_above_opening_15m_high`
-  - buy_precheck_met: `fresh_data, price_above_vwap, not_below_opening_15m_low,
-    spread_available_and_acceptable, no_auto_trade`
-  - buy_precheck_unmet: `price_above_opening_15m_high, execution_level_is_manual_confirm`
-  - relative_vs_QQQ: vwap_delta=0.126pct; above_vwap=True/True;
+  - risk_reasons: `below_vwap, not_above_opening_15m_high`
+  - buy_precheck_met: `fresh_data, not_below_opening_15m_low, spread_available_and_acceptable,
+    no_auto_trade`
+  - buy_precheck_unmet: `price_above_vwap, price_above_opening_15m_high,
+    execution_level_is_manual_confirm`
+  - relative_vs_QQQ: vwap_delta=-0.204pct; above_vwap=False/True;
     open15=inside_opening_15m_range/inside_opening_15m_range
-  - relative_vs_SMH: vwap_delta=0pct; above_vwap=True/True;
+  - relative_vs_SMH: vwap_delta=0pct; above_vwap=False/False;
     open15=inside_opening_15m_range/inside_opening_15m_range
-  - relative_vs_SOXX: vwap_delta=-0.0099pct; above_vwap=True/True;
+  - relative_vs_SOXX: vwap_delta=0.0924pct; above_vwap=False/False;
     open15=inside_opening_15m_range/inside_opening_15m_range
-- `SPY` S&P 500 ETF | raw_score=50.8 | price=752.31 | VWAP=752.5978 | open15=753.835/752.42 |
+- `SPY` S&P 500 ETF | raw_score=50.9 | price=750.89 | VWAP=750.5578 | open15=751.5/749.54 |
   spread=0.004% | level=L1_WATCH | allowed=no
   - data_quality: `{"price_status": "ALPACA_IEX_ONLY", "vwap_status": "ALPACA_IEX_ONLY",
     "opening_15m_high_status": "ALPACA_IEX_ONLY", "opening_15m_low_status": "ALPACA_IEX_ONLY",
-    "bid_ask_spread_status": "ALPACA_IEX_ONLY", "lag_minutes": 2.11, "fresh_within_lag": true,
+    "bid_ask_spread_status": "ALPACA_IEX_ONLY", "lag_minutes": 2.02, "fresh_within_lag": true,
     "live_fresh_within_lag": true}`
-  - risk_reasons: `below_opening_15m_low, below_vwap, not_above_opening_15m_high`
-  - buy_precheck_met: `fresh_data, spread_available_and_acceptable, no_auto_trade`
-  - buy_precheck_unmet: `price_above_vwap, price_above_opening_15m_high,
-    not_below_opening_15m_low, execution_level_is_manual_confirm`
-  - relative_vs_QQQ: vwap_delta=-0.4166pct; above_vwap=False/True;
-    open15=below_opening_15m_low/inside_opening_15m_range
-  - relative_vs_SMH: vwap_delta=-0.5427pct; above_vwap=False/True;
-    open15=below_opening_15m_low/inside_opening_15m_range
-  - relative_vs_SOXX: vwap_delta=-0.5525pct; above_vwap=False/True;
-    open15=below_opening_15m_low/inside_opening_15m_range
-- `CRWV` CoreWeave | raw_score=40.4 | price=87.145 | VWAP=86.2726 | open15=86.94/84.51 |
-  spread=0.1377% | level=L3_MANUAL_CONFIRM_REQUIRED | allowed=manual_confirm_only
-  - data_quality: `{"price_status": "ALPACA_IEX_ONLY", "vwap_status": "ALPACA_IEX_ONLY",
-    "opening_15m_high_status": "ALPACA_IEX_ONLY", "opening_15m_low_status": "ALPACA_IEX_ONLY",
-    "bid_ask_spread_status": "ALPACA_IEX_ONLY", "lag_minutes": 2.11, "fresh_within_lag": true,
-    "live_fresh_within_lag": true}`
-  - risk_reasons: `none`
-  - buy_precheck_met: `fresh_data, price_above_vwap, price_above_opening_15m_high,
-    not_below_opening_15m_low, spread_available_and_acceptable,
-    execution_level_is_manual_confirm, no_auto_trade`
-  - buy_precheck_unmet: `none`
-  - relative_vs_QQQ: vwap_delta=0.6328pct; above_vwap=True/True;
-    open15=above_opening_15m_high/inside_opening_15m_range
-  - relative_vs_SMH: vwap_delta=0.5068pct; above_vwap=True/True;
-    open15=above_opening_15m_high/inside_opening_15m_range
-  - relative_vs_SOXX: vwap_delta=0.4969pct; above_vwap=True/True;
-    open15=above_opening_15m_high/inside_opening_15m_range
-- `AMAT` Applied Materials | raw_score=50.2 | price=585.885 | VWAP=579.0799 |
-  open15=583.85/568.665 | spread=0.2065% | level=L3_MANUAL_CONFIRM_REQUIRED |
-  allowed=manual_confirm_only
-  - data_quality: `{"price_status": "ALPACA_IEX_ONLY", "vwap_status": "ALPACA_IEX_ONLY",
-    "opening_15m_high_status": "ALPACA_IEX_ONLY", "opening_15m_low_status": "ALPACA_IEX_ONLY",
-    "bid_ask_spread_status": "ALPACA_IEX_ONLY", "lag_minutes": 2.11, "fresh_within_lag": true,
-    "live_fresh_within_lag": true}`
-  - risk_reasons: `none`
-  - buy_precheck_met: `fresh_data, price_above_vwap, price_above_opening_15m_high,
-    not_below_opening_15m_low, spread_available_and_acceptable,
-    execution_level_is_manual_confirm, no_auto_trade`
-  - buy_precheck_unmet: `none`
-  - relative_vs_QQQ: vwap_delta=0.7968pct; above_vwap=True/True;
-    open15=above_opening_15m_high/inside_opening_15m_range
-  - relative_vs_SMH: vwap_delta=0.6707pct; above_vwap=True/True;
-    open15=above_opening_15m_high/inside_opening_15m_range
-  - relative_vs_SOXX: vwap_delta=0.6609pct; above_vwap=True/True;
-    open15=above_opening_15m_high/inside_opening_15m_range
-- `WDC` Western Digital | raw_score=50.2 | price=558.725 | VWAP=544.9698 | open15=553.495/532.85
-  | spread=0.1754% | level=L3_MANUAL_CONFIRM_REQUIRED | allowed=manual_confirm_only
-  - data_quality: `{"price_status": "ALPACA_IEX_ONLY", "vwap_status": "ALPACA_IEX_ONLY",
-    "opening_15m_high_status": "ALPACA_IEX_ONLY", "opening_15m_low_status": "ALPACA_IEX_ONLY",
-    "bid_ask_spread_status": "ALPACA_IEX_ONLY", "lag_minutes": 2.11, "fresh_within_lag": true,
-    "live_fresh_within_lag": true}`
-  - risk_reasons: `none`
-  - buy_precheck_met: `fresh_data, price_above_vwap, price_above_opening_15m_high,
-    not_below_opening_15m_low, spread_available_and_acceptable,
-    execution_level_is_manual_confirm, no_auto_trade`
-  - buy_precheck_unmet: `none`
-  - relative_vs_QQQ: vwap_delta=2.1457pct; above_vwap=True/True;
-    open15=above_opening_15m_high/inside_opening_15m_range
-  - relative_vs_SMH: vwap_delta=2.0196pct; above_vwap=True/True;
-    open15=above_opening_15m_high/inside_opening_15m_range
-  - relative_vs_SOXX: vwap_delta=2.0097pct; above_vwap=True/True;
-    open15=above_opening_15m_high/inside_opening_15m_range
-- `AMZN` Amazon | raw_score=51.3 | price=249.11 | VWAP=247.2531 | open15=248.56/244.18 |
-  spread=0.0442% | level=L3_MANUAL_CONFIRM_REQUIRED | allowed=manual_confirm_only
-  - data_quality: `{"price_status": "ALPACA_IEX_ONLY", "vwap_status": "ALPACA_IEX_ONLY",
-    "opening_15m_high_status": "ALPACA_IEX_ONLY", "opening_15m_low_status": "ALPACA_IEX_ONLY",
-    "bid_ask_spread_status": "ALPACA_IEX_ONLY", "lag_minutes": 2.11, "fresh_within_lag": true,
-    "live_fresh_within_lag": true}`
-  - risk_reasons: `none`
-  - buy_precheck_met: `fresh_data, price_above_vwap, price_above_opening_15m_high,
-    not_below_opening_15m_low, spread_available_and_acceptable,
-    execution_level_is_manual_confirm, no_auto_trade`
-  - buy_precheck_unmet: `none`
-  - relative_vs_QQQ: vwap_delta=0.3726pct; above_vwap=True/True;
-    open15=above_opening_15m_high/inside_opening_15m_range
-  - relative_vs_SMH: vwap_delta=0.2466pct; above_vwap=True/True;
-    open15=above_opening_15m_high/inside_opening_15m_range
-  - relative_vs_SOXX: vwap_delta=0.2367pct; above_vwap=True/True;
-    open15=above_opening_15m_high/inside_opening_15m_range
-- `MU` Micron | raw_score=57.6 | price=941.545 | VWAP=925.8494 | open15=929.76/903 |
-  spread=2.549% | level=L3_MANUAL_CONFIRM_REQUIRED | allowed=no
-  - data_quality: `{"price_status": "ALPACA_IEX_ONLY", "vwap_status": "ALPACA_IEX_ONLY",
-    "opening_15m_high_status": "ALPACA_IEX_ONLY", "opening_15m_low_status": "ALPACA_IEX_ONLY",
-    "bid_ask_spread_status": "ALPACA_IEX_ONLY", "lag_minutes": 2.11, "fresh_within_lag": true,
-    "live_fresh_within_lag": true}`
-  - risk_reasons: `spread_too_wide, spread_too_wide_or_missing`
-  - buy_precheck_met: `fresh_data, price_above_vwap, price_above_opening_15m_high,
-    not_below_opening_15m_low, execution_level_is_manual_confirm, no_auto_trade`
-  - buy_precheck_unmet: `spread_available_and_acceptable`
-  - relative_vs_QQQ: vwap_delta=1.3169pct; above_vwap=True/True;
-    open15=above_opening_15m_high/inside_opening_15m_range
-  - relative_vs_SMH: vwap_delta=1.1908pct; above_vwap=True/True;
-    open15=above_opening_15m_high/inside_opening_15m_range
-  - relative_vs_SOXX: vwap_delta=1.181pct; above_vwap=True/True;
-    open15=above_opening_15m_high/inside_opening_15m_range
-- `AVGO` Broadcom | raw_score=56.6 | price=391.1 | VWAP=390.7659 | open15=394.81/387.98 |
-  spread=2.066% | level=L3_MANUAL_CONFIRM_REQUIRED | allowed=no
-  - data_quality: `{"price_status": "ALPACA_IEX_ONLY", "vwap_status": "ALPACA_IEX_ONLY",
-    "opening_15m_high_status": "ALPACA_IEX_ONLY", "opening_15m_low_status": "ALPACA_IEX_ONLY",
-    "bid_ask_spread_status": "ALPACA_IEX_ONLY", "lag_minutes": 2.11, "fresh_within_lag": true,
-    "live_fresh_within_lag": true}`
-  - risk_reasons: `not_above_opening_15m_high, spread_too_wide, spread_too_wide_or_missing`
+  - risk_reasons: `not_above_opening_15m_high`
   - buy_precheck_met: `fresh_data, price_above_vwap, not_below_opening_15m_low,
-    execution_level_is_manual_confirm, no_auto_trade`
-  - buy_precheck_unmet: `price_above_opening_15m_high, spread_available_and_acceptable`
-  - relative_vs_QQQ: vwap_delta=-0.2929pct; above_vwap=True/True;
+    spread_available_and_acceptable, no_auto_trade`
+  - buy_precheck_unmet: `price_above_opening_15m_high, execution_level_is_manual_confirm`
+  - relative_vs_QQQ: vwap_delta=-0.0288pct; above_vwap=True/True;
     open15=inside_opening_15m_range/inside_opening_15m_range
-  - relative_vs_SMH: vwap_delta=-0.4189pct; above_vwap=True/True;
+  - relative_vs_SMH: vwap_delta=0.1751pct; above_vwap=True/False;
     open15=inside_opening_15m_range/inside_opening_15m_range
-  - relative_vs_SOXX: vwap_delta=-0.4288pct; above_vwap=True/True;
+  - relative_vs_SOXX: vwap_delta=0.2675pct; above_vwap=True/False;
     open15=inside_opening_15m_range/inside_opening_15m_range
-- `TT` Trane Technologies | raw_score=53.3 | price=478.485 | VWAP=479.8442 |
-  open15=479.64/473.03 | spread=4.648% | level=L3_MANUAL_CONFIRM_REQUIRED | allowed=no
+- `NVDA` NVIDIA | raw_score=57.2 | price=204.6 | VWAP=205.377 | open15=208.25/203.84 |
+  spread=0.3617% | level=L3_MANUAL_CONFIRM_REQUIRED | allowed=no
   - data_quality: `{"price_status": "ALPACA_IEX_ONLY", "vwap_status": "ALPACA_IEX_ONLY",
     "opening_15m_high_status": "ALPACA_IEX_ONLY", "opening_15m_low_status": "ALPACA_IEX_ONLY",
-    "bid_ask_spread_status": "ALPACA_IEX_ONLY", "lag_minutes": 4.11, "fresh_within_lag": true,
+    "bid_ask_spread_status": "ALPACA_IEX_ONLY", "lag_minutes": 2.02, "fresh_within_lag": true,
     "live_fresh_within_lag": true}`
   - risk_reasons: `below_vwap, not_above_opening_15m_high, spread_too_wide`
   - buy_precheck_met: `fresh_data, not_below_opening_15m_low, execution_level_is_manual_confirm,
     no_auto_trade`
   - buy_precheck_unmet: `price_above_vwap, price_above_opening_15m_high,
     spread_available_and_acceptable`
-  - relative_vs_QQQ: vwap_delta=-0.6616pct; above_vwap=False/True;
+  - relative_vs_QQQ: vwap_delta=-0.4514pct; above_vwap=False/True;
     open15=inside_opening_15m_range/inside_opening_15m_range
-  - relative_vs_SMH: vwap_delta=-0.7877pct; above_vwap=False/True;
+  - relative_vs_SMH: vwap_delta=-0.2475pct; above_vwap=False/False;
     open15=inside_opening_15m_range/inside_opening_15m_range
-  - relative_vs_SOXX: vwap_delta=-0.7976pct; above_vwap=False/True;
+  - relative_vs_SOXX: vwap_delta=-0.155pct; above_vwap=False/False;
     open15=inside_opening_15m_range/inside_opening_15m_range
-- `ASML` ASML Holding | raw_score=52.5 | price=1759.72 | VWAP=1752.2055 |
-  open15=1774.255/1738.94 | spread=0.703% | level=L3_MANUAL_CONFIRM_REQUIRED | allowed=no
+- `MU` Micron | raw_score=54.9 | price=979.98 | VWAP=980.8301 | open15=994.7/967.665 |
+  spread=0.5388% | level=L3_MANUAL_CONFIRM_REQUIRED | allowed=no
   - data_quality: `{"price_status": "ALPACA_IEX_ONLY", "vwap_status": "ALPACA_IEX_ONLY",
     "opening_15m_high_status": "ALPACA_IEX_ONLY", "opening_15m_low_status": "ALPACA_IEX_ONLY",
-    "bid_ask_spread_status": "ALPACA_IEX_ONLY", "lag_minutes": 3.11, "fresh_within_lag": true,
+    "bid_ask_spread_status": "ALPACA_IEX_ONLY", "lag_minutes": 2.02, "fresh_within_lag": true,
     "live_fresh_within_lag": true}`
-  - risk_reasons: `not_above_opening_15m_high, spread_too_wide, spread_too_wide_or_missing`
-  - buy_precheck_met: `fresh_data, price_above_vwap, not_below_opening_15m_low,
-    execution_level_is_manual_confirm, no_auto_trade`
-  - buy_precheck_unmet: `price_above_opening_15m_high, spread_available_and_acceptable`
-  - relative_vs_QQQ: vwap_delta=0.0505pct; above_vwap=True/True;
+  - risk_reasons: `below_vwap, not_above_opening_15m_high, spread_too_wide`
+  - buy_precheck_met: `fresh_data, not_below_opening_15m_low, execution_level_is_manual_confirm,
+    no_auto_trade`
+  - buy_precheck_unmet: `price_above_vwap, price_above_opening_15m_high,
+    spread_available_and_acceptable`
+  - relative_vs_QQQ: vwap_delta=-0.1598pct; above_vwap=False/True;
     open15=inside_opening_15m_range/inside_opening_15m_range
-  - relative_vs_SMH: vwap_delta=-0.0756pct; above_vwap=True/True;
+  - relative_vs_SMH: vwap_delta=0.0442pct; above_vwap=False/False;
     open15=inside_opening_15m_range/inside_opening_15m_range
-  - relative_vs_SOXX: vwap_delta=-0.0854pct; above_vwap=True/True;
+  - relative_vs_SOXX: vwap_delta=0.1366pct; above_vwap=False/False;
     open15=inside_opening_15m_range/inside_opening_15m_range
-- `JCI` Johnson Controls | raw_score=52.3 | price=143.95 | VWAP=143.3772 | open15=143.43/140.87
-  | spread=% | level=L3_MANUAL_CONFIRM_REQUIRED | allowed=no
+- `CIEN` Ciena | raw_score=54.8 | price=464.5 | VWAP=460.7055 | open15=463.28/458.1 | spread=% |
+  level=L3_MANUAL_CONFIRM_REQUIRED | allowed=no
   - data_quality: `{"price_status": "ALPACA_IEX_ONLY", "vwap_status": "ALPACA_IEX_ONLY",
     "opening_15m_high_status": "ALPACA_IEX_ONLY", "opening_15m_low_status": "ALPACA_IEX_ONLY",
-    "bid_ask_spread_status": "UNAVAILABLE", "lag_minutes": 3.11, "fresh_within_lag": true,
+    "bid_ask_spread_status": "UNAVAILABLE", "lag_minutes": 2.02, "fresh_within_lag": true,
     "live_fresh_within_lag": true}`
   - risk_reasons: `spread_too_wide_or_missing, spread_unavailable`
   - buy_precheck_met: `fresh_data, price_above_vwap, price_above_opening_15m_high,
     not_below_opening_15m_low, execution_level_is_manual_confirm, no_auto_trade`
   - buy_precheck_unmet: `spread_available_and_acceptable`
-  - relative_vs_QQQ: vwap_delta=0.0211pct; above_vwap=True/True;
+  - relative_vs_QQQ: vwap_delta=0.7505pct; above_vwap=True/True;
     open15=above_opening_15m_high/inside_opening_15m_range
-  - relative_vs_SMH: vwap_delta=-0.1049pct; above_vwap=True/True;
+  - relative_vs_SMH: vwap_delta=0.9545pct; above_vwap=True/False;
     open15=above_opening_15m_high/inside_opening_15m_range
-  - relative_vs_SOXX: vwap_delta=-0.1148pct; above_vwap=True/True;
+  - relative_vs_SOXX: vwap_delta=1.0469pct; above_vwap=True/False;
     open15=above_opening_15m_high/inside_opening_15m_range
-- `KLAC` KLA | raw_score=51.8 | price=224.66 | VWAP=222.764 | open15=225.15/219.8 |
-  spread=1.1573% | level=L3_MANUAL_CONFIRM_REQUIRED | allowed=no
+- `AVGO` Broadcom | raw_score=53.7 | price=389.83 | VWAP=388.3782 | open15=394.65/384.665 |
+  spread=2.2907% | level=L3_MANUAL_CONFIRM_REQUIRED | allowed=no
   - data_quality: `{"price_status": "ALPACA_IEX_ONLY", "vwap_status": "ALPACA_IEX_ONLY",
     "opening_15m_high_status": "ALPACA_IEX_ONLY", "opening_15m_low_status": "ALPACA_IEX_ONLY",
-    "bid_ask_spread_status": "ALPACA_IEX_ONLY", "lag_minutes": 2.11, "fresh_within_lag": true,
+    "bid_ask_spread_status": "ALPACA_IEX_ONLY", "lag_minutes": 2.02, "fresh_within_lag": true,
     "live_fresh_within_lag": true}`
   - risk_reasons: `not_above_opening_15m_high, spread_too_wide, spread_too_wide_or_missing`
   - buy_precheck_met: `fresh_data, price_above_vwap, not_below_opening_15m_low,
     execution_level_is_manual_confirm, no_auto_trade`
   - buy_precheck_unmet: `price_above_opening_15m_high, spread_available_and_acceptable`
-  - relative_vs_QQQ: vwap_delta=0.4728pct; above_vwap=True/True;
+  - relative_vs_QQQ: vwap_delta=0.3007pct; above_vwap=True/True;
     open15=inside_opening_15m_range/inside_opening_15m_range
-  - relative_vs_SMH: vwap_delta=0.3467pct; above_vwap=True/True;
+  - relative_vs_SMH: vwap_delta=0.5047pct; above_vwap=True/False;
     open15=inside_opening_15m_range/inside_opening_15m_range
-  - relative_vs_SOXX: vwap_delta=0.3368pct; above_vwap=True/True;
+  - relative_vs_SOXX: vwap_delta=0.5971pct; above_vwap=True/False;
     open15=inside_opening_15m_range/inside_opening_15m_range
-- `PWR` Quanta Services | raw_score=50.6 | price=647.12 | VWAP=646.9455 | open15=652.475/643.23
-  | spread=% | level=L3_MANUAL_CONFIRM_REQUIRED | allowed=no
+- `ANET` Arista Networks | raw_score=53.7 | price=183.315 | VWAP=181.7201 | open15=185.24/175.76
+  | spread=4.5932% | level=L3_MANUAL_CONFIRM_REQUIRED | allowed=no
   - data_quality: `{"price_status": "ALPACA_IEX_ONLY", "vwap_status": "ALPACA_IEX_ONLY",
     "opening_15m_high_status": "ALPACA_IEX_ONLY", "opening_15m_low_status": "ALPACA_IEX_ONLY",
-    "bid_ask_spread_status": "UNAVAILABLE", "lag_minutes": 2.11, "fresh_within_lag": true,
+    "bid_ask_spread_status": "ALPACA_IEX_ONLY", "lag_minutes": 2.02, "fresh_within_lag": true,
     "live_fresh_within_lag": true}`
-  - risk_reasons: `not_above_opening_15m_high, spread_too_wide_or_missing, spread_unavailable`
+  - risk_reasons: `not_above_opening_15m_high, spread_too_wide, spread_too_wide_or_missing`
   - buy_precheck_met: `fresh_data, price_above_vwap, not_below_opening_15m_low,
     execution_level_is_manual_confirm, no_auto_trade`
   - buy_precheck_unmet: `price_above_opening_15m_high, spread_available_and_acceptable`
-  - relative_vs_QQQ: vwap_delta=-0.3514pct; above_vwap=True/True;
+  - relative_vs_QQQ: vwap_delta=0.8046pct; above_vwap=True/True;
     open15=inside_opening_15m_range/inside_opening_15m_range
-  - relative_vs_SMH: vwap_delta=-0.4774pct; above_vwap=True/True;
+  - relative_vs_SMH: vwap_delta=1.0085pct; above_vwap=True/False;
     open15=inside_opening_15m_range/inside_opening_15m_range
-  - relative_vs_SOXX: vwap_delta=-0.4873pct; above_vwap=True/True;
+  - relative_vs_SOXX: vwap_delta=1.1009pct; above_vwap=True/False;
     open15=inside_opening_15m_range/inside_opening_15m_range
-- `GEV` GE Vernova | raw_score=50.6 | price=1060 | VWAP=1065.7028 | open15=1087.78/1054.39 |
-  spread=4.9708% | level=L3_MANUAL_CONFIRM_REQUIRED | allowed=no
+- `ASML` ASML Holding | raw_score=52.4 | price=1783.66 | VWAP=1781.1285 |
+  open15=1792.835/1768.71 | spread=0.7075% | level=L3_MANUAL_CONFIRM_REQUIRED | allowed=no
   - data_quality: `{"price_status": "ALPACA_IEX_ONLY", "vwap_status": "ALPACA_IEX_ONLY",
     "opening_15m_high_status": "ALPACA_IEX_ONLY", "opening_15m_low_status": "ALPACA_IEX_ONLY",
-    "bid_ask_spread_status": "ALPACA_IEX_ONLY", "lag_minutes": 2.11, "fresh_within_lag": true,
+    "bid_ask_spread_status": "ALPACA_IEX_ONLY", "lag_minutes": 2.02, "fresh_within_lag": true,
     "live_fresh_within_lag": true}`
-  - risk_reasons: `below_vwap, not_above_opening_15m_high, spread_too_wide`
+  - risk_reasons: `not_above_opening_15m_high, spread_too_wide, spread_too_wide_or_missing`
+  - buy_precheck_met: `fresh_data, price_above_vwap, not_below_opening_15m_low,
+    execution_level_is_manual_confirm, no_auto_trade`
+  - buy_precheck_unmet: `price_above_opening_15m_high, spread_available_and_acceptable`
+  - relative_vs_QQQ: vwap_delta=0.069pct; above_vwap=True/True;
+    open15=inside_opening_15m_range/inside_opening_15m_range
+  - relative_vs_SMH: vwap_delta=0.273pct; above_vwap=True/False;
+    open15=inside_opening_15m_range/inside_opening_15m_range
+  - relative_vs_SOXX: vwap_delta=0.3654pct; above_vwap=True/False;
+    open15=inside_opening_15m_range/inside_opening_15m_range
+- `AMAT` Applied Materials | raw_score=51 | price=598 | VWAP=600.3309 | open15=613.945/594.87 |
+  spread=0.214% | level=L3_MANUAL_CONFIRM_REQUIRED | allowed=no
+  - data_quality: `{"price_status": "ALPACA_IEX_ONLY", "vwap_status": "ALPACA_IEX_ONLY",
+    "opening_15m_high_status": "ALPACA_IEX_ONLY", "opening_15m_low_status": "ALPACA_IEX_ONLY",
+    "bid_ask_spread_status": "ALPACA_IEX_ONLY", "lag_minutes": 2.02, "fresh_within_lag": true,
+    "live_fresh_within_lag": true}`
+  - risk_reasons: `below_vwap, not_above_opening_15m_high`
+  - buy_precheck_met: `fresh_data, not_below_opening_15m_low, spread_available_and_acceptable,
+    execution_level_is_manual_confirm, no_auto_trade`
+  - buy_precheck_unmet: `price_above_vwap, price_above_opening_15m_high`
+  - relative_vs_QQQ: vwap_delta=-0.4614pct; above_vwap=False/True;
+    open15=inside_opening_15m_range/inside_opening_15m_range
+  - relative_vs_SMH: vwap_delta=-0.2574pct; above_vwap=False/False;
+    open15=inside_opening_15m_range/inside_opening_15m_range
+  - relative_vs_SOXX: vwap_delta=-0.165pct; above_vwap=False/False;
+    open15=inside_opening_15m_range/inside_opening_15m_range
+- `TT` Trane Technologies | raw_score=50.3 | price=486.5 | VWAP=488.0668 | open15=490.755/486.16
+  | spread=% | level=L3_MANUAL_CONFIRM_REQUIRED | allowed=no
+  - data_quality: `{"price_status": "ALPACA_IEX_ONLY", "vwap_status": "ALPACA_IEX_ONLY",
+    "opening_15m_high_status": "ALPACA_IEX_ONLY", "opening_15m_low_status": "ALPACA_IEX_ONLY",
+    "bid_ask_spread_status": "UNAVAILABLE", "lag_minutes": 3.02, "fresh_within_lag": true,
+    "live_fresh_within_lag": true}`
+  - risk_reasons: `below_vwap, not_above_opening_15m_high, spread_unavailable`
   - buy_precheck_met: `fresh_data, not_below_opening_15m_low, execution_level_is_manual_confirm,
     no_auto_trade`
   - buy_precheck_unmet: `price_above_vwap, price_above_opening_15m_high,
     spread_available_and_acceptable`
-  - relative_vs_QQQ: vwap_delta=-0.9135pct; above_vwap=False/True;
+  - relative_vs_QQQ: vwap_delta=-0.3941pct; above_vwap=False/True;
     open15=inside_opening_15m_range/inside_opening_15m_range
-  - relative_vs_SMH: vwap_delta=-1.0395pct; above_vwap=False/True;
+  - relative_vs_SMH: vwap_delta=-0.1901pct; above_vwap=False/False;
     open15=inside_opening_15m_range/inside_opening_15m_range
-  - relative_vs_SOXX: vwap_delta=-1.0494pct; above_vwap=False/True;
+  - relative_vs_SOXX: vwap_delta=-0.0977pct; above_vwap=False/False;
     open15=inside_opening_15m_range/inside_opening_15m_range
-- `SKHY` SK hynix ADR | raw_score=42.3 | price=158.09 | VWAP=156.5278 | open15=156.7/152.425 |
-  spread=1.9103% | level=L1_WATCH | allowed=no
+- `SKHY` SK hynix ADR | raw_score=39.1 | price=169.67 | VWAP=168.7553 | open15=170.74/166.91 |
+  spread=1.1788% | level=L1_WATCH | allowed=no
   - data_quality: `{"price_status": "ALPACA_IEX_ONLY", "vwap_status": "ALPACA_IEX_ONLY",
     "opening_15m_high_status": "ALPACA_IEX_ONLY", "opening_15m_low_status": "ALPACA_IEX_ONLY",
-    "bid_ask_spread_status": "ALPACA_IEX_ONLY", "lag_minutes": 2.11, "fresh_within_lag": true,
+    "bid_ask_spread_status": "ALPACA_IEX_ONLY", "lag_minutes": 2.02, "fresh_within_lag": true,
     "live_fresh_within_lag": true}`
-  - risk_reasons: `spread_too_wide, spread_too_wide_or_missing`
-  - buy_precheck_met: `fresh_data, price_above_vwap, price_above_opening_15m_high,
-    not_below_opening_15m_low, no_auto_trade`
-  - buy_precheck_unmet: `spread_available_and_acceptable, execution_level_is_manual_confirm`
-  - relative_vs_QQQ: vwap_delta=0.6197pct; above_vwap=True/True;
-    open15=above_opening_15m_high/inside_opening_15m_range
-  - relative_vs_SMH: vwap_delta=0.4936pct; above_vwap=True/True;
-    open15=above_opening_15m_high/inside_opening_15m_range
-  - relative_vs_SOXX: vwap_delta=0.4838pct; above_vwap=True/True;
-    open15=above_opening_15m_high/inside_opening_15m_range
+  - risk_reasons: `not_above_opening_15m_high, spread_too_wide, spread_too_wide_or_missing`
+  - buy_precheck_met: `fresh_data, price_above_vwap, not_below_opening_15m_low, no_auto_trade`
+  - buy_precheck_unmet: `price_above_opening_15m_high, spread_available_and_acceptable,
+    execution_level_is_manual_confirm`
+  - relative_vs_QQQ: vwap_delta=0.4689pct; above_vwap=True/True;
+    open15=inside_opening_15m_range/inside_opening_15m_range
+  - relative_vs_SMH: vwap_delta=0.6729pct; above_vwap=True/False;
+    open15=inside_opening_15m_range/inside_opening_15m_range
+  - relative_vs_SOXX: vwap_delta=0.7653pct; above_vwap=True/False;
+    open15=inside_opening_15m_range/inside_opening_15m_range

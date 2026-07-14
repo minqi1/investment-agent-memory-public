@@ -1,7 +1,7 @@
 # Market Overview
 
-Generated: 2026-07-14T20:48:44
-Stage: premarket | Report date: 2026-07-14
+Generated: 2026-07-14T21:50:02
+Stage: intraday | Report date: 2026-07-14
 
 ## Market Regime
 
@@ -10,166 +10,119 @@ Stage: premarket | Report date: 2026-07-14
 - Snapshot stage: premarket
 - Snapshot generated at: 2026-07-14T20:48:42
 - Execution boundary: L3_MANUAL_CONFIRM_REQUIRED
-- Monitor fresh/stale: 50/6
+- Monitor fresh/stale: 55/1
 
 ## Index
 
 - `QQQ` Nasdaq 100 ETF
-  - close: 711.739990234375
-  - price: 720.71
-  - premarket_price: 720.71
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: 1.26
-  - premarket_volume: 747.0
-  - VWAP: 716.0099854233631
+  - price: 719.25
+  - VWAP: 718.7245847806264
+  - above_vwap: True
+  - caution: watch_only
 - `SPY` S&P 500 ETF
-  - close: 749.1699829101562
-  - price: 751.91
-  - premarket_price: 751.91
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: 0.37
-  - premarket_volume: 2400.0
-  - VWAP: 749.3250940331619
+  - price: 750.89
+  - VWAP: 750.5577834210677
+  - above_vwap: True
+  - caution: watch_only
 - `SOXX` iShares Semiconductor ETF
-  - close: 553.6099853515625
-  - price: 571.41
-  - premarket_price: 571.41
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: 3.22
-  - premarket_volume: 100.0
-  - VWAP: 570.9289983599941
+  - price: 571.74
+  - VWAP: 573.0194142618195
+  - above_vwap: False
+  - caution: below_vwap
 - `SMH` VanEck Semiconductor ETF
-  - close: 585.6199951171875
-  - price: 607.12
-  - premarket_price: 607.12
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: 3.67
-  - premarket_volume: 0.0
-  - VWAP: 598.7961840343023
+  - price: 599.97
+  - VWAP: 600.756182397559
+  - above_vwap: False
+  - caution: below_vwap
 - `IWM` Russell 2000 ETF
-  - close: 293.4800109863281
-  - price: 298.04
-  - premarket_price: 298.04
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: 1.55
-  - premarket_volume: 600.0
+  - price: 295.195
+  - VWAP: 295.46531693674416
+  - above_vwap: False
+  - caution: below_vwap
 
 ## Leaders
 
 - `SPY` S&P 500 ETF
   - chain: market_regime
-  - close: 749.1699829101562
   - price: 753.29
-  - premarket_price: 751.91
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: 0.37
-  - premarket_volume: 2400.0
   - VWAP: 749.33
   - score: 49.91
   - level: L1
   - caution: watch_only
 - `AVGO` Broadcom
   - chain: custom_silicon_networking
-  - close: 384.04998779296875
   - price: 395.05
-  - premarket_price: 394.09
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: 2.61
-  - premarket_volume: 0.0
   - VWAP: 393.44
   - score: 26.17
   - level: L3_MANUAL
   - caution: spread_missing
 - `QQQ` Nasdaq 100 ETF
   - chain: market_regime
-  - close: 711.739990234375
   - price: 722.24
-  - premarket_price: 720.71
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: 1.26
-  - premarket_volume: 747.0
   - VWAP: 716.01
   - score: 24.53
   - level: L1
   - caution: watch_only
 - `NVDA` NVIDIA
   - chain: ai_accelerator
-  - close: 203.52999877929688
   - price: 207.38
-  - premarket_price: 207.35
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: 1.88
-  - premarket_volume: 278.0
   - VWAP: 204.43
   - score: 1.74
   - level: L3_MANUAL
   - caution: spread_missing
 - `CIEN` Ciena
   - chain: ai_networking_optical
-  - close: 445.44000244140625
-  - premarket_change_status: UNAVAILABLE
+  - price: 464.5
+  - VWAP: 460.7054930661498
   - score: -5.34
   - level: L3_MANUAL
   - caution: below_vwap
 - `META` Meta Platforms
   - chain: cloud_ai_capex
-  - close: 656.72998046875
   - price: 652.23
-  - premarket_price: 648.6552
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: -1.23
-  - premarket_volume: 0.0
   - VWAP: 642.71
   - score: -5.64
   - level: L1
   - caution: spread_missing
 - `ANET` Arista Networks
   - chain: ai_networking_optical
-  - close: 181.14999389648438
-  - premarket_change_status: UNAVAILABLE
+  - price: 183.315
+  - VWAP: 181.72009189967272
   - score: -5.83
   - level: L3_MANUAL
   - caution: below_vwap
 - `ASML` ASML Holding
   - chain: semiconductor_equipment
-  - close: 1726.0400390625
   - price: 1789.11
-  - premarket_price: 1776.8
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: 2.94
-  - premarket_volume: 140.0
+  - VWAP: 1781.1284742445926
   - score: -6.42
   - level: L3_MANUAL
   - caution: below_vwap
 - `AMAT` Applied Materials
   - chain: semiconductor_equipment
-  - close: 575.3900146484375
-  - premarket_change_status: UNAVAILABLE
+  - price: 598.0
+  - VWAP: 600.3309010846755
   - score: -7.05
   - level: L3_MANUAL
   - caution: below_vwap
 - `TT` Trane Technologies
   - chain: data_center_power_cooling
-  - close: 479.8999938964844
-  - premarket_change_status: UNAVAILABLE
+  - price: 486.5
+  - VWAP: 488.06676890729784
   - score: -7.37
   - level: L3_MANUAL
   - caution: below_vwap
 - `ONTO` Onto Innovation
   - chain: semiconductor_test_packaging
-  - close: 304.2099914550781
-  - premarket_change_status: UNAVAILABLE
+  - price: 324.32
+  - VWAP: 325.3544924729196
   - score: -7.45
   - level: L3_MANUAL
   - caution: below_vwap
 - `VRT` Vertiv
   - chain: data_center_power_cooling
-  - close: 305.8699951171875
-  - price: 316.5
-  - premarket_price: 316.5
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: 3.48
-  - premarket_volume: 1232.0
+  - price: 308.0
+  - VWAP: 310.88727624132883
   - score: -7.86
   - level: L3_MANUAL
   - caution: below_vwap
@@ -177,79 +130,50 @@ Stage: premarket | Report date: 2026-07-14
 ## Technical State
 
 - `SPY`
-  - close: 749.1699829101562
   - price: 753.29
-  - premarket_price: 751.91
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: 0.37
-  - premarket_volume: 2400.0
   - VWAP: 749.33
   - above_vwap: True
   - caution: watch_only
   - execution: L1
 - `AVGO`
-  - close: 384.04998779296875
   - price: 395.05
-  - premarket_price: 394.09
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: 2.61
-  - premarket_volume: 0.0
   - VWAP: 393.44
   - above_vwap: True
   - caution: spread_missing
   - execution: L3_MANUAL
 - `QQQ`
-  - close: 711.739990234375
   - price: 722.24
-  - premarket_price: 720.71
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: 1.26
-  - premarket_volume: 747.0
   - VWAP: 716.01
   - above_vwap: True
   - caution: watch_only
   - execution: L1
 - `NVDA`
-  - close: 203.52999877929688
   - price: 207.38
-  - premarket_price: 207.35
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: 1.88
-  - premarket_volume: 278.0
   - VWAP: 204.43
   - above_vwap: True
   - caution: spread_missing
   - execution: L3_MANUAL
 - `CIEN`
-  - close: 445.44000244140625
-  - premarket_change_status: UNAVAILABLE
+  - price: 464.5
+  - VWAP: 460.7054930661498
   - above_vwap: False
   - caution: below_vwap
   - execution: L3_MANUAL
 - `META`
-  - close: 656.72998046875
   - price: 652.23
-  - premarket_price: 648.6552
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: -1.23
-  - premarket_volume: 0.0
   - VWAP: 642.71
   - above_vwap: True
   - caution: spread_missing
   - execution: L1
 - `ANET`
-  - close: 181.14999389648438
-  - premarket_change_status: UNAVAILABLE
+  - price: 183.315
+  - VWAP: 181.72009189967272
   - above_vwap: False
   - caution: below_vwap
   - execution: L3_MANUAL
 - `ASML`
-  - close: 1726.0400390625
   - price: 1789.11
-  - premarket_price: 1776.8
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: 2.94
-  - premarket_volume: 140.0
+  - VWAP: 1781.1284742445926
   - above_vwap: False
   - caution: below_vwap
   - execution: L3_MANUAL
@@ -299,7 +223,7 @@ Stage: premarket | Report date: 2026-07-14
 
 ## Risk Factors
 
-- low: data_freshness - fresh=50, stale=6, stale_ratio=10.71%
+- low: data_freshness - fresh=55, stale=1, stale_ratio=1.79%
 - medium: execution_boundary - Automated output is capped at L3_MANUAL_CONFIRM_REQUIRED unless
   broker realtime
   data is verified.
