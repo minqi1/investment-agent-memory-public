@@ -4,7 +4,7 @@ Use this file as the stable handoff prompt between Codex and ChatGPT.
 
 ## Current Context
 
-- Generated: 2026-07-14T21:50:02
+- Generated: 2026-07-14T22:28:16
 - Stage: `intraday`
 - Report date: `2026-07-14`
 - Market regime from Codex: `weak_breadth_or_pullback`
@@ -13,10 +13,10 @@ Use this file as the stable handoff prompt between Codex and ChatGPT.
 - Latest GPT premarket overlay date: `2026-07-13`
 - Latest GPT postmarket overlay date: `None`
 - GPT overlay gap days: `None`
-- Latest intraday context generated: `2026-07-14T21:50:02+08:00`
-- Latest intraday US/Eastern time: `2026-07-14T09:50:02-04:00`
+- Latest intraday context generated: `2026-07-14T22:28:16+08:00`
+- Latest intraday US/Eastern time: `2026-07-14T10:28:16-04:00`
 - Latest intraday session open: `True`
-- Latest intraday candidate count: `0`
+- Latest intraday candidate count: `2`
 
 ## Files To Read
 
@@ -211,7 +211,7 @@ Then output one machine-readable JSON block:
 - Leaders available: 20
 - Watchlist rows available: 20
 - Risk flags available: 6
-- Signals available: 15
+- Signals available: 12
 
 Top leaders from Codex:
 - `SPY` S&P 500 ETF | chain=market_regime | score=49.91 | exec=L1 | flag=watch_only

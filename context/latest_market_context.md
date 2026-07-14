@@ -1,6 +1,6 @@
 # Market Overview
 
-Generated: 2026-07-14T21:50:02
+Generated: 2026-07-14T22:28:16
 Stage: intraday | Report date: 2026-07-14
 
 ## Market Regime
@@ -15,30 +15,30 @@ Stage: intraday | Report date: 2026-07-14
 ## Index
 
 - `QQQ` Nasdaq 100 ETF
-  - price: 719.25
-  - VWAP: 718.7245847806264
-  - above_vwap: True
-  - caution: watch_only
+  - price: 717.84
+  - VWAP: 718.0690291382999
+  - above_vwap: False
+  - caution: below_vwap
 - `SPY` S&P 500 ETF
-  - price: 750.89
-  - VWAP: 750.5577834210677
+  - price: 750.74
+  - VWAP: 750.4549613240275
   - above_vwap: True
   - caution: watch_only
 - `SOXX` iShares Semiconductor ETF
-  - price: 571.74
-  - VWAP: 573.0194142618195
+  - price: 565.84
+  - VWAP: 570.7781337551163
   - above_vwap: False
-  - caution: below_vwap
+  - caution: below_opening_15m_low
 - `SMH` VanEck Semiconductor ETF
-  - price: 599.97
-  - VWAP: 600.756182397559
+  - price: 596.06
+  - VWAP: 597.6211615628038
   - above_vwap: False
-  - caution: below_vwap
+  - caution: below_opening_15m_low
 - `IWM` Russell 2000 ETF
-  - price: 295.195
-  - VWAP: 295.46531693674416
+  - price: 294.59
+  - VWAP: 295.0203766953385
   - above_vwap: False
-  - caution: below_vwap
+  - caution: below_opening_15m_low
 
 ## Leaders
 
@@ -72,8 +72,8 @@ Stage: intraday | Report date: 2026-07-14
   - caution: spread_missing
 - `CIEN` Ciena
   - chain: ai_networking_optical
-  - price: 464.5
-  - VWAP: 460.7054930661498
+  - price: 461.735
+  - VWAP: 461.6282367511694
   - score: -5.34
   - level: L3_MANUAL
   - caution: below_vwap
@@ -86,43 +86,43 @@ Stage: intraday | Report date: 2026-07-14
   - caution: spread_missing
 - `ANET` Arista Networks
   - chain: ai_networking_optical
-  - price: 183.315
-  - VWAP: 181.72009189967272
+  - price: 184.06
+  - VWAP: 182.4452883251055
   - score: -5.83
   - level: L3_MANUAL
   - caution: below_vwap
 - `ASML` ASML Holding
   - chain: semiconductor_equipment
   - price: 1789.11
-  - VWAP: 1781.1284742445926
+  - VWAP: 1776.1178141486698
   - score: -6.42
   - level: L3_MANUAL
   - caution: below_vwap
 - `AMAT` Applied Materials
   - chain: semiconductor_equipment
-  - price: 598.0
-  - VWAP: 600.3309010846755
+  - price: 593.02
+  - VWAP: 595.786644274292
   - score: -7.05
   - level: L3_MANUAL
   - caution: below_vwap
 - `TT` Trane Technologies
   - chain: data_center_power_cooling
-  - price: 486.5
-  - VWAP: 488.06676890729784
+  - price: 483.34
+  - VWAP: 485.78133922049096
   - score: -7.37
   - level: L3_MANUAL
   - caution: below_vwap
 - `ONTO` Onto Innovation
   - chain: semiconductor_test_packaging
-  - price: 324.32
-  - VWAP: 325.3544924729196
+  - price: 319.145
+  - VWAP: 324.3233625030119
   - score: -7.45
   - level: L3_MANUAL
   - caution: below_vwap
 - `VRT` Vertiv
   - chain: data_center_power_cooling
-  - price: 308.0
-  - VWAP: 310.88727624132883
+  - price: 305.74
+  - VWAP: 305.65112712719343
   - score: -7.86
   - level: L3_MANUAL
   - caution: below_vwap
@@ -154,8 +154,8 @@ Stage: intraday | Report date: 2026-07-14
   - caution: spread_missing
   - execution: L3_MANUAL
 - `CIEN`
-  - price: 464.5
-  - VWAP: 460.7054930661498
+  - price: 461.735
+  - VWAP: 461.6282367511694
   - above_vwap: False
   - caution: below_vwap
   - execution: L3_MANUAL
@@ -166,14 +166,14 @@ Stage: intraday | Report date: 2026-07-14
   - caution: spread_missing
   - execution: L1
 - `ANET`
-  - price: 183.315
-  - VWAP: 181.72009189967272
+  - price: 184.06
+  - VWAP: 182.4452883251055
   - above_vwap: False
   - caution: below_vwap
   - execution: L3_MANUAL
 - `ASML`
   - price: 1789.11
-  - VWAP: 1781.1284742445926
+  - VWAP: 1776.1178141486698
   - above_vwap: False
   - caution: below_vwap
   - execution: L3_MANUAL
