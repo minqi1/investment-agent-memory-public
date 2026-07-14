@@ -1,165 +1,131 @@
 # Market Overview
 
-Generated: 2026-07-13T23:06:07
-Stage: intraday | Report date: 2026-07-13
+Generated: 2026-07-14T09:02:01
+Stage: eod | Report date: 2026-07-14
 
 ## Market Regime
 
-当前市场状态：`tech_led_risk_on`
+当前市场状态：`weak_breadth_or_pullback`
 
-- Snapshot stage: premarket
-- Snapshot generated at: 2026-07-13T20:48:52
+- Snapshot stage: postmarket_review
+- Snapshot generated at: 2026-07-14T09:01:56
 - Execution boundary: L3_MANUAL_CONFIRM_REQUIRED
-- Monitor fresh/stale: 55/1
+- Monitor fresh/stale: 56/0
 
 ## Index
 
 - `QQQ` Nasdaq 100 ETF
-  - price: 718.15
-  - VWAP: 715.4429876194454
-  - above_vwap: True
-  - caution: watch_only
+  - above_vwap: False
+  - caution: closed_market_eod_proxy
 - `SPY` S&P 500 ETF
-  - price: 752.31
-  - VWAP: 752.597831513814
   - above_vwap: False
-  - caution: below_opening_15m_low
+  - caution: closed_market_eod_proxy
 - `SOXX` iShares Semiconductor ETF
-  - price: 562.85
-  - VWAP: 559.9701004387474
-  - above_vwap: True
-  - caution: watch_only
-- `SMH` VanEck Semiconductor ETF
-  - price: 596.42
-  - VWAP: 593.4266550649539
-  - above_vwap: True
-  - caution: watch_only
-- `IWM` Russell 2000 ETF
-  - price: 294.32
-  - VWAP: 294.68739892181975
   - above_vwap: False
-  - caution: below_opening_15m_low
+  - caution: closed_market_eod_proxy
+- `SMH` VanEck Semiconductor ETF
+  - above_vwap: False
+  - caution: closed_market_eod_proxy
+- `IWM` Russell 2000 ETF
+  - above_vwap: False
+  - caution: closed_market_eod_proxy
 
 ## Leaders
 
-- `ARM` Arm Holdings
-  - chain: ai_accelerator
-  - price: 313.52
-  - VWAP: 313.35
-  - score: 43.34
-  - level: L1
-  - caution: spread_missing
-- `AMZN` Amazon
-  - chain: cloud_ai_capex
-  - price: 244.65
-  - VWAP: 244.43
-  - score: 41.09
-  - level: L1
-  - caution: spread_missing
-- `STX` Seagate
+- `MU` Micron
   - chain: memory_hbm_storage
-  - price: 870.60
-  - VWAP: 868.31
-  - score: 37.08
-  - level: L1
-  - caution: spread_missing
-- `SMH` VanEck Semiconductor ETF
-  - chain: semiconductor_index
-  - price: 596.50
-  - VWAP: 592.98
-  - score: 24.73
-  - level: L1
-  - caution: spread_missing
-- `MSFT` Microsoft
-  - chain: cloud_ai_capex
-  - price: 387.33
-  - VWAP: 385.21
-  - score: 24.28
+  - score: 13.92
   - level: L3_MANUAL
-  - caution: spread_missing
+  - caution: closed_market_eod_proxy
 - `AVGO` Broadcom
   - chain: custom_silicon_networking
-  - price: 393.30
-  - VWAP: 388.07
-  - score: 1.47
+  - score: 13.47
   - level: L3_MANUAL
-  - caution: spread_missing
+  - caution: closed_market_eod_proxy
+- `ARM` Arm Holdings
+  - chain: ai_accelerator
+  - score: 13.34
+  - level: L1
+  - caution: closed_market_eod_proxy
+- `SOXX` iShares Semiconductor ETF
+  - chain: semiconductor_index
+  - score: 12.98
+  - level: L1
+  - caution: closed_market_eod_proxy
+- `QQQ` Nasdaq 100 ETF
+  - chain: market_regime
+  - score: 12.57
+  - level: L1
+  - caution: closed_market_eod_proxy
 - `TT` Trane Technologies
   - chain: data_center_power_cooling
-  - score: -6.02
+  - score: 11.98
   - level: L3_MANUAL
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
+- `ASML` ASML Holding
+  - chain: semiconductor_equipment
+  - score: 11.62
+  - level: L3_MANUAL
+  - caution: closed_market_eod_proxy
 - `JCI` Johnson Controls
   - chain: data_center_power_cooling
-  - score: -6.47
+  - score: 11.53
   - level: L3_MANUAL
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
 - `KLAC` KLA
   - chain: semiconductor_equipment
-  - score: -6.69
+  - score: 11.31
   - level: L3_MANUAL
-  - caution: below_vwap
-- `PWR` Quanta Services
-  - chain: data_center_power_cooling
-  - score: -7.23
-  - level: L3_MANUAL
-  - caution: below_vwap
-- `VRT` Vertiv
-  - chain: data_center_power_cooling
-  - score: -7.37
-  - level: L3_MANUAL
-  - caution: below_vwap
-- `AMAT` Applied Materials
-  - chain: semiconductor_equipment
-  - score: -7.41
-  - level: L3_MANUAL
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
+- `NVDA` NVIDIA
+  - chain: ai_accelerator
+  - score: 11.13
+  - level: L1
+  - caution: closed_market_eod_proxy
+- `AMZN` Amazon
+  - chain: cloud_ai_capex
+  - score: 11.09
+  - level: L1
+  - caution: closed_market_eod_proxy
+- `SPY` S&P 500 ETF
+  - chain: market_regime
+  - score: 10.86
+  - level: L1
+  - caution: closed_market_eod_proxy
 
 ## Technical State
 
-- `ARM`
-  - price: 313.52
-  - VWAP: 313.35
-  - above_vwap: True
-  - caution: spread_missing
-  - execution: L1
-- `AMZN`
-  - price: 244.65
-  - VWAP: 244.43
-  - above_vwap: True
-  - caution: spread_missing
-  - execution: L1
-- `STX`
-  - price: 870.60
-  - VWAP: 868.31
-  - above_vwap: True
-  - caution: spread_missing
-  - execution: L1
-- `SMH`
-  - price: 596.50
-  - VWAP: 592.98
-  - above_vwap: True
-  - caution: spread_missing
-  - execution: L1
-- `MSFT`
-  - price: 387.33
-  - VWAP: 385.21
-  - above_vwap: True
-  - caution: spread_missing
+- `MU`
+  - above_vwap: False
+  - caution: closed_market_eod_proxy
   - execution: L3_MANUAL
 - `AVGO`
-  - price: 393.30
-  - VWAP: 388.07
-  - above_vwap: True
-  - caution: spread_missing
+  - above_vwap: False
+  - caution: closed_market_eod_proxy
   - execution: L3_MANUAL
+- `ARM`
+  - above_vwap: False
+  - caution: closed_market_eod_proxy
+  - execution: L1
+- `SOXX`
+  - above_vwap: False
+  - caution: closed_market_eod_proxy
+  - execution: L1
+- `QQQ`
+  - above_vwap: False
+  - caution: closed_market_eod_proxy
+  - execution: L1
 - `TT`
   - above_vwap: False
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
+  - execution: L3_MANUAL
+- `ASML`
+  - above_vwap: False
+  - caution: closed_market_eod_proxy
   - execution: L3_MANUAL
 - `JCI`
   - above_vwap: False
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
   - execution: L3_MANUAL
 
 ## GPT Overlay Continuity
@@ -207,13 +173,12 @@ Stage: intraday | Report date: 2026-07-13
 
 ## Risk Factors
 
-- low: data_freshness - fresh=55, stale=1, stale_ratio=1.79%
+- low: data_freshness - fresh=56, stale=0, stale_ratio=0.00%
 - medium: execution_boundary - Automated output is capped at L3_MANUAL_CONFIRM_REQUIRED unless
   broker realtime
   data is verified.
-- medium: market_or_data_caution - below_vwap: 30
-- medium: market_or_data_caution - price_stale_or_missing: 19
-- medium: market_or_data_caution - spread_too_wide_or_missing: 7
+- medium: market_or_data_caution - below_vwap: 2
+- medium: market_or_data_caution - closed_market_eod_proxy: 54
 - info: market_breadth - latest breadth cache present; generated_at=2026-07-09T23:31:33
 
 ## Watch Items
@@ -301,7 +266,7 @@ Stage: intraday | Report date: 2026-07-13
   trades?
 - Are high-score names extended away from VWAP/opening range, or still near a reasonable
   support-check zone?
-- Please judge whether the support behind these leaders is durable: ARM, AMZN, STX, SMH, MSFT.
+- Please judge whether the support behind these leaders is durable: MU, AVGO, ARM, SOXX, QQQ.
 - Separate data-quality/execution-boundary risks from true market risks.
 
 ## Source Files
