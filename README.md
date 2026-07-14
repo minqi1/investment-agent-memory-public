@@ -5,9 +5,12 @@ This public repository is a sanitized bridge for ChatGPT investment committee re
 ## Read First
 
 - `context/gpt_handoff.md`
+- `context/latest_intraday_context.md`
+- `context/latest_intraday_state.json`
 - `context/latest_market_context.md`
 - `context/latest_market_state.json`
 - `context/watchlist.md`
+- `gpt_outputs/summary.json` when GPT overlay continuity is available
 
 ## Redactions
 

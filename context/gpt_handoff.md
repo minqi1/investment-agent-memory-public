@@ -4,8 +4,8 @@ Use this file as the stable handoff prompt between Codex and ChatGPT.
 
 ## Current Context
 
-- Generated: 2026-07-14T09:02:01
-- Stage: `eod`
+- Generated: 2026-07-14T20:15:24
+- Stage: `premarket`
 - Report date: `2026-07-14`
 - Market regime from Codex: `weak_breadth_or_pullback`
 - Current automated execution ceiling: `L3_MANUAL_CONFIRM_REQUIRED`
@@ -122,7 +122,7 @@ If GPT overlay continuity is gapped, do not invent missing forecasts or decision
   or crowded trades?
 - Are high-score names extended away from VWAP/opening range, or still near a reasonable
   support-check zone?
-- Please judge whether the support behind these leaders is durable: MU, AVGO, ARM, SOXX, QQQ.
+- Please judge whether the support behind these leaders is durable: MU, AVGO, SOXX, SMH, NVDA.
 - Separate data-quality/execution-boundary risks from true market risks.
 
 ## Required Output
@@ -210,23 +210,18 @@ Then output one machine-readable JSON block:
 
 - Leaders available: 20
 - Watchlist rows available: 20
-- Risk flags available: 5
+- Risk flags available: 6
 - Signals available: 12
 
 Top leaders from Codex:
-- `MU` Micron | chain=memory_hbm_storage | score=13.92 | exec=L3_MANUAL |
-  flag=closed_market_eod_proxy
-- `AVGO` Broadcom | chain=custom_silicon_networking | score=13.47 | exec=L3_MANUAL |
-  flag=closed_market_eod_proxy
-- `ARM` Arm Holdings | chain=ai_accelerator | score=13.34 | exec=L1 |
-  flag=closed_market_eod_proxy
-- `SOXX` iShares Semiconductor ETF | chain=semiconductor_index | score=12.98 | exec=L1 |
-  flag=closed_market_eod_proxy
-- `QQQ` Nasdaq 100 ETF | chain=market_regime | score=12.57 | exec=L1 |
-  flag=closed_market_eod_proxy
-- `TT` Trane Technologies | chain=data_center_power_cooling | score=11.98 | exec=L3_MANUAL |
-  flag=closed_market_eod_proxy
-- `ASML` ASML Holding | chain=semiconductor_equipment | score=11.62 | exec=L3_MANUAL |
-  flag=closed_market_eod_proxy
-- `JCI` Johnson Controls | chain=data_center_power_cooling | score=11.53 | exec=L3_MANUAL |
-  flag=closed_market_eod_proxy
+- `MU` Micron | chain=memory_hbm_storage | score=43.92 | exec=L3_MANUAL | flag=spread_missing
+- `AVGO` Broadcom | chain=custom_silicon_networking | score=43.47 | exec=L3_MANUAL |
+  flag=spread_missing
+- `SOXX` iShares Semiconductor ETF | chain=semiconductor_index | score=42.97 | exec=L1 |
+  flag=spread_missing
+- `SMH` VanEck Semiconductor ETF | chain=semiconductor_index | score=40.72 | exec=L1 |
+  flag=spread_missing
+- `NVDA` NVIDIA | chain=ai_accelerator | score=25.13 | exec=L1 | flag=spread_missing
+- `AMZN` Amazon | chain=cloud_ai_capex | score=25.09 | exec=L1 | flag=spread_missing
+- `STX` Seagate | chain=memory_hbm_storage | score=-4.92 | exec=L1 | flag=spread_missing
+- `META` Meta Platforms | chain=cloud_ai_capex | score=-5.14 | exec=L1 | flag=spread_missing
