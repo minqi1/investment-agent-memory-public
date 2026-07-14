@@ -9,7 +9,7 @@ Manual notes live outside the generated section. Use this file for durable compa
 
 <!-- AUTO-GENERATED:BEGIN -->
 
-Generated: 2026-07-14T20:15:24
+Generated: 2026-07-14T20:48:44
 
 ## Current Long-Term Watch Notes
 - `ANET` Arista Networks: chain=ai_networking_optical; tier/action=B_HIGH_BETA; watch invalidation=Downgrade if earnings/order thesis is disproved, valuation rises without growth support, news risk becomes hard negative, or price loses medium-term trend support.

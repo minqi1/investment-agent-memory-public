@@ -4,7 +4,7 @@ Use this file as the stable handoff prompt between Codex and ChatGPT.
 
 ## Current Context
 
-- Generated: 2026-07-14T20:28:41
+- Generated: 2026-07-14T20:48:44
 - Stage: `premarket`
 - Report date: `2026-07-14`
 - Market regime from Codex: `weak_breadth_or_pullback`
@@ -122,7 +122,7 @@ If GPT overlay continuity is gapped, do not invent missing forecasts or decision
   or crowded trades?
 - Are high-score names extended away from VWAP/opening range, or still near a reasonable
   support-check zone?
-- Please judge whether the support behind these leaders is durable: MU, AVGO, SOXX, SMH, NVDA.
+- Please judge whether the support behind these leaders is durable: SPY, AVGO, QQQ, NVDA, CIEN.
 - Separate data-quality/execution-boundary risks from true market risks.
 
 ## Required Output
@@ -214,14 +214,14 @@ Then output one machine-readable JSON block:
 - Signals available: 12
 
 Top leaders from Codex:
-- `MU` Micron | chain=memory_hbm_storage | score=43.92 | exec=L3_MANUAL | flag=spread_missing
-- `AVGO` Broadcom | chain=custom_silicon_networking | score=43.47 | exec=L3_MANUAL |
+- `SPY` S&P 500 ETF | chain=market_regime | score=49.91 | exec=L1 | flag=watch_only
+- `AVGO` Broadcom | chain=custom_silicon_networking | score=26.17 | exec=L3_MANUAL |
   flag=spread_missing
-- `SOXX` iShares Semiconductor ETF | chain=semiconductor_index | score=42.97 | exec=L1 |
-  flag=spread_missing
-- `SMH` VanEck Semiconductor ETF | chain=semiconductor_index | score=40.72 | exec=L1 |
-  flag=spread_missing
-- `NVDA` NVIDIA | chain=ai_accelerator | score=25.13 | exec=L1 | flag=spread_missing
-- `AMZN` Amazon | chain=cloud_ai_capex | score=25.09 | exec=L1 | flag=spread_missing
-- `STX` Seagate | chain=memory_hbm_storage | score=-4.92 | exec=L1 | flag=spread_missing
-- `META` Meta Platforms | chain=cloud_ai_capex | score=-5.14 | exec=L1 | flag=spread_missing
+- `QQQ` Nasdaq 100 ETF | chain=market_regime | score=24.53 | exec=L1 | flag=watch_only
+- `NVDA` NVIDIA | chain=ai_accelerator | score=1.74 | exec=L3_MANUAL | flag=spread_missing
+- `CIEN` Ciena | chain=ai_networking_optical | score=-5.34 | exec=L3_MANUAL | flag=below_vwap
+- `META` Meta Platforms | chain=cloud_ai_capex | score=-5.64 | exec=L1 | flag=spread_missing
+- `ANET` Arista Networks | chain=ai_networking_optical | score=-5.83 | exec=L3_MANUAL |
+  flag=below_vwap
+- `ASML` ASML Holding | chain=semiconductor_equipment | score=-6.42 | exec=L3_MANUAL |
+  flag=below_vwap

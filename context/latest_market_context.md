@@ -1,6 +1,6 @@
 # Market Overview
 
-Generated: 2026-07-14T20:28:41
+Generated: 2026-07-14T20:48:44
 Stage: premarket | Report date: 2026-07-14
 
 ## Market Regime
@@ -8,273 +8,251 @@ Stage: premarket | Report date: 2026-07-14
 当前市场状态：`weak_breadth_or_pullback`
 
 - Snapshot stage: premarket
-- Snapshot generated at: 2026-07-14T20:15:20
+- Snapshot generated at: 2026-07-14T20:48:42
 - Execution boundary: L3_MANUAL_CONFIRM_REQUIRED
-- Monitor fresh/stale: 55/1
+- Monitor fresh/stale: 50/6
 
 ## Index
 
 - `QQQ` Nasdaq 100 ETF
   - close: 711.739990234375
-  - price: 714.79
-  - premarket_price: 714.79
+  - price: 720.71
+  - premarket_price: 720.71
   - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: 0.43
-  - premarket_volume: 0.0
+  - premarket_change_proxy_pct: 1.26
+  - premarket_volume: 747.0
   - VWAP: 716.0099854233631
 - `SPY` S&P 500 ETF
   - close: 749.1699829101562
-  - price: 747.8
-  - premarket_price: 747.8
+  - price: 751.91
+  - premarket_price: 751.91
   - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: -0.18
-  - premarket_volume: 0.0
+  - premarket_change_proxy_pct: 0.37
+  - premarket_volume: 2400.0
   - VWAP: 749.3250940331619
 - `SOXX` iShares Semiconductor ETF
   - close: 553.6099853515625
-  - price: 570.51
-  - premarket_price: 570.51
+  - price: 571.41
+  - premarket_price: 571.41
   - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: 3.05
-  - premarket_volume: 0.0
-  - VWAP: 570.928998359994
+  - premarket_change_proxy_pct: 3.22
+  - premarket_volume: 100.0
+  - VWAP: 570.9289983599941
 - `SMH` VanEck Semiconductor ETF
   - close: 585.6199951171875
-  - price: 599.77
-  - premarket_price: 599.77
+  - price: 607.12
+  - premarket_price: 607.12
   - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: 2.42
+  - premarket_change_proxy_pct: 3.67
   - premarket_volume: 0.0
   - VWAP: 598.7961840343023
 - `IWM` Russell 2000 ETF
   - close: 293.4800109863281
-  - price: 293.14
-  - premarket_price: 293.14
+  - price: 298.04
+  - premarket_price: 298.04
   - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: -0.12
-  - premarket_volume: 80.0
+  - premarket_change_proxy_pct: 1.55
+  - premarket_volume: 600.0
 
 ## Leaders
 
-- `MU` Micron
-  - chain: memory_hbm_storage
-  - close: 937.0
-  - price: 965.98
-  - premarket_price: 965.0
+- `SPY` S&P 500 ETF
+  - chain: market_regime
+  - close: 749.1699829101562
+  - price: 753.29
+  - premarket_price: 751.91
   - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: 2.99
-  - premarket_volume: 0.0
-  - VWAP: 963.66
-  - score: 43.92
-  - level: L3_MANUAL
-  - caution: spread_missing
+  - premarket_change_proxy_pct: 0.37
+  - premarket_volume: 2400.0
+  - VWAP: 749.33
+  - score: 49.91
+  - level: L1
+  - caution: watch_only
 - `AVGO` Broadcom
   - chain: custom_silicon_networking
   - close: 384.04998779296875
-  - price: 394.80
-  - premarket_price: 391.68
+  - price: 395.05
+  - premarket_price: 394.09
   - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: 1.99
+  - premarket_change_proxy_pct: 2.61
   - premarket_volume: 0.0
   - VWAP: 393.44
-  - score: 43.47
+  - score: 26.17
   - level: L3_MANUAL
   - caution: spread_missing
-- `SOXX` iShares Semiconductor ETF
-  - chain: semiconductor_index
-  - close: 553.6099853515625
-  - price: 571.25
-  - premarket_price: 570.51
+- `QQQ` Nasdaq 100 ETF
+  - chain: market_regime
+  - close: 711.739990234375
+  - price: 722.24
+  - premarket_price: 720.71
   - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: 3.05
-  - premarket_volume: 0.0
-  - VWAP: 570.93
-  - score: 42.97
+  - premarket_change_proxy_pct: 1.26
+  - premarket_volume: 747.0
+  - VWAP: 716.01
+  - score: 24.53
   - level: L1
-  - caution: spread_missing
-- `SMH` VanEck Semiconductor ETF
-  - chain: semiconductor_index
-  - close: 585.6199951171875
-  - price: 600.10
-  - premarket_price: 599.77
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: 2.42
-  - premarket_volume: 0.0
-  - VWAP: 598.80
-  - score: 40.72
-  - level: L1
-  - caution: spread_missing
+  - caution: watch_only
 - `NVDA` NVIDIA
   - chain: ai_accelerator
   - close: 203.52999877929688
-  - price: 206.04
-  - premarket_price: 205.77
+  - price: 207.38
+  - premarket_price: 207.35
   - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: 1.10
-  - premarket_volume: 0.0
+  - premarket_change_proxy_pct: 1.88
+  - premarket_volume: 278.0
   - VWAP: 204.43
-  - score: 25.13
-  - level: L1
+  - score: 1.74
+  - level: L3_MANUAL
   - caution: spread_missing
-- `AMZN` Amazon
-  - chain: cloud_ai_capex
-  - close: 247.30999755859375
-  - price: 246.39
-  - premarket_price: 246.4
+- `CIEN` Ciena
+  - chain: ai_networking_optical
+  - close: 445.44000244140625
   - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: -0.37
-  - premarket_volume: 0.0
-  - VWAP: 244.95
-  - score: 25.09
-  - level: L1
-  - caution: spread_missing
-- `STX` Seagate
-  - chain: memory_hbm_storage
-  - close: 860.6599731445312
-  - price: 887.61
-  - premarket_price: 886.25
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: 2.97
-  - premarket_volume: 0.0
-  - VWAP: 877.61
-  - score: -4.92
-  - level: L1
-  - caution: spread_missing
+  - score: -5.34
+  - level: L3_MANUAL
+  - caution: below_vwap
 - `META` Meta Platforms
   - chain: cloud_ai_capex
   - close: 656.72998046875
-  - price: 648.00
-  - premarket_price: 647.525
+  - price: 652.23
+  - premarket_price: 648.6552
   - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: -1.40
+  - premarket_change_proxy_pct: -1.23
   - premarket_volume: 0.0
   - VWAP: 642.71
-  - score: -5.14
+  - score: -5.64
   - level: L1
   - caution: spread_missing
-- `TT` Trane Technologies
-  - chain: data_center_power_cooling
-  - close: 479.8999938964844
+- `ANET` Arista Networks
+  - chain: ai_networking_optical
+  - close: 181.14999389648438
   - premarket_change_status: UNAVAILABLE
-  - score: -6.02
+  - score: -5.83
   - level: L3_MANUAL
   - caution: below_vwap
 - `ASML` ASML Holding
   - chain: semiconductor_equipment
   - close: 1726.0400390625
-  - price: 1765.18
-  - premarket_price: 1765.18
+  - price: 1789.11
+  - premarket_price: 1776.8
   - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: 2.27
-  - premarket_volume: 10.0
-  - score: -6.38
+  - premarket_change_proxy_pct: 2.94
+  - premarket_volume: 140.0
+  - score: -6.42
   - level: L3_MANUAL
   - caution: below_vwap
-- `JCI` Johnson Controls
-  - chain: data_center_power_cooling
-  - close: 143.92999267578125
-  - premarket_change_status: UNAVAILABLE
-  - score: -6.47
-  - level: L3_MANUAL
-  - caution: below_vwap
-- `KLAC` KLA
+- `AMAT` Applied Materials
   - chain: semiconductor_equipment
-  - close: 222.25
+  - close: 575.3900146484375
   - premarket_change_status: UNAVAILABLE
-  - score: -6.69
+  - score: -7.05
+  - level: L3_MANUAL
+  - caution: below_vwap
+- `TT` Trane Technologies
+  - chain: data_center_power_cooling
+  - close: 479.8999938964844
+  - premarket_change_status: UNAVAILABLE
+  - score: -7.37
+  - level: L3_MANUAL
+  - caution: below_vwap
+- `ONTO` Onto Innovation
+  - chain: semiconductor_test_packaging
+  - close: 304.2099914550781
+  - premarket_change_status: UNAVAILABLE
+  - score: -7.45
+  - level: L3_MANUAL
+  - caution: below_vwap
+- `VRT` Vertiv
+  - chain: data_center_power_cooling
+  - close: 305.8699951171875
+  - price: 316.5
+  - premarket_price: 316.5
+  - premarket_change_status: UNAVAILABLE
+  - premarket_change_proxy_pct: 3.48
+  - premarket_volume: 1232.0
+  - score: -7.86
   - level: L3_MANUAL
   - caution: below_vwap
 
 ## Technical State
 
-- `MU`
-  - close: 937.0
-  - price: 965.98
-  - premarket_price: 965.0
+- `SPY`
+  - close: 749.1699829101562
+  - price: 753.29
+  - premarket_price: 751.91
   - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: 2.99
-  - premarket_volume: 0.0
-  - VWAP: 963.66
+  - premarket_change_proxy_pct: 0.37
+  - premarket_volume: 2400.0
+  - VWAP: 749.33
   - above_vwap: True
-  - caution: spread_missing
-  - execution: L3_MANUAL
+  - caution: watch_only
+  - execution: L1
 - `AVGO`
   - close: 384.04998779296875
-  - price: 394.80
-  - premarket_price: 391.68
+  - price: 395.05
+  - premarket_price: 394.09
   - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: 1.99
+  - premarket_change_proxy_pct: 2.61
   - premarket_volume: 0.0
   - VWAP: 393.44
   - above_vwap: True
   - caution: spread_missing
   - execution: L3_MANUAL
-- `SOXX`
-  - close: 553.6099853515625
-  - price: 571.25
-  - premarket_price: 570.51
+- `QQQ`
+  - close: 711.739990234375
+  - price: 722.24
+  - premarket_price: 720.71
   - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: 3.05
-  - premarket_volume: 0.0
-  - VWAP: 570.93
+  - premarket_change_proxy_pct: 1.26
+  - premarket_volume: 747.0
+  - VWAP: 716.01
   - above_vwap: True
-  - caution: spread_missing
-  - execution: L1
-- `SMH`
-  - close: 585.6199951171875
-  - price: 600.10
-  - premarket_price: 599.77
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: 2.42
-  - premarket_volume: 0.0
-  - VWAP: 598.80
-  - above_vwap: True
-  - caution: spread_missing
+  - caution: watch_only
   - execution: L1
 - `NVDA`
   - close: 203.52999877929688
-  - price: 206.04
-  - premarket_price: 205.77
+  - price: 207.38
+  - premarket_price: 207.35
   - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: 1.10
-  - premarket_volume: 0.0
+  - premarket_change_proxy_pct: 1.88
+  - premarket_volume: 278.0
   - VWAP: 204.43
   - above_vwap: True
   - caution: spread_missing
-  - execution: L1
-- `AMZN`
-  - close: 247.30999755859375
-  - price: 246.39
-  - premarket_price: 246.4
+  - execution: L3_MANUAL
+- `CIEN`
+  - close: 445.44000244140625
   - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: -0.37
-  - premarket_volume: 0.0
-  - VWAP: 244.95
-  - above_vwap: True
-  - caution: spread_missing
-  - execution: L1
-- `STX`
-  - close: 860.6599731445312
-  - price: 887.61
-  - premarket_price: 886.25
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: 2.97
-  - premarket_volume: 0.0
-  - VWAP: 877.61
-  - above_vwap: True
-  - caution: spread_missing
-  - execution: L1
+  - above_vwap: False
+  - caution: below_vwap
+  - execution: L3_MANUAL
 - `META`
   - close: 656.72998046875
-  - price: 648.00
-  - premarket_price: 647.525
+  - price: 652.23
+  - premarket_price: 648.6552
   - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: -1.40
+  - premarket_change_proxy_pct: -1.23
   - premarket_volume: 0.0
   - VWAP: 642.71
   - above_vwap: True
   - caution: spread_missing
   - execution: L1
+- `ANET`
+  - close: 181.14999389648438
+  - premarket_change_status: UNAVAILABLE
+  - above_vwap: False
+  - caution: below_vwap
+  - execution: L3_MANUAL
+- `ASML`
+  - close: 1726.0400390625
+  - price: 1789.11
+  - premarket_price: 1776.8
+  - premarket_change_status: UNAVAILABLE
+  - premarket_change_proxy_pct: 2.94
+  - premarket_volume: 140.0
+  - above_vwap: False
+  - caution: below_vwap
+  - execution: L3_MANUAL
 
 ## GPT Overlay Continuity
 
@@ -321,13 +299,13 @@ Stage: premarket | Report date: 2026-07-14
 
 ## Risk Factors
 
-- low: data_freshness - fresh=55, stale=1, stale_ratio=1.79%
+- low: data_freshness - fresh=50, stale=6, stale_ratio=10.71%
 - medium: execution_boundary - Automated output is capped at L3_MANUAL_CONFIRM_REQUIRED unless
   broker realtime
   data is verified.
-- medium: market_or_data_caution - below_vwap: 45
-- medium: market_or_data_caution - price_stale_or_missing: 1
-- medium: market_or_data_caution - spread_too_wide_or_missing: 10
+- medium: market_or_data_caution - below_vwap: 39
+- medium: market_or_data_caution - price_stale_or_missing: 6
+- medium: market_or_data_caution - spread_too_wide_or_missing: 9
 - info: market_breadth - latest breadth cache present; generated_at=2026-07-09T23:31:33
 
 ## Watch Items
@@ -415,7 +393,7 @@ Stage: premarket | Report date: 2026-07-14
   trades?
 - Are high-score names extended away from VWAP/opening range, or still near a reasonable
   support-check zone?
-- Please judge whether the support behind these leaders is durable: MU, AVGO, SOXX, SMH, NVDA.
+- Please judge whether the support behind these leaders is durable: SPY, AVGO, QQQ, NVDA, CIEN.
 - Separate data-quality/execution-boundary risks from true market risks.
 
 ## Source Files
