@@ -4,7 +4,7 @@ Use this file as the stable handoff prompt between Codex and ChatGPT.
 
 ## Current Context
 
-- Generated: 2026-07-14T20:15:24
+- Generated: 2026-07-14T20:28:41
 - Stage: `premarket`
 - Report date: `2026-07-14`
 - Market regime from Codex: `weak_breadth_or_pullback`
