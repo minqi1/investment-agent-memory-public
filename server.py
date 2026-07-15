@@ -89,6 +89,14 @@ def markdown_response(markdown: str, status_code: int = 200) -> Response:
     )
 
 
+def plain_text_response(text: str, status_code: int = 200) -> Response:
+    return Response(
+        content=text,
+        status_code=status_code,
+        headers=no_store_headers("text/plain; charset=utf-8"),
+    )
+
+
 def current_payload() -> tuple[dict[str, Any], str]:
     if latest_payload is not None:
         return latest_payload, "uploaded"
@@ -398,9 +406,17 @@ def root() -> Response:
         "service": "investment-live-relay",
         "read": "/latest_intraday.json",
         "markdown": "/latest_intraday.md",
+        "text": "/latest_intraday.txt",
+        "plain": "/latest_intraday_plain",
         "ticker": "/ticker/{symbol}.json",
+        "ping": "/ping",
         "health": "/health",
     })
+
+
+@app.get("/ping")
+def ping() -> Response:
+    return plain_text_response("ok\n")
 
 
 @app.get("/health")
@@ -442,6 +458,22 @@ def latest_intraday_markdown() -> Response:
             status_code=503,
         )
     return markdown_response(build_markdown(normalize_contract(payload, source)))
+
+
+@app.get("/latest_intraday.txt")
+def latest_intraday_text() -> Response:
+    payload, source = current_payload()
+    if not payload:
+        return plain_text_response(
+            "# Latest Intraday Snapshot\n\nNo uploaded payload and no repo fallback available.\n",
+            status_code=503,
+        )
+    return plain_text_response(build_markdown(normalize_contract(payload, source)))
+
+
+@app.get("/latest_intraday_plain")
+def latest_intraday_plain() -> Response:
+    return latest_intraday_text()
 
 
 @app.get("/ticker/{symbol}.json")
