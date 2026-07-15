@@ -1,6 +1,6 @@
 # Live Endpoint Directory
 
-- updated_at: `2026-07-16T01:16:51+08:00`
+- updated_at: `2026-07-16T01:19:25+08:00`
 - source_updated_at: `2026-07-16T01:05:06`
 - status: `healthy`
 - ttl_seconds: `300`
@@ -30,10 +30,10 @@
 
 - snapshot_public_url_ok: `True`
 - snapshot_public_url_status_code: `200`
-- snapshot_public_url_checked_at: `2026-07-16T01:16:47+08:00`
+- snapshot_public_url_checked_at: `2026-07-16T01:19:22+08:00`
 - dashboard_public_url_ok: `True`
 - dashboard_public_url_status_code: `200`
-- dashboard_public_url_checked_at: `2026-07-16T01:16:49+08:00`
+- dashboard_public_url_checked_at: `2026-07-16T01:19:23+08:00`
 
 ## Raw Fallbacks
 

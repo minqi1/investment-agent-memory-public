@@ -4,7 +4,7 @@ Use this file as the stable handoff prompt between Codex and ChatGPT.
 
 ## Current Context
 
-- Generated: 2026-07-16T01:16:47
+- Generated: 2026-07-16T01:19:21
 - Stage: `intraday`
 - Report date: `2026-07-15`
 - Market regime from Codex: `risk_off_or_index_breakdown`
@@ -13,10 +13,10 @@ Use this file as the stable handoff prompt between Codex and ChatGPT.
 - Latest GPT premarket overlay date: `2026-07-13`
 - Latest GPT postmarket overlay date: `None`
 - GPT overlay gap days: `None`
-- Latest intraday context generated: `2026-07-16T01:16:47+08:00`
-- Latest intraday US/Eastern time: `2026-07-15T13:16:47-04:00`
+- Latest intraday context generated: `2026-07-16T01:19:21+08:00`
+- Latest intraday US/Eastern time: `2026-07-15T13:19:21-04:00`
 - Latest intraday session open: `True`
-- Latest intraday candidate count: `5`
+- Latest intraday candidate count: `4`
 
 ## Live Endpoint Discovery
 
@@ -227,7 +227,7 @@ Then output one machine-readable JSON block:
 - Leaders available: 20
 - Watchlist rows available: 20
 - Risk flags available: 6
-- Signals available: 13
+- Signals available: 12
 
 Top leaders from Codex:
 - `AAPL` Apple | chain=mega_cap_platform | score=60.59 | exec=L1 | flag=watch_only
