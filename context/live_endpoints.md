@@ -1,8 +1,8 @@
 # Live Endpoint Directory
 
-- updated_at: `2026-07-15T22:58:55+08:00`
-- source_updated_at: `2026-07-15T22:57:50`
-- status: `degraded`
+- updated_at: `2026-07-15T23:16:19+08:00`
+- source_updated_at: `2026-07-15T23:05:33`
+- status: `healthy`
 - ttl_seconds: `300`
 
 ## GPT Read Order
@@ -15,19 +15,19 @@
 
 ## Live Layer
 
-- dashboard_public_url: https://coaching-cds-contrary-nebraska.trycloudflare.com/?board=us&t=committee
-- snapshot_public_url: https://identify-ruled-learning-number.trycloudflare.com/live_intraday.json
-- premarket_refresh_public_url: https://identify-ruled-learning-number.trycloudflare.com/refresh_snapshot.json?stage=premarket
-- postmarket_refresh_public_url: https://identify-ruled-learning-number.trycloudflare.com/refresh_snapshot.json?stage=postmarket_review
+- dashboard_public_url: https://topics-singles-focused-yields.trycloudflare.com/?board=us&t=committee
+- snapshot_public_url: https://navy-kelly-initially-thumbnails.trycloudflare.com/live_intraday.json
+- premarket_refresh_public_url: https://navy-kelly-initially-thumbnails.trycloudflare.com/refresh_snapshot.json?stage=premarket
+- postmarket_refresh_public_url: https://navy-kelly-initially-thumbnails.trycloudflare.com/refresh_snapshot.json?stage=postmarket_review
 
 ## Live Health
 
-- snapshot_public_url_ok: `False`
-- snapshot_public_url_status_code: `None`
-- snapshot_public_url_checked_at: `2026-07-15T22:58:38+08:00`
-- dashboard_public_url_ok: `False`
-- dashboard_public_url_status_code: `None`
-- dashboard_public_url_checked_at: `2026-07-15T22:58:46+08:00`
+- snapshot_public_url_ok: `True`
+- snapshot_public_url_status_code: `200`
+- snapshot_public_url_checked_at: `2026-07-15T23:16:15+08:00`
+- dashboard_public_url_ok: `True`
+- dashboard_public_url_status_code: `200`
+- dashboard_public_url_checked_at: `2026-07-15T23:16:18+08:00`
 
 ## Raw Fallbacks
 
