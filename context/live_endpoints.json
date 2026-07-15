@@ -1,35 +1,44 @@
 {
   "schema_version": "live_endpoints_v1",
-  "updated_at": "2026-07-15T23:16:19+08:00",
+  "updated_at": "2026-07-15T23:46:26+08:00",
   "source": "stock_learning_companion/data/automation/latest_urls.json",
-  "source_updated_at": "2026-07-15T23:05:33",
+  "source_updated_at": "2026-07-15T23:40:00",
   "status": "healthy",
   "ttl_seconds": 300,
   "public_repo": "https://github.com/minqi1/investment-agent-memory-public",
   "public_site_url": "https://minqi1.github.io/investment-agent-memory-public/",
   "live": {
-    "dashboard_public_url": "https://topics-singles-focused-yields.trycloudflare.com/?board=us&t=committee",
-    "snapshot_public_url": "https://navy-kelly-initially-thumbnails.trycloudflare.com/live_intraday.json",
-    "premarket_refresh_public_url": "https://navy-kelly-initially-thumbnails.trycloudflare.com/refresh_snapshot.json?stage=premarket",
-    "postmarket_refresh_public_url": "https://navy-kelly-initially-thumbnails.trycloudflare.com/refresh_snapshot.json?stage=postmarket_review",
+    "dashboard_public_url": "",
+    "health_public_url": "https://investment-agent-memory-public.onrender.com/health",
+    "snapshot_public_url": "https://investment-agent-memory-public.onrender.com/latest_intraday.json",
+    "premarket_refresh_public_url": "",
+    "postmarket_refresh_public_url": "",
     "dashboard_local_url": "http://127.0.0.1:8501/?board=us&t=committee",
     "snapshot_local_url": "http://127.0.0.1:8510/live_intraday.json"
   },
   "health": {
     "snapshot_public_url": {
       "ok": true,
-      "checked_at": "2026-07-15T23:16:15+08:00",
+      "checked_at": "2026-07-15T23:46:24+08:00",
       "status_code": 200,
-      "content_type": "application/json; charset=utf-8",
+      "content_type": "application/json",
       "sample_bytes": 512,
+      "error": ""
+    },
+    "health_public_url": {
+      "ok": true,
+      "checked_at": "2026-07-15T23:46:25+08:00",
+      "status_code": 200,
+      "content_type": "application/json",
+      "sample_bytes": 219,
       "error": ""
     },
     "dashboard_public_url": {
       "ok": true,
-      "checked_at": "2026-07-15T23:16:18+08:00",
+      "checked_at": "2026-07-15T23:46:25+08:00",
       "status_code": 200,
-      "content_type": "text/html",
-      "sample_bytes": 512,
+      "content_type": "application/json",
+      "sample_bytes": 219,
       "error": ""
     }
   },
@@ -42,7 +51,7 @@
   },
   "gpt_read_order": [
     "Read context/live_endpoints.json from GitHub raw.",
-    "If live.snapshot_public_url is reachable, use it for the freshest current state.",
+    "Use live.snapshot_public_url as the fixed Render intraday relay endpoint.",
     "If the live endpoint is unreachable, stale, or contradictory, fall back to raw_fallbacks.latest_intraday_state.",
     "Use context/gpt_handoff.md for role boundaries and required output format."
   ],
