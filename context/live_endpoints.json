@@ -1,6 +1,6 @@
 {
   "schema_version": "live_endpoints_v1",
-  "updated_at": "2026-07-16T00:29:32+08:00",
+  "updated_at": "2026-07-16T00:31:44+08:00",
   "source": "stock_learning_companion/data/automation/latest_urls.json",
   "source_updated_at": "2026-07-15T23:40:00",
   "status": "healthy",
@@ -19,7 +19,7 @@
   "health": {
     "snapshot_public_url": {
       "ok": true,
-      "checked_at": "2026-07-16T00:29:29+08:00",
+      "checked_at": "2026-07-16T00:31:42+08:00",
       "status_code": 200,
       "content_type": "application/json",
       "sample_bytes": 512,
@@ -27,18 +27,18 @@
     },
     "health_public_url": {
       "ok": true,
-      "checked_at": "2026-07-16T00:29:31+08:00",
+      "checked_at": "2026-07-16T00:31:43+08:00",
       "status_code": 200,
       "content_type": "application/json",
-      "sample_bytes": 241,
+      "sample_bytes": 219,
       "error": ""
     },
     "dashboard_public_url": {
       "ok": true,
-      "checked_at": "2026-07-16T00:29:31+08:00",
+      "checked_at": "2026-07-16T00:31:43+08:00",
       "status_code": 200,
       "content_type": "application/json",
-      "sample_bytes": 241,
+      "sample_bytes": 219,
       "error": ""
     }
   },

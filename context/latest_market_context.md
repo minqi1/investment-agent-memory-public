@@ -1,6 +1,6 @@
 # Market Overview
 
-Generated: 2026-07-16T00:29:29
+Generated: 2026-07-16T00:31:41
 Stage: intraday | Report date: 2026-07-15
 
 ## Market Regime
@@ -15,28 +15,28 @@ Stage: intraday | Report date: 2026-07-15
 ## Index
 
 - `QQQ` Nasdaq 100 ETF
-  - price: 711.24
-  - VWAP: 716.9932025646737
+  - price: 712.13
+  - VWAP: 716.9469854753302
   - above_vwap: False
   - caution: below_opening_15m_low
 - `SPY` S&P 500 ETF
-  - price: 750.55
-  - VWAP: 753.5060795771462
+  - price: 751.065
+  - VWAP: 753.46763273426
   - above_vwap: False
   - caution: below_opening_15m_low
 - `SOXX` iShares Semiconductor ETF
-  - price: 539.48
-  - VWAP: 553.5731097989908
+  - price: 541.6
+  - VWAP: 553.3211701507471
   - above_vwap: False
   - caution: below_opening_15m_low
 - `SMH` VanEck Semiconductor ETF
-  - price: 574.98
-  - VWAP: 589.2193152862301
+  - price: 576.61
+  - VWAP: 588.8697485353177
   - above_vwap: False
   - caution: below_opening_15m_low
 - `IWM` Russell 2000 ETF
-  - price: 294.37
-  - VWAP: 295.71108254536233
+  - price: 294.71
+  - VWAP: 295.68845264477545
   - above_vwap: False
   - caution: below_opening_15m_low
 
