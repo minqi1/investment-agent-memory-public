@@ -4,7 +4,7 @@ Use this file as the stable handoff prompt between Codex and ChatGPT.
 
 ## Current Context
 
-- Generated: 2026-07-16T01:01:40
+- Generated: 2026-07-16T01:11:26
 - Stage: `intraday`
 - Report date: `2026-07-15`
 - Market regime from Codex: `risk_off_or_index_breakdown`
@@ -13,10 +13,10 @@ Use this file as the stable handoff prompt between Codex and ChatGPT.
 - Latest GPT premarket overlay date: `2026-07-13`
 - Latest GPT postmarket overlay date: `None`
 - GPT overlay gap days: `None`
-- Latest intraday context generated: `2026-07-16T01:01:40+08:00`
-- Latest intraday US/Eastern time: `2026-07-15T13:01:40-04:00`
+- Latest intraday context generated: `2026-07-16T01:11:26+08:00`
+- Latest intraday US/Eastern time: `2026-07-15T13:11:26-04:00`
 - Latest intraday session open: `True`
-- Latest intraday candidate count: `2`
+- Latest intraday candidate count: `4`
 
 ## Live Endpoint Discovery
 
