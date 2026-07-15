@@ -11,6 +11,12 @@ interface only; it does not authorize automated trading.
 3. If the live relay is stale or unreachable, use raw fallback: `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_state.json`.
 4. Use handoff boundaries and narrative context from `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/gpt_handoff.md`.
 
+## Fixed Live Links
+
+- current_intraday_json: `https://investment-agent-memory-public.onrender.com/latest_intraday.json`
+- health: `https://investment-agent-memory-public.onrender.com/health`
+- endpoint_directory: `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/live_endpoints.json`
+
 ## Premarket Packet
 
 Premarket context is published through `context/latest_market_context.md` and

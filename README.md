@@ -28,6 +28,9 @@ This bridge is for research and review only. It does not authorize automated tra
 
 ## Live Endpoint Pattern
 
+- current_intraday_json: `https://investment-agent-memory-public.onrender.com/latest_intraday.json`
+- health: `https://investment-agent-memory-public.onrender.com/health`
+
 The GitHub Pages site and `context/live_endpoints.json` act as a stable directory for the fixed Render live intraday relay. If the Render endpoint is unreachable, stale, or degraded, use the GitHub raw fallback files.
 
 ## Intraday Monitor Guardrails
