@@ -4,7 +4,7 @@ Use this file as the stable handoff prompt between Codex and ChatGPT.
 
 ## Current Context
 
-- Generated: 2026-07-15T22:32:38
+- Generated: 2026-07-16T00:29:29
 - Stage: `intraday`
 - Report date: `2026-07-15`
 - Market regime from Codex: `risk_off_or_index_breakdown`
@@ -13,10 +13,10 @@ Use this file as the stable handoff prompt between Codex and ChatGPT.
 - Latest GPT premarket overlay date: `2026-07-13`
 - Latest GPT postmarket overlay date: `None`
 - GPT overlay gap days: `None`
-- Latest intraday context generated: `2026-07-15T22:32:33+08:00`
-- Latest intraday US/Eastern time: `2026-07-15T10:32:33-04:00`
+- Latest intraday context generated: `2026-07-16T00:29:29+08:00`
+- Latest intraday US/Eastern time: `2026-07-15T12:29:29-04:00`
 - Latest intraday session open: `True`
-- Latest intraday candidate count: `4`
+- Latest intraday candidate count: `3`
 
 ## Live Endpoint Discovery
 
@@ -26,8 +26,10 @@ For the freshest intraday state and field definitions, read these stable public 
 2. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/live_endpoints.json`
 3. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/live_endpoints.md`
 
-If `snapshot_public_url` is reachable, use it as the live real-time layer.
-If it is unreachable or stale, fall back to the GitHub raw files below.
+GitHub raw is the canonical GPT-readable source.
+If `snapshot_public_url` is reachable from GPT, it may be used as an optional live layer.
+If the Render API cannot be fetched, returns cache miss, or is stale, use the GitHub raw files
+below.
 Use the data contract to interpret premarket, intraday live, postmarket, dynamic leaderboard,
 and comfortable-entry leaderboard fields.
 Do not infer market facts from page styling; use JSON and Markdown fields.
@@ -225,7 +227,7 @@ Then output one machine-readable JSON block:
 - Leaders available: 20
 - Watchlist rows available: 20
 - Risk flags available: 6
-- Signals available: 13
+- Signals available: 12
 
 Top leaders from Codex:
 - `AAPL` Apple | chain=mega_cap_platform | score=60.59 | exec=L1 | flag=watch_only

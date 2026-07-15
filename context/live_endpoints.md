@@ -1,6 +1,6 @@
 # Live Endpoint Directory
 
-- updated_at: `2026-07-16T00:11:55+08:00`
+- updated_at: `2026-07-16T00:29:32+08:00`
 - source_updated_at: `2026-07-15T23:40:00`
 - status: `healthy`
 - ttl_seconds: `300`
@@ -9,9 +9,11 @@
 
 - Read context/data_contract.md for field definitions and usage boundaries.
 - Read context/live_endpoints.json from GitHub raw.
-- Use live.snapshot_public_url as the fixed Render intraday relay endpoint.
-- If the live endpoint is unreachable, stale, or contradictory, fall back to
-  raw_fallbacks.latest_intraday_state.
+- Use raw_fallbacks.latest_intraday_context and raw_fallbacks.latest_intraday_state as the
+  canonical GPT-readable intraday source.
+- Optionally try live.snapshot_public_url as the fixed Render intraday relay endpoint.
+- If the live endpoint is unreachable, stale, returns cache miss, or is contradictory, continue
+  from GitHub raw.
 - Use context/gpt_handoff.md for role boundaries and required output format.
 
 ## Live Layer
@@ -25,10 +27,10 @@
 
 - snapshot_public_url_ok: `True`
 - snapshot_public_url_status_code: `200`
-- snapshot_public_url_checked_at: `2026-07-16T00:11:52+08:00`
+- snapshot_public_url_checked_at: `2026-07-16T00:29:29+08:00`
 - dashboard_public_url_ok: `True`
 - dashboard_public_url_status_code: `200`
-- dashboard_public_url_checked_at: `2026-07-16T00:11:54+08:00`
+- dashboard_public_url_checked_at: `2026-07-16T00:29:31+08:00`
 
 ## Raw Fallbacks
 

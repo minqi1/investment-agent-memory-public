@@ -1,21 +1,25 @@
 # GPT Data Contract
 
-This repository is the stable public directory for GPT investment review. Use it as a research
-interface only; it does not authorize automated trading.
+This repository is the stable public directory for GPT investment review. GitHub raw is the
+canonical GPT-readable source. Use it as a research interface only; it does not authorize
+automated trading.
 
 ## Read Order
 
 1. Live directory: `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/live_endpoints.json`
-2. If `live.snapshot_public_url` is healthy and fresh, read that Render JSON first for the
-   current intraday layer.
-3. If the live relay is stale or unreachable, use raw fallback: `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_state.json`.
+2. Read raw intraday context: `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_context.md`.
+3. Read raw intraday state JSON when details are needed: `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_state.json`.
 4. Use handoff boundaries and narrative context from `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/gpt_handoff.md`.
+5. Optionally try the Render live endpoint only as a freshness layer; if it fails, continue from
+   GitHub raw.
 
 ## Fixed Live Links
 
-- current_intraday_json: `https://investment-agent-memory-public.onrender.com/latest_intraday.json`
+- optional_render_current_intraday_json: `https://investment-agent-memory-public.onrender.com/latest_intraday.json`
 - health: `https://investment-agent-memory-public.onrender.com/health`
 - endpoint_directory: `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/live_endpoints.json`
+- raw_intraday_context: `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_context.md`
+- raw_intraday_state: `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_state.json`
 
 ## Premarket Packet
 
@@ -33,8 +37,8 @@ Premarket context is published through `context/latest_market_context.md` and
 
 ## Intraday Live Packet
 
-Intraday realtime data should come from `live.snapshot_public_url` in
-`context/live_endpoints.json`. The current fixed endpoint is the Render relay.
+Intraday data for GPT should come from GitHub raw first. The Render relay is optional because
+GPT web openers may fail on dynamic API endpoints.
 
 - `generated_at`: ISO-8601 timestamp with timezone for the uploaded live packet.
 - converted US Eastern time and session status, when present.
@@ -86,8 +90,8 @@ these checks remain true:
 - no `429` or `Too Many Requests` appears in monitor or relay status.
 - `relay_ok` or `relay_upload.ok` remains `True`.
 
-If these guardrails degrade, prefer raw GitHub fallback context and mark the live layer stale or
-degraded.
+If these guardrails degrade, or if GPT reports a Render fetch/cache miss, use raw GitHub
+context/state and mark the live API layer unavailable.
 
 ## Hard Boundaries
 
