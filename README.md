@@ -4,6 +4,9 @@ This public repository is a sanitized bridge for ChatGPT investment committee re
 
 ## Read First
 
+- `index.html` for the stable live endpoint directory site
+- `context/live_endpoints.json`
+- `context/live_endpoints.md`
 - `context/gpt_handoff.md`
 - `context/latest_intraday_context.md`
 - `context/latest_intraday_state.json`
@@ -21,3 +24,7 @@ This public repository is a sanitized bridge for ChatGPT investment committee re
 ## Boundary
 
 This bridge is for research and review only. It does not authorize automated trading. Current automated ceiling remains `L3_MANUAL_CONFIRM_REQUIRED` unless realtime broker data is explicitly verified.
+
+## Live Endpoint Pattern
+
+The GitHub Pages site and `context/live_endpoints.json` act as a stable directory for the current temporary trycloudflare live endpoints. If those URLs are unreachable, use the GitHub raw fallback files.

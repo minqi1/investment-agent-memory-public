@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Investment Agent Live Bridge</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fb;
+      --panel: #ffffff;
+      --text: #1c2430;
+      --muted: #667085;
+      --line: #d9dee8;
+      --accent: #1f7a5f;
+      --warn: #a95c10;
+      --bad: #b42318;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111418;
+        --panel: #181d23;
+        --text: #edf1f6;
+        --muted: #aab4c0;
+        --line: #2c343f;
+        --accent: #5dd6ac;
+        --warn: #f4b04a;
+        --bad: #ff8a80;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    header, main { width: min(1120px, calc(100vw - 32px)); margin: 0 auto; }
+    header { padding: 28px 0 18px; }
+    h1 { margin: 0 0 8px; font-size: 28px; line-height: 1.15; }
+    h2 { margin: 0 0 12px; font-size: 16px; }
+    p { margin: 0; color: var(--muted); }
+    a { color: var(--accent); word-break: break-word; }
+    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 12px; }
+    .panel {
+      grid-column: span 12;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px;
+    }
+    @media (min-width: 820px) {
+      .half { grid-column: span 6; }
+      .third { grid-column: span 4; }
+    }
+    .status-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    .badge {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 5px 9px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .ok { color: var(--accent); }
+    .warn { color: var(--warn); }
+    .bad { color: var(--bad); }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    th { color: var(--muted); font-weight: 600; }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 12px;
+      overflow-wrap: anywhere;
+    }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .small { font-size: 13px; }
+    .links div { margin: 8px 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Investment Agent Live Bridge</h1>
+    <p>Stable public entry for GPT and a human-readable live endpoint directory.</p>
+    <div class="status-row">
+      <span class="badge" id="endpointStatus">loading endpoints</span>
+      <span class="badge" id="snapshotStatus">snapshot pending</span>
+      <span class="badge" id="lastChecked">not checked yet</span>
+    </div>
+  </header>
+  <main class="grid">
+    <section class="panel">
+      <h2>GPT Read Order</h2>
+      <p class="small">GPT should read the JSON endpoints below. This page is a convenience shell, not a source of trading authorization.</p>
+      <div class="links">
+        <div><strong>stable endpoint directory:</strong> <a href="https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/live_endpoints.json" target="_blank" rel="noreferrer">https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/live_endpoints.json</a></div>
+        <div><strong>stable handoff:</strong> <a href="https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/gpt_handoff.md" target="_blank" rel="noreferrer">https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/gpt_handoff.md</a></div>
+      </div>
+      <div class="links" id="readOrder"></div>
+    </section>
+    <section class="panel half">
+      <h2>Live Endpoints</h2>
+      <p class="small">These links are written directly into this page so GPT can read them even without running JavaScript.</p>
+      <div class="links">
+        <div><strong>dashboard:</strong> <a href="https://coaching-cds-contrary-nebraska.trycloudflare.com/?board=us&t=committee" target="_blank" rel="noreferrer">https://coaching-cds-contrary-nebraska.trycloudflare.com/?board=us&t=committee</a></div>
+<div><strong>snapshot:</strong> <a href="https://bill-stability-objective-revolution.trycloudflare.com/snapshot.json" target="_blank" rel="noreferrer">https://bill-stability-objective-revolution.trycloudflare.com/snapshot.json</a></div>
+<div><strong>premarket refresh:</strong> <a href="https://bill-stability-objective-revolution.trycloudflare.com/refresh_snapshot.json?stage=premarket" target="_blank" rel="noreferrer">https://bill-stability-objective-revolution.trycloudflare.com/refresh_snapshot.json?stage=premarket</a></div>
+<div><strong>postmarket refresh:</strong> <a href="https://bill-stability-objective-revolution.trycloudflare.com/refresh_snapshot.json?stage=postmarket_review" target="_blank" rel="noreferrer">https://bill-stability-objective-revolution.trycloudflare.com/refresh_snapshot.json?stage=postmarket_review</a></div>
+      </div>
+      <div class="links" id="liveLinks"></div>
+    </section>
+    <section class="panel half">
+      <h2>Raw Fallbacks</h2>
+      <div class="links">
+        <div><strong>gpt_handoff:</strong> <a href="https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/gpt_handoff.md" target="_blank" rel="noreferrer">https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/gpt_handoff.md</a></div>
+<div><strong>latest_intraday_context:</strong> <a href="https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_context.md" target="_blank" rel="noreferrer">https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_context.md</a></div>
+<div><strong>latest_intraday_state:</strong> <a href="https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_state.json" target="_blank" rel="noreferrer">https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_state.json</a></div>
+<div><strong>latest_market_context:</strong> <a href="https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_market_context.md" target="_blank" rel="noreferrer">https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_market_context.md</a></div>
+<div><strong>latest_market_state:</strong> <a href="https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_market_state.json" target="_blank" rel="noreferrer">https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_market_state.json</a></div>
+      </div>
+      <div class="links" id="fallbackLinks"></div>
+    </section>
+    <section class="panel third">
+      <h2>Freshness</h2>
+      <table>
+        <tbody id="freshnessRows"></tbody>
+      </table>
+    </section>
+    <section class="panel third">
+      <h2>Session</h2>
+      <table>
+        <tbody id="sessionRows"></tbody>
+      </table>
+    </section>
+    <section class="panel third">
+      <h2>Boundary</h2>
+      <table>
+        <tbody id="boundaryRows"></tbody>
+      </table>
+    </section>
+    <section class="panel">
+      <h2>Current Snapshot Summary</h2>
+      <table>
+        <tbody id="snapshotRows"></tbody>
+      </table>
+    </section>
+  </main>
+  <script id="bootstrap-live-endpoints" type="application/json">
+{
+  "schema_version": "live_endpoints_v1",
+  "updated_at": "2026-07-15T22:38:58+08:00",
+  "source": "stock_learning_companion/data/automation/latest_urls.json",
+  "source_updated_at": "2026-07-15T22:35:05",
+  "status": "available",
+  "ttl_seconds": 300,
+  "public_repo": "https://github.com/minqi1/investment-agent-memory-public",
+  "public_site_url": "https://minqi1.github.io/investment-agent-memory-public/",
+  "live": {
+    "dashboard_public_url": "https://coaching-cds-contrary-nebraska.trycloudflare.com/?board=us&t=committee",
+    "snapshot_public_url": "https://bill-stability-objective-revolution.trycloudflare.com/snapshot.json",
+    "premarket_refresh_public_url": "https://bill-stability-objective-revolution.trycloudflare.com/refresh_snapshot.json?stage=premarket",
+    "postmarket_refresh_public_url": "https://bill-stability-objective-revolution.trycloudflare.com/refresh_snapshot.json?stage=postmarket_review",
+    "dashboard_local_url": "http://127.0.0.1:8501/?board=us&t=committee",
+    "snapshot_local_url": "http://127.0.0.1:8510/snapshot.json"
+  },
+  "raw_fallbacks": {
+    "gpt_handoff": "https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/gpt_handoff.md",
+    "latest_intraday_context": "https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_context.md",
+    "latest_intraday_state": "https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_state.json",
+    "latest_market_context": "https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_market_context.md",
+    "latest_market_state": "https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_market_state.json"
+  },
+  "gpt_read_order": [
+    "Read context/live_endpoints.json from GitHub raw.",
+    "If live.snapshot_public_url is reachable, use it for the freshest current state.",
+    "If the live endpoint is unreachable, stale, or contradictory, fall back to raw_fallbacks.latest_intraday_state.",
+    "Use context/gpt_handoff.md for role boundaries and required output format."
+  ],
+  "boundaries": [
+    "Research and review only; no automated trading.",
+    "Current automated ceiling remains L3_MANUAL_CONFIRM_REQUIRED.",
+    "Do not overwrite raw_score, price, vwap, data_quality, execution_level, or risk_reasons."
+  ]
+}
+  </script>
+  <script>
+    const RAW_BASE = "https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main";
+    const ENDPOINTS_URL = `${RAW_BASE}/context/live_endpoints.json`;
+    const INTRADAY_FALLBACK_URL = `${RAW_BASE}/context/latest_intraday_state.json`;
+
+    const withCacheBust = (url) => {
+      const sep = url.includes("?") ? "&" : "?";
+      return `${url}${sep}cb=${Date.now()}`;
+    };
+
+    async function fetchJson(url) {
+      const response = await fetch(withCacheBust(url), { cache: "no-store" });
+      if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+      return response.json();
+    }
+
+    function link(label, url) {
+      if (!url) return `<div><strong>${label}:</strong> <span class="warn">unavailable</span></div>`;
+      return `<div><strong>${label}:</strong> <a href="${url}" target="_blank" rel="noreferrer">${url}</a></div>`;
+    }
+
+    function rows(target, entries) {
+      document.getElementById(target).innerHTML = entries.map(([key, value]) =>
+        `<tr><th>${key}</th><td>${value ?? ""}</td></tr>`
+      ).join("");
+    }
+
+    function valueAt(obj, path) {
+      return path.split(".").reduce((acc, key) => acc && acc[key] !== undefined ? acc[key] : undefined, obj);
+    }
+
+    function summarizeSnapshot(snapshot, sourceLabel) {
+      const session = snapshot.session || snapshot.market_session || {};
+      const dataQuality = snapshot.data_quality || snapshot.execution_boundary || {};
+      const candidateCount = valueAt(snapshot, "buy_precheck_summary.candidate_count")
+        ?? (snapshot.active_manual_confirm_candidates || []).length
+        ?? (snapshot.buy_precheck_candidates || []).length
+        ?? "";
+      rows("freshnessRows", [
+        ["source", sourceLabel],
+        ["generated_at", snapshot.generated_at || snapshot.timestamp || ""],
+        ["public_bridge_updated_at", snapshot.public_bridge_generated_at || ""],
+        ["data_delay", snapshot.data_delay || snapshot.lag_minutes || ""]
+      ]);
+      rows("sessionRows", [
+        ["stage", snapshot.stage || snapshot.committee_stage || ""],
+        ["us_eastern_time", snapshot.us_eastern_time || session.us_eastern_time || ""],
+        ["session_status", session.status || session.label || ""],
+        ["is_open", session.is_open ?? ""]
+      ]);
+      rows("boundaryRows", [
+        ["execution_ceiling", dataQuality.current_max_execution_level || dataQuality.current_max_level || "L3_MANUAL_CONFIRM_REQUIRED"],
+        ["real_trade_allowed", "manual confirmation only"],
+        ["protected_fields", "raw_score, data_quality, execution_level, risk_reasons"]
+      ]);
+      rows("snapshotRows", [
+        ["candidate_count", candidateCount],
+        ["market_regime", snapshot.market_regime || ""],
+        ["qqq", JSON.stringify(snapshot.qqq || (snapshot.indices || {}).QQQ || {}).slice(0, 500)],
+        ["smh", JSON.stringify((snapshot.indices || {}).SMH || {}).slice(0, 500)],
+        ["soxx", JSON.stringify((snapshot.indices || {}).SOXX || {}).slice(0, 500)]
+      ]);
+    }
+
+    async function refresh() {
+      document.getElementById("lastChecked").textContent = `checked ${new Date().toLocaleTimeString()}`;
+      let endpoints;
+      const bootstrap = document.getElementById("bootstrap-live-endpoints");
+      try {
+        endpoints = await fetchJson(ENDPOINTS_URL);
+        document.getElementById("endpointStatus").innerHTML = `<span class="ok">endpoints loaded</span>`;
+      } catch (error) {
+        document.getElementById("endpointStatus").innerHTML = `<span class="bad">endpoint directory failed</span>`;
+        endpoints = bootstrap ? JSON.parse(bootstrap.textContent) : {
+          live: {},
+          raw_fallbacks: { latest_intraday_state: INTRADAY_FALLBACK_URL },
+          gpt_read_order: ["Use raw fallback latest_intraday_state.json"]
+        };
+      }
+      document.getElementById("readOrder").innerHTML = (endpoints.gpt_read_order || []).map((item, index) =>
+        `<div>${index + 1}. ${item}</div>`
+      ).join("");
+      const live = endpoints.live || {};
+      const fallbacks = endpoints.raw_fallbacks || {};
+      document.getElementById("liveLinks").innerHTML = [
+        link("dashboard", live.dashboard_public_url),
+        link("snapshot", live.snapshot_public_url),
+        link("premarket refresh", live.premarket_refresh_public_url),
+        link("postmarket refresh", live.postmarket_refresh_public_url)
+      ].join("");
+      document.getElementById("fallbackLinks").innerHTML = Object.entries(fallbacks)
+        .map(([key, url]) => link(key, url)).join("");
+
+      try {
+        const liveUrl = live.snapshot_public_url;
+        if (!liveUrl) throw new Error("missing live snapshot URL");
+        const snapshot = await fetchJson(liveUrl);
+        document.getElementById("snapshotStatus").innerHTML = `<span class="ok">live snapshot loaded</span>`;
+        summarizeSnapshot(snapshot, "trycloud live snapshot");
+      } catch (liveError) {
+        try {
+          const fallbackUrl = fallbacks.latest_intraday_state || INTRADAY_FALLBACK_URL;
+          const fallback = await fetchJson(fallbackUrl);
+          document.getElementById("snapshotStatus").innerHTML = `<span class="warn">using raw fallback</span>`;
+          summarizeSnapshot(fallback, "GitHub raw fallback");
+        } catch (fallbackError) {
+          document.getElementById("snapshotStatus").innerHTML = `<span class="bad">snapshot unavailable</span>`;
+          rows("snapshotRows", [["error", fallbackError.message]]);
+        }
+      }
+    }
+
+    refresh();
+    setInterval(refresh, 60000);
+  </script>
+</body>
+</html>

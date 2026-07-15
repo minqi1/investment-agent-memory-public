@@ -18,6 +18,17 @@ Use this file as the stable handoff prompt between Codex and ChatGPT.
 - Latest intraday session open: `True`
 - Latest intraday candidate count: `4`
 
+## Live Endpoint Discovery
+
+For the freshest intraday state, read the stable endpoint directory first:
+
+1. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/live_endpoints.json`
+2. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/live_endpoints.md`
+
+If `snapshot_public_url` is reachable, use it as the live real-time layer.
+If it is unreachable or stale, fall back to the GitHub raw files below.
+Do not infer market facts from page styling; use JSON and Markdown fields.
+
 ## Files To Read
 
 Read these files first, in this order:
