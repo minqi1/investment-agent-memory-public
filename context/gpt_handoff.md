@@ -4,8 +4,8 @@ Use this file as the stable handoff prompt between Codex and ChatGPT.
 
 ## Current Context
 
-- Generated: 2026-07-15T21:16:02
-- Stage: `premarket`
+- Generated: 2026-07-15T21:45:27
+- Stage: `intraday`
 - Report date: `2026-07-15`
 - Market regime from Codex: `weak_breadth_or_pullback`
 - Current automated execution ceiling: `L3_MANUAL_CONFIRM_REQUIRED`
@@ -13,10 +13,10 @@ Use this file as the stable handoff prompt between Codex and ChatGPT.
 - Latest GPT premarket overlay date: `2026-07-13`
 - Latest GPT postmarket overlay date: `None`
 - GPT overlay gap days: `None`
-- Latest intraday context generated: `2026-07-14T22:28:16+08:00`
-- Latest intraday US/Eastern time: `2026-07-14T10:28:16-04:00`
+- Latest intraday context generated: `2026-07-15T21:45:05+08:00`
+- Latest intraday US/Eastern time: `2026-07-15T09:45:05-04:00`
 - Latest intraday session open: `True`
-- Latest intraday candidate count: `2`
+- Latest intraday candidate count: `0`
 
 ## Files To Read
 
@@ -122,8 +122,7 @@ If GPT overlay continuity is gapped, do not invent missing forecasts or decision
   or crowded trades?
 - Are high-score names extended away from VWAP/opening range, or still near a reasonable
   support-check zone?
-- Please judge whether the support behind these leaders is durable: NVDA, MU, TSM, 000660.KS,
-  AMD.
+- Please judge whether the support behind these leaders is durable: AAPL, GOOGL, LIN, VRT, GEV.
 - Separate data-quality/execution-boundary risks from true market risks.
 
 ## Required Output
@@ -211,16 +210,18 @@ Then output one machine-readable JSON block:
 
 - Leaders available: 20
 - Watchlist rows available: 20
-- Risk flags available: 4
+- Risk flags available: 6
 - Signals available: 12
 
 Top leaders from Codex:
-- `NVDA` NVIDIA | chain=ai_accelerator | score=-6.96 | exec=L1 | flag=below_vwap
-- `MU` Micron | chain=memory_hbm_storage | score=-7.32 | exec=L1 | flag=below_vwap
-- `TSM` TSMC ADR | chain=foundry | score=-8.58 | exec=L1 | flag=below_vwap
-- `000660.KS` SK Hynix | chain=memory_hbm_storage | score=-9.03 | exec=L1 | flag=below_vwap
-- `AMD` AMD | chain=ai_accelerator | score=-9.34 | exec=L1 | flag=below_vwap
-- `TT` Trane Technologies | chain=data_center_power_cooling | score=-9.8 | exec=L1 |
-  flag=below_vwap
-- `WDC` Western Digital | chain=memory_hbm_storage | score=-9.8 | exec=L1 | flag=below_vwap
-- `STX` Seagate | chain=memory_hbm_storage | score=-9.8 | exec=L1 | flag=below_vwap
+- `AAPL` Apple | chain=mega_cap_platform | score=60.59 | exec=L1 | flag=watch_only
+- `GOOGL` Alphabet | chain=cloud_ai_capex | score=54.39 | exec=L1 | flag=watch_only
+- `LIN` Linde | chain=industrial_gases | score=54.03 | exec=L1 | flag=watch_only
+- `VRT` Vertiv | chain=data_center_power_cooling | score=40.45 | exec=L3_MANUAL |
+  flag=spread_missing
+- `GEV` GE Vernova | chain=data_center_power_cooling | score=39.42 | exec=L3_MANUAL |
+  flag=spread_missing
+- `ALAB` Astera Labs | chain=ai_networking_optical | score=39.28 | exec=L1 | flag=spread_missing
+- `ARM` Arm Holdings | chain=ai_accelerator | score=37.75 | exec=L1 | flag=spread_missing
+- `CIEN` Ciena | chain=ai_networking_optical | score=32.66 | exec=L3_MANUAL |
+  flag=spread_missing
