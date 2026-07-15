@@ -1,9 +1,9 @@
 {
   "schema_version": "live_endpoints_v1",
-  "updated_at": "2026-07-15T22:38:58+08:00",
+  "updated_at": "2026-07-15T22:45:06+08:00",
   "source": "stock_learning_companion/data/automation/latest_urls.json",
   "source_updated_at": "2026-07-15T22:35:05",
-  "status": "available",
+  "status": "healthy",
   "ttl_seconds": 300,
   "public_repo": "https://github.com/minqi1/investment-agent-memory-public",
   "public_site_url": "https://minqi1.github.io/investment-agent-memory-public/",
@@ -14,6 +14,24 @@
     "postmarket_refresh_public_url": "https://bill-stability-objective-revolution.trycloudflare.com/refresh_snapshot.json?stage=postmarket_review",
     "dashboard_local_url": "http://127.0.0.1:8501/?board=us&t=committee",
     "snapshot_local_url": "http://127.0.0.1:8510/snapshot.json"
+  },
+  "health": {
+    "snapshot_public_url": {
+      "ok": true,
+      "checked_at": "2026-07-15T22:45:04+08:00",
+      "status_code": 200,
+      "content_type": "application/json; charset=utf-8",
+      "sample_bytes": 512,
+      "error": ""
+    },
+    "dashboard_public_url": {
+      "ok": true,
+      "checked_at": "2026-07-15T22:45:05+08:00",
+      "status_code": 200,
+      "content_type": "text/html",
+      "sample_bytes": 512,
+      "error": ""
+    }
   },
   "raw_fallbacks": {
     "gpt_handoff": "https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/gpt_handoff.md",

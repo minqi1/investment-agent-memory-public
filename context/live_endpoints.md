@@ -1,8 +1,8 @@
 # Live Endpoint Directory
 
-- updated_at: `2026-07-15T22:38:58+08:00`
+- updated_at: `2026-07-15T22:45:06+08:00`
 - source_updated_at: `2026-07-15T22:35:05`
-- status: `available`
+- status: `healthy`
 - ttl_seconds: `300`
 
 ## GPT Read Order
@@ -19,6 +19,15 @@
 - snapshot_public_url: https://bill-stability-objective-revolution.trycloudflare.com/snapshot.json
 - premarket_refresh_public_url: https://bill-stability-objective-revolution.trycloudflare.com/refresh_snapshot.json?stage=premarket
 - postmarket_refresh_public_url: https://bill-stability-objective-revolution.trycloudflare.com/refresh_snapshot.json?stage=postmarket_review
+
+## Live Health
+
+- snapshot_public_url_ok: `True`
+- snapshot_public_url_status_code: `200`
+- snapshot_public_url_checked_at: `2026-07-15T22:45:04+08:00`
+- dashboard_public_url_ok: `True`
+- dashboard_public_url_status_code: `200`
+- dashboard_public_url_checked_at: `2026-07-15T22:45:05+08:00`
 
 ## Raw Fallbacks
 
