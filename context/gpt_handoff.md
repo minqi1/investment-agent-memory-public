@@ -20,13 +20,16 @@ Use this file as the stable handoff prompt between Codex and ChatGPT.
 
 ## Live Endpoint Discovery
 
-For the freshest intraday state, read the stable endpoint directory first:
+For the freshest intraday state and field definitions, read these stable public files first:
 
-1. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/live_endpoints.json`
-2. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/live_endpoints.md`
+1. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/data_contract.md`
+2. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/live_endpoints.json`
+3. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/live_endpoints.md`
 
 If `snapshot_public_url` is reachable, use it as the live real-time layer.
 If it is unreachable or stale, fall back to the GitHub raw files below.
+Use the data contract to interpret premarket, intraday live, postmarket, dynamic leaderboard,
+and comfortable-entry leaderboard fields.
 Do not infer market facts from page styling; use JSON and Markdown fields.
 
 ## Files To Read

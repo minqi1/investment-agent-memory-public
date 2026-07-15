@@ -1,12 +1,13 @@
 # Live Endpoint Directory
 
-- updated_at: `2026-07-15T23:46:26+08:00`
+- updated_at: `2026-07-16T00:10:02+08:00`
 - source_updated_at: `2026-07-15T23:40:00`
 - status: `healthy`
 - ttl_seconds: `300`
 
 ## GPT Read Order
 
+- Read context/data_contract.md for field definitions and usage boundaries.
 - Read context/live_endpoints.json from GitHub raw.
 - Use live.snapshot_public_url as the fixed Render intraday relay endpoint.
 - If the live endpoint is unreachable, stale, or contradictory, fall back to
@@ -24,18 +25,27 @@
 
 - snapshot_public_url_ok: `True`
 - snapshot_public_url_status_code: `200`
-- snapshot_public_url_checked_at: `2026-07-15T23:46:24+08:00`
+- snapshot_public_url_checked_at: `2026-07-16T00:10:01+08:00`
 - dashboard_public_url_ok: `True`
 - dashboard_public_url_status_code: `200`
-- dashboard_public_url_checked_at: `2026-07-15T23:46:25+08:00`
+- dashboard_public_url_checked_at: `2026-07-16T00:10:02+08:00`
 
 ## Raw Fallbacks
 
+- data_contract: https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/data_contract.md
 - gpt_handoff: https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/gpt_handoff.md
 - latest_intraday_context: https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_context.md
 - latest_intraday_state: https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_state.json
 - latest_market_context: https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_market_context.md
 - latest_market_state: https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_market_state.json
+
+## Monitor Guardrails
+
+- interval_open_seconds: `180`
+- duration_seconds_max: `120`
+- stale_count_policy: should not obviously rise across consecutive refreshes
+- rate_limit_policy: no 429 or Too Many Requests
+- relay_ok_required: `True`
 
 ## Boundaries
 

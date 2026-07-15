@@ -5,6 +5,7 @@ This public repository is a sanitized bridge for ChatGPT investment committee re
 ## Read First
 
 - `index.html` for the stable live endpoint directory site
+- `context/data_contract.md` for premarket, intraday, postmarket, and user-ranking field definitions
 - `context/live_endpoints.json`
 - `context/live_endpoints.md`
 - `context/gpt_handoff.md`
@@ -27,4 +28,10 @@ This bridge is for research and review only. It does not authorize automated tra
 
 ## Live Endpoint Pattern
 
-The GitHub Pages site and `context/live_endpoints.json` act as a stable directory for the current temporary trycloudflare live endpoints. If those URLs are unreachable, use the GitHub raw fallback files.
+The GitHub Pages site and `context/live_endpoints.json` act as a stable directory for the fixed Render live intraday relay. If the Render endpoint is unreachable, stale, or degraded, use the GitHub raw fallback files.
+
+## Intraday Monitor Guardrails
+
+- Open-session monitor cadence is currently 180 seconds.
+- Treat the live relay as healthy only while `duration_seconds < 120`, `stale_count` is not obviously rising, there are no `429` / `Too Many Requests` errors, and `relay_ok` or `relay_upload.ok` remains `True`.
+- The live packet includes the user's `dynamic_leaderboard` and `comfortable_entry_leaderboard`; these are research signals, not trade instructions.
