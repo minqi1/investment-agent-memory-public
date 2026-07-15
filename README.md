@@ -31,6 +31,8 @@ This bridge is for research and review only. It does not authorize automated tra
 - raw_intraday_context: `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_context.md`
 - raw_intraday_state: `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_state.json`
 - optional_render_current_intraday_json: `https://investment-agent-memory-public.onrender.com/latest_intraday.json`
+- optional_render_current_intraday_markdown: `https://investment-agent-memory-public.onrender.com/latest_intraday.md`
+- optional_render_ticker_template: `https://investment-agent-memory-public.onrender.com/ticker/{symbol}.json`
 - optional_render_health: `https://investment-agent-memory-public.onrender.com/health`
 
 The GitHub Pages site and `context/live_endpoints.json` act as a stable directory. GPT should treat GitHub raw as canonical and Render as optional. If the Render endpoint is unreachable, stale, degraded, or returns cache miss, use the GitHub raw fallback files.

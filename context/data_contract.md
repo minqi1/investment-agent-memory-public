@@ -16,6 +16,8 @@ automated trading.
 ## Fixed Live Links
 
 - optional_render_current_intraday_json: `https://investment-agent-memory-public.onrender.com/latest_intraday.json`
+- optional_render_current_intraday_markdown: `https://investment-agent-memory-public.onrender.com/latest_intraday.md`
+- optional_render_ticker_template: `https://investment-agent-memory-public.onrender.com/ticker/{symbol}.json`
 - health: `https://investment-agent-memory-public.onrender.com/health`
 - endpoint_directory: `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/live_endpoints.json`
 - raw_intraday_context: `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_context.md`
@@ -39,6 +41,9 @@ Premarket context is published through `context/latest_market_context.md` and
 
 Intraday data for GPT should come from GitHub raw first. The Render relay is optional because
 GPT web openers may fail on dynamic API endpoints.
+When GPT can fetch Render successfully, prefer `/latest_intraday.md` for human-readable review
+or `/ticker/{symbol}.json` for single-name lookup. `/latest_intraday.json` is pretty-printed
+JSON and should preserve full current watchlist state without long history arrays.
 
 - `generated_at`: ISO-8601 timestamp with timezone for the uploaded live packet.
 - converted US Eastern time and session status, when present.

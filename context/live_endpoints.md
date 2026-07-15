@@ -1,7 +1,7 @@
 # Live Endpoint Directory
 
-- updated_at: `2026-07-16T00:31:44+08:00`
-- source_updated_at: `2026-07-15T23:40:00`
+- updated_at: `2026-07-16T00:40:45+08:00`
+- source_updated_at: `2026-07-16T00:35:19`
 - status: `healthy`
 - ttl_seconds: `300`
 
@@ -11,15 +11,18 @@
 - Read context/live_endpoints.json from GitHub raw.
 - Use raw_fallbacks.latest_intraday_context and raw_fallbacks.latest_intraday_state as the
   canonical GPT-readable intraday source.
-- Optionally try live.snapshot_public_url as the fixed Render intraday relay endpoint.
+- Optionally try live.snapshot_markdown_public_url, live.snapshot_public_url, or
+  live.ticker_public_url_template as fixed Render relay endpoints.
 - If the live endpoint is unreachable, stale, returns cache miss, or is contradictory, continue
   from GitHub raw.
 - Use context/gpt_handoff.md for role boundaries and required output format.
 
 ## Live Layer
 
-- dashboard_public_url:
+- dashboard_public_url: https://topics-singles-focused-yields.trycloudflare.com/?board=us&t=committee
 - snapshot_public_url: https://investment-agent-memory-public.onrender.com/latest_intraday.json
+- snapshot_markdown_public_url: https://investment-agent-memory-public.onrender.com/latest_intraday.md
+- ticker_public_url_template: https://investment-agent-memory-public.onrender.com/ticker/{symbol}.json
 - premarket_refresh_public_url:
 - postmarket_refresh_public_url:
 
@@ -27,10 +30,10 @@
 
 - snapshot_public_url_ok: `True`
 - snapshot_public_url_status_code: `200`
-- snapshot_public_url_checked_at: `2026-07-16T00:31:42+08:00`
+- snapshot_public_url_checked_at: `2026-07-16T00:40:41+08:00`
 - dashboard_public_url_ok: `True`
 - dashboard_public_url_status_code: `200`
-- dashboard_public_url_checked_at: `2026-07-16T00:31:43+08:00`
+- dashboard_public_url_checked_at: `2026-07-16T00:40:43+08:00`
 
 ## Raw Fallbacks
 
