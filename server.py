@@ -474,8 +474,7 @@ def ticker(symbol: str) -> Response:
                 "market_time_et": contract.get("market_time_et"),
                 "links": contract.get("links"),
                 "relay": contract.get("relay"),
-            },
-            status_code=404,
+            }
         )
     return pretty_json_response(
         {
