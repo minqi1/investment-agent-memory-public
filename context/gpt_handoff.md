@@ -25,6 +25,7 @@ For the freshest intraday state and field definitions, read these stable public 
 1. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/data_contract.md`
 2. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/live_endpoints.json`
 3. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/live_endpoints.md`
+4. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_state.md`
 
 GitHub raw is the canonical GPT-readable source.
 If `snapshot_public_url` is reachable from GPT, it may be used as an optional live layer.
@@ -32,24 +33,32 @@ If the Render API cannot be fetched, returns cache miss, or is stale, use the Gi
 below.
 Use the data contract to interpret premarket, intraday live, postmarket, dynamic leaderboard,
 and comfortable-entry leaderboard fields.
-Do not infer market facts from page styling; use JSON and Markdown fields.
+Do not infer market facts from page styling; use Markdown and structured fallback fields.
+
+For intraday analysis, prefer the Markdown state file. It is intentionally multi-line and
+sectioned for GPT reading. Use JSONL only as a structured fallback, and use pretty JSON only
+if both Markdown and JSONL fail. Do not rely on single-line compressed JSON.
 
 ## Files To Read
 
 Read these files first, in this order:
 
-1. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_context.md`
-2. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_state.json`
-3. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_market_context.md`
-4. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_market_state.json`
-5. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/watchlist.md`
-6. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/memory/investment_principles.md`
-7. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/memory/mistakes.md`
-8. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/memory/stock_notes.md`
+1. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_state.md`
+2. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_state.jsonl`
+3. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_state.json`
+4. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_context.md`
+5. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_market_context.md`
+6. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_market_state.json`
+7. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/watchlist.md`
+8. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/memory/investment_principles.md`
+9. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/memory/mistakes.md`
+10. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/memory/stock_notes.md`
 
 If raw GitHub URLs are unavailable, read the same paths inside the repo:
 
 - `context/latest_intraday_context.md`
+- `context/latest_intraday_state.md`
+- `context/latest_intraday_state.jsonl`
 - `context/latest_intraday_state.json`
 - `context/latest_market_context.md`
 - `context/latest_market_state.json`

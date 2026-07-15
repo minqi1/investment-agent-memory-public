@@ -1,6 +1,6 @@
 {
   "schema_version": "live_endpoints_v1",
-  "updated_at": "2026-07-16T01:19:25+08:00",
+  "updated_at": "2026-07-16T02:12:23+08:00",
   "source": "stock_learning_companion/data/automation/latest_urls.json",
   "source_updated_at": "2026-07-16T01:05:06",
   "status": "healthy",
@@ -47,8 +47,10 @@
   "raw_fallbacks": {
     "data_contract": "https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/data_contract.md",
     "gpt_handoff": "https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/gpt_handoff.md",
+    "latest_intraday_state_markdown": "https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_state.md",
+    "latest_intraday_state_jsonl": "https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_state.jsonl",
+    "latest_intraday_state_json": "https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_state.json",
     "latest_intraday_context": "https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_context.md",
-    "latest_intraday_state": "https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_state.json",
     "latest_market_context": "https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_market_context.md",
     "latest_market_state": "https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_market_state.json"
   },
@@ -62,7 +64,9 @@
   "gpt_read_order": [
     "Read context/data_contract.md for field definitions and usage boundaries.",
     "Read context/live_endpoints.json from GitHub raw.",
-    "Use raw_fallbacks.latest_intraday_context and raw_fallbacks.latest_intraday_state as the canonical GPT-readable intraday source.",
+    "Use raw_fallbacks.latest_intraday_state_markdown as the canonical GPT-readable intraday source.",
+    "If Markdown cannot be read, use raw_fallbacks.latest_intraday_state_jsonl.",
+    "Use raw_fallbacks.latest_intraday_state_json only as the final structured fallback.",
     "Optionally try live.snapshot_markdown_public_url, live.snapshot_public_url, or live.ticker_public_url_template as fixed Render relay endpoints.",
     "If the live endpoint is unreachable, stale, returns cache miss, or is contradictory, continue from GitHub raw.",
     "Use context/gpt_handoff.md for role boundaries and required output format."
