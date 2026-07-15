@@ -4,19 +4,19 @@ Use this file as the stable handoff prompt between Codex and ChatGPT.
 
 ## Current Context
 
-- Generated: 2026-07-15T21:45:27
+- Generated: 2026-07-15T22:32:38
 - Stage: `intraday`
 - Report date: `2026-07-15`
-- Market regime from Codex: `weak_breadth_or_pullback`
+- Market regime from Codex: `risk_off_or_index_breakdown`
 - Current automated execution ceiling: `L3_MANUAL_CONFIRM_REQUIRED`
 - GitHub repo: https://github.com/minqi1/investment-agent-memory-public
 - Latest GPT premarket overlay date: `2026-07-13`
 - Latest GPT postmarket overlay date: `None`
 - GPT overlay gap days: `None`
-- Latest intraday context generated: `2026-07-15T21:45:05+08:00`
-- Latest intraday US/Eastern time: `2026-07-15T09:45:05-04:00`
+- Latest intraday context generated: `2026-07-15T22:32:33+08:00`
+- Latest intraday US/Eastern time: `2026-07-15T10:32:33-04:00`
 - Latest intraday session open: `True`
-- Latest intraday candidate count: `0`
+- Latest intraday candidate count: `4`
 
 ## Files To Read
 
@@ -211,7 +211,7 @@ Then output one machine-readable JSON block:
 - Leaders available: 20
 - Watchlist rows available: 20
 - Risk flags available: 6
-- Signals available: 12
+- Signals available: 13
 
 Top leaders from Codex:
 - `AAPL` Apple | chain=mega_cap_platform | score=60.59 | exec=L1 | flag=watch_only
