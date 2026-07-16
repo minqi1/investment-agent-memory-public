@@ -4,10 +4,10 @@ Use this file as the stable handoff prompt between Codex and ChatGPT.
 
 ## Current Context
 
-- Generated: 2026-07-16T09:01:39
-- Stage: `eod`
+- Generated: 2026-07-16T20:47:11
+- Stage: `premarket`
 - Report date: `2026-07-16`
-- Market regime from Codex: `risk_off_or_index_breakdown`
+- Market regime from Codex: `weak_breadth_or_pullback`
 - Current automated execution ceiling: `L3_MANUAL_CONFIRM_REQUIRED`
 - GitHub repo: https://github.com/minqi1/investment-agent-memory-public
 - Latest GPT premarket overlay date: `2026-07-13`
@@ -138,7 +138,7 @@ If GPT overlay continuity is gapped, do not invent missing forecasts or decision
   or crowded trades?
 - Are high-score names extended away from VWAP/opening range, or still near a reasonable
   support-check zone?
-- Please judge whether the support behind these leaders is durable: SPY, IWM, ORCL, MSFT, AMZN.
+- Please judge whether the support behind these leaders is durable: SPY, NVDA, CIEN, ANET, AMAT.
 - Separate data-quality/execution-boundary risks from true market risks.
 
 ## Required Output
@@ -230,16 +230,15 @@ Then output one machine-readable JSON block:
 - Signals available: 12
 
 Top leaders from Codex:
-- `SPY` S&P 500 ETF | chain=market_regime | score=65.91 | exec=L1 | flag=closed_market_eod_proxy
-- `IWM` Russell 2000 ETF | chain=market_regime | score=64.19 | exec=L1 |
-  flag=closed_market_eod_proxy
-- `ORCL` Oracle | chain=cloud_ai_capex | score=59.11 | exec=L1 | flag=closed_market_eod_proxy
-- `MSFT` Microsoft | chain=cloud_ai_capex | score=56.51 | exec=L3_MANUAL |
-  flag=closed_market_eod_proxy
-- `AMZN` Amazon | chain=cloud_ai_capex | score=53.54 | exec=L1 | flag=closed_market_eod_proxy
-- `AVGO` Broadcom | chain=custom_silicon_networking | score=51.17 | exec=L3_MANUAL |
-  flag=closed_market_eod_proxy
-- `SKHY` SK hynix ADR | chain=memory_hbm_storage | score=44.59 | exec=L1 |
-  flag=closed_market_eod_proxy
-- `ANET` Arista Networks | chain=ai_networking_optical | score=31.09 | exec=L3_MANUAL |
-  flag=closed_market_eod_proxy
+- `SPY` S&P 500 ETF | chain=market_regime | score=65.91 | exec=L1 | flag=watch_only
+- `NVDA` NVIDIA | chain=ai_accelerator | score=43.74 | exec=L3_MANUAL | flag=spread_missing
+- `CIEN` Ciena | chain=ai_networking_optical | score=-5.34 | exec=L3_MANUAL | flag=below_vwap
+- `ANET` Arista Networks | chain=ai_networking_optical | score=-6.91 | exec=L3_MANUAL |
+  flag=below_vwap
+- `AMAT` Applied Materials | chain=semiconductor_equipment | score=-7.05 | exec=L3_MANUAL |
+  flag=below_vwap
+- `TT` Trane Technologies | chain=data_center_power_cooling | score=-7.37 | exec=L3_MANUAL |
+  flag=below_vwap
+- `VRT` Vertiv | chain=data_center_power_cooling | score=-7.55 | exec=L3_MANUAL |
+  flag=below_vwap
+- `KLAC` KLA | chain=semiconductor_equipment | score=-7.91 | exec=L1 | flag=below_vwap
