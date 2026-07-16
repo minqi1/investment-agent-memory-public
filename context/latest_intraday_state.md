@@ -1,7 +1,7 @@
 # Intraday State
 
-- Generated at: `2026-07-17T03:03:28+08:00`
-- Market time ET: `2026-07-16T15:03:29-04:00`
+- Generated at: `2026-07-17T03:07:27+08:00`
+- Market time ET: `2026-07-16T15:07:28-04:00`
 - Session open: `True`
 - Execution limit: `L3_MANUAL_CONFIRM_REQUIRED`
 - Rows: `56`
@@ -13,7 +13,7 @@
 - stale_count: `1`
 - coverage_price: `55`
 - coverage_vwap: `55`
-- caution_counts: `{'below_opening_15m_low': 39, 'watch_only': 1, 'manual_confirm_candidate': 2, 'below_vwap': 9, 'price_stale_or_missing': 1, 'spread_too_wide_or_missing': 4}`
+- caution_counts: `{'below_opening_15m_low': 41, 'manual_confirm_candidate': 2, 'below_vwap': 8, 'price_stale_or_missing': 1, 'spread_too_wide_or_missing': 4}`
 - current_max_execution_level: `L3_MANUAL_CONFIRM_REQUIRED`
 - data_source_note: `ALPACA_IEX_ONLY/proxy data supports research and manual confirmation only.`
 
@@ -25,125 +25,125 @@
 
 | ticker | chain | price | chg% | vwap | vs_vwap% | 15m_high | 15m_low | spread% | action | risk |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| QQQ | market_regime | 706.41 |  | 709.2747 | -0.4039 | 713.55 | 708.25 | 0.0142 | below_opening_15m_low | below_opening_15m_low,below_vwap |
-| SOXX | semiconductor_index | 529.16 |  | 533.781 | -0.8657 | 543.4 | 535.47 | 0.0416 | below_opening_15m_low | below_opening_15m_low,below_vwap |
-| SMH | semiconductor_index | 568.12 |  | 571.6598 | -0.6192 | 580.31 | 572.21 | 0.0704 | below_opening_15m_low | below_opening_15m_low,below_vwap |
-| SPY | market_regime | 750.615 |  | 752.2546 | -0.218 | 753.51 | 751.13 | 0.004 | below_opening_15m_low | below_opening_15m_low,below_vwap |
+| QQQ | market_regime | 705.66 |  | 709.2387 | -0.5046 | 713.55 | 708.25 | 0.0142 | below_opening_15m_low | below_opening_15m_low,below_vwap |
+| SOXX | semiconductor_index | 527.63 |  | 533.7271 | -1.1424 | 543.4 | 535.47 | 0.0739 | below_opening_15m_low | below_opening_15m_low,below_vwap |
+| SMH | semiconductor_index | 567.425 |  | 571.6343 | -0.7364 | 580.31 | 572.21 | 0.0599 | below_opening_15m_low | below_opening_15m_low,below_vwap |
+| SPY | market_regime | 750.29 |  | 752.224 | -0.2571 | 753.51 | 751.13 | 0.0027 | below_opening_15m_low | below_opening_15m_low,below_vwap |
 
 ## Buy Precheck Candidates
 
 | rank | ticker | chain | price | chg% | vwap | vs_vwap% | 15m_high | 15m_low | spread% | action | risk |
 | ---: | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| 1 | MSFT | cloud_ai_capex | 405.69 |  | 399.7756 | 1.4794 | 398.69 | 392.2 | 0.0394 | buy_precheck_manual_confirm | none |
-| 2 | AAPL | mega_cap_platform | 333.29 |  | 330.8314 | 0.7432 | 328.98 | 326.885 | 0.099 | buy_precheck_manual_confirm | none |
+| 1 | MSFT | cloud_ai_capex | 405.07 |  | 399.8477 | 1.3061 | 398.69 | 392.2 | 0.0815 | buy_precheck_manual_confirm | none |
+| 2 | AAPL | mega_cap_platform | 334.44 |  | 330.9144 | 1.0654 | 328.98 | 326.885 | 0.0419 | buy_precheck_manual_confirm | none |
 
 ## Comfortable Entry Leaderboard
 
 | rank | ticker | chain | price | chg% | vwap | vs_vwap% | 15m_high | 15m_low | spread% | action | risk |
 | ---: | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| 1 | NVDA | ai_accelerator | 207.51 |  | 207.3471 | 0.0785 | 211.03 | 207.49 | 0.0193 | watch_only | none |
-| 2 | AAPL | mega_cap_platform | 333.29 |  | 330.8314 | 0.7432 | 328.98 | 326.885 | 0.099 | buy_precheck_manual_confirm | none |
-| 3 | ANET | ai_networking_optical | 166.75 |  | 166.5868 | 0.098 | 169.91 | 165.6 |  | spread_too_wide_or_missing | spread_too_wide_or_missing,spread_unavailable |
-| 4 | JCI | data_center_power_cooling | 140.7 |  | 140.5221 | 0.1266 | 140.83 | 139.43 |  | spread_too_wide_or_missing | spread_too_wide_or_missing,spread_unavailable |
-| 5 | MSFT | cloud_ai_capex | 405.69 |  | 399.7756 | 1.4794 | 398.69 | 392.2 | 0.0394 | buy_precheck_manual_confirm | none |
-| 6 | LIN | industrial_gases | 518.245 |  | 515.2423 | 0.5828 | 515.825 | 512.23 |  | spread_too_wide_or_missing | spread_too_wide_or_missing,spread_unavailable |
-| 7 | APD | industrial_gases | 296.065 |  | 295.0014 | 0.3605 | 293.89 | 291.35 |  | spread_too_wide_or_missing | spread_too_wide_or_missing,spread_unavailable |
-| 8 | IREN | high_beta_ai_infrastructure | 35.575 |  | 35.5 | 0.2113 | 37.365 | 36.4 | 0.0281 | below_opening_15m_low | below_opening_15m_low |
-| 9 | TT | data_center_power_cooling | 473.71 |  | 474.1176 | -0.086 | 474.085 | 467.64 | 0.133 | below_vwap | below_vwap |
-| 10 | ASML | semiconductor_equipment | 1796.84 |  | 1817.6779 | -1.1464 | 1823.13 | 1796.26 | 0.1085 | below_vwap | below_vwap |
-| 11 | IWM | market_regime | 295.14 |  | 296.1152 | -0.3293 | 296.28 | 294.65 | 0.0102 | below_vwap | below_vwap |
-| 12 | ^SOX | semiconductor_index |  |  |  |  |  |  |  | below_vwap | below_vwap,spread_unavailable |
-| 13 | TSM | foundry | 407.3 |  | 408.7234 | -0.3483 | 414.385 | 406.61 | 0.221 | below_vwap | below_vwap |
-| 14 | AMZN | cloud_ai_capex | 253.19 |  | 255.1015 | -0.7493 | 258.07 | 252.62 | 0.2054 | below_vwap | below_vwap |
-| 15 | GEV | data_center_power_cooling | 1023.76 |  | 1027.1505 | -0.3301 | 1035.07 | 1021.09 | 4.4942 | below_vwap | below_vwap,spread_too_wide |
-| 16 | KLAC | semiconductor_equipment | 219.67 |  | 220.9336 | -0.5719 | 222.19 | 218.09 | 4.6297 | below_vwap | below_vwap,spread_too_wide |
-| 17 | META | cloud_ai_capex | 667.595 |  | 671.2799 | -0.5489 | 680.09 | 667.1 | 0.4044 | below_vwap | below_vwap,spread_too_wide |
-| 18 | SOXX | semiconductor_index | 529.16 |  | 533.781 | -0.8657 | 543.4 | 535.47 | 0.0416 | below_opening_15m_low | below_opening_15m_low,below_vwap |
-| 19 | QQQ | market_regime | 706.41 |  | 709.2747 | -0.4039 | 713.55 | 708.25 | 0.0142 | below_opening_15m_low | below_opening_15m_low,below_vwap |
-| 20 | SMH | semiconductor_index | 568.12 |  | 571.6598 | -0.6192 | 580.31 | 572.21 | 0.0704 | below_opening_15m_low | below_opening_15m_low,below_vwap |
+| 1 | TT | data_center_power_cooling | 474.43 |  | 474.1137 | 0.0667 | 474.085 | 467.64 |  | spread_too_wide_or_missing | spread_too_wide_or_missing,spread_unavailable |
+| 2 | MSFT | cloud_ai_capex | 405.07 |  | 399.8477 | 1.3061 | 398.69 | 392.2 | 0.0815 | buy_precheck_manual_confirm | none |
+| 3 | AAPL | mega_cap_platform | 334.44 |  | 330.9144 | 1.0654 | 328.98 | 326.885 | 0.0419 | buy_precheck_manual_confirm | none |
+| 4 | ANET | ai_networking_optical | 166.94 |  | 166.5882 | 0.2112 | 169.91 | 165.6 | 3.2287 | spread_too_wide_or_missing | spread_too_wide,spread_too_wide_or_missing |
+| 5 | NVDA | ai_accelerator | 207.35 |  | 207.3496 | 0.0002 | 211.03 | 207.49 | 0.0096 | below_opening_15m_low | below_opening_15m_low |
+| 6 | LIN | industrial_gases | 518.4 |  | 515.2613 | 0.6091 | 515.825 | 512.23 | 5.0116 | spread_too_wide_or_missing | spread_too_wide,spread_too_wide_or_missing |
+| 7 | APD | industrial_gases | 296.175 |  | 295.0036 | 0.3971 | 293.89 | 291.35 | 3.9031 | spread_too_wide_or_missing | spread_too_wide,spread_too_wide_or_missing |
+| 8 | IWM | market_regime | 295.015 |  | 296.0925 | -0.3639 | 296.28 | 294.65 | 0.0068 | below_vwap | below_vwap |
+| 9 | AMZN | cloud_ai_capex | 252.635 |  | 255.052 | -0.9476 | 258.07 | 252.62 | 0.0198 | below_vwap | below_vwap |
+| 10 | ^SOX | semiconductor_index |  |  |  |  |  |  |  | below_vwap | below_vwap,spread_unavailable |
+| 11 | JCI | data_center_power_cooling | 140.43 |  | 140.521 | -0.0648 | 140.83 | 139.43 |  | below_vwap | below_vwap,spread_unavailable |
+| 12 | ENTG | semiconductor_materials | 134.22 |  | 134.7893 | -0.4224 | 138.07 | 133.73 |  | below_vwap | below_vwap,spread_unavailable |
+| 13 | TSM | foundry | 406.73 |  | 408.7127 | -0.4851 | 414.385 | 406.61 | 0.5483 | below_vwap | below_vwap,spread_too_wide |
+| 14 | GEV | data_center_power_cooling | 1023.62 |  | 1027.1015 | -0.339 | 1035.07 | 1021.09 | 4.3551 | below_vwap | below_vwap,spread_too_wide |
+| 15 | KLAC | semiconductor_equipment | 219.2 |  | 220.9244 | -0.7805 | 222.19 | 218.09 | 5.0365 | below_vwap | below_vwap,spread_too_wide |
+| 16 | SOXX | semiconductor_index | 527.63 |  | 533.7271 | -1.1424 | 543.4 | 535.47 | 0.0739 | below_opening_15m_low | below_opening_15m_low,below_vwap |
+| 17 | QQQ | market_regime | 705.66 |  | 709.2387 | -0.5046 | 713.55 | 708.25 | 0.0142 | below_opening_15m_low | below_opening_15m_low,below_vwap |
+| 18 | ASML | semiconductor_equipment | 1794.96 |  | 1817.5176 | -1.2411 | 1823.13 | 1796.26 | 0.0797 | below_opening_15m_low | below_opening_15m_low,below_vwap |
+| 19 | SMH | semiconductor_index | 567.425 |  | 571.6343 | -0.7364 | 580.31 | 572.21 | 0.0599 | below_opening_15m_low | below_opening_15m_low,below_vwap |
+| 20 | SPY | market_regime | 750.29 |  | 752.224 | -0.2571 | 753.51 | 751.13 | 0.0027 | below_opening_15m_low | below_opening_15m_low,below_vwap |
 
 ## Dynamic Leaderboard
 
 | rank | ticker | chain | price | chg% | vwap | vs_vwap% | 15m_high | 15m_low | spread% | action | risk |
 | ---: | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| 1 | MSFT | cloud_ai_capex | 405.69 |  | 399.7756 | 1.4794 | 398.69 | 392.2 | 0.0394 | buy_precheck_manual_confirm | none |
-| 2 | AAPL | mega_cap_platform | 333.29 |  | 330.8314 | 0.7432 | 328.98 | 326.885 | 0.099 | buy_precheck_manual_confirm | none |
-| 3 | LIN | industrial_gases | 518.245 |  | 515.2423 | 0.5828 | 515.825 | 512.23 |  | spread_too_wide_or_missing | spread_too_wide_or_missing,spread_unavailable |
-| 4 | APD | industrial_gases | 296.065 |  | 295.0014 | 0.3605 | 293.89 | 291.35 |  | spread_too_wide_or_missing | spread_too_wide_or_missing,spread_unavailable |
-| 5 | NVDA | ai_accelerator | 207.51 |  | 207.3471 | 0.0785 | 211.03 | 207.49 | 0.0193 | watch_only | none |
-| 6 | TSM | foundry | 407.3 |  | 408.7234 | -0.3483 | 414.385 | 406.61 | 0.221 | below_vwap | below_vwap |
-| 7 | TT | data_center_power_cooling | 473.71 |  | 474.1176 | -0.086 | 474.085 | 467.64 | 0.133 | below_vwap | below_vwap |
-| 8 | GEV | data_center_power_cooling | 1023.76 |  | 1027.1505 | -0.3301 | 1035.07 | 1021.09 | 4.4942 | below_vwap | below_vwap,spread_too_wide |
-| 9 | ASML | semiconductor_equipment | 1796.84 |  | 1817.6779 | -1.1464 | 1823.13 | 1796.26 | 0.1085 | below_vwap | below_vwap |
-| 10 | KLAC | semiconductor_equipment | 219.67 |  | 220.9336 | -0.5719 | 222.19 | 218.09 | 4.6297 | below_vwap | below_vwap,spread_too_wide |
-| 11 | IWM | market_regime | 295.14 |  | 296.1152 | -0.3293 | 296.28 | 294.65 | 0.0102 | below_vwap | below_vwap |
-| 12 | ^SOX | semiconductor_index |  |  |  |  |  |  |  | below_vwap | below_vwap,spread_unavailable |
-| 13 | AMZN | cloud_ai_capex | 253.19 |  | 255.1015 | -0.7493 | 258.07 | 252.62 | 0.2054 | below_vwap | below_vwap |
-| 14 | META | cloud_ai_capex | 667.595 |  | 671.2799 | -0.5489 | 680.09 | 667.1 | 0.4044 | below_vwap | below_vwap,spread_too_wide |
-| 15 | ANET | ai_networking_optical | 166.75 |  | 166.5868 | 0.098 | 169.91 | 165.6 |  | spread_too_wide_or_missing | spread_too_wide_or_missing,spread_unavailable |
-| 16 | JCI | data_center_power_cooling | 140.7 |  | 140.5221 | 0.1266 | 140.83 | 139.43 |  | spread_too_wide_or_missing | spread_too_wide_or_missing,spread_unavailable |
-| 17 | IREN | high_beta_ai_infrastructure | 35.575 |  | 35.5 | 0.2113 | 37.365 | 36.4 | 0.0281 | below_opening_15m_low | below_opening_15m_low |
-| 18 | SOXX | semiconductor_index | 529.16 |  | 533.781 | -0.8657 | 543.4 | 535.47 | 0.0416 | below_opening_15m_low | below_opening_15m_low,below_vwap |
-| 19 | CIEN | ai_networking_optical | 388.2 |  | 394.3263 | -1.5536 | 410 | 397.68 | 0.2756 | below_opening_15m_low | below_opening_15m_low,below_vwap |
-| 20 | QQQ | market_regime | 706.41 |  | 709.2747 | -0.4039 | 713.55 | 708.25 | 0.0142 | below_opening_15m_low | below_opening_15m_low,below_vwap |
+| 1 | MSFT | cloud_ai_capex | 405.07 |  | 399.8477 | 1.3061 | 398.69 | 392.2 | 0.0815 | buy_precheck_manual_confirm | none |
+| 2 | AAPL | mega_cap_platform | 334.44 |  | 330.9144 | 1.0654 | 328.98 | 326.885 | 0.0419 | buy_precheck_manual_confirm | none |
+| 3 | TT | data_center_power_cooling | 474.43 |  | 474.1137 | 0.0667 | 474.085 | 467.64 |  | spread_too_wide_or_missing | spread_too_wide_or_missing,spread_unavailable |
+| 4 | LIN | industrial_gases | 518.4 |  | 515.2613 | 0.6091 | 515.825 | 512.23 | 5.0116 | spread_too_wide_or_missing | spread_too_wide,spread_too_wide_or_missing |
+| 5 | APD | industrial_gases | 296.175 |  | 295.0036 | 0.3971 | 293.89 | 291.35 | 3.9031 | spread_too_wide_or_missing | spread_too_wide,spread_too_wide_or_missing |
+| 6 | TSM | foundry | 406.73 |  | 408.7127 | -0.4851 | 414.385 | 406.61 | 0.5483 | below_vwap | below_vwap,spread_too_wide |
+| 7 | JCI | data_center_power_cooling | 140.43 |  | 140.521 | -0.0648 | 140.83 | 139.43 |  | below_vwap | below_vwap,spread_unavailable |
+| 8 | GEV | data_center_power_cooling | 1023.62 |  | 1027.1015 | -0.339 | 1035.07 | 1021.09 | 4.3551 | below_vwap | below_vwap,spread_too_wide |
+| 9 | KLAC | semiconductor_equipment | 219.2 |  | 220.9244 | -0.7805 | 222.19 | 218.09 | 5.0365 | below_vwap | below_vwap,spread_too_wide |
+| 10 | IWM | market_regime | 295.015 |  | 296.0925 | -0.3639 | 296.28 | 294.65 | 0.0068 | below_vwap | below_vwap |
+| 11 | ^SOX | semiconductor_index |  |  |  |  |  |  |  | below_vwap | below_vwap,spread_unavailable |
+| 12 | ENTG | semiconductor_materials | 134.22 |  | 134.7893 | -0.4224 | 138.07 | 133.73 |  | below_vwap | below_vwap,spread_unavailable |
+| 13 | AMZN | cloud_ai_capex | 252.635 |  | 255.052 | -0.9476 | 258.07 | 252.62 | 0.0198 | below_vwap | below_vwap |
+| 14 | ANET | ai_networking_optical | 166.94 |  | 166.5882 | 0.2112 | 169.91 | 165.6 | 3.2287 | spread_too_wide_or_missing | spread_too_wide,spread_too_wide_or_missing |
+| 15 | NVDA | ai_accelerator | 207.35 |  | 207.3496 | 0.0002 | 211.03 | 207.49 | 0.0096 | below_opening_15m_low | below_opening_15m_low |
+| 16 | SOXX | semiconductor_index | 527.63 |  | 533.7271 | -1.1424 | 543.4 | 535.47 | 0.0739 | below_opening_15m_low | below_opening_15m_low,below_vwap |
+| 17 | CIEN | ai_networking_optical | 388.34 |  | 394.1303 | -1.4691 | 410 | 397.68 | 0.412 | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_too_wide |
+| 18 | QQQ | market_regime | 705.66 |  | 709.2387 | -0.5046 | 713.55 | 708.25 | 0.0142 | below_opening_15m_low | below_opening_15m_low,below_vwap |
+| 19 | AVGO | custom_silicon_networking | 375.81 |  | 379.7765 | -1.0444 | 386.58 | 378.53 | 0.2661 | below_opening_15m_low | below_opening_15m_low,below_vwap |
+| 20 | MU | memory_hbm_storage | 845.81 |  | 856.5636 | -1.2554 | 887.1 | 866.765 | 0.3488 | below_opening_15m_low | below_opening_15m_low,below_vwap |
 
 ## Full Watchlist Rows
 
 | ticker | chain | price | chg% | vwap | vs_vwap% | 15m_high | 15m_low | spread% | action | risk |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| QQQ | market_regime | 706.41 |  | 709.2747 | -0.4039 | 713.55 | 708.25 | 0.0142 | below_opening_15m_low | below_opening_15m_low,below_vwap |
-| TQQQ | leveraged_tool | 70.9 |  | 71.7831 | -1.2302 | 73.09 | 71.45 | 0.0141 | below_opening_15m_low | below_opening_15m_low,below_vwap |
-| NVDA | ai_accelerator | 207.51 |  | 207.3471 | 0.0785 | 211.03 | 207.49 | 0.0193 | watch_only | none |
-| MSFT | cloud_ai_capex | 405.69 |  | 399.7756 | 1.4794 | 398.69 | 392.2 | 0.0394 | buy_precheck_manual_confirm | none |
-| AAPL | mega_cap_platform | 333.29 |  | 330.8314 | 0.7432 | 328.98 | 326.885 | 0.099 | buy_precheck_manual_confirm | none |
-| GOOGL | cloud_ai_capex | 357.04 |  | 368.1461 | -3.0168 | 375.18 | 369.2 | 0.3949 | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_too_wide |
-| AMD | ai_accelerator | 496 |  | 503.6832 | -1.5254 | 518.33 | 507.62 | 1.3508 | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_too_wide |
-| TSM | foundry | 407.3 |  | 408.7234 | -0.3483 | 414.385 | 406.61 | 0.221 | below_vwap | below_vwap |
+| QQQ | market_regime | 705.66 |  | 709.2387 | -0.5046 | 713.55 | 708.25 | 0.0142 | below_opening_15m_low | below_opening_15m_low,below_vwap |
+| TQQQ | leveraged_tool | 70.63 |  | 71.7742 | -1.5942 | 73.09 | 71.45 | 0.0142 | below_opening_15m_low | below_opening_15m_low,below_vwap |
+| NVDA | ai_accelerator | 207.35 |  | 207.3496 | 0.0002 | 211.03 | 207.49 | 0.0096 | below_opening_15m_low | below_opening_15m_low |
+| MSFT | cloud_ai_capex | 405.07 |  | 399.8477 | 1.3061 | 398.69 | 392.2 | 0.0815 | buy_precheck_manual_confirm | none |
+| AAPL | mega_cap_platform | 334.44 |  | 330.9144 | 1.0654 | 328.98 | 326.885 | 0.0419 | buy_precheck_manual_confirm | none |
+| GOOGL | cloud_ai_capex | 356.625 |  | 367.7259 | -3.0188 | 375.18 | 369.2 | 0.1318 | below_opening_15m_low | below_opening_15m_low,below_vwap |
+| AMD | ai_accelerator | 494.415 |  | 503.585 | -1.8209 | 518.33 | 507.62 | 0.6917 | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_too_wide |
+| TSM | foundry | 406.73 |  | 408.7127 | -0.4851 | 414.385 | 406.61 | 0.5483 | below_vwap | below_vwap,spread_too_wide |
 | 000660.KS | memory_hbm_storage | 1842000 |  | 1958272.8955 | -5.9375 |  |  |  | price_stale_or_missing | below_vwap,price_stale_or_missing,spread_unavailable,stale_or_missing |
 | ^SOX | semiconductor_index |  |  |  |  |  |  |  | below_vwap | below_vwap,spread_unavailable |
-| SOXX | semiconductor_index | 529.16 |  | 533.781 | -0.8657 | 543.4 | 535.47 | 0.0416 | below_opening_15m_low | below_opening_15m_low,below_vwap |
-| SMH | semiconductor_index | 568.12 |  | 571.6598 | -0.6192 | 580.31 | 572.21 | 0.0704 | below_opening_15m_low | below_opening_15m_low,below_vwap |
-| AVGO | custom_silicon_networking | 376.27 |  | 379.8173 | -0.934 | 386.58 | 378.53 | 0.3375 | below_opening_15m_low | below_opening_15m_low,below_vwap |
-| MU | memory_hbm_storage | 848.9 |  | 856.7602 | -0.9174 | 887.1 | 866.765 | 0.1531 | below_opening_15m_low | below_opening_15m_low,below_vwap |
-| MRVL | custom_silicon_networking | 188.365 |  | 190.9636 | -1.3608 | 201.61 | 194.19 | 0.4937 | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_too_wide |
-| DELL | ai_server_oem | 395.63 |  | 402.026 | -1.5909 | 411.65 | 400.635 |  | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_unavailable |
-| HPE | ai_server_oem | 45.21 |  | 45.7784 | -1.2416 | 47.65 | 46.165 | 0.0221 | below_opening_15m_low | below_opening_15m_low,below_vwap |
-| SMCI | ai_server_oem | 25.09 |  | 25.3099 | -0.8687 | 26.71 | 25.74 | 0.0399 | below_opening_15m_low | below_opening_15m_low,below_vwap |
-| SPY | market_regime | 750.615 |  | 752.2546 | -0.218 | 753.51 | 751.13 | 0.004 | below_opening_15m_low | below_opening_15m_low,below_vwap |
-| IWM | market_regime | 295.14 |  | 296.1152 | -0.3293 | 296.28 | 294.65 | 0.0102 | below_vwap | below_vwap |
-| ORCL | cloud_ai_capex | 125.8 |  | 126.6103 | -0.64 | 131.36 | 126.665 | 0.159 | below_opening_15m_low | below_opening_15m_low,below_vwap |
-| CRWV | gpu_cloud_ai_factory | 73.15 |  | 73.2962 | -0.1994 | 75.54 | 73.985 | 0.3418 | below_opening_15m_low | below_opening_15m_low,below_vwap |
-| VRT | data_center_power_cooling | 289.09 |  | 293.2858 | -1.4306 | 300.385 | 293.64 |  | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_unavailable |
-| ETN | data_center_power_cooling | 395.41 |  | 399.2279 | -0.9563 | 406.24 | 399.495 | 0.2226 | below_opening_15m_low | below_opening_15m_low,below_vwap |
-| PWR | data_center_power_cooling | 627.95 |  | 631.214 | -0.5171 | 640.25 | 631.005 |  | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_unavailable |
-| GEV | data_center_power_cooling | 1023.76 |  | 1027.1505 | -0.3301 | 1035.07 | 1021.09 | 4.4942 | below_vwap | below_vwap,spread_too_wide |
-| TT | data_center_power_cooling | 473.71 |  | 474.1176 | -0.086 | 474.085 | 467.64 | 0.133 | below_vwap | below_vwap |
-| JCI | data_center_power_cooling | 140.7 |  | 140.5221 | 0.1266 | 140.83 | 139.43 |  | spread_too_wide_or_missing | spread_too_wide_or_missing,spread_unavailable |
-| ANET | ai_networking_optical | 166.75 |  | 166.5868 | 0.098 | 169.91 | 165.6 |  | spread_too_wide_or_missing | spread_too_wide_or_missing,spread_unavailable |
-| COHR | ai_networking_optical | 275.61 |  | 280.6181 | -1.7847 | 288.48 | 280.67 | 2.4963 | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_too_wide |
-| LITE | ai_networking_optical | 698.16 |  | 708.1566 | -1.4116 | 737.175 | 720.21 | 2.8131 | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_too_wide |
-| CIEN | ai_networking_optical | 388.2 |  | 394.3263 | -1.5536 | 410 | 397.68 | 0.2756 | below_opening_15m_low | below_opening_15m_low,below_vwap |
-| AAOI | ai_networking_optical | 99.09 |  | 101.2558 | -2.139 | 106.975 | 102.85 |  | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_unavailable |
-| ALAB | ai_networking_optical | 318.27 |  | 323.3128 | -1.5597 | 337.59 | 326.16 |  | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_unavailable |
-| ASML | semiconductor_equipment | 1796.84 |  | 1817.6779 | -1.1464 | 1823.13 | 1796.26 | 0.1085 | below_vwap | below_vwap |
-| AMAT | semiconductor_equipment | 561.87 |  | 569.8128 | -1.3939 | 572.69 | 562.32 | 0.6995 | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_too_wide |
-| LRCX | semiconductor_equipment | 317.67 |  | 322.8774 | -1.6128 | 328.96 | 324.11 |  | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_unavailable |
-| KLAC | semiconductor_equipment | 219.67 |  | 220.9336 | -0.5719 | 222.19 | 218.09 | 4.6297 | below_vwap | below_vwap,spread_too_wide |
-| TER | semiconductor_test_packaging | 322.965 |  | 326.6027 | -1.1138 | 332.49 | 326.685 | 4.2481 | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_too_wide |
-| ONTO | semiconductor_test_packaging | 279.89 |  | 286.3034 | -2.2401 | 295.83 | 285.02 |  | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_unavailable |
-| AMKR | semiconductor_test_packaging | 63.02 |  | 63.8816 | -1.3488 | 66.19 | 63.93 | 1.8566 | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_too_wide |
-| COHU | semiconductor_test_packaging | 50.94 |  | 51.762 | -1.588 | 52.72 | 51.735 |  | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_unavailable |
-| ENTG | semiconductor_materials | 133.39 |  | 134.8127 | -1.0553 | 138.07 | 133.73 |  | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_unavailable |
-| MKSI | semiconductor_materials | 328.42 |  | 334.1388 | -1.7115 | 346.26 | 338 |  | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_unavailable |
-| LIN | industrial_gases | 518.245 |  | 515.2423 | 0.5828 | 515.825 | 512.23 |  | spread_too_wide_or_missing | spread_too_wide_or_missing,spread_unavailable |
-| APD | industrial_gases | 296.065 |  | 295.0014 | 0.3605 | 293.89 | 291.35 |  | spread_too_wide_or_missing | spread_too_wide_or_missing,spread_unavailable |
-| APLD | high_beta_ai_infrastructure | 26.295 |  | 26.7779 | -1.8035 | 28.05 | 27.6 | 0.038 | below_opening_15m_low | below_opening_15m_low,below_vwap |
-| IREN | high_beta_ai_infrastructure | 35.575 |  | 35.5 | 0.2113 | 37.365 | 36.4 | 0.0281 | below_opening_15m_low | below_opening_15m_low |
-| CORZ | high_beta_ai_infrastructure | 21.065 |  | 21.2034 | -0.6527 | 22.18 | 21.78 | 0.0475 | below_opening_15m_low | below_opening_15m_low,below_vwap |
-| SNDK | memory_hbm_storage | 1412.425 |  | 1460.4589 | -3.289 | 1549.47 | 1482.06 | 0.7179 | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_too_wide |
-| WDC | memory_hbm_storage | 459.12 |  | 473.4239 | -3.0214 | 498.04 | 480.14 |  | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_unavailable |
-| STX | memory_hbm_storage | 743.87 |  | 764.0155 | -2.6368 | 797.155 | 768.7 | 4.4712 | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_too_wide |
-| AMZN | cloud_ai_capex | 253.19 |  | 255.1015 | -0.7493 | 258.07 | 252.62 | 0.2054 | below_vwap | below_vwap |
-| META | cloud_ai_capex | 667.595 |  | 671.2799 | -0.5489 | 680.09 | 667.1 | 0.4044 | below_vwap | below_vwap,spread_too_wide |
-| ARM | ai_accelerator | 256.65 |  | 257.2847 | -0.2467 | 265.96 | 258.1 | 3.8964 | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_too_wide |
-| SKHY | memory_hbm_storage | 156.18 |  | 161.5962 | -3.3517 | 168.11 | 162.41 | 0.7491 | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_too_wide |
+| SOXX | semiconductor_index | 527.63 |  | 533.7271 | -1.1424 | 543.4 | 535.47 | 0.0739 | below_opening_15m_low | below_opening_15m_low,below_vwap |
+| SMH | semiconductor_index | 567.425 |  | 571.6343 | -0.7364 | 580.31 | 572.21 | 0.0599 | below_opening_15m_low | below_opening_15m_low,below_vwap |
+| AVGO | custom_silicon_networking | 375.81 |  | 379.7765 | -1.0444 | 386.58 | 378.53 | 0.2661 | below_opening_15m_low | below_opening_15m_low,below_vwap |
+| MU | memory_hbm_storage | 845.81 |  | 856.5636 | -1.2554 | 887.1 | 866.765 | 0.3488 | below_opening_15m_low | below_opening_15m_low,below_vwap |
+| MRVL | custom_silicon_networking | 186.71 |  | 190.8994 | -2.1946 | 201.61 | 194.19 | 1.8799 | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_too_wide |
+| DELL | ai_server_oem | 395.9 |  | 401.9157 | -1.4968 | 411.65 | 400.635 |  | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_unavailable |
+| HPE | ai_server_oem | 45.255 |  | 45.7657 | -1.116 | 47.65 | 46.165 | 0.0221 | below_opening_15m_low | below_opening_15m_low,below_vwap |
+| SMCI | ai_server_oem | 25.065 |  | 25.3074 | -0.958 | 26.71 | 25.74 | 0.0798 | below_opening_15m_low | below_opening_15m_low,below_vwap |
+| SPY | market_regime | 750.29 |  | 752.224 | -0.2571 | 753.51 | 751.13 | 0.0027 | below_opening_15m_low | below_opening_15m_low,below_vwap |
+| IWM | market_regime | 295.015 |  | 296.0925 | -0.3639 | 296.28 | 294.65 | 0.0068 | below_vwap | below_vwap |
+| ORCL | cloud_ai_capex | 125.685 |  | 126.6006 | -0.7232 | 131.36 | 126.665 | 0.4694 | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_too_wide |
+| CRWV | gpu_cloud_ai_factory | 73.29 |  | 73.296 | -0.0082 | 75.54 | 73.985 | 4.3526 | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_too_wide |
+| VRT | data_center_power_cooling | 289.45 |  | 293.2532 | -1.2969 | 300.385 | 293.64 |  | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_unavailable |
+| ETN | data_center_power_cooling | 395.81 |  | 399.218 | -0.8537 | 406.24 | 399.495 |  | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_unavailable |
+| PWR | data_center_power_cooling | 628.52 |  | 631.1894 | -0.4229 | 640.25 | 631.005 | 4.824 | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_too_wide |
+| GEV | data_center_power_cooling | 1023.62 |  | 1027.1015 | -0.339 | 1035.07 | 1021.09 | 4.3551 | below_vwap | below_vwap,spread_too_wide |
+| TT | data_center_power_cooling | 474.43 |  | 474.1137 | 0.0667 | 474.085 | 467.64 |  | spread_too_wide_or_missing | spread_too_wide_or_missing,spread_unavailable |
+| JCI | data_center_power_cooling | 140.43 |  | 140.521 | -0.0648 | 140.83 | 139.43 |  | below_vwap | below_vwap,spread_unavailable |
+| ANET | ai_networking_optical | 166.94 |  | 166.5882 | 0.2112 | 169.91 | 165.6 | 3.2287 | spread_too_wide_or_missing | spread_too_wide,spread_too_wide_or_missing |
+| COHR | ai_networking_optical | 275.07 |  | 280.598 | -1.9701 | 288.48 | 280.67 | 2.5012 | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_too_wide |
+| LITE | ai_networking_optical | 697.73 |  | 708.051 | -1.4577 | 737.175 | 720.21 |  | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_unavailable |
+| CIEN | ai_networking_optical | 388.34 |  | 394.1303 | -1.4691 | 410 | 397.68 | 0.412 | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_too_wide |
+| AAOI | ai_networking_optical | 99.155 |  | 101.2377 | -2.0572 | 106.975 | 102.85 |  | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_unavailable |
+| ALAB | ai_networking_optical | 317.88 |  | 323.2864 | -1.6723 | 337.59 | 326.16 |  | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_unavailable |
+| ASML | semiconductor_equipment | 1794.96 |  | 1817.5176 | -1.2411 | 1823.13 | 1796.26 | 0.0797 | below_opening_15m_low | below_opening_15m_low,below_vwap |
+| AMAT | semiconductor_equipment | 560.45 |  | 569.7422 | -1.6309 | 572.69 | 562.32 | 0.546 | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_too_wide |
+| LRCX | semiconductor_equipment | 317.285 |  | 322.8548 | -1.7252 | 328.96 | 324.11 |  | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_unavailable |
+| KLAC | semiconductor_equipment | 219.2 |  | 220.9244 | -0.7805 | 222.19 | 218.09 | 5.0365 | below_vwap | below_vwap,spread_too_wide |
+| TER | semiconductor_test_packaging | 322.61 |  | 326.5762 | -1.2145 | 332.49 | 326.685 |  | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_unavailable |
+| ONTO | semiconductor_test_packaging | 280.7 |  | 286.2356 | -1.9339 | 295.83 | 285.02 |  | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_unavailable |
+| AMKR | semiconductor_test_packaging | 62.83 |  | 63.8634 | -1.6182 | 66.19 | 63.93 |  | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_unavailable |
+| COHU | semiconductor_test_packaging | 51.05 |  | 51.7568 | -1.3656 | 52.72 | 51.735 |  | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_unavailable |
+| ENTG | semiconductor_materials | 134.22 |  | 134.7893 | -0.4224 | 138.07 | 133.73 |  | below_vwap | below_vwap,spread_unavailable |
+| MKSI | semiconductor_materials | 329.24 |  | 334.1298 | -1.4634 | 346.26 | 338 | 4.2158 | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_too_wide |
+| LIN | industrial_gases | 518.4 |  | 515.2613 | 0.6091 | 515.825 | 512.23 | 5.0116 | spread_too_wide_or_missing | spread_too_wide,spread_too_wide_or_missing |
+| APD | industrial_gases | 296.175 |  | 295.0036 | 0.3971 | 293.89 | 291.35 | 3.9031 | spread_too_wide_or_missing | spread_too_wide,spread_too_wide_or_missing |
+| APLD | high_beta_ai_infrastructure | 26.425 |  | 26.7734 | -1.3014 | 28.05 | 27.6 | 0.0378 | below_opening_15m_low | below_opening_15m_low,below_vwap |
+| IREN | high_beta_ai_infrastructure | 35.5 |  | 35.5026 | -0.0073 | 37.365 | 36.4 | 0.0282 | below_opening_15m_low | below_opening_15m_low,below_vwap |
+| CORZ | high_beta_ai_infrastructure | 21.13 |  | 21.2026 | -0.3422 | 22.18 | 21.78 | 0.0473 | below_opening_15m_low | below_opening_15m_low,below_vwap |
+| SNDK | memory_hbm_storage | 1401.52 |  | 1459.3393 | -3.962 | 1549.47 | 1482.06 | 1.285 | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_too_wide |
+| WDC | memory_hbm_storage | 457.77 |  | 473.2424 | -3.2694 | 498.04 | 480.14 | 0.7842 | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_too_wide |
+| STX | memory_hbm_storage | 740.14 |  | 763.7326 | -3.0891 | 797.155 | 768.7 | 4.1627 | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_too_wide |
+| AMZN | cloud_ai_capex | 252.635 |  | 255.052 | -0.9476 | 258.07 | 252.62 | 0.0198 | below_vwap | below_vwap |
+| META | cloud_ai_capex | 666.81 |  | 671.2257 | -0.6579 | 680.09 | 667.1 | 0.174 | below_opening_15m_low | below_opening_15m_low,below_vwap |
+| ARM | ai_accelerator | 256.58 |  | 257.2822 | -0.2729 | 265.96 | 258.1 | 2.319 | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_too_wide |
+| SKHY | memory_hbm_storage | 155.7 |  | 161.5695 | -3.6328 | 168.11 | 162.41 | 0.3982 | below_opening_15m_low | below_opening_15m_low,below_vwap,spread_too_wide |
