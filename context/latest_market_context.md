@@ -1,179 +1,181 @@
 # Market Overview
 
-Generated: 2026-07-16T01:19:21
-Stage: intraday | Report date: 2026-07-15
+Generated: 2026-07-16T09:01:39
+Stage: eod | Report date: 2026-07-16
 
 ## Market Regime
 
 当前市场状态：`risk_off_or_index_breakdown`
 
-- Snapshot stage: premarket
-- Snapshot generated at: 2026-07-15T21:44:34
+- Snapshot stage: postmarket_review
+- Snapshot generated at: 2026-07-16T09:01:31
 - Execution boundary: L3_MANUAL_CONFIRM_REQUIRED
 - Monitor fresh/stale: 55/1
 
 ## Index
 
 - `QQQ` Nasdaq 100 ETF
-  - price: 713.69
-  - VWAP: 716.2596142129939
-  - above_vwap: False
-  - caution: below_opening_15m_low
+  - price: 717.63
+  - VWAP: 716.4205991987858
+  - above_vwap: True
+  - caution: closed_market_eod_proxy
 - `SPY` S&P 500 ETF
-  - price: 751.98
-  - VWAP: 753.1559356347892
-  - above_vwap: False
-  - caution: below_opening_15m_low
+  - price: 754.77
+  - VWAP: 753.4755369811849
+  - above_vwap: True
+  - caution: closed_market_eod_proxy
 - `SOXX` iShares Semiconductor ETF
-  - price: 547.1
-  - VWAP: 551.1224066970183
-  - above_vwap: False
-  - caution: below_opening_15m_low
+  - price: 554.9
+  - VWAP: 552.2421907899258
+  - above_vwap: True
+  - caution: closed_market_eod_proxy
 - `SMH` VanEck Semiconductor ETF
-  - price: 581.97
-  - VWAP: 587.3392951737763
-  - above_vwap: False
-  - caution: below_opening_15m_low
+  - price: 590.43
+  - VWAP: 587.864499507358
+  - above_vwap: True
+  - caution: closed_market_eod_proxy
 - `IWM` Russell 2000 ETF
-  - price: 295.27
-  - VWAP: 295.5850348409702
-  - above_vwap: False
-  - caution: below_vwap
+  - price: 295.77
+  - VWAP: 295.62701088780955
+  - above_vwap: True
+  - caution: closed_market_eod_proxy
 
 ## Leaders
 
-- `AAPL` Apple
-  - chain: mega_cap_platform
-  - price: 319.65
-  - VWAP: 318.75
-  - score: 60.59
+- `SPY` S&P 500 ETF
+  - chain: market_regime
+  - price: 754.77
+  - VWAP: 753.48
+  - score: 65.91
   - level: L1
-  - caution: watch_only
-- `GOOGL` Alphabet
+  - caution: closed_market_eod_proxy
+- `IWM` Russell 2000 ETF
+  - chain: market_regime
+  - price: 295.77
+  - VWAP: 295.63
+  - score: 64.19
+  - level: L1
+  - caution: closed_market_eod_proxy
+- `ORCL` Oracle
   - chain: cloud_ai_capex
-  - price: 363.19
-  - VWAP: 361.99
-  - score: 54.39
+  - price: 132.48
+  - VWAP: 132.09
+  - score: 59.11
   - level: L1
-  - caution: watch_only
-- `LIN` Linde
-  - chain: industrial_gases
-  - price: 520.30
-  - VWAP: 519.84
-  - score: 54.03
-  - level: L1
-  - caution: watch_only
-- `VRT` Vertiv
-  - chain: data_center_power_cooling
-  - price: 307.26
-  - VWAP: 307.21
-  - score: 40.45
+  - caution: closed_market_eod_proxy
+- `MSFT` Microsoft
+  - chain: cloud_ai_capex
+  - price: 396.00
+  - VWAP: 395.38
+  - score: 56.51
   - level: L3_MANUAL
-  - caution: spread_missing
-- `GEV` GE Vernova
-  - chain: data_center_power_cooling
-  - price: 1066.56
-  - VWAP: 1063.71
-  - score: 39.42
-  - level: L3_MANUAL
-  - caution: spread_missing
-- `ALAB` Astera Labs
-  - chain: ai_networking_optical
-  - price: 363.50
-  - VWAP: 363.07
-  - score: 39.28
+  - caution: closed_market_eod_proxy
+- `AMZN` Amazon
+  - chain: cloud_ai_capex
+  - price: 254.94
+  - VWAP: 254.51
+  - score: 53.54
   - level: L1
-  - caution: spread_missing
-- `ARM` Arm Holdings
-  - chain: ai_accelerator
-  - price: 284.91
-  - VWAP: 284.44
-  - score: 37.75
-  - level: L1
-  - caution: spread_missing
-- `CIEN` Ciena
-  - chain: ai_networking_optical
-  - price: 437.62
-  - VWAP: 434.84
-  - score: 32.66
-  - level: L3_MANUAL
-  - caution: spread_missing
+  - caution: closed_market_eod_proxy
 - `AVGO` Broadcom
   - chain: custom_silicon_networking
-  - price: 396.44
-  - VWAP: 395.02
-  - score: 26.17
+  - price: 394.16
+  - VWAP: 392.62
+  - score: 51.17
   - level: L3_MANUAL
-  - caution: spread_missing
-- `^SOX` PHLX Semiconductor Index
-  - chain: semiconductor_index
-  - score: -9.43
-  - level: L3_MANUAL
-  - caution: below_vwap
-- `MU` Micron
+  - caution: closed_market_eod_proxy
+- `SKHY` SK hynix ADR
   - chain: memory_hbm_storage
-  - price: 957.45
-  - VWAP: 962.20
-  - score: -23.30
-  - level: L3_MANUAL
-  - caution: below_vwap
-- `SOXX` iShares Semiconductor ETF
-  - chain: semiconductor_index
-  - price: 566.38
-  - VWAP: 569.54
-  - score: -23.61
+  - price: 176.43
+  - VWAP: 175.81
+  - score: 44.59
   - level: L1
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
+- `ANET` Arista Networks
+  - chain: ai_networking_optical
+  - price: 171.87
+  - VWAP: 171.84
+  - score: 31.09
+  - level: L3_MANUAL
+  - caution: closed_market_eod_proxy
+- `AMAT` Applied Materials
+  - chain: semiconductor_equipment
+  - price: 579.24
+  - VWAP: 577.73
+  - score: 30.95
+  - level: L3_MANUAL
+  - caution: closed_market_eod_proxy
+- `TT` Trane Technologies
+  - chain: data_center_power_cooling
+  - price: 480.11
+  - VWAP: 478.89
+  - score: 30.63
+  - level: L3_MANUAL
+  - caution: closed_market_eod_proxy
+- `AMD` AMD
+  - chain: ai_accelerator
+  - price: 529.14
+  - VWAP: 527.74
+  - score: 30.59
+  - level: L3_MANUAL
+  - caution: closed_market_eod_proxy
+- `PWR` Quanta Services
+  - chain: data_center_power_cooling
+  - price: 648.97
+  - VWAP: 647.14
+  - score: 29.42
+  - level: L3_MANUAL
+  - caution: closed_market_eod_proxy
 
 ## Technical State
 
-- `AAPL`
-  - price: 319.65
-  - VWAP: 318.75
+- `SPY`
+  - price: 754.77
+  - VWAP: 753.48
   - above_vwap: True
-  - caution: watch_only
+  - caution: closed_market_eod_proxy
   - execution: L1
-- `GOOGL`
-  - price: 363.19
-  - VWAP: 361.99
+- `IWM`
+  - price: 295.77
+  - VWAP: 295.63
   - above_vwap: True
-  - caution: watch_only
+  - caution: closed_market_eod_proxy
   - execution: L1
-- `LIN`
-  - price: 520.30
-  - VWAP: 519.84
+- `ORCL`
+  - price: 132.48
+  - VWAP: 132.09
   - above_vwap: True
-  - caution: watch_only
+  - caution: closed_market_eod_proxy
   - execution: L1
-- `VRT`
-  - price: 307.26
-  - VWAP: 307.21
+- `MSFT`
+  - price: 396.00
+  - VWAP: 395.38
   - above_vwap: True
-  - caution: spread_missing
+  - caution: closed_market_eod_proxy
   - execution: L3_MANUAL
-- `GEV`
-  - price: 1066.56
-  - VWAP: 1063.71
+- `AMZN`
+  - price: 254.94
+  - VWAP: 254.51
   - above_vwap: True
-  - caution: spread_missing
+  - caution: closed_market_eod_proxy
+  - execution: L1
+- `AVGO`
+  - price: 394.16
+  - VWAP: 392.62
+  - above_vwap: True
+  - caution: closed_market_eod_proxy
   - execution: L3_MANUAL
-- `ALAB`
-  - price: 363.50
-  - VWAP: 363.07
+- `SKHY`
+  - price: 176.43
+  - VWAP: 175.81
   - above_vwap: True
-  - caution: spread_missing
+  - caution: closed_market_eod_proxy
   - execution: L1
-- `ARM`
-  - price: 284.91
-  - VWAP: 284.44
+- `ANET`
+  - price: 171.87
+  - VWAP: 171.84
   - above_vwap: True
-  - caution: spread_missing
-  - execution: L1
-- `CIEN`
-  - price: 437.62
-  - VWAP: 434.84
-  - above_vwap: True
-  - caution: spread_missing
+  - caution: closed_market_eod_proxy
   - execution: L3_MANUAL
 
 ## GPT Overlay Continuity
@@ -225,9 +227,9 @@ Stage: intraday | Report date: 2026-07-15
 - medium: execution_boundary - Automated output is capped at L3_MANUAL_CONFIRM_REQUIRED unless
   broker realtime
   data is verified.
-- medium: market_or_data_caution - below_vwap: 45
+- medium: market_or_data_caution - below_vwap: 1
+- medium: market_or_data_caution - closed_market_eod_proxy: 54
 - medium: market_or_data_caution - price_stale_or_missing: 1
-- medium: market_or_data_caution - spread_too_wide_or_missing: 7
 - info: market_breadth - latest breadth cache present; generated_at=2026-07-09T23:31:33
 
 ## Watch Items
@@ -315,7 +317,7 @@ Stage: intraday | Report date: 2026-07-15
   trades?
 - Are high-score names extended away from VWAP/opening range, or still near a reasonable
   support-check zone?
-- Please judge whether the support behind these leaders is durable: AAPL, GOOGL, LIN, VRT, GEV.
+- Please judge whether the support behind these leaders is durable: SPY, IWM, ORCL, MSFT, AMZN.
 - Separate data-quality/execution-boundary risks from true market risks.
 
 ## Source Files

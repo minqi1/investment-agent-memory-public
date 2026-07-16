@@ -4,9 +4,9 @@ Use this file as the stable handoff prompt between Codex and ChatGPT.
 
 ## Current Context
 
-- Generated: 2026-07-16T01:19:21
-- Stage: `intraday`
-- Report date: `2026-07-15`
+- Generated: 2026-07-16T09:01:39
+- Stage: `eod`
+- Report date: `2026-07-16`
 - Market regime from Codex: `risk_off_or_index_breakdown`
 - Current automated execution ceiling: `L3_MANUAL_CONFIRM_REQUIRED`
 - GitHub repo: https://github.com/minqi1/investment-agent-memory-public
@@ -25,7 +25,6 @@ For the freshest intraday state and field definitions, read these stable public 
 1. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/data_contract.md`
 2. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/live_endpoints.json`
 3. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/live_endpoints.md`
-4. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_state.md`
 
 GitHub raw is the canonical GPT-readable source.
 If `snapshot_public_url` is reachable from GPT, it may be used as an optional live layer.
@@ -33,32 +32,24 @@ If the Render API cannot be fetched, returns cache miss, or is stale, use the Gi
 below.
 Use the data contract to interpret premarket, intraday live, postmarket, dynamic leaderboard,
 and comfortable-entry leaderboard fields.
-Do not infer market facts from page styling; use Markdown and structured fallback fields.
-
-For intraday analysis, prefer the Markdown state file. It is intentionally multi-line and
-sectioned for GPT reading. Use JSONL only as a structured fallback, and use pretty JSON only
-if both Markdown and JSONL fail. Do not rely on single-line compressed JSON.
+Do not infer market facts from page styling; use JSON and Markdown fields.
 
 ## Files To Read
 
 Read these files first, in this order:
 
-1. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_state.md`
-2. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_state.jsonl`
-3. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_state.json`
-4. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_context.md`
-5. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_market_context.md`
-6. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_market_state.json`
-7. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/watchlist.md`
-8. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/memory/investment_principles.md`
-9. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/memory/mistakes.md`
-10. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/memory/stock_notes.md`
+1. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_context.md`
+2. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_intraday_state.json`
+3. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_market_context.md`
+4. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/latest_market_state.json`
+5. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/context/watchlist.md`
+6. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/memory/investment_principles.md`
+7. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/memory/mistakes.md`
+8. `https://raw.githubusercontent.com/minqi1/investment-agent-memory-public/main/memory/stock_notes.md`
 
 If raw GitHub URLs are unavailable, read the same paths inside the repo:
 
 - `context/latest_intraday_context.md`
-- `context/latest_intraday_state.md`
-- `context/latest_intraday_state.jsonl`
 - `context/latest_intraday_state.json`
 - `context/latest_market_context.md`
 - `context/latest_market_state.json`
@@ -147,7 +138,7 @@ If GPT overlay continuity is gapped, do not invent missing forecasts or decision
   or crowded trades?
 - Are high-score names extended away from VWAP/opening range, or still near a reasonable
   support-check zone?
-- Please judge whether the support behind these leaders is durable: AAPL, GOOGL, LIN, VRT, GEV.
+- Please judge whether the support behind these leaders is durable: SPY, IWM, ORCL, MSFT, AMZN.
 - Separate data-quality/execution-boundary risks from true market risks.
 
 ## Required Output
@@ -239,14 +230,16 @@ Then output one machine-readable JSON block:
 - Signals available: 12
 
 Top leaders from Codex:
-- `AAPL` Apple | chain=mega_cap_platform | score=60.59 | exec=L1 | flag=watch_only
-- `GOOGL` Alphabet | chain=cloud_ai_capex | score=54.39 | exec=L1 | flag=watch_only
-- `LIN` Linde | chain=industrial_gases | score=54.03 | exec=L1 | flag=watch_only
-- `VRT` Vertiv | chain=data_center_power_cooling | score=40.45 | exec=L3_MANUAL |
-  flag=spread_missing
-- `GEV` GE Vernova | chain=data_center_power_cooling | score=39.42 | exec=L3_MANUAL |
-  flag=spread_missing
-- `ALAB` Astera Labs | chain=ai_networking_optical | score=39.28 | exec=L1 | flag=spread_missing
-- `ARM` Arm Holdings | chain=ai_accelerator | score=37.75 | exec=L1 | flag=spread_missing
-- `CIEN` Ciena | chain=ai_networking_optical | score=32.66 | exec=L3_MANUAL |
-  flag=spread_missing
+- `SPY` S&P 500 ETF | chain=market_regime | score=65.91 | exec=L1 | flag=closed_market_eod_proxy
+- `IWM` Russell 2000 ETF | chain=market_regime | score=64.19 | exec=L1 |
+  flag=closed_market_eod_proxy
+- `ORCL` Oracle | chain=cloud_ai_capex | score=59.11 | exec=L1 | flag=closed_market_eod_proxy
+- `MSFT` Microsoft | chain=cloud_ai_capex | score=56.51 | exec=L3_MANUAL |
+  flag=closed_market_eod_proxy
+- `AMZN` Amazon | chain=cloud_ai_capex | score=53.54 | exec=L1 | flag=closed_market_eod_proxy
+- `AVGO` Broadcom | chain=custom_silicon_networking | score=51.17 | exec=L3_MANUAL |
+  flag=closed_market_eod_proxy
+- `SKHY` SK hynix ADR | chain=memory_hbm_storage | score=44.59 | exec=L1 |
+  flag=closed_market_eod_proxy
+- `ANET` Arista Networks | chain=ai_networking_optical | score=31.09 | exec=L3_MANUAL |
+  flag=closed_market_eod_proxy
