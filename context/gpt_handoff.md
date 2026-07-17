@@ -4,10 +4,10 @@ Use this file as the stable handoff prompt between Codex and ChatGPT.
 
 ## Current Context
 
-- Generated: 2026-07-17T09:01:26
-- Stage: `eod`
+- Generated: 2026-07-17T20:49:00
+- Stage: `premarket`
 - Report date: `2026-07-17`
-- Market regime from Codex: `risk_off_or_index_breakdown`
+- Market regime from Codex: `weak_breadth_or_pullback`
 - Current automated execution ceiling: `L3_MANUAL_CONFIRM_REQUIRED`
 - GitHub repo: https://github.com/minqi1/investment-agent-memory-public
 - Latest GPT premarket overlay date: `2026-07-13`
@@ -138,7 +138,7 @@ If GPT overlay continuity is gapped, do not invent missing forecasts or decision
   or crowded trades?
 - Are high-score names extended away from VWAP/opening range, or still near a reasonable
   support-check zone?
-- Please judge whether the support behind these leaders is durable: TT, PWR, MSFT, ENTG, GEV.
+- Please judge whether the support behind these leaders is durable: ANET, CIEN, TT, VRT, JCI.
 - Separate data-quality/execution-boundary risks from true market risks.
 
 ## Required Output
@@ -230,17 +230,18 @@ Then output one machine-readable JSON block:
 - Signals available: 12
 
 Top leaders from Codex:
-- `TT` Trane Technologies | chain=data_center_power_cooling | score=72.89 | exec=L3_MANUAL |
-  flag=closed_market_eod_proxy
-- `PWR` Quanta Services | chain=data_center_power_cooling | score=66.04 | exec=L3_MANUAL |
-  flag=closed_market_eod_proxy
-- `MSFT` Microsoft | chain=cloud_ai_capex | score=62.75 | exec=L1 | flag=closed_market_eod_proxy
-- `ENTG` Entegris | chain=semiconductor_materials | score=62.67 | exec=L1 |
-  flag=closed_market_eod_proxy
-- `GEV` GE Vernova | chain=data_center_power_cooling | score=55.86 | exec=L3_MANUAL |
-  flag=closed_market_eod_proxy
-- `TSM` TSMC ADR | chain=foundry | score=51.8 | exec=L3_MANUAL | flag=closed_market_eod_proxy
-- `VRT` Vertiv | chain=data_center_power_cooling | score=50.62 | exec=L3_MANUAL |
-  flag=closed_market_eod_proxy
-- `JCI` Johnson Controls | chain=data_center_power_cooling | score=50.27 | exec=L3_MANUAL |
-  flag=closed_market_eod_proxy
+- `ANET` Arista Networks | chain=ai_networking_optical | score=-4.39 | exec=L3_MANUAL |
+  flag=below_vwap
+- `CIEN` Ciena | chain=ai_networking_optical | score=-5.79 | exec=L1 | flag=below_vwap
+- `TT` Trane Technologies | chain=data_center_power_cooling | score=-6.11 | exec=L3_MANUAL |
+  flag=below_vwap
+- `VRT` Vertiv | chain=data_center_power_cooling | score=-6.38 | exec=L3_MANUAL |
+  flag=below_vwap
+- `JCI` Johnson Controls | chain=data_center_power_cooling | score=-6.73 | exec=L3_MANUAL |
+  flag=below_vwap
+- `PWR` Quanta Services | chain=data_center_power_cooling | score=-6.96 | exec=L3_MANUAL |
+  flag=below_vwap
+- `ONTO` Onto Innovation | chain=semiconductor_test_packaging | score=-7.05 | exec=L3_MANUAL |
+  flag=below_vwap
+- `ASML` ASML Holding | chain=semiconductor_equipment | score=-7.05 | exec=L3_MANUAL |
+  flag=below_vwap
