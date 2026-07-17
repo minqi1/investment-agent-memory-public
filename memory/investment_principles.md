@@ -9,6 +9,11 @@ Manual notes live outside the generated section. Keep this file focused on rules
 - A trade idea must have an invalidation condition before entry.
 - A short-term loss cannot be renamed into a long-term investment after the fact.
 - Cash is also a position.
+- Cycle consistency comes first: define whether each trade is intraday, overnight, swing, or long-term before entry.
+- Do not use a higher-timeframe thesis to carry a lower-timeframe loss. Example: long-term HBM optimism cannot justify holding a broken 2x SK Hynix product after its short-term event setup fails.
+- Prefer breakout-pullback-confirmation entries: do not chase the first breakout; wait for a pullback to VWAP, opening-range high, or prior resistance, then require a hold and renewed upward move before buy precheck.
+- Every trade plan must state timeframe, target space, invalidation level, expected holding period, and position size before entry.
+- If price action no longer matches the original timeframe, downgrade or exit instead of rewriting the thesis.
 
 <!-- AUTO-GENERATED:BEGIN -->
 
