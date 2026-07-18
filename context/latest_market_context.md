@@ -1,207 +1,181 @@
 # Market Overview
 
-Generated: 2026-07-17T20:49:00
-Stage: premarket | Report date: 2026-07-17
+Generated: 2026-07-18T09:01:54
+Stage: eod | Report date: 2026-07-18
 
 ## Market Regime
 
 当前市场状态：`weak_breadth_or_pullback`
 
-- Snapshot stage: premarket
-- Snapshot generated at: 2026-07-17T20:48:54
+- Snapshot stage: postmarket_review
+- Snapshot generated at: 2026-07-18T09:01:51
 - Execution boundary: L3_MANUAL_CONFIRM_REQUIRED
-- Monitor fresh/stale: 45/11
+- Monitor fresh/stale: 55/1
 
 ## Index
 
 - `QQQ` Nasdaq 100 ETF
-  - close: 705.9400024414062
-  - price: 693.11
-  - premarket_price: 693.11
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: -1.82
-  - premarket_volume: 258.0
-  - VWAP: 714.1236401582831
+  - price: 695.29
+  - VWAP: 695.7249335490915
+  - above_vwap: False
+  - caution: closed_market_eod_proxy
 - `SPY` S&P 500 ETF
-  - close: 750.719970703125
-  - price: 744.22
-  - premarket_price: 744.22
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: -0.87
-  - premarket_volume: 880.0
-  - VWAP: 751.7101859948634
+  - price: 743.28
+  - VWAP: 744.4227693689577
+  - above_vwap: False
+  - caution: closed_market_eod_proxy
 - `SOXX` iShares Semiconductor ETF
-  - close: 530.5
-  - price: 511.56
-  - premarket_price: 511.56
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: -3.57
-  - premarket_volume: 40.0
-  - VWAP: 551.7010289025553
+  - price: 520.87
+  - VWAP: 519.6512823015729
+  - above_vwap: True
+  - caution: closed_market_eod_proxy
 - `SMH` VanEck Semiconductor ETF
-  - close: 568.9199829101562
-  - price: 549.15
-  - premarket_price: 549.15
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: -3.48
-  - premarket_volume: 110.0
-  - VWAP: 585.1547221735673
+  - price: 555.0
+  - VWAP: 555.5506567441946
+  - above_vwap: False
+  - caution: closed_market_eod_proxy
 - `IWM` Russell 2000 ETF
-  - close: 295.5899963378906
-  - premarket_change_status: UNAVAILABLE
+  - price: 293.89
+  - VWAP: 294.07420449085083
+  - above_vwap: False
+  - caution: closed_market_eod_proxy
 
 ## Leaders
 
-- `ANET` Arista Networks
-  - chain: ai_networking_optical
-  - close: 168.55999755859375
-  - premarket_change_status: UNAVAILABLE
-  - score: -4.39
+- `AVGO` Broadcom
+  - chain: custom_silicon_networking
+  - price: 370.69
+  - VWAP: 370.68
+  - score: 67.17
   - level: L3_MANUAL
-  - caution: below_vwap
-- `CIEN` Ciena
-  - chain: ai_networking_optical
-  - close: 388.80999755859375
-  - premarket_change_status: UNAVAILABLE
-  - score: -5.79
+  - caution: closed_market_eod_proxy
+- `GOOGL` Alphabet
+  - chain: cloud_ai_capex
+  - price: 346.76
+  - VWAP: 345.79
+  - score: 61.90
   - level: L1
-  - caution: below_vwap
-- `TT` Trane Technologies
-  - chain: data_center_power_cooling
-  - close: 475.0
-  - premarket_change_status: UNAVAILABLE
-  - score: -6.11
-  - level: L3_MANUAL
-  - caution: below_vwap
-- `VRT` Vertiv
-  - chain: data_center_power_cooling
-  - close: 294.1099853515625
-  - price: 279.43
-  - premarket_price: 279.43
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: -4.99
-  - premarket_volume: 135.0
-  - score: -6.38
-  - level: L3_MANUAL
-  - caution: below_vwap
-- `JCI` Johnson Controls
-  - chain: data_center_power_cooling
-  - close: 141.25999450683594
-  - premarket_change_status: UNAVAILABLE
-  - score: -6.73
-  - level: L3_MANUAL
-  - caution: below_vwap
-- `PWR` Quanta Services
-  - chain: data_center_power_cooling
-  - close: 631.02001953125
-  - premarket_change_status: UNAVAILABLE
-  - score: -6.96
-  - level: L3_MANUAL
-  - caution: below_vwap
-- `ONTO` Onto Innovation
-  - chain: semiconductor_test_packaging
-  - close: 281.6099853515625
-  - premarket_change_status: UNAVAILABLE
-  - score: -7.05
-  - level: L3_MANUAL
-  - caution: below_vwap
-- `ASML` ASML Holding
-  - chain: semiconductor_equipment
-  - close: 1784.8699951171875
-  - price: 1755.71
-  - premarket_price: 1755.71
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: -1.63
-  - premarket_volume: 20.0
-  - score: -7.05
-  - level: L3_MANUAL
-  - caution: below_vwap
-- `AMAT` Applied Materials
-  - chain: semiconductor_equipment
-  - close: 560.9299926757812
-  - premarket_change_status: UNAVAILABLE
-  - score: -7.09
-  - level: L3_MANUAL
-  - caution: below_vwap
-- `GEV` GE Vernova
-  - chain: data_center_power_cooling
-  - close: 1036.219970703125
-  - premarket_change_status: UNAVAILABLE
-  - score: -7.14
-  - level: L3_MANUAL
-  - caution: below_vwap
-- `ETN` Eaton
-  - chain: data_center_power_cooling
-  - close: 396.2699890136719
-  - premarket_change_status: UNAVAILABLE
-  - score: -7.41
-  - level: L3_MANUAL
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
+- `AAPL` Apple
+  - chain: mega_cap_platform
+  - price: 333.75
+  - VWAP: 332.59
+  - score: 58.75
+  - level: L1
+  - caution: closed_market_eod_proxy
 - `KLAC` KLA
   - chain: semiconductor_equipment
-  - close: 219.3699951171875
-  - premarket_change_status: UNAVAILABLE
-  - score: -7.45
+  - price: 212.84
+  - VWAP: 212.43
+  - score: 57.81
+  - level: L1
+  - caution: closed_market_eod_proxy
+- `SOXX` iShares Semiconductor ETF
+  - chain: semiconductor_index
+  - price: 520.87
+  - VWAP: 519.65
+  - score: 48.62
+  - level: L1
+  - caution: closed_market_eod_proxy
+- `VRT` Vertiv
+  - chain: data_center_power_cooling
+  - price: 288.96
+  - VWAP: 288.13
+  - score: 47.19
   - level: L3_MANUAL
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
+- `LRCX` Lam Research
+  - chain: semiconductor_equipment
+  - price: 313.12
+  - VWAP: 312.25
+  - score: 45.75
+  - level: L1
+  - caution: closed_market_eod_proxy
+- `HPE` Hewlett Packard Enterprise
+  - chain: ai_server_oem
+  - price: 45.82
+  - VWAP: 45.75
+  - score: 45.12
+  - level: L3_MANUAL
+  - caution: closed_market_eod_proxy
+- `META` Meta Platforms
+  - chain: cloud_ai_capex
+  - price: 646.03
+  - VWAP: 642.95
+  - score: 44.95
+  - level: L1
+  - caution: closed_market_eod_proxy
+- `TER` Teradyne
+  - chain: semiconductor_test_packaging
+  - price: 322.02
+  - VWAP: 321.28
+  - score: 42.73
+  - level: L1
+  - caution: closed_market_eod_proxy
+- `AMD` AMD
+  - chain: ai_accelerator
+  - price: 493.18
+  - VWAP: 489.85
+  - score: 32.62
+  - level: L3_MANUAL
+  - caution: closed_market_eod_proxy
+- `DELL` Dell Technologies
+  - chain: ai_server_oem
+  - price: 396.40
+  - VWAP: 394.43
+  - score: 29.97
+  - level: L3_MANUAL
+  - caution: closed_market_eod_proxy
 
 ## Technical State
 
-- `ANET`
-  - close: 168.55999755859375
-  - premarket_change_status: UNAVAILABLE
-  - above_vwap: False
-  - caution: below_vwap
+- `AVGO`
+  - price: 370.69
+  - VWAP: 370.68
+  - above_vwap: True
+  - caution: closed_market_eod_proxy
   - execution: L3_MANUAL
-- `CIEN`
-  - close: 388.80999755859375
-  - premarket_change_status: UNAVAILABLE
-  - above_vwap: False
-  - caution: below_vwap
+- `GOOGL`
+  - price: 346.76
+  - VWAP: 345.79
+  - above_vwap: True
+  - caution: closed_market_eod_proxy
   - execution: L1
-- `TT`
-  - close: 475.0
-  - premarket_change_status: UNAVAILABLE
-  - above_vwap: False
-  - caution: below_vwap
-  - execution: L3_MANUAL
+- `AAPL`
+  - price: 333.75
+  - VWAP: 332.59
+  - above_vwap: True
+  - caution: closed_market_eod_proxy
+  - execution: L1
+- `KLAC`
+  - price: 212.84
+  - VWAP: 212.43
+  - above_vwap: True
+  - caution: closed_market_eod_proxy
+  - execution: L1
+- `SOXX`
+  - price: 520.87
+  - VWAP: 519.65
+  - above_vwap: True
+  - caution: closed_market_eod_proxy
+  - execution: L1
 - `VRT`
-  - close: 294.1099853515625
-  - price: 279.43
-  - premarket_price: 279.43
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: -4.99
-  - premarket_volume: 135.0
-  - above_vwap: False
-  - caution: below_vwap
+  - price: 288.96
+  - VWAP: 288.13
+  - above_vwap: True
+  - caution: closed_market_eod_proxy
   - execution: L3_MANUAL
-- `JCI`
-  - close: 141.25999450683594
-  - premarket_change_status: UNAVAILABLE
-  - above_vwap: False
-  - caution: below_vwap
-  - execution: L3_MANUAL
-- `PWR`
-  - close: 631.02001953125
-  - premarket_change_status: UNAVAILABLE
-  - above_vwap: False
-  - caution: below_vwap
-  - execution: L3_MANUAL
-- `ONTO`
-  - close: 281.6099853515625
-  - premarket_change_status: UNAVAILABLE
-  - above_vwap: False
-  - caution: below_vwap
-  - execution: L3_MANUAL
-- `ASML`
-  - close: 1784.8699951171875
-  - price: 1755.71
-  - premarket_price: 1755.71
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: -1.63
-  - premarket_volume: 20.0
-  - above_vwap: False
-  - caution: below_vwap
+- `LRCX`
+  - price: 313.12
+  - VWAP: 312.25
+  - above_vwap: True
+  - caution: closed_market_eod_proxy
+  - execution: L1
+- `HPE`
+  - price: 45.82
+  - VWAP: 45.75
+  - above_vwap: True
+  - caution: closed_market_eod_proxy
   - execution: L3_MANUAL
 
 ## GPT Overlay Continuity
@@ -249,13 +223,13 @@ Stage: premarket | Report date: 2026-07-17
 
 ## Risk Factors
 
-- low: data_freshness - fresh=45, stale=11, stale_ratio=19.64%
+- low: data_freshness - fresh=55, stale=1, stale_ratio=1.79%
 - medium: execution_boundary - Automated output is capped at L3_MANUAL_CONFIRM_REQUIRED unless
   broker realtime
   data is verified.
-- medium: market_or_data_caution - below_vwap: 44
-- medium: market_or_data_caution - price_stale_or_missing: 11
-- medium: market_or_data_caution - spread_too_wide_or_missing: 1
+- medium: market_or_data_caution - below_vwap: 1
+- medium: market_or_data_caution - closed_market_eod_proxy: 54
+- medium: market_or_data_caution - price_stale_or_missing: 1
 - info: market_breadth - latest breadth cache present; generated_at=2026-07-09T23:31:33
 
 ## Watch Items
@@ -343,7 +317,8 @@ Stage: premarket | Report date: 2026-07-17
   trades?
 - Are high-score names extended away from VWAP/opening range, or still near a reasonable
   support-check zone?
-- Please judge whether the support behind these leaders is durable: ANET, CIEN, TT, VRT, JCI.
+- Please judge whether the support behind these leaders is durable: AVGO, GOOGL, AAPL, KLAC,
+  SOXX.
 - Separate data-quality/execution-boundary risks from true market risks.
 
 ## Source Files

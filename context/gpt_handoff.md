@@ -4,9 +4,9 @@ Use this file as the stable handoff prompt between Codex and ChatGPT.
 
 ## Current Context
 
-- Generated: 2026-07-17T20:49:00
-- Stage: `premarket`
-- Report date: `2026-07-17`
+- Generated: 2026-07-18T09:01:54
+- Stage: `eod`
+- Report date: `2026-07-18`
 - Market regime from Codex: `weak_breadth_or_pullback`
 - Current automated execution ceiling: `L3_MANUAL_CONFIRM_REQUIRED`
 - GitHub repo: https://github.com/minqi1/investment-agent-memory-public
@@ -138,7 +138,8 @@ If GPT overlay continuity is gapped, do not invent missing forecasts or decision
   or crowded trades?
 - Are high-score names extended away from VWAP/opening range, or still near a reasonable
   support-check zone?
-- Please judge whether the support behind these leaders is durable: ANET, CIEN, TT, VRT, JCI.
+- Please judge whether the support behind these leaders is durable: AVGO, GOOGL, AAPL, KLAC,
+  SOXX.
 - Separate data-quality/execution-boundary risks from true market risks.
 
 ## Required Output
@@ -230,18 +231,17 @@ Then output one machine-readable JSON block:
 - Signals available: 12
 
 Top leaders from Codex:
-- `ANET` Arista Networks | chain=ai_networking_optical | score=-4.39 | exec=L3_MANUAL |
-  flag=below_vwap
-- `CIEN` Ciena | chain=ai_networking_optical | score=-5.79 | exec=L1 | flag=below_vwap
-- `TT` Trane Technologies | chain=data_center_power_cooling | score=-6.11 | exec=L3_MANUAL |
-  flag=below_vwap
-- `VRT` Vertiv | chain=data_center_power_cooling | score=-6.38 | exec=L3_MANUAL |
-  flag=below_vwap
-- `JCI` Johnson Controls | chain=data_center_power_cooling | score=-6.73 | exec=L3_MANUAL |
-  flag=below_vwap
-- `PWR` Quanta Services | chain=data_center_power_cooling | score=-6.96 | exec=L3_MANUAL |
-  flag=below_vwap
-- `ONTO` Onto Innovation | chain=semiconductor_test_packaging | score=-7.05 | exec=L3_MANUAL |
-  flag=below_vwap
-- `ASML` ASML Holding | chain=semiconductor_equipment | score=-7.05 | exec=L3_MANUAL |
-  flag=below_vwap
+- `AVGO` Broadcom | chain=custom_silicon_networking | score=67.17 | exec=L3_MANUAL |
+  flag=closed_market_eod_proxy
+- `GOOGL` Alphabet | chain=cloud_ai_capex | score=61.9 | exec=L1 | flag=closed_market_eod_proxy
+- `AAPL` Apple | chain=mega_cap_platform | score=58.75 | exec=L1 | flag=closed_market_eod_proxy
+- `KLAC` KLA | chain=semiconductor_equipment | score=57.81 | exec=L1 |
+  flag=closed_market_eod_proxy
+- `SOXX` iShares Semiconductor ETF | chain=semiconductor_index | score=48.62 | exec=L1 |
+  flag=closed_market_eod_proxy
+- `VRT` Vertiv | chain=data_center_power_cooling | score=47.19 | exec=L3_MANUAL |
+  flag=closed_market_eod_proxy
+- `LRCX` Lam Research | chain=semiconductor_equipment | score=45.75 | exec=L1 |
+  flag=closed_market_eod_proxy
+- `HPE` Hewlett Packard Enterprise | chain=ai_server_oem | score=45.12 | exec=L3_MANUAL |
+  flag=closed_market_eod_proxy
