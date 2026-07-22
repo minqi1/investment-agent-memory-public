@@ -4,10 +4,10 @@ Use this file as the stable handoff prompt between Codex and ChatGPT.
 
 ## Current Context
 
-- Generated: 2026-07-18T09:01:54
+- Generated: 2026-07-22T09:03:19
 - Stage: `eod`
-- Report date: `2026-07-18`
-- Market regime from Codex: `weak_breadth_or_pullback`
+- Report date: `2026-07-22`
+- Market regime from Codex: `tech_led_risk_on`
 - Current automated execution ceiling: `L3_MANUAL_CONFIRM_REQUIRED`
 - GitHub repo: https://github.com/minqi1/investment-agent-memory-public
 - Latest GPT premarket overlay date: `2026-07-13`
@@ -138,8 +138,7 @@ If GPT overlay continuity is gapped, do not invent missing forecasts or decision
   or crowded trades?
 - Are high-score names extended away from VWAP/opening range, or still near a reasonable
   support-check zone?
-- Please judge whether the support behind these leaders is durable: AVGO, GOOGL, AAPL, KLAC,
-  SOXX.
+- Please judge whether the support behind these leaders is durable: SMH, QQQ, SPY, AVGO, PWR.
 - Separate data-quality/execution-boundary risks from true market risks.
 
 ## Required Output
@@ -231,17 +230,17 @@ Then output one machine-readable JSON block:
 - Signals available: 12
 
 Top leaders from Codex:
-- `AVGO` Broadcom | chain=custom_silicon_networking | score=67.17 | exec=L3_MANUAL |
+- `SMH` VanEck Semiconductor ETF | chain=semiconductor_index | score=74.83 | exec=L1 |
   flag=closed_market_eod_proxy
-- `GOOGL` Alphabet | chain=cloud_ai_capex | score=61.9 | exec=L1 | flag=closed_market_eod_proxy
-- `AAPL` Apple | chain=mega_cap_platform | score=58.75 | exec=L1 | flag=closed_market_eod_proxy
-- `KLAC` KLA | chain=semiconductor_equipment | score=57.81 | exec=L1 |
+- `QQQ` Nasdaq 100 ETF | chain=market_regime | score=73.57 | exec=L1 |
   flag=closed_market_eod_proxy
-- `SOXX` iShares Semiconductor ETF | chain=semiconductor_index | score=48.62 | exec=L1 |
+- `SPY` S&P 500 ETF | chain=market_regime | score=73.3 | exec=L1 | flag=closed_market_eod_proxy
+- `AVGO` Broadcom | chain=custom_silicon_networking | score=68.42 | exec=L3_MANUAL |
   flag=closed_market_eod_proxy
-- `VRT` Vertiv | chain=data_center_power_cooling | score=47.19 | exec=L3_MANUAL |
+- `PWR` Quanta Services | chain=data_center_power_cooling | score=65.14 | exec=L3_MANUAL |
   flag=closed_market_eod_proxy
-- `LRCX` Lam Research | chain=semiconductor_equipment | score=45.75 | exec=L1 |
+- `KLAC` KLA | chain=semiconductor_equipment | score=64.96 | exec=L1 |
   flag=closed_market_eod_proxy
-- `HPE` Hewlett Packard Enterprise | chain=ai_server_oem | score=45.12 | exec=L3_MANUAL |
+- `DELL` Dell Technologies | chain=ai_server_oem | score=64.42 | exec=L3_MANUAL |
   flag=closed_market_eod_proxy
+- `AAPL` Apple | chain=mega_cap_platform | score=60.78 | exec=L1 | flag=closed_market_eod_proxy

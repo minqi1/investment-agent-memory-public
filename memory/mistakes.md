@@ -9,7 +9,7 @@ Manual notes live outside the generated section. Record what happened, why it ha
 
 <!-- AUTO-GENERATED:BEGIN -->
 
-Generated: 2026-07-18T09:01:54
+Generated: 2026-07-22T09:03:19
 
 ## Current Avoidance Rules
 - Avoid ignoring `data_freshness`: fresh=55, stale=1, stale_ratio=1.79%
