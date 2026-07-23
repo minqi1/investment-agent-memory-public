@@ -4,10 +4,10 @@ Use this file as the stable handoff prompt between Codex and ChatGPT.
 
 ## Current Context
 
-- Generated: 2026-07-22T09:03:19
+- Generated: 2026-07-23T09:02:37
 - Stage: `eod`
-- Report date: `2026-07-22`
-- Market regime from Codex: `tech_led_risk_on`
+- Report date: `2026-07-23`
+- Market regime from Codex: `weak_breadth_or_pullback`
 - Current automated execution ceiling: `L3_MANUAL_CONFIRM_REQUIRED`
 - GitHub repo: https://github.com/minqi1/investment-agent-memory-public
 - Latest GPT premarket overlay date: `2026-07-13`
@@ -138,7 +138,7 @@ If GPT overlay continuity is gapped, do not invent missing forecasts or decision
   or crowded trades?
 - Are high-score names extended away from VWAP/opening range, or still near a reasonable
   support-check zone?
-- Please judge whether the support behind these leaders is durable: SMH, QQQ, SPY, AVGO, PWR.
+- Please judge whether the support behind these leaders is durable: SPY, MU, LIN, PWR, AAPL.
 - Separate data-quality/execution-boundary risks from true market risks.
 
 ## Required Output
@@ -230,17 +230,14 @@ Then output one machine-readable JSON block:
 - Signals available: 12
 
 Top leaders from Codex:
-- `SMH` VanEck Semiconductor ETF | chain=semiconductor_index | score=74.83 | exec=L1 |
+- `SPY` S&P 500 ETF | chain=market_regime | score=67.45 | exec=L1 | flag=closed_market_eod_proxy
+- `MU` Micron | chain=memory_hbm_storage | score=65.68 | exec=L1 | flag=closed_market_eod_proxy
+- `LIN` Linde | chain=industrial_gases | score=65.47 | exec=L1 | flag=closed_market_eod_proxy
+- `PWR` Quanta Services | chain=data_center_power_cooling | score=64.7 | exec=L1 |
   flag=closed_market_eod_proxy
-- `QQQ` Nasdaq 100 ETF | chain=market_regime | score=73.57 | exec=L1 |
+- `AAPL` Apple | chain=mega_cap_platform | score=59.29 | exec=L1 | flag=closed_market_eod_proxy
+- `ORCL` Oracle | chain=cloud_ai_capex | score=58.84 | exec=L1 | flag=closed_market_eod_proxy
+- `SMH` VanEck Semiconductor ETF | chain=semiconductor_index | score=53.94 | exec=L1 |
   flag=closed_market_eod_proxy
-- `SPY` S&P 500 ETF | chain=market_regime | score=73.3 | exec=L1 | flag=closed_market_eod_proxy
-- `AVGO` Broadcom | chain=custom_silicon_networking | score=68.42 | exec=L3_MANUAL |
+- `ASML` ASML Holding | chain=semiconductor_equipment | score=52.1 | exec=L1 |
   flag=closed_market_eod_proxy
-- `PWR` Quanta Services | chain=data_center_power_cooling | score=65.14 | exec=L3_MANUAL |
-  flag=closed_market_eod_proxy
-- `KLAC` KLA | chain=semiconductor_equipment | score=64.96 | exec=L1 |
-  flag=closed_market_eod_proxy
-- `DELL` Dell Technologies | chain=ai_server_oem | score=64.42 | exec=L3_MANUAL |
-  flag=closed_market_eod_proxy
-- `AAPL` Apple | chain=mega_cap_platform | score=60.78 | exec=L1 | flag=closed_market_eod_proxy
