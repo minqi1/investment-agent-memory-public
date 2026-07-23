@@ -4,8 +4,8 @@ Use this file as the stable handoff prompt between Codex and ChatGPT.
 
 ## Current Context
 
-- Generated: 2026-07-23T09:02:37
-- Stage: `eod`
+- Generated: 2026-07-23T20:48:11
+- Stage: `premarket`
 - Report date: `2026-07-23`
 - Market regime from Codex: `weak_breadth_or_pullback`
 - Current automated execution ceiling: `L3_MANUAL_CONFIRM_REQUIRED`
@@ -138,7 +138,7 @@ If GPT overlay continuity is gapped, do not invent missing forecasts or decision
   or crowded trades?
 - Are high-score names extended away from VWAP/opening range, or still near a reasonable
   support-check zone?
-- Please judge whether the support behind these leaders is durable: SPY, MU, LIN, PWR, AAPL.
+- Please judge whether the support behind these leaders is durable: ORCL, TT, ^SOX, TER, KLAC.
 - Separate data-quality/execution-boundary risks from true market risks.
 
 ## Required Output
@@ -230,14 +230,15 @@ Then output one machine-readable JSON block:
 - Signals available: 12
 
 Top leaders from Codex:
-- `SPY` S&P 500 ETF | chain=market_regime | score=67.45 | exec=L1 | flag=closed_market_eod_proxy
-- `MU` Micron | chain=memory_hbm_storage | score=65.68 | exec=L1 | flag=closed_market_eod_proxy
-- `LIN` Linde | chain=industrial_gases | score=65.47 | exec=L1 | flag=closed_market_eod_proxy
-- `PWR` Quanta Services | chain=data_center_power_cooling | score=64.7 | exec=L1 |
-  flag=closed_market_eod_proxy
-- `AAPL` Apple | chain=mega_cap_platform | score=59.29 | exec=L1 | flag=closed_market_eod_proxy
-- `ORCL` Oracle | chain=cloud_ai_capex | score=58.84 | exec=L1 | flag=closed_market_eod_proxy
-- `SMH` VanEck Semiconductor ETF | chain=semiconductor_index | score=53.94 | exec=L1 |
-  flag=closed_market_eod_proxy
-- `ASML` ASML Holding | chain=semiconductor_equipment | score=52.1 | exec=L1 |
-  flag=closed_market_eod_proxy
+- `ORCL` Oracle | chain=cloud_ai_capex | score=33.84 | exec=L1 | flag=spread_missing
+- `TT` Trane Technologies | chain=data_center_power_cooling | score=-9.8 | exec=L1 |
+  flag=below_vwap
+- `^SOX` PHLX Semiconductor Index | chain=semiconductor_index | score=-10.61 | exec=L1 |
+  flag=below_vwap
+- `TER` Teradyne | chain=semiconductor_test_packaging | score=-11.5 | exec=L1 | flag=below_vwap
+- `KLAC` KLA | chain=semiconductor_equipment | score=-12.9 | exec=L1 | flag=below_vwap
+- `ASML` ASML Holding | chain=semiconductor_equipment | score=-12.9 | exec=L1 | flag=below_vwap
+- `AMAT` Applied Materials | chain=semiconductor_equipment | score=-13.08 | exec=L1 |
+  flag=below_vwap
+- `ANET` Arista Networks | chain=ai_networking_optical | score=-13.21 | exec=L1 |
+  flag=below_vwap
