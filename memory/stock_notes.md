@@ -9,7 +9,7 @@ Manual notes live outside the generated section. Use this file for durable compa
 
 <!-- AUTO-GENERATED:BEGIN -->
 
-Generated: 2026-07-23T20:48:11
+Generated: 2026-07-24T09:02:55
 
 ## Current Long-Term Watch Notes
 - `NVDA` NVIDIA: chain=ai_accelerator; tier/action=A_CORE; watch invalidation=Downgrade if earnings/order thesis is disproved, valuation rises without growth support, news risk becomes hard negative, or price loses medium-term trend support.
