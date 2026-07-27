@@ -4,10 +4,10 @@ Use this file as the stable handoff prompt between Codex and ChatGPT.
 
 ## Current Context
 
-- Generated: 2026-07-24T09:02:55
-- Stage: `eod`
-- Report date: `2026-07-24`
-- Market regime from Codex: `tech_led_risk_on`
+- Generated: 2026-07-27T21:20:31
+- Stage: `premarket`
+- Report date: `2026-07-27`
+- Market regime from Codex: `weak_breadth_or_pullback`
 - Current automated execution ceiling: `L3_MANUAL_CONFIRM_REQUIRED`
 - GitHub repo: https://github.com/minqi1/investment-agent-memory-public
 - Latest GPT premarket overlay date: `2026-07-13`
@@ -138,7 +138,7 @@ If GPT overlay continuity is gapped, do not invent missing forecasts or decision
   or crowded trades?
 - Are high-score names extended away from VWAP/opening range, or still near a reasonable
   support-check zone?
-- Please judge whether the support behind these leaders is durable: SMH, NVDA, ASML, AMAT, ANET.
+- Please judge whether the support behind these leaders is durable: AVGO, ASML, AMAT, TT, ANET.
 - Separate data-quality/execution-boundary risks from true market risks.
 
 ## Required Output
@@ -230,17 +230,18 @@ Then output one machine-readable JSON block:
 - Signals available: 12
 
 Top leaders from Codex:
-- `SMH` VanEck Semiconductor ETF | chain=semiconductor_index | score=67.08 | exec=L1 |
-  flag=closed_market_eod_proxy
-- `NVDA` NVIDIA | chain=ai_accelerator | score=66.58 | exec=L1 | flag=closed_market_eod_proxy
-- `ASML` ASML Holding | chain=semiconductor_equipment | score=66.0 | exec=L3_MANUAL |
-  flag=closed_market_eod_proxy
-- `AMAT` Applied Materials | chain=semiconductor_equipment | score=65.91 | exec=L3_MANUAL |
-  flag=closed_market_eod_proxy
-- `ANET` Arista Networks | chain=ai_networking_optical | score=65.32 | exec=L3_MANUAL |
-  flag=closed_market_eod_proxy
-- `IWM` Russell 2000 ETF | chain=market_regime | score=64.11 | exec=L1 |
-  flag=closed_market_eod_proxy
-- `LRCX` Lam Research | chain=semiconductor_equipment | score=63.88 | exec=L1 |
-  flag=closed_market_eod_proxy
-- `SPY` S&P 500 ETF | chain=market_regime | score=63.56 | exec=L1 | flag=closed_market_eod_proxy
+- `AVGO` Broadcom | chain=custom_silicon_networking | score=25.27 | exec=L3_MANUAL |
+  flag=spread_missing
+- `ASML` ASML Holding | chain=semiconductor_equipment | score=-7.0 | exec=L3_MANUAL |
+  flag=below_vwap
+- `AMAT` Applied Materials | chain=semiconductor_equipment | score=-7.09 | exec=L3_MANUAL |
+  flag=below_vwap
+- `TT` Trane Technologies | chain=data_center_power_cooling | score=-7.19 | exec=L3_MANUAL |
+  flag=below_vwap
+- `ANET` Arista Networks | chain=ai_networking_optical | score=-7.68 | exec=L3_MANUAL |
+  flag=below_vwap
+- `JCI` Johnson Controls | chain=data_center_power_cooling | score=-7.77 | exec=L3_MANUAL |
+  flag=below_vwap
+- `PWR` Quanta Services | chain=data_center_power_cooling | score=-7.95 | exec=L3_MANUAL |
+  flag=below_vwap
+- `KLAC` KLA | chain=semiconductor_equipment | score=-8.0 | exec=L1 | flag=below_vwap
