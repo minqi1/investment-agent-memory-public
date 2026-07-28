@@ -4,10 +4,10 @@ Use this file as the stable handoff prompt between Codex and ChatGPT.
 
 ## Current Context
 
-- Generated: 2026-07-28T09:03:46
-- Stage: `eod`
+- Generated: 2026-07-28T20:47:53
+- Stage: `premarket`
 - Report date: `2026-07-28`
-- Market regime from Codex: `risk_off_or_index_breakdown`
+- Market regime from Codex: `weak_breadth_or_pullback`
 - Current automated execution ceiling: `L3_MANUAL_CONFIRM_REQUIRED`
 - GitHub repo: https://github.com/minqi1/investment-agent-memory-public
 - Latest GPT premarket overlay date: `2026-07-13`
@@ -138,7 +138,7 @@ If GPT overlay continuity is gapped, do not invent missing forecasts or decision
   or crowded trades?
 - Are high-score names extended away from VWAP/opening range, or still near a reasonable
   support-check zone?
-- Please judge whether the support behind these leaders is durable: AAPL, TT, JCI, ASML, SMH.
+- Please judge whether the support behind these leaders is durable: GOOGL, ASML, PWR, TT, ANET.
 - Separate data-quality/execution-boundary risks from true market risks.
 
 ## Required Output
@@ -230,18 +230,17 @@ Then output one machine-readable JSON block:
 - Signals available: 12
 
 Top leaders from Codex:
-- `AAPL` Apple | chain=mega_cap_platform | score=59.2 | exec=L1 | flag=closed_market_eod_proxy
-- `TT` Trane Technologies | chain=data_center_power_cooling | score=50.53 | exec=L3_MANUAL |
-  flag=closed_market_eod_proxy
-- `JCI` Johnson Controls | chain=data_center_power_cooling | score=49.28 | exec=L3_MANUAL |
-  flag=closed_market_eod_proxy
-- `ASML` ASML Holding | chain=semiconductor_equipment | score=34.78 | exec=L3_MANUAL |
-  flag=closed_market_eod_proxy
-- `SMH` VanEck Semiconductor ETF | chain=semiconductor_index | score=32.53 | exec=L1 |
-  flag=closed_market_eod_proxy
-- `WDC` Western Digital | chain=memory_hbm_storage | score=31.0 | exec=L3_MANUAL |
-  flag=closed_market_eod_proxy
-- `IWM` Russell 2000 ETF | chain=market_regime | score=29.73 | exec=L1 |
-  flag=closed_market_eod_proxy
-- `QQQ` Nasdaq 100 ETF | chain=market_regime | score=29.24 | exec=L1 |
-  flag=closed_market_eod_proxy
+- `GOOGL` Alphabet | chain=cloud_ai_capex | score=23.78 | exec=L1 | flag=spread_missing
+- `ASML` ASML Holding | chain=semiconductor_equipment | score=-3.22 | exec=L3_MANUAL |
+  flag=below_vwap
+- `PWR` Quanta Services | chain=data_center_power_cooling | score=-4.3 | exec=L3_MANUAL |
+  flag=below_vwap
+- `TT` Trane Technologies | chain=data_center_power_cooling | score=-6.47 | exec=L3_MANUAL |
+  flag=below_vwap
+- `ANET` Arista Networks | chain=ai_networking_optical | score=-7.0 | exec=L3_MANUAL |
+  flag=below_vwap
+- `GEV` GE Vernova | chain=data_center_power_cooling | score=-7.37 | exec=L3_MANUAL |
+  flag=below_vwap
+- `JCI` Johnson Controls | chain=data_center_power_cooling | score=-7.72 | exec=L3_MANUAL |
+  flag=below_vwap
+- `LITE` Lumentum | chain=ai_networking_optical | score=-7.81 | exec=L3_MANUAL | flag=below_vwap

@@ -1,182 +1,212 @@
 # Market Overview
 
-Generated: 2026-07-28T09:03:46
-Stage: eod | Report date: 2026-07-28
+Generated: 2026-07-28T20:47:53
+Stage: premarket | Report date: 2026-07-28
 
 ## Market Regime
 
-当前市场状态：`risk_off_or_index_breakdown`
+当前市场状态：`weak_breadth_or_pullback`
 
-- Snapshot stage: postmarket_review
-- Snapshot generated at: 2026-07-28T09:03:43
+- Snapshot stage: premarket
+- Snapshot generated at: 2026-07-28T20:47:49
 - Execution boundary: L3_MANUAL_CONFIRM_REQUIRED
-- Monitor fresh/stale: 55/1
+- Monitor fresh/stale: 47/9
 
 ## Index
 
 - `QQQ` Nasdaq 100 ETF
-  - price: 682.05
-  - VWAP: 681.5208516824572
-  - above_vwap: True
-  - caution: closed_market_eod_proxy
+  - close: 682.1199951171875
+  - price: 677.32
+  - premarket_price: 677.32
+  - premarket_change_status: UNAVAILABLE
+  - premarket_change_proxy_pct: -0.70
+  - premarket_volume: 340.0
+  - VWAP: 689.934889369093
 - `SPY` S&P 500 ETF
-  - price: 738.85
-  - VWAP: 739.080594734896
-  - above_vwap: False
-  - caution: closed_market_eod_proxy
+  - close: 739.0900268554688
+  - price: 739.87
+  - premarket_price: 739.87
+  - premarket_change_status: UNAVAILABLE
+  - premarket_change_proxy_pct: 0.11
+  - premarket_volume: 1386.0
+  - VWAP: 740.5963557608586
 - `SOXX` iShares Semiconductor ETF
-  - price: 515.65
-  - VWAP: 512.4988160267922
-  - above_vwap: True
-  - caution: closed_market_eod_proxy
+  - close: 516.22998046875
+  - price: 496.03
+  - premarket_price: 496.03
+  - premarket_change_status: UNAVAILABLE
+  - premarket_change_proxy_pct: -3.91
+  - premarket_volume: 40.0
+  - VWAP: 531.3946671353011
 - `SMH` VanEck Semiconductor ETF
-  - price: 548.295
-  - VWAP: 547.2772522622352
-  - above_vwap: True
-  - caution: closed_market_eod_proxy
+  - close: 548.5499877929688
+  - price: 532.28
+  - premarket_price: 532.28
+  - premarket_change_status: UNAVAILABLE
+  - premarket_change_proxy_pct: -2.97
+  - premarket_volume: 50.0
+  - VWAP: 558.8785395996055
 - `IWM` Russell 2000 ETF
-  - price: 293.24
-  - VWAP: 293.0634060880258
-  - above_vwap: True
-  - caution: closed_market_eod_proxy
+  - close: 292.9100036621094
+  - premarket_change_status: UNAVAILABLE
 
 ## Leaders
 
-- `AAPL` Apple
-  - chain: mega_cap_platform
-  - price: 336.93
-  - VWAP: 336.74
-  - score: 59.20
+- `GOOGL` Alphabet
+  - chain: cloud_ai_capex
+  - close: 326.55999755859375
+  - price: 328.00
+  - premarket_price: 328.41
+  - premarket_change_status: UNAVAILABLE
+  - premarket_change_proxy_pct: 0.57
+  - premarket_volume: 120.0
+  - VWAP: 326.17
+  - score: 23.78
   - level: L1
-  - caution: closed_market_eod_proxy
-- `TT` Trane Technologies
-  - chain: data_center_power_cooling
-  - price: 483.44
-  - VWAP: 479.74
-  - score: 50.53
-  - level: L3_MANUAL
-  - caution: closed_market_eod_proxy
-- `JCI` Johnson Controls
-  - chain: data_center_power_cooling
-  - price: 143.34
-  - VWAP: 142.31
-  - score: 49.28
-  - level: L3_MANUAL
-  - caution: closed_market_eod_proxy
+  - caution: spread_missing
 - `ASML` ASML Holding
   - chain: semiconductor_equipment
-  - price: 1655.30
-  - VWAP: 1653.99
-  - score: 34.78
+  - close: 1655.260009765625
+  - price: 1573.65
+  - premarket_price: 1573.65
+  - premarket_change_status: UNAVAILABLE
+  - premarket_change_proxy_pct: -4.93
+  - premarket_volume: 60.0
+  - score: -3.22
   - level: L3_MANUAL
-  - caution: closed_market_eod_proxy
-- `SMH` VanEck Semiconductor ETF
-  - chain: semiconductor_index
-  - price: 548.29
-  - VWAP: 547.28
-  - score: 32.53
-  - level: L1
-  - caution: closed_market_eod_proxy
-- `WDC` Western Digital
-  - chain: memory_hbm_storage
-  - price: 494.63
-  - VWAP: 494.54
-  - score: 31.00
+  - caution: below_vwap
+- `PWR` Quanta Services
+  - chain: data_center_power_cooling
+  - close: 620.280029296875
+  - premarket_change_status: UNAVAILABLE
+  - score: -4.30
   - level: L3_MANUAL
-  - caution: closed_market_eod_proxy
-- `IWM` Russell 2000 ETF
-  - chain: market_regime
-  - price: 293.24
-  - VWAP: 293.06
-  - score: 29.73
-  - level: L1
-  - caution: closed_market_eod_proxy
-- `QQQ` Nasdaq 100 ETF
-  - chain: market_regime
-  - price: 682.05
-  - VWAP: 681.52
-  - score: 29.24
-  - level: L1
-  - caution: closed_market_eod_proxy
-- `ONTO` Onto Innovation
-  - chain: semiconductor_test_packaging
-  - price: 262.30
-  - VWAP: 259.33
-  - score: 19.27
-  - level: L1
-  - caution: closed_market_eod_proxy
-- `AVGO` Broadcom
-  - chain: custom_silicon_networking
-  - price: 383.35
-  - VWAP: 381.33
-  - score: 16.88
+  - caution: below_vwap
+- `TT` Trane Technologies
+  - chain: data_center_power_cooling
+  - close: 483.3399963378906
+  - premarket_change_status: UNAVAILABLE
+  - score: -6.47
   - level: L3_MANUAL
-  - caution: closed_market_eod_proxy
-- `SOXX` iShares Semiconductor ETF
-  - chain: semiconductor_index
-  - price: 515.65
-  - VWAP: 512.50
-  - score: 16.66
-  - level: L1
-  - caution: closed_market_eod_proxy
+  - caution: below_vwap
 - `ANET` Arista Networks
   - chain: ai_networking_optical
-  - price: 170.72
-  - VWAP: 169.93
-  - score: 15.00
+  - close: 170.75999450683594
+  - premarket_change_status: UNAVAILABLE
+  - score: -7.00
   - level: L3_MANUAL
-  - caution: closed_market_eod_proxy
+  - caution: below_vwap
+- `GEV` GE Vernova
+  - chain: data_center_power_cooling
+  - close: 996.5700073242188
+  - premarket_change_status: UNAVAILABLE
+  - score: -7.37
+  - level: L3_MANUAL
+  - caution: below_vwap
+- `JCI` Johnson Controls
+  - chain: data_center_power_cooling
+  - close: 143.38999938964844
+  - premarket_change_status: UNAVAILABLE
+  - score: -7.72
+  - level: L3_MANUAL
+  - caution: below_vwap
+- `LITE` Lumentum
+  - chain: ai_networking_optical
+  - close: 711.9600219726562
+  - premarket_change_status: UNAVAILABLE
+  - score: -7.81
+  - level: L3_MANUAL
+  - caution: below_vwap
+- `ETN` Eaton
+  - chain: data_center_power_cooling
+  - close: 398.6400146484375
+  - premarket_change_status: UNAVAILABLE
+  - score: -7.95
+  - level: L3_MANUAL
+  - caution: below_vwap
+- `IWM` Russell 2000 ETF
+  - chain: market_regime
+  - close: 292.9100036621094
+  - premarket_change_status: UNAVAILABLE
+  - score: -8.27
+  - level: L1
+  - caution: below_vwap
+- `KLAC` KLA
+  - chain: semiconductor_equipment
+  - close: 203.36000061035156
+  - premarket_change_status: UNAVAILABLE
+  - score: -8.45
+  - level: L1
+  - caution: below_vwap
+- `SKHY` SK hynix ADR
+  - chain: memory_hbm_storage
+  - price: 136.65
+  - premarket_price: 136.65
+  - premarket_change_status: UNAVAILABLE
+  - premarket_volume: 200.0
+  - score: -8.94
+  - level: L1
+  - caution: below_vwap
 
 ## Technical State
 
-- `AAPL`
-  - price: 336.93
-  - VWAP: 336.74
+- `GOOGL`
+  - close: 326.55999755859375
+  - price: 328.00
+  - premarket_price: 328.41
+  - premarket_change_status: UNAVAILABLE
+  - premarket_change_proxy_pct: 0.57
+  - premarket_volume: 120.0
+  - VWAP: 326.17
   - above_vwap: True
-  - caution: closed_market_eod_proxy
+  - caution: spread_missing
   - execution: L1
+- `ASML`
+  - close: 1655.260009765625
+  - price: 1573.65
+  - premarket_price: 1573.65
+  - premarket_change_status: UNAVAILABLE
+  - premarket_change_proxy_pct: -4.93
+  - premarket_volume: 60.0
+  - above_vwap: False
+  - caution: below_vwap
+  - execution: L3_MANUAL
+- `PWR`
+  - close: 620.280029296875
+  - premarket_change_status: UNAVAILABLE
+  - above_vwap: False
+  - caution: below_vwap
+  - execution: L3_MANUAL
 - `TT`
-  - price: 483.44
-  - VWAP: 479.74
-  - above_vwap: True
-  - caution: closed_market_eod_proxy
+  - close: 483.3399963378906
+  - premarket_change_status: UNAVAILABLE
+  - above_vwap: False
+  - caution: below_vwap
+  - execution: L3_MANUAL
+- `ANET`
+  - close: 170.75999450683594
+  - premarket_change_status: UNAVAILABLE
+  - above_vwap: False
+  - caution: below_vwap
+  - execution: L3_MANUAL
+- `GEV`
+  - close: 996.5700073242188
+  - premarket_change_status: UNAVAILABLE
+  - above_vwap: False
+  - caution: below_vwap
   - execution: L3_MANUAL
 - `JCI`
-  - price: 143.34
-  - VWAP: 142.31
-  - above_vwap: True
-  - caution: closed_market_eod_proxy
+  - close: 143.38999938964844
+  - premarket_change_status: UNAVAILABLE
+  - above_vwap: False
+  - caution: below_vwap
   - execution: L3_MANUAL
-- `ASML`
-  - price: 1655.30
-  - VWAP: 1653.99
-  - above_vwap: True
-  - caution: closed_market_eod_proxy
+- `LITE`
+  - close: 711.9600219726562
+  - premarket_change_status: UNAVAILABLE
+  - above_vwap: False
+  - caution: below_vwap
   - execution: L3_MANUAL
-- `SMH`
-  - price: 548.29
-  - VWAP: 547.28
-  - above_vwap: True
-  - caution: closed_market_eod_proxy
-  - execution: L1
-- `WDC`
-  - price: 494.63
-  - VWAP: 494.54
-  - above_vwap: True
-  - caution: closed_market_eod_proxy
-  - execution: L3_MANUAL
-- `IWM`
-  - price: 293.24
-  - VWAP: 293.06
-  - above_vwap: True
-  - caution: closed_market_eod_proxy
-  - execution: L1
-- `QQQ`
-  - price: 682.05
-  - VWAP: 681.52
-  - above_vwap: True
-  - caution: closed_market_eod_proxy
-  - execution: L1
 
 ## GPT Overlay Continuity
 
@@ -223,13 +253,13 @@ Stage: eod | Report date: 2026-07-28
 
 ## Risk Factors
 
-- low: data_freshness - fresh=55, stale=1, stale_ratio=1.79%
+- low: data_freshness - fresh=47, stale=9, stale_ratio=16.07%
 - medium: execution_boundary - Automated output is capped at L3_MANUAL_CONFIRM_REQUIRED unless
   broker realtime
   data is verified.
-- medium: market_or_data_caution - below_vwap: 1
-- medium: market_or_data_caution - closed_market_eod_proxy: 54
-- medium: market_or_data_caution - price_stale_or_missing: 1
+- medium: market_or_data_caution - below_vwap: 45
+- medium: market_or_data_caution - price_stale_or_missing: 9
+- medium: market_or_data_caution - spread_too_wide_or_missing: 2
 - info: market_breadth - latest breadth cache present; generated_at=2026-07-09T23:31:33
 
 ## Watch Items
@@ -240,21 +270,9 @@ Stage: eod | Report date: 2026-07-28
   - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
     growth support,
     news risk becomes hard negative, or price loses medium-term trend support.
-- `TSM` TSMC ADR
-  - tier: A_CORE
-  - action: research_watch
-  - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
-    growth support,
-    news risk becomes hard negative, or price loses medium-term trend support.
-- `ASML` ASML Holding
-  - tier: A_CORE
-  - action: watch_for_reclaim_and_support
-  - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
-    growth support,
-    news risk becomes hard negative, or price loses medium-term trend support.
-- `AMD` AMD
+- `TT` Trane Technologies
   - tier: B_HIGH_BETA
-  - action: watch_for_reclaim_and_support
+  - action: core_watch_wait_for_pullback
   - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
     growth support,
     news risk becomes hard negative, or price loses medium-term trend support.
@@ -264,15 +282,21 @@ Stage: eod | Report date: 2026-07-28
   - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
     growth support,
     news risk becomes hard negative, or price loses medium-term trend support.
-- `ANET` Arista Networks
+- `TSM` TSMC ADR
+  - tier: A_CORE
+  - action: long_logic_only_wait_for_trend_repair
+  - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
+    growth support,
+    news risk becomes hard negative, or price loses medium-term trend support.
+- `JCI` Johnson Controls
   - tier: B_HIGH_BETA
   - action: research_watch
   - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
     growth support,
     news risk becomes hard negative, or price loses medium-term trend support.
-- `AVGO` Broadcom
-  - tier: A_CORE
-  - action: long_logic_only_wait_for_trend_repair
+- `ANET` Arista Networks
+  - tier: B_HIGH_BETA
+  - action: watch_for_reclaim_and_support
   - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
     growth support,
     news risk becomes hard negative, or price loses medium-term trend support.
@@ -282,27 +306,33 @@ Stage: eod | Report date: 2026-07-28
   - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
     growth support,
     news risk becomes hard negative, or price loses medium-term trend support.
-- `TT` Trane Technologies
-  - tier: B_HIGH_BETA
-  - action: research_watch
+- `HPE` Hewlett Packard Enterprise
+  - tier: C_RESEARCH
+  - action: core_watch_wait_for_pullback
+  - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
+    growth support,
+    news risk becomes hard negative, or price loses medium-term trend support.
+- `DELL` Dell Technologies
+  - tier: C_RESEARCH
+  - action: core_watch_wait_for_pullback
+  - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
+    growth support,
+    news risk becomes hard negative, or price loses medium-term trend support.
+- `AVGO` Broadcom
+  - tier: A_CORE
+  - action: long_logic_only_wait_for_trend_repair
   - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
     growth support,
     news risk becomes hard negative, or price loses medium-term trend support.
 - `ETN` Eaton
   - tier: C_RESEARCH
-  - action: watch_for_reclaim_and_support
-  - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
-    growth support,
-    news risk becomes hard negative, or price loses medium-term trend support.
-- `MU` Micron
-  - tier: B_HIGH_BETA
-  - action: long_logic_only_wait_for_trend_repair
-  - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
-    growth support,
-    news risk becomes hard negative, or price loses medium-term trend support.
-- `GEV` GE Vernova
-  - tier: C_RESEARCH
   - action: research_watch
+  - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
+    growth support,
+    news risk becomes hard negative, or price loses medium-term trend support.
+- `IWM` Russell 2000 ETF
+  - tier: INDEX_REGIME
+  - action: use_as_regime_check
   - downgrade_if: Downgrade if earnings/order thesis is disproved, valuation rises without
     growth support,
     news risk becomes hard negative, or price loses medium-term trend support.
@@ -317,7 +347,7 @@ Stage: eod | Report date: 2026-07-28
   trades?
 - Are high-score names extended away from VWAP/opening range, or still near a reasonable
   support-check zone?
-- Please judge whether the support behind these leaders is durable: AAPL, TT, JCI, ASML, SMH.
+- Please judge whether the support behind these leaders is durable: GOOGL, ASML, PWR, TT, ANET.
 - Separate data-quality/execution-boundary risks from true market risks.
 
 ## Source Files
