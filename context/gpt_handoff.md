@@ -4,9 +4,9 @@ Use this file as the stable handoff prompt between Codex and ChatGPT.
 
 ## Current Context
 
-- Generated: 2026-07-28T20:47:53
-- Stage: `premarket`
-- Report date: `2026-07-28`
+- Generated: 2026-07-29T09:02:04
+- Stage: `eod`
+- Report date: `2026-07-29`
 - Market regime from Codex: `weak_breadth_or_pullback`
 - Current automated execution ceiling: `L3_MANUAL_CONFIRM_REQUIRED`
 - GitHub repo: https://github.com/minqi1/investment-agent-memory-public
@@ -138,7 +138,7 @@ If GPT overlay continuity is gapped, do not invent missing forecasts or decision
   or crowded trades?
 - Are high-score names extended away from VWAP/opening range, or still near a reasonable
   support-check zone?
-- Please judge whether the support behind these leaders is durable: GOOGL, ASML, PWR, TT, ANET.
+- Please judge whether the support behind these leaders is durable: SPY, IWM, SMH, QQQ, ASML.
 - Separate data-quality/execution-boundary risks from true market risks.
 
 ## Required Output
@@ -230,17 +230,16 @@ Then output one machine-readable JSON block:
 - Signals available: 12
 
 Top leaders from Codex:
-- `GOOGL` Alphabet | chain=cloud_ai_capex | score=23.78 | exec=L1 | flag=spread_missing
-- `ASML` ASML Holding | chain=semiconductor_equipment | score=-3.22 | exec=L3_MANUAL |
-  flag=below_vwap
-- `PWR` Quanta Services | chain=data_center_power_cooling | score=-4.3 | exec=L3_MANUAL |
-  flag=below_vwap
-- `TT` Trane Technologies | chain=data_center_power_cooling | score=-6.47 | exec=L3_MANUAL |
-  flag=below_vwap
-- `ANET` Arista Networks | chain=ai_networking_optical | score=-7.0 | exec=L3_MANUAL |
-  flag=below_vwap
-- `GEV` GE Vernova | chain=data_center_power_cooling | score=-7.37 | exec=L3_MANUAL |
-  flag=below_vwap
-- `JCI` Johnson Controls | chain=data_center_power_cooling | score=-7.72 | exec=L3_MANUAL |
-  flag=below_vwap
-- `LITE` Lumentum | chain=ai_networking_optical | score=-7.81 | exec=L3_MANUAL | flag=below_vwap
+- `SPY` S&P 500 ETF | chain=market_regime | score=73.17 | exec=L1 | flag=closed_market_eod_proxy
+- `IWM` Russell 2000 ETF | chain=market_regime | score=70.42 | exec=L1 |
+  flag=closed_market_eod_proxy
+- `SMH` VanEck Semiconductor ETF | chain=semiconductor_index | score=67.66 | exec=L1 |
+  flag=closed_market_eod_proxy
+- `QQQ` Nasdaq 100 ETF | chain=market_regime | score=66.94 | exec=L1 |
+  flag=closed_market_eod_proxy
+- `ASML` ASML Holding | chain=semiconductor_equipment | score=66.49 | exec=L3_MANUAL |
+  flag=closed_market_eod_proxy
+- `AMZN` Amazon | chain=cloud_ai_capex | score=62.08 | exec=L1 | flag=closed_market_eod_proxy
+- `MRVL` Marvell Technology | chain=custom_silicon_networking | score=61.67 | exec=L1 |
+  flag=closed_market_eod_proxy
+- `AAPL` Apple | chain=mega_cap_platform | score=58.21 | exec=L1 | flag=closed_market_eod_proxy

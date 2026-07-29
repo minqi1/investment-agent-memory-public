@@ -1,212 +1,182 @@
 # Market Overview
 
-Generated: 2026-07-28T20:47:53
-Stage: premarket | Report date: 2026-07-28
+Generated: 2026-07-29T09:02:04
+Stage: eod | Report date: 2026-07-29
 
 ## Market Regime
 
 当前市场状态：`weak_breadth_or_pullback`
 
-- Snapshot stage: premarket
-- Snapshot generated at: 2026-07-28T20:47:49
+- Snapshot stage: postmarket_review
+- Snapshot generated at: 2026-07-29T09:02:02
 - Execution boundary: L3_MANUAL_CONFIRM_REQUIRED
-- Monitor fresh/stale: 47/9
+- Monitor fresh/stale: 55/1
 
 ## Index
 
 - `QQQ` Nasdaq 100 ETF
-  - close: 682.1199951171875
-  - price: 677.32
-  - premarket_price: 677.32
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: -0.70
-  - premarket_volume: 340.0
-  - VWAP: 689.934889369093
+  - price: 676.15
+  - VWAP: 674.6024780833595
+  - above_vwap: True
+  - caution: closed_market_eod_proxy
 - `SPY` S&P 500 ETF
-  - close: 739.0900268554688
-  - price: 739.87
-  - premarket_price: 739.87
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: 0.11
-  - premarket_volume: 1386.0
-  - VWAP: 740.5963557608586
+  - price: 740.67
+  - VWAP: 740.0687637291934
+  - above_vwap: True
+  - caution: closed_market_eod_proxy
 - `SOXX` iShares Semiconductor ETF
-  - close: 516.22998046875
-  - price: 496.03
-  - premarket_price: 496.03
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: -3.91
-  - premarket_volume: 40.0
-  - VWAP: 531.3946671353011
+  - price: 487.0
+  - VWAP: 490.7595493914543
+  - above_vwap: False
+  - caution: closed_market_eod_proxy
 - `SMH` VanEck Semiconductor ETF
-  - close: 548.5499877929688
-  - price: 532.28
-  - premarket_price: 532.28
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: -2.97
-  - premarket_volume: 50.0
-  - VWAP: 558.8785395996055
+  - price: 528.5
+  - VWAP: 528.1487799751324
+  - above_vwap: True
+  - caution: closed_market_eod_proxy
 - `IWM` Russell 2000 ETF
-  - close: 292.9100036621094
-  - premarket_change_status: UNAVAILABLE
+  - price: 293.39
+  - VWAP: 292.60787687120927
+  - above_vwap: True
+  - caution: closed_market_eod_proxy
 
 ## Leaders
 
-- `GOOGL` Alphabet
-  - chain: cloud_ai_capex
-  - close: 326.55999755859375
-  - price: 328.00
-  - premarket_price: 328.41
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: 0.57
-  - premarket_volume: 120.0
-  - VWAP: 326.17
-  - score: 23.78
+- `SPY` S&P 500 ETF
+  - chain: market_regime
+  - price: 740.67
+  - VWAP: 740.07
+  - score: 73.17
   - level: L1
-  - caution: spread_missing
-- `ASML` ASML Holding
-  - chain: semiconductor_equipment
-  - close: 1655.260009765625
-  - price: 1573.65
-  - premarket_price: 1573.65
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: -4.93
-  - premarket_volume: 60.0
-  - score: -3.22
-  - level: L3_MANUAL
-  - caution: below_vwap
-- `PWR` Quanta Services
-  - chain: data_center_power_cooling
-  - close: 620.280029296875
-  - premarket_change_status: UNAVAILABLE
-  - score: -4.30
-  - level: L3_MANUAL
-  - caution: below_vwap
-- `TT` Trane Technologies
-  - chain: data_center_power_cooling
-  - close: 483.3399963378906
-  - premarket_change_status: UNAVAILABLE
-  - score: -6.47
-  - level: L3_MANUAL
-  - caution: below_vwap
-- `ANET` Arista Networks
-  - chain: ai_networking_optical
-  - close: 170.75999450683594
-  - premarket_change_status: UNAVAILABLE
-  - score: -7.00
-  - level: L3_MANUAL
-  - caution: below_vwap
-- `GEV` GE Vernova
-  - chain: data_center_power_cooling
-  - close: 996.5700073242188
-  - premarket_change_status: UNAVAILABLE
-  - score: -7.37
-  - level: L3_MANUAL
-  - caution: below_vwap
-- `JCI` Johnson Controls
-  - chain: data_center_power_cooling
-  - close: 143.38999938964844
-  - premarket_change_status: UNAVAILABLE
-  - score: -7.72
-  - level: L3_MANUAL
-  - caution: below_vwap
-- `LITE` Lumentum
-  - chain: ai_networking_optical
-  - close: 711.9600219726562
-  - premarket_change_status: UNAVAILABLE
-  - score: -7.81
-  - level: L3_MANUAL
-  - caution: below_vwap
-- `ETN` Eaton
-  - chain: data_center_power_cooling
-  - close: 398.6400146484375
-  - premarket_change_status: UNAVAILABLE
-  - score: -7.95
-  - level: L3_MANUAL
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
 - `IWM` Russell 2000 ETF
   - chain: market_regime
-  - close: 292.9100036621094
-  - premarket_change_status: UNAVAILABLE
-  - score: -8.27
+  - price: 293.39
+  - VWAP: 292.61
+  - score: 70.42
   - level: L1
-  - caution: below_vwap
-- `KLAC` KLA
+  - caution: closed_market_eod_proxy
+- `SMH` VanEck Semiconductor ETF
+  - chain: semiconductor_index
+  - price: 528.50
+  - VWAP: 528.15
+  - score: 67.66
+  - level: L1
+  - caution: closed_market_eod_proxy
+- `QQQ` Nasdaq 100 ETF
+  - chain: market_regime
+  - price: 676.15
+  - VWAP: 674.60
+  - score: 66.94
+  - level: L1
+  - caution: closed_market_eod_proxy
+- `ASML` ASML Holding
   - chain: semiconductor_equipment
-  - close: 203.36000061035156
-  - premarket_change_status: UNAVAILABLE
-  - score: -8.45
+  - price: 1581.66
+  - VWAP: 1579.39
+  - score: 66.49
+  - level: L3_MANUAL
+  - caution: closed_market_eod_proxy
+- `AMZN` Amazon
+  - chain: cloud_ai_capex
+  - price: 230.74
+  - VWAP: 230.61
+  - score: 62.08
   - level: L1
-  - caution: below_vwap
-- `SKHY` SK hynix ADR
-  - chain: memory_hbm_storage
-  - price: 136.65
-  - premarket_price: 136.65
-  - premarket_change_status: UNAVAILABLE
-  - premarket_volume: 200.0
-  - score: -8.94
+  - caution: closed_market_eod_proxy
+- `MRVL` Marvell Technology
+  - chain: custom_silicon_networking
+  - price: 174.57
+  - VWAP: 174.43
+  - score: 61.67
   - level: L1
-  - caution: below_vwap
+  - caution: closed_market_eod_proxy
+- `AAPL` Apple
+  - chain: mega_cap_platform
+  - price: 340.17
+  - VWAP: 339.13
+  - score: 58.21
+  - level: L1
+  - caution: closed_market_eod_proxy
+- `TSM` TSMC ADR
+  - chain: foundry
+  - price: 392.16
+  - VWAP: 389.58
+  - score: 52.38
+  - level: L3_MANUAL
+  - caution: closed_market_eod_proxy
+- `TT` Trane Technologies
+  - chain: data_center_power_cooling
+  - price: 470.19
+  - VWAP: 466.81
+  - score: 50.22
+  - level: L3_MANUAL
+  - caution: closed_market_eod_proxy
+- `PWR` Quanta Services
+  - chain: data_center_power_cooling
+  - price: 588.20
+  - VWAP: 584.41
+  - score: 49.41
+  - level: L3_MANUAL
+  - caution: closed_market_eod_proxy
+- `GEV` GE Vernova
+  - chain: data_center_power_cooling
+  - price: 943.29
+  - VWAP: 938.12
+  - score: 49.37
+  - level: L3_MANUAL
+  - caution: closed_market_eod_proxy
 
 ## Technical State
 
-- `GOOGL`
-  - close: 326.55999755859375
-  - price: 328.00
-  - premarket_price: 328.41
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: 0.57
-  - premarket_volume: 120.0
-  - VWAP: 326.17
+- `SPY`
+  - price: 740.67
+  - VWAP: 740.07
   - above_vwap: True
-  - caution: spread_missing
+  - caution: closed_market_eod_proxy
+  - execution: L1
+- `IWM`
+  - price: 293.39
+  - VWAP: 292.61
+  - above_vwap: True
+  - caution: closed_market_eod_proxy
+  - execution: L1
+- `SMH`
+  - price: 528.50
+  - VWAP: 528.15
+  - above_vwap: True
+  - caution: closed_market_eod_proxy
+  - execution: L1
+- `QQQ`
+  - price: 676.15
+  - VWAP: 674.60
+  - above_vwap: True
+  - caution: closed_market_eod_proxy
   - execution: L1
 - `ASML`
-  - close: 1655.260009765625
-  - price: 1573.65
-  - premarket_price: 1573.65
-  - premarket_change_status: UNAVAILABLE
-  - premarket_change_proxy_pct: -4.93
-  - premarket_volume: 60.0
-  - above_vwap: False
-  - caution: below_vwap
+  - price: 1581.66
+  - VWAP: 1579.39
+  - above_vwap: True
+  - caution: closed_market_eod_proxy
   - execution: L3_MANUAL
-- `PWR`
-  - close: 620.280029296875
-  - premarket_change_status: UNAVAILABLE
-  - above_vwap: False
-  - caution: below_vwap
-  - execution: L3_MANUAL
-- `TT`
-  - close: 483.3399963378906
-  - premarket_change_status: UNAVAILABLE
-  - above_vwap: False
-  - caution: below_vwap
-  - execution: L3_MANUAL
-- `ANET`
-  - close: 170.75999450683594
-  - premarket_change_status: UNAVAILABLE
-  - above_vwap: False
-  - caution: below_vwap
-  - execution: L3_MANUAL
-- `GEV`
-  - close: 996.5700073242188
-  - premarket_change_status: UNAVAILABLE
-  - above_vwap: False
-  - caution: below_vwap
-  - execution: L3_MANUAL
-- `JCI`
-  - close: 143.38999938964844
-  - premarket_change_status: UNAVAILABLE
-  - above_vwap: False
-  - caution: below_vwap
-  - execution: L3_MANUAL
-- `LITE`
-  - close: 711.9600219726562
-  - premarket_change_status: UNAVAILABLE
-  - above_vwap: False
-  - caution: below_vwap
-  - execution: L3_MANUAL
+- `AMZN`
+  - price: 230.74
+  - VWAP: 230.61
+  - above_vwap: True
+  - caution: closed_market_eod_proxy
+  - execution: L1
+- `MRVL`
+  - price: 174.57
+  - VWAP: 174.43
+  - above_vwap: True
+  - caution: closed_market_eod_proxy
+  - execution: L1
+- `AAPL`
+  - price: 340.17
+  - VWAP: 339.13
+  - above_vwap: True
+  - caution: closed_market_eod_proxy
+  - execution: L1
 
 ## GPT Overlay Continuity
 
@@ -253,13 +223,13 @@ Stage: premarket | Report date: 2026-07-28
 
 ## Risk Factors
 
-- low: data_freshness - fresh=47, stale=9, stale_ratio=16.07%
+- low: data_freshness - fresh=55, stale=1, stale_ratio=1.79%
 - medium: execution_boundary - Automated output is capped at L3_MANUAL_CONFIRM_REQUIRED unless
   broker realtime
   data is verified.
-- medium: market_or_data_caution - below_vwap: 45
-- medium: market_or_data_caution - price_stale_or_missing: 9
-- medium: market_or_data_caution - spread_too_wide_or_missing: 2
+- medium: market_or_data_caution - below_vwap: 1
+- medium: market_or_data_caution - closed_market_eod_proxy: 54
+- medium: market_or_data_caution - price_stale_or_missing: 1
 - info: market_breadth - latest breadth cache present; generated_at=2026-07-09T23:31:33
 
 ## Watch Items
@@ -347,7 +317,7 @@ Stage: premarket | Report date: 2026-07-28
   trades?
 - Are high-score names extended away from VWAP/opening range, or still near a reasonable
   support-check zone?
-- Please judge whether the support behind these leaders is durable: GOOGL, ASML, PWR, TT, ANET.
+- Please judge whether the support behind these leaders is durable: SPY, IWM, SMH, QQQ, ASML.
 - Separate data-quality/execution-boundary risks from true market risks.
 
 ## Source Files
